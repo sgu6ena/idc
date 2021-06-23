@@ -19,11 +19,11 @@
 }
 
 @font-face {
-    font-family: 'San Francisco Pro semibold';
+    font-family: 'San Francisco Pro Semibold';
     src: local('San Francisco Pro Display Semibold'), local('San-Francisco-Pro-Display-Semibold'),
-        url('SFProDisplay-Semibold.woff2') format('woff2'),
-        url('SFProDisplay-Semibold.woff') format('woff'),
-        url('SFProDisplay-Semibold.ttf') format('truetype');
+        url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
+        url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
@@ -64,11 +64,11 @@ button {
 
 /* * HEADER * */
 .header {
-position: absolute;
-left: 0;
-top: 0;
-width: 100%;
-z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
 }
 
 
@@ -91,7 +91,7 @@ z-index: 99;
 }
 
 .nav-link {
-    font-family: "San Francisco Pro semibold", sans-serif;
+    font-family: "San Francisco Pro Semibold", sans-serif;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.01em;
@@ -142,10 +142,10 @@ z-index: 99;
 
 }
 
-/* * ckfqlth*/ 
+/* * ckfqlth*/
 
-.big-slider { 
-    
+.big-slider {
+
     overflow: hidden;
     color: var(--background-color);
     /* background: center no-repeat url(../image/header-image1.png); */
@@ -156,18 +156,18 @@ z-index: 99;
 }
 
 
-.swiper-wrapper{
-    margin : 0;
+.swiper-wrapper {
+    margin: 0;
     padding: 0;
 }
 
-.big-slider  .slide-1 {
+.big-slider .slide-1 {
     background: center no-repeat url(../image/header-image1.png);
     background-size: cover;
-    
+
 }
 
-.big-slider .slide-2{
+.big-slider .slide-2 {
     background: center no-repeat url(../image/slide-2.jpg);
     background-size: cover;
 }
@@ -248,7 +248,7 @@ z-index: 99;
 }
 
 .progress-slider {
-    font-family: 'San Francisco Pro semibold';
+    font-family: 'San Francisco Pro Semibold';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -265,13 +265,14 @@ z-index: 99;
 }
 
 .progress-bar {
-    height: 1px;  
+    height: 1px;
     -webkit-appearance: none;
 }
+
 .progress-bar::-webkit-progress-value {
     height: 3px;
     color: var(--second-accent);
-    background: var(--second-accent);   
+    background: var(--second-accent);
 }
 
 
@@ -293,24 +294,21 @@ z-index: 99;
     width: 50px;
     height: 50px;
     margin-left: 25px;
-    animation:swiper-preloader-spin 2s 1 ease-in-out;
+    /* animation:swiper-preloader-spin 2s 1 ease-in-out; */
 
 }
 
-.slider-next{
+.slider-next {
     margin-right: 110px;
 }
 
-.swiper-lazy-preloader{
-    animation-delay: 5;
+
+.swiper-lazy-preloader {
+
+    animation: swiper-preloader-spin 2s 1 ease-in-out;
+
 }
 
-.swiper-lazy-preloader{
-   
-    animation:swiper-preloader-spin 2s 1 ease-in-out;
-    
-}  
-    
 
 /* ** BALANCE* * */
 .balance {
@@ -331,7 +329,7 @@ z-index: 99;
 
 
 .name-balance {
-    font-family: 'San Francisco Pro semibold';
+    font-family: 'San Francisco Pro Semibold';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -377,7 +375,7 @@ z-index: 99;
 }
 
 .balance-descrition {
-    font-family: 'San Francisco Pro semibold';
+    font-family: 'San Francisco Pro Semibold';
 
     font-size: 14px;
     line-height: 17px;
@@ -513,25 +511,22 @@ z-index: 99;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.tariffs-head{
+
+.tariffs-head {
     margin-bottom: 30px;
 }
 
 .tariffs-title {
     font-weight: 500;
-    
     font-size: 36px;
     line-height: 43px;
     letter-spacing: 0.02em;
-
     color: var(--title-second);
-    
-    
 }
 
-.tariffs-list {}
-
-
+.tariffs-item {
+    margin: 30px;
+}
 
 .tariffs-list-item {
 
@@ -551,18 +546,17 @@ z-index: 99;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     background: #FFFFFF;
-    /* border: 1px solid red; */
-    height: 500px;
+    min-height: 450px; 
     display: block;
     position: relative;
     width: 273px;
     border-radius: 25px;
-  
 }
+
 .tariff-image {
-   
+
     width: 100%;
-   
+
     border-radius: 25px 25px 0px 0px;
 }
 
@@ -592,7 +586,7 @@ z-index: 99;
 }
 
 .tariff-name {
-
+    margin-bottom: 31px;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -600,17 +594,74 @@ z-index: 99;
     color: #006285;
 }
 
-.tariff-price-count {
-    font-family: 'Rubik', sans-serif;
 
+.tariff-details {
+    font-family: 'San Francisco Pro';
+    font-size: 12px;
+    line-height: 14px;
+    color: #37355B;
+    width: 190px;
+    margin-bottom: 32px;
+}
+
+.tariff-details-item {
+    margin-bottom: 10px;
+}
+
+.tariff-details-progressbar{
+    height: 10px;
+}
+
+.tariff-details-other {
+    font-family: 'San Francisco Pro';
+    font-size: 13px;
+    line-height: 16px;
+    color: #7C7B8A;
+    margin-bottom: 23px;
+}
+
+.tariff-details-other-item {
+    margin-bottom: 10px;
+}
+
+.progress-bar-tarriff {
+    -webkit-appearance: none;
+    color:  var(--background-color);
+    background: var(--background-color);
+    outline: 5px;
+    width: 100%;
+    height: 10px;
+}
+
+
+
+.progress-bar-tarriff::-webkit-progress-value {
+    height: 10px;   
+    border-radius: 5px;
+    color: #066285;
+    background: #066285;
+}
+
+
+
+
+.tariff-details-other-icon {
+    margin-right: 12px;
+}
+.tariff-hr{
+    margin: 15px -3px;
+}
+.tariff-price-count {
+    font-family: 'Rubik', sans-serif;font-weight: 700;
     font-size: 36px;
     line-height: 43px;
     color: var(--title-second);
+    margin-right: 5px;
 }
 
 .tariff-price-currency {
     font-family: 'Rubik', sans-serif;
-
+    font-weight: 500;
     width: 55px;
     height: 34px;
     font-size: 14px;
