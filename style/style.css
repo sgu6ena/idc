@@ -36,6 +36,7 @@
 
 :root {
     --background-color: #F2F3F7;
+    --background-color-second:rgba(0, 98, 133, 0.15);
 
     --default-color: #3554D1;
     --first-default: #2B4D5D;
@@ -600,11 +601,9 @@ border:none;
 
 
 .tariffs-list-button:hover{
-
     color: #006285; 
 }
 .tariffs-list-button:focus{
-
     color: #006285; 
 }
 
@@ -743,4 +742,85 @@ border:none;
 .tariff-button {
     border: none;
     background: transparent
+}
+
+/* * EXTRA * */
+
+.extra{
+
+background: var(--background-color-second)
+}
+
+.extra-item{
+    width: 367px;
+    margin: 50px;
+    padding: 20px;
+    background: #F2F3F7;
+    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    border-radius: 25px;
+}
+
+.extra-image-wrapper{
+   
+height: 210px;
+overflow: hidden;
+border-radius: 25px;
+}
+
+.extra-image{
+    height: 100%;
+    width:   100%;
+}
+
+.extra-description-wrapper{
+padding: 10px 20px ;
+}
+.extra-subtitle{
+    font-family: 'San Francisco Pro';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+font-feature-settings: 'liga' off;
+color: var(--text-second);
+}
+
+.tag-film{
+    background: #FFBDBD;
+    color:#AB091E;
+}
+
+.tag-LTE{
+    background: #D1F4FF;
+    color:#0B69A3;
+}
+
+.tag-internet{
+    background: #FCE588;
+    color:#B16F05;
+}
+
+.extra-title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'San Francisco Pro Bold';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 21px;
+color: var(--title-second);
+
+
+}
+
+.extra-description{
+    font-family: 'San Francisco Pro Semibold';
+
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+
+color: var(--text-second);
 }
