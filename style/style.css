@@ -36,7 +36,7 @@
 
 :root {
     --background-color: #F2F3F7;
-    --background-color-second:rgba(0, 98, 133, 0.15);
+    --background-color-second: rgba(0, 98, 133, 0.15);
 
     --default-color: #3554D1;
     --first-default: #2B4D5D;
@@ -310,7 +310,7 @@ button {
 
 .swiper-lazy-preloader {
     z-index: -1;
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
     width: 58px;
     height: 58px;
     position: absolute;
@@ -536,7 +536,7 @@ button {
 }
 
 .tariffs-item {
-   
+
     margin: 30px;
 }
 
@@ -559,15 +559,16 @@ button {
     line-height: 17px;
     display: flex;
     align-items: center;
-    text-transform: uppercase;   
-    color: #7C7B8A;   
+    text-transform: uppercase;
+    color: #7C7B8A;
     background: transparent;
-border:none;
+    border: none;
     text-transform: uppercase;
 }
 
 
-/* Underline From Center */  /** hover.css **/
+/* Underline From Center */
+/** hover.css **/
 .hvr-underline-from-center {
     display: inline-block;
     vertical-align: middle;
@@ -576,8 +577,9 @@ border:none;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-  }
-  .hvr-underline-from-center:before {
+}
+
+.hvr-underline-from-center:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -593,18 +595,22 @@ border:none;
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+}
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
     left: 0;
     right: 0;
-  }
-
-
-.tariffs-list-button:hover{
-    color: #006285; 
 }
-.tariffs-list-button:focus{
-    color: #006285; 
+
+
+.tariffs-list-button:hover {
+    color: #006285;
+}
+
+.tariffs-list-button:focus {
+    color: #006285;
 }
 
 .tariff-item {
@@ -746,12 +752,12 @@ border:none;
 
 /* * EXTRA * */
 
-.extra{
+.extra {
 
-background: var(--background-color-second)
+    background: var(--background-color-second)
 }
 
-.extra-item{
+.extra-item {
     width: 367px;
     margin: 50px;
     padding: 20px;
@@ -760,67 +766,68 @@ background: var(--background-color-second)
     border-radius: 25px;
 }
 
-.extra-image-wrapper{
-   
-height: 210px;
-overflow: hidden;
-border-radius: 25px;
+.extra-image-wrapper {
+
+    height: 210px;
+    overflow: hidden;
+    border-radius: 25px;
 }
 
-.extra-image{
+.extra-image {
     height: 100%;
-    width:   100%;
+    width: 100%;
 }
 
-.extra-description-wrapper{
-padding: 10px 20px ;
+.extra-description-wrapper {
+    padding: 10px 20px;
 }
-.extra-subtitle{
+
+.extra-subtitle {
     font-family: 'San Francisco Pro';
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.02em;
-font-feature-settings: 'liga' off;
-color: var(--text-second);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    font-feature-settings: 'liga'off;
+    color: var(--text-second);
 }
 
-.tag-film{
+.tag-film {
     background: #FFBDBD;
-    color:#AB091E;
+    color: #AB091E;
 }
 
-.tag-LTE{
+.tag-LTE {
     background: #D1F4FF;
-    color:#0B69A3;
+    color: #0B69A3;
 }
 
-.tag-internet{
+.tag-internet {
     background: #FCE588;
-    color:#B16F05;
+    color: #B16F05;
 }
 
-.extra-title{
+.extra-title {
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: 'San Francisco Pro Bold';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 21px;
-color: var(--title-second);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--title-second);
 
 
 }
 
-.extra-description{
+.extra-description {
     font-family: 'San Francisco Pro Semibold';
 
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
 
 
-color: var(--text-second);
+    color: var(--text-second);
 }
