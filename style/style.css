@@ -46,7 +46,7 @@
     --title-first: ;
     --title-second: #37355B;
 
-    --text-second: ;
+    --text-first: ;
     --text-second: #7C7B8A;
 
     --swiper-theme-color: #F8F32B;
@@ -302,18 +302,29 @@ button {
     margin-right: 110px;
 }
 
+.button-big-slider {
+
+    position: relative;
+}
 
 .swiper-lazy-preloader {
-
-    animation: swiper-preloader-spin 2s 1 ease-in-out;
+    z-index: -1;
+    transform: rotate(45deg);
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    top: 17px;
+    left: 42px;
+    animation: swiper-preloader-spin 6s infinite ease-in-out;
 
 }
+
 
 
 /* ** BALANCE* * */
 .balance {
     padding-top: 50px;
-    padding-bottom: 50px;
+
 }
 
 .card-balance {
@@ -323,8 +334,7 @@ button {
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
     border-radius: 8px;
     padding: 20px;
-
-    margin-right: 65px;
+    margin: 0 30px 30px 30px;
 }
 
 
@@ -376,7 +386,7 @@ button {
 
 .balance-descrition {
     font-family: 'San Francisco Pro Semibold';
-
+    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
 
@@ -388,12 +398,12 @@ button {
 
 .card-balance-payment {
     height: 150px;
-
     width: 570px;
     background: #FFFFFF;
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
     border-radius: 8px;
     padding: 20px;
+    margin: 0 30px 50px;
 
 
 }
@@ -525,20 +535,77 @@ button {
 }
 
 .tariffs-item {
+   
     margin: 30px;
 }
 
 .tariffs-list-item {
-
+    padding-bottom: 10px;
+    background: linear-gradient(#006285, #006285) center bottom;
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
     z-index: 1;
     margin-left: 25px;
     list-style: none;
 }
 
 .tariffs-list-button {
+    padding-bottom: 10px;
+    height: 100%;
+    font-family: 'San Francisco Pro Semibold';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;   
+    color: #7C7B8A;   
     background: transparent;
-    border: none;
+border:none;
     text-transform: uppercase;
+}
+
+
+/* Underline From Center */  /** hover.css **/
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    color: #006285;
+    background: #006285;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+
+
+.tariffs-list-button:hover{
+
+    color: #006285; 
+}
+.tariffs-list-button:focus{
+
+    color: #006285; 
 }
 
 .tariff-item {
@@ -546,17 +613,17 @@ button {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     background: #FFFFFF;
-    min-height: 450px; 
+    min-height: 450px;
     display: block;
     position: relative;
-    width: 273px;
+    min-width: 273px;
+    max-width: 300px;
     border-radius: 25px;
+    margin: 25px;
 }
 
 .tariff-image {
-
     width: 100%;
-
     border-radius: 25px 25px 0px 0px;
 }
 
@@ -608,7 +675,7 @@ button {
     margin-bottom: 10px;
 }
 
-.tariff-details-progressbar{
+.tariff-details-progressbar {
     height: 10px;
 }
 
@@ -626,7 +693,7 @@ button {
 
 .progress-bar-tarriff {
     -webkit-appearance: none;
-    color:  var(--background-color);
+    color: var(--background-color);
     background: var(--background-color);
     outline: 5px;
     width: 100%;
@@ -636,7 +703,7 @@ button {
 
 
 .progress-bar-tarriff::-webkit-progress-value {
-    height: 10px;   
+    height: 10px;
     border-radius: 5px;
     color: #066285;
     background: #066285;
@@ -648,11 +715,14 @@ button {
 .tariff-details-other-icon {
     margin-right: 12px;
 }
-.tariff-hr{
+
+.tariff-hr {
     margin: 15px -3px;
 }
+
 .tariff-price-count {
-    font-family: 'Rubik', sans-serif;font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
     color: var(--title-second);

@@ -1,10 +1,10 @@
 const swiper = new Swiper('.big-slider', {
-    speed: 500,
+    speed: 1000,
     loop: true,
     slidesPerView: 1,
 
     autoplay: {
-        delay: 2000,
+        delay: 5000,
     },
     navigation: {
         nextEl: '.arrow-slider-next',
@@ -23,13 +23,13 @@ const swiper = new Swiper('.big-slider', {
     },
     lazy: {
         loadPrevNext: true,
-       
-      },
 
-      effect: 'fade',
-      fadeEffect: {
+    },
+
+    effect: 'fade',
+    fadeEffect: {
         crossFade: true
-      },
+    },
 
 
 });

@@ -66,7 +66,7 @@
     <section class="big-slider">
         <div class="container-fluid  swiper-wrapper">
             <!-- * * тут добавляются слайды* * -->
-            <div class="header-slide swiper-slide slide-1">
+            <div class="header-slide swiper-slide slide-1 swiper-lazy">
                 <div class="row m-0 p-0">
                     <div class="col-6 header-slider-wrapper">
                         <div class="header-slider">
@@ -134,7 +134,7 @@
 
             </div>
             <!-- <div class="swiper-lazy-preloader "></div> -->
-            <div class="swiper-lazy-preloader"></div>
+            
             <!-- /.progress-slider -->
         </div>
         <!-- /.col-3 -->
@@ -145,11 +145,15 @@
             </button>
         </div>
         <div class="col-3 d-flex justify-content-end  align-items-start ">
-            <button class="slider-prev">
+            <div class="button-prev-wrapper  ">
+                
+                <button class="slider-prev">
                 <img src="image/short_left.svg" alt="" class="arrow-slider-prev">
-            </button>
+            </button></div>
+            
 
-            <div class="button-next-wrapper  ">
+            <div class="button-next-wrapper button-big-slider d-flex justify-content-center align-content-center ">
+                <div class="swiper-lazy-preloader"></div>
                 <button class="slider-next ">
                     <img src="image/short_right.svg" alt="" class="arrow-slider-next">
                 </button>
@@ -234,10 +238,7 @@
                         <div class="input-wrapper d-flex justify-content-start  align-items-center">
                             <input type="number" class="input-number" placeholder="+373-77______">
                             <input type="number" class="input-sum" placeholder="СУММА">
-
                             <button class="button-payment" type="submit">Пополнить</button></div>
-
-
                     </form>
 
 
@@ -254,23 +255,23 @@
     <section class="tariffs">
 
         <div class="container">
-            <div class="tariffs-head d-flex justify-content-between">
+            <div class="tariffs-head d-flex justify-content-between align-items-center">
                 <div class="tariffs-title-wrapper d-flex align-items-between">
                     <h2 class="tariffs-title">Тарифы</h2>
                     <img src="image/chevron_right.svg" alt="" class="tariffs-icon" width="">
                 </div>
                 <!-- /.tariffs-title -->
                 <div class="tariffs-options ">
-                    <ul class="tariffs-list d-flex justify-content-end">
-                        <li class="tariffs-list-item"><button class="tariffs-list-button">Хиты</button></li>
+                    <ul class="tariffs-list d-flex justify-content-end ">
+                        <li class="tariffs-list-item"><button class="tariffs-list-button hvr-underline-from-center  ">Хиты</button></li>
                         <!-- /.tariffs-list-item -->
-                        <li class="tariffs-list-item"><button class="tariffs-list-button">Мобильная связь</button></li>
+                        <li class="tariffs-list-item"><button class="tariffs-list-button hvr-underline-from-center ">Мобильная связь</button></li>
                         <!-- /.tariffs-list-item -->
-                        <li class="tariffs-list-item"><button class="tariffs-list-button">интернет</button></li>
+                        <li class="tariffs-list-item"><button class="tariffs-list-button hvr-underline-from-center ">интернет</button></li>
                         <!-- /.tariffs-list-item -->
-                        <li class="tariffs-list-item"><button class="tariffs-list-button">телевидение</button></li>
+                        <li class="tariffs-list-item"><button class="tariffs-list-button hvr-underline-from-center ">телевидение</button></li>
                         <!-- /.tariffs-list-item -->
-                        <li class="tariffs-list-item"><button class="tariffs-list-button">проводная связь</button></li>
+                        <li class="tariffs-list-item"><button class="tariffs-list-button hvr-underline-from-center ">проводная связь</button></li>
                         <!-- /.tariffs-list-item -->
                     </ul>
                     <!-- /.tariffs-list -->
@@ -279,7 +280,7 @@
             </div>
 
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="tariff-item">
                         <div class="tariff-image-wrapper"> <img src="image/active-2.jpg" alt="" class="tariff-image">
                             <!-- /.tarrif-image -->
@@ -342,7 +343,7 @@
                     </div>
                     <!-- /.tarrif-item -->
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="tariff-item">
                         <div class="tariff-image-wrapper"> <img src="image/active-5.jpg" alt="" class="tariff-image">
                             <!-- /.tarrif-image -->
@@ -405,7 +406,7 @@
                     </div>
                     <!-- /.tarrif-item -->
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="tariff-item">
                         <div class="tariff-image-wrapper"> <img src="image/active-15.jpg" alt="" class="tariff-image">
                             <!-- /.tarrif-image -->
@@ -468,7 +469,7 @@
                     </div>
                     <!-- /.tarrif-item -->
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="tariff-item">
                         <div class="tariff-image-wrapper"> <img src="image/active-35.jpg" alt="" class="tariff-image">
                             <!-- /.tarrif-image -->
