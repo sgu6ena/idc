@@ -878,3 +878,87 @@ margin-right: 8px;
 
     color: var(--text-second);
 }
+
+/* * СМАРТФОНЫ И ГАДЖЕТЫ * */
+
+.shop {
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.shop-head {
+    margin-bottom: 30px;
+}
+
+.shop-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.02em;
+    color: var(--title-second);
+}
+.shop-card{
+    background: #FFFFFF;
+box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+border-radius: 5px;
+margin-bottom: 50px;
+}
+.shop-image-card-wrapper{overflow: hidden;
+    width: 150px;height: 150px;
+}
+.shop-image-card{
+    
+    height: 100%;
+}
+.shop-3d-wrapper{
+    /* text-align: center; */
+}
+.shop-3d-text{
+    font-family:'San Francisco Pro';
+
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+color: var(--text-second);
+}
+
+.shop-card-name{
+    margin-top: 28px;
+    font-family: 'San Francisco Pro';
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: var(--text-second);
+
+}
+.shop-card-description{
+
+    margin-bottom: 31px;
+
+}
+.shop-card-price{
+    font-family: 'Rubik';
+
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+/* Заголовок 2 */
+
+color: var(--title-second);
+
+}
+
+.shop-card-currency{
+font-size: 13px;
+line-height: 15px;
+padding-left: 6px;color: var(--title-second);
+}
+
+.shop-card-button{
+    border:none;
+    background: transparent;
+}
