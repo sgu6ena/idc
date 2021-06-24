@@ -697,11 +697,13 @@ button {
 }
 
 .progress-bar-tarriff {
+    /* margin-left: -5px; */
     -webkit-appearance: none;
-    color: var(--background-color);
-    background: var(--background-color);
-    outline: 5px;
-    width: 100%;
+    background: var(--background-color); 
+    /* color: #ffffff; */
+    border: 5px solid transparent;
+    border-radius: 5px;
+    width: 200px;
     height: 10px;
 }
 
@@ -710,8 +712,10 @@ button {
 .progress-bar-tarriff::-webkit-progress-value {
     height: 10px;
     border-radius: 5px;
-    color: #066285;
+    /* color: #066285; */
     background: #066285;
+    margin-left: -5px;
+    margin-top: -5px;
 }
 
 
