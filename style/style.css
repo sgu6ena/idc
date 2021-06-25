@@ -368,13 +368,13 @@ button {
     padding: 4px 15px;
 }
 
-.tag-television {
+.tag-orange {
     background: #FFDDBD;
     color: #AB7409;
 
 }
 
-.tag-payment {
+.tag-red {
     background: #FFD1D1;
     color: #A30B0B;
 }
@@ -817,17 +817,13 @@ button {
     color: var(--text-second);
 }
 
-.tag-film {
-    background: #FFBDBD;
-    color: #AB091E;
-}
 
-.tag-LTE {
+.tag-blue {
     background: #D1F4FF;
     color: #0B69A3;
 }
 
-.tag-internet {
+.tag-beige {
     background: #FCE588;
     color: #B16F05;
 }
@@ -863,7 +859,7 @@ button {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     padding-top: 50px;
-   
+
 }
 
 .shop-head {
@@ -949,7 +945,8 @@ button {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     padding-top: 50px;
-    padding-bottom: 50px;background: rgba(0, 98, 133, 0.15);
+    padding-bottom: 50px;
+    background: rgba(0, 98, 133, 0.15);
 }
 
 .services-head {
@@ -964,69 +961,153 @@ button {
     color: var(--title-second);
 }
 
-.servise-card{ 
+.servise-card {
     min-height: 300px;
     overflow: hidden;
     background: #F2F3F7;
-box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
-border-radius: 25px;
+    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    border-radius: 25px;
 }
 
-.service-card-description{
+.service-card-description {
     padding-left: 100px;
     padding-top: 40px;
     padding-bottom: 39px;
 
 }
 
-.service-card-title{
-    font-family:'Rubik';
+.service-card-title {
+    font-family: 'Rubik';
 
-font-weight: 500;
-font-size: 24px;
-line-height: 120%;
-letter-spacing: 0.02em;
-color: var(--title-second);
-padding-bottom: 12px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: var(--title-second);
+    padding-bottom: 12px;
 }
 
-.service-card-text{
+.service-card-text {
     z-index: 15;
     font-family: 'San Francisco Pro Semibold';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 21px;
-color: var(--text-second);
-padding-bottom: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--text-second);
+    padding-bottom: 18px;
 }
 
-.service-card-button{
+.service-card-button {
     background: var(--second-accent);
-border-radius: 48px;
-border: none;
-padding: 10px 58px 9px 57px;
-font-family: 'San Francisco Pro Semibold';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
+    border-radius: 48px;
+    border: none;
+    padding: 10px 58px 9px 57px;
+    font-family: 'San Francisco Pro Semibold';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
 
 
-color: var(--title-second);
+    color: var(--title-second);
 }
 
-.servise-card-image-wrapper{
-   
+.servise-card-image-wrapper {
+
     margin-top: -5%;
     /* height: 120%; */
 }
 
 
-.servise-card-image{
+.servise-card-image {
     margin-left: -15%;
     height: 90%;
     margin-bottom: -20%;
-   
-   
+
+
+}
+
+
+/* * новости */
+
+
+
+.news {
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.news-head {
+    margin-bottom: 30px;
+}
+
+h2.news-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.02em;
+    color: var(--title-second);
+}
+
+.news-item-wrapper {
+    height: auto;
+}
+
+.news-item {
+    height: 100%;
+    padding: 20px 40px 0;
+    margin: 0 25px 25px 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    border-radius: 8px;
+}
+
+.news-date-wrapper {
+    margin-bottom: 10px;
+}
+
+.news-date {
+    font-family: "San Francisco Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--text-second);
+}
+
+.news-title {
+    margin-bottom: 20px;
+    font-family: "San Francisco Pro Semibold";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: var(--title-second);
+}
+
+.news-text {
+    font-family: 'San Francisco Pro Semibold';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--text-second);
+
+}
+
+.tag-green {
+    background: #BEFFBD;
+    color: #09AB23;
+}
+
+.tag-yellow {
+    background: #FFF8BD;
+    color: #AB8709;
 }
