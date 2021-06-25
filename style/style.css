@@ -150,7 +150,7 @@ button {
 /* * ckfqlth*/
 
 .big-slider {
-
+    background: #006285;
     overflow: hidden;
     color: var(--background-color);
     /* background: center no-repeat url(../image/header-image1.png); */
@@ -1081,7 +1081,7 @@ h2.news-title {
     color: var(--text-second);
 }
 
-.news-title {
+h3.news-title {
     margin-bottom: 20px;
     font-family: "San Francisco Pro Semibold";
     font-style: normal;
@@ -1110,4 +1110,82 @@ h2.news-title {
 .tag-yellow {
     background: #FFF8BD;
     color: #AB8709;
+}
+
+
+/* * FOOTER * */
+
+.footer{
+    padding-left: 131px;
+    padding-right: 129px;
+    padding-top: 50px;
+    background: #006285;
+}
+
+.footer-title{
+    font-family: 'San Francisco Pro Semibold';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 21px;
+/* Фон */
+
+color: #F2F3F7;
+
+}
+
+.contacts-info{
+    font-family: 'San Francisco Pro Semibold';
+
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+color: #AAA9BA;
+
+}
+
+.contacts-text{
+    margin: 0;
+}
+
+.header-link, .header-link:hover{
+    color: #AAA9BA;
+}
+.header-list{
+    margin: 0;
+    padding: 0;
+}
+.header-list-item{
+    font-family: 'San Francisco Pro Semibold';
+
+font-weight: 500;
+font-size: 15px;
+line-height: 20px;
+color: #AAA9BA;
+    list-style-type: none;
+   
+}
+
+.footer-my-idc{
+    font-family: Rubik;
+
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+letter-spacing: 0.02em;
+
+
+color: #FCF5ED;
+margin-bottom: 4px;
+}
+
+.store-link{display: block;
+    text-decoration: none;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.footer-line{
+    height: 2px;
 }
