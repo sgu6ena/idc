@@ -73,6 +73,7 @@ button {
 }
 
 
+
 .header-menu {
     height: 75px;
     padding-top: 25px;
@@ -107,7 +108,6 @@ button {
 .header-nav-item:hover {
     transition: all 0.45s;
     background-size: 50% 3px;
-
 }
 
 .button-search {
@@ -115,14 +115,15 @@ button {
     border: none;
     margin-right: 30px;
 }
-
+.icon-search, .icon-menu-alt, .icon-user{
+    fill:var(--background-color);
+}
 .button-login {
     background: transparent;
     border: none;
     margin-right: 30px;
     width: 85px;
     height: 22px;
-
 }
 
 .login-text {
@@ -144,8 +145,17 @@ button {
     right: 12.5%;
     top: 25%;
     bottom: 25%;
-
 }
+
+.header-dark .header-nav-link, 
+.header-dark .login-text{
+
+    color: #000;
+}
+.header-dark .icon-search, .header-dark .icon-menu-alt, .header-dark .icon-user{
+    fill: #000;
+}
+
 
 /* * ckfqlth*/
 
@@ -155,7 +165,6 @@ button {
     color: var(--background-color);
     /* background: center no-repeat url(../image/header-image1.png); */
     background-size: cover;
-
     position: relative;
 
 }
@@ -196,7 +205,6 @@ button {
     font-size: 22px;
     line-height: 140%;
     letter-spacing: 0.21em;
-
     text-transform: uppercase;
 }
 
@@ -268,17 +276,18 @@ button {
     margin-left: 10px;
 }
 
-.progress-bar {
-    height: 1px;
+.progress-bar { 
+   
+    height: 2px;
     -webkit-appearance: none;
 }
 
 .progress-bar::-webkit-progress-value {
+   
     height: 3px;
     color: var(--second-accent);
     background: var(--second-accent);
 }
-
 
 
 
@@ -307,7 +316,6 @@ button {
 }
 
 .button-big-slider {
-
     position: relative;
 }
 
@@ -777,13 +785,13 @@ button {
 /* * EXTRA * */
 
 .extra {
-
+padding-top: 50px;
+padding-bottom: 50px;
     background: var(--background-color-second)
 }
 
 .extra-item {
     width: 367px;
-    margin: 50px;
     padding: 20px;
     background: #F2F3F7;
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
@@ -1056,12 +1064,13 @@ h2.news-title {
 
 .news-item-wrapper {
     height: auto;
+    padding-top: 20px;
 }
 
 .news-item {
     height: 100%;
-    padding: 20px 40px 0;
-    margin: 0 25px 25px 25px;
+    padding: 20px 40px ;
+    margin: 0px 25px 25px 25px;
     background: #FFFFFF;
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
     border-radius: 8px;

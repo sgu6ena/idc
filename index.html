@@ -35,14 +35,14 @@
 <body>
     <header class="header">
         <div class="container-fluid ">
-            <div class="row header-menu d-flex justify-content-between align-items-center">
-                <div class="col-lg-2  d-flex justify-content-start">
+            <div class="row header-dark header-menu d-flex justify-content-between align-items-center">
+                <div class="  col-lg-1 col-md-1  d-flex justify-content-start">
                     <div class="logo">
                         <img src="image/logo.svg" alt="IDC" class="image-logo" height="40px">
                     </div>
                     <!-- /.logo -->
                 </div>
-                <div class="col-lg-7 ">
+                <div class="col-lg-8 col-md-8 ">
                     <ul class="d-flex justify-content-center align-items-center">
                         <li class="header-nav-item">
                             <a href="#" class="header-nav-link">Для Вас</a>
@@ -58,16 +58,25 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 d-flex justify-content-end  align-items-center">
+                <div class="col-lg-3 col-md-2 d-flex justify-content-end  align-items-center">
                     <button class="button-search">
-                        <img src="image/search.svg" alt="search" width="22px">
+                        <svg class="icon-search " width="22px" height="22px">
+                            <use xlink:href="image/sprite.svg#search"></use>
+                        </svg>
+
                     </button>
                     <button class="button-login d-flex align-items-center">
-                        <img src="image/user.svg" alt="login" width="22px">
+                        <svg class="icon-user" width="22px" height="22px">
+                            <use xlink:href="image/sprite.svg#user"></use>
+                        </svg>
+
                         <span class="login-text">Войти</span>
                     </button>
                     <button class="button-menu">
-                        <img src="image/menu_alt_01.svg" alt="menu" width="33px">
+                        <svg class="icon-menu-alt" width="33px" height="33px">
+                            <use xlink:href="image/sprite.svg#menu_alt_01"></use>
+                        </svg>
+
                     </button>
                 </div>
             </div>
@@ -77,6 +86,60 @@
     <section class="big-slider">
         <div class="container-fluid  swiper-wrapper">
             <!-- * * тут добавляются слайды* * -->
+            <div class="header-slide  swiper-slide slide-1 swiper-lazy">
+                <div class="row m-0 p-0">
+                    <div class="col-lg-6 header-slider-wrapper">
+                        <div class="header-slider">
+                            <div class="slider-description d-flex">
+                                <img src="image/line.svg" alt="line" class="slider-description-image">
+                                <div class="slider-description-text">обеспечьте ребенку <br>
+                                    безопасность в интернете</div>
+                            </div>
+                            <!-- /.slider-description -->
+                            <h2 class="header-slider-name">Безопасный <br>
+                                интернет</h2>
+                            <!-- /.header-slider-name -->
+                            <button class="button-header-slider ">
+                                <span class="button-header-slider-text">Подключить</span>
+                                <img src="image/arrow-right.svg" alt="login" width="15px">
+                            </button>
+                            <!-- /.button-header-slider -->
+                        </div>
+                        <!-- /.header-slider -->
+                    </div>
+                    <!-- /.col-6 -->
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /слайд -->
+            <div class="header-slide slide-ligth swiper-slide slide-2 swiper-lazy">
+                <div class="row m-0 p-0">
+                    <div class="col-lg-6 header-slider-wrapper">
+                        <div class="header-slider">
+                            <div class="slider-description d-flex">
+                                <img src="image/line.svg" alt="line" class="slider-description-image">
+                                <div class="slider-description-text"> Цифровое телевидение <br>
+                                    в каждый дом</div>
+                            </div>
+                            <!-- /.slider-description -->
+                            <h2 class="header-slider-name">Декодер + антенна <br>
+                                = 1 рубль</h2>
+                            <!-- /.header-slider-name -->
+                            <button class="button-header-slider ">
+                                <span class="button-header-slider-text">Узнать подробнее</span>
+                                <img src="image/arrow-right.svg" alt="login" width="15px">
+                            </button>
+                            <!-- /.button-header-slider -->
+                        </div>
+                        <!-- /.header-slider -->
+                    </div>
+                    <!-- /.col-6 -->
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /слайд -->
             <div class="header-slide swiper-slide slide-1 swiper-lazy">
                 <div class="row m-0 p-0">
                     <div class="col-lg-6 header-slider-wrapper">
@@ -104,61 +167,7 @@
 
             </div>
             <!-- /слайд -->
-            <div class="header-slide swiper-slide slide-2 swiper-lazy">
-                <div class="row m-0 p-0">
-                    <div class="col-lg-6 header-slider-wrapper">
-                        <div class="header-slider">
-                            <div class="slider-description d-flex">
-                                <img src="image/line.svg" alt="line" class="slider-description-image">
-                                <div class="slider-description-text"> Цифровое телевидение <br>
-                                    в каждый дом</div>
-                            </div>
-                            <!-- /.slider-description -->
-                            <h2 class="header-slider-name">Декодер + антенна <br>
-                                = 1 рубль</h2>
-                            <!-- /.header-slider-name -->
-                            <button class="button-header-slider ">
-                                <span class="button-header-slider-text">Узнать подробнее</span>
-                                <img src="image/arrow-right.svg" alt="login" width="15px">
-                            </button>
-                            <!-- /.button-header-slider -->
-                        </div>
-                        <!-- /.header-slider -->
-                    </div>
-                    <!-- /.col-6 -->
-                </div>
-                <!-- /.row -->
-
-            </div>
-            <!-- /слайд -->
-<div class="header-slide swiper-slide slide-1 swiper-lazy">
-                <div class="row m-0 p-0">
-                    <div class="col-lg-6 header-slider-wrapper">
-                        <div class="header-slider">
-                            <div class="slider-description d-flex">
-                                <img src="image/line.svg" alt="line" class="slider-description-image">
-                                <div class="slider-description-text">обеспечьте ребенку <br>
-                                    безопасность в интернете</div>
-                            </div>
-                            <!-- /.slider-description -->
-                            <h2 class="header-slider-name">Безопасный <br>
-                                интернет</h2>
-                            <!-- /.header-slider-name -->
-                            <button class="button-header-slider ">
-                                <span class="button-header-slider-text">Подключить</span>
-                                <img src="image/arrow-right.svg" alt="login" width="15px">
-                            </button>
-                            <!-- /.button-header-slider -->
-                        </div>
-                        <!-- /.header-slider -->
-                    </div>
-                    <!-- /.col-6 -->
-                </div>
-                <!-- /.row -->
-
-            </div>
-            <!-- /слайд -->
-            <div class="header-slide swiper-slide slide-2 swiper-lazy">
+            <div class="header-slide slide-ligth swiper-slide slide-2 swiper-lazy">
                 <div class="row m-0 p-0">
                     <div class="col-lg-6 header-slider-wrapper">
                         <div class="header-slider">
@@ -196,7 +205,7 @@
                     <progress class="progress-bar ""></progress>
                     <div class=" progress-slider-end">05
                 </div>
-
+                <div class="scrollbar "></div>
             </div>
             <!-- <div class="swiper-lazy-preloader "></div> -->
 
@@ -1697,53 +1706,58 @@
     <section class="extra">
         <div class="container">
             <div class="row d-flex align-items-stretch justify-content-center">
-                <div class="col-lg-4  d-flex  justify-content-center">
+                <div class="col-4 d-flex  justify-content-center">
                     <div class=" extra-item">
-                    <div class="extra-image-wrapper">
-                        <img src="image/extra-1.jpg" alt="кино" class="extra-image">
-                    </div>
-                    <div class="extra-description-wrapper">
-                        <div class="extra-subtitle-wrapper d-flex justify-content-between align-items-center">
-                            <h4 class="extra-subtitle">Сервис</h4>
-                            <div class="tag tag-red">Кино</div>
+                        <div class="extra-image-wrapper">
+                            <img src="image/extra-1.jpg" alt="кино" class="extra-image">
                         </div>
-                        <h3 class="extra-title">Онлайн-кинотеатр PORTAL</h3>
-                        <div class="extra-description">Море впечатлений всегда с тобой</div>
+                        <div class="extra-description-wrapper">
+                            <div class="extra-subtitle-wrapper d-flex justify-content-between align-items-center">
+                                <h4 class="extra-subtitle">Сервис</h4>
+                                <div class="tag tag-red">Кино</div>
+                            </div>
+                            <h3 class="extra-title">Онлайн-кинотеатр PORTAL</h3>
+                            <div class="extra-description">Море впечатлений всегда с тобой</div>
+                        </div>
                     </div>
-                </div></div>
-                
+                </div>
 
-                <div class="col-lg-4 d-flex  justify-content-center"> 
+
+                <div class="col-4  d-flex  justify-content-center">
                     <div class=" extra-item">
-                    <div class="extra-image-wrapper">
-                        <img src="image/extra-2.jpg" alt="" class="extra-image">
-                    </div>
-                    <div class="extra-description-wrapper">
-                        <div class="extra-subtitle-wrapper d-flex justify-content-between align-items-center">
-                            <h4 class="extra-subtitle">Роуминг</h4>
-                            <div class="tag tag-blue">LTE</div>
+                        <div class="extra-image-wrapper">
+                            <img src="image/extra-2.jpg" alt="" class="extra-image">
                         </div>
-                        <h3 class="extra-title">LTE Роуминг</h3>
-                        <div class="extra-description">Высокоскоростной мобильный интернет от IDC не только дома, но и в
-                            самых популярных странах мира!</div>
+                        <div class="extra-description-wrapper">
+                            <div class="extra-subtitle-wrapper d-flex justify-content-between align-items-center">
+                                <h4 class="extra-subtitle">Роуминг</h4>
+                                <div class="tag tag-blue">LTE</div>
+                            </div>
+                            <h3 class="extra-title">LTE Роуминг</h3>
+                            <div class="extra-description">Высокоскоростной мобильный интернет от IDC не только дома, но
+                                и в
+                                самых популярных странах мира!</div>
+                        </div>
                     </div>
-                </div> </div>
-               
-                <div class="col-lg-4 d-flex  justify-content-center"> <div class=" extra-item">
-                    <div class="extra-image-wrapper">
-                        <img src="image/extra-3.jpg" alt="" class="extra-image">
-                    </div>
+                </div>
 
-                    <div class="extra-description-wrapper">
-                        <div class="extra-subtitle-wrapper d-flex justify-content-between align-items-center">
-                            <h4 class="extra-subtitle">Опция</h4>
-                            <div class="tag tag-beige">Интернет</div>
+                <div class="col-4  d-flex  justify-content-center">
+                    <div class=" extra-item">
+                        <div class="extra-image-wrapper">
+                            <img src="image/extra-3.jpg" alt="" class="extra-image">
                         </div>
-                        <h3 class="extra-title">Тариф EXTRA</h3>
-                        <div class="extra-description">Социальные сети всегда под рукой</div>
+
+                        <div class="extra-description-wrapper">
+                            <div class="extra-subtitle-wrapper d-flex justify-content-between align-items-center">
+                                <h4 class="extra-subtitle">Опция</h4>
+                                <div class="tag tag-beige">Интернет</div>
+                            </div>
+                            <h3 class="extra-title">Тариф EXTRA</h3>
+                            <div class="extra-description">Социальные сети всегда под рукой</div>
+                        </div>
                     </div>
-                </div></div>
-               
+                </div>
+
 
             </div>
         </div>
@@ -2164,7 +2178,7 @@
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 col-md-6 contacts">
+                <div class="col contacts">
                     <h3 class="footer-title">
                         Контактная информация
                     </h3>
@@ -2181,7 +2195,7 @@
                                 справочная служба</p>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6">
+                <div class="col">
                     <h3 class="footer-title">
                         Компания
                     </h3>
@@ -2208,7 +2222,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6">
+                <div class="col">
                     <h3 class="footer-title">
                         Тарифы
                     </h3>
@@ -2231,7 +2245,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col">
                     <h3 class="footer-title">
                         Поддержка
                     </h3>
@@ -2265,7 +2279,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-md-6">
+                <div class="col">
                     <h3 class="footer-title footer-my-idc">Мой IDC</h3>
 
                     <div class="store-wrapper">
@@ -2284,7 +2298,28 @@
     </footer>
 
 
-
+    <!-- <svg class="icon" >
+        <use xlink:href="image/sprite.svg#short_left" ></use>
+      </svg>
+      <svg class="icon"  >
+        <use xlink:href="image/sprite.svg#short_right" ></use>
+      </svg><svg class="icon">
+        <use xlink:href="image/sprite.svg#tariff-arrow"  fill="red"></use>
+      </svg><svg class="icon" >
+        <use xlink:href="image/sprite.svg#arrow.triangle.2.circlepath"></use>
+      </svg><svg class="icon" >
+        <use xlink:href="image/sprite.svg#arrow-down"></use>
+      </svg><svg class="icon"  >
+        <use xlink:href="image/sprite.svg#arrow-right"></use>
+      </svg><svg class="icon">
+        <use xlink:href="image/sprite.svg#Check_mark"></use>
+      </svg><svg class="icon">
+        <use xlink:href="image/sprite.svg#chevron_right"></use>
+      </svg><svg class="icon">
+        <use xlink:href="image/sprite.svg#line"></use>
+      </svg><svg class="icon">
+        <use xlink:href="image/sprite.svg#logo" fill="red"></use>
+      </svg> -->
 </body>
 
 </html>

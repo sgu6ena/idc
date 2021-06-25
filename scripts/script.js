@@ -35,6 +35,11 @@ const swiper = new Swiper('.big-slider', {
 });
 
 
-
-
-
+const headerMenu = document.querySelector('.header-menu');
+swiper.on('slideChange',  ()=> {
+    if (swiper.slides[swiper.activeIndex].classList.contains('slide-ligth')) 
+        headerMenu.classList.add('header-dark');
+     else 
+        headerMenu.classList.remove('header-dark');
+    
+});
