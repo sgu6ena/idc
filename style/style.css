@@ -100,7 +100,7 @@ button {
     color: var(--background-color);
 }
 
-.header-nav-link:hover{
+.header-nav-link:hover {
     color: var(--background-color);
 }
 
@@ -429,8 +429,8 @@ button {
 /* * FORM PAYMENT * */
 /* .balance-payment-form {} */
 
-.balance-tab-button{
-    
+.balance-tab-button {
+
     font-family: 'San Francisco Pro';
     font-size: 12px;
     line-height: 16px;
@@ -438,70 +438,39 @@ button {
     cursor: pointer;
     padding: 8px 16px;
     border: 2px solid transparent;
-    background: var(--background-color);color:#006285;
-   
+    background: var(--background-color);
+    color: #006285;
+
 }
-.nav-item{
-    
-margin-right: 8px;
+
+.nav-item {
+
+    margin-right: 8px;
 }
+
 .nav-item:last-child {
     margin-right: 0;
 }
 
-.nav-pills .nav-link.active,.nav-pills .show>.nav-link{
-    color:#006285;
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #006285;
     border: 2px solid #006285;
     background: var(--background-color);
     border-radius: 32px;
 
 }
-.nav-pills .nav-link{  
-   
+
+.nav-pills .nav-link {
+
     background: var(--background-color);
-    border: 2px solid var(--background-color); 
+    border: 2px solid var(--background-color);
     border-radius: 32px;
 }
 
 
-/* .balance-form_radio_btn {
-    display: inline-block;
-    margin-right: 6px;
-}
-
-.balance-form_radio_btn:last-child {
-    margin-right: 0;
-}
 
 
-.balance-form_radio_btn input[type=radio] {
-    display: none;
-}
-
-.balance-form_radio_btn label {
-
-   
-
-} */
-
-/* Checked */
-/* .balance-form_radio_btn input[type=radio]:checked+label {
-    background: var(--background-color);
-    border: 2px solid #006285;
-} */
-
-/*  
-/* Hover */
-.balance-form_radio_btn label:hover {
-    /* 	color: #666; */
-}
-
-/* Disabled */
-.balance-form_radio_btn input[type=radio]:disabled+label {
-    /* 	background: #efefef;
-	color: #666;
-}  */
-}
 
 .input-wrapper {
     margin-top: 10px;
@@ -597,22 +566,25 @@ margin-right: 8px;
 }
 
 
-.tariffs-list-item .tariffs-list-button.active,.tariffs-list-item .show>.tariffs-list-button{
-    color:#006285;
+.tariffs-list-item .tariffs-list-button.active,
+.tariffs-list-item .show>.tariffs-list-button {
+    color: #006285;
     border: 0px solid #006285;
     background: var(--background-color);
     border-radius: 0px;
 
 }
-.tariffs-list-item .tariffs-list-button{  
-   
+
+.tariffs-list-item .tariffs-list-button {
+
     background: var(--background-color);
-    border: 0px solid var(--background-color); 
+    border: 0px solid var(--background-color);
     border-radius: 0px;
 }
+
 /* Underline From Center */
 /** hover.css **/
-.hvr-underline-from-center{
+.hvr-underline-from-center {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -683,6 +655,11 @@ margin-right: 8px;
     display: inline-block;
     padding: 5px 12px 6px 15px;
     background: var(--second-accent);
+    font-family: 'San Francisco Pro Semibold';
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
 }
 
 .tariff-description {
@@ -886,7 +863,7 @@ margin-right: 8px;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     padding-top: 50px;
-    padding-bottom: 50px;
+   
 }
 
 .shop-head {
@@ -900,65 +877,156 @@ margin-right: 8px;
     letter-spacing: 0.02em;
     color: var(--title-second);
 }
-.shop-card{
+
+.shop-card {
     background: #FFFFFF;
-box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
-border-radius: 5px;
-margin-bottom: 50px;
+    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    border-radius: 5px;
+    margin-bottom: 50px;
 }
-.shop-image-card-wrapper{overflow: hidden;
-    width: 150px;height: 150px;
+
+.shop-image-card-wrapper {
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
 }
-.shop-image-card{
-    
+
+.shop-image-card {
+
     height: 100%;
 }
-.shop-3d-wrapper{
-    /* text-align: center; */
-}
-.shop-3d-text{
-    font-family:'San Francisco Pro';
 
-font-weight: 500;
-font-size: 12px;
-line-height: 14px;
-color: var(--text-second);
+.shop-3d-text {
+    font-family: 'San Francisco Pro';
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--text-second);
 }
 
-.shop-card-name{
+.shop-card-name {
     margin-top: 28px;
     font-family: 'San Francisco Pro';
-font-weight: 500;
-font-size: 18px;
-line-height: 21px;
-color: var(--text-second);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--text-second);
 
 }
-.shop-card-description{
+
+.shop-card-description {
 
     margin-bottom: 31px;
 
 }
-.shop-card-price{
+
+.shop-card-price {
     font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--title-second);
+}
+
+.shop-card-currency {
+    font-size: 13px;
+    line-height: 15px;
+    padding-left: 6px;
+    color: var(--title-second);
+}
+
+.shop-card-button {
+    border: none;
+    background: transparent;
+}
+
+
+/* * Сервисы * */
+
+.services {
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 50px;background: rgba(0, 98, 133, 0.15);
+}
+
+.services-head {
+    margin-bottom: 30px;
+}
+
+.services-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.02em;
+    color: var(--title-second);
+}
+
+.servise-card{ 
+    min-height: 300px;
+    overflow: hidden;
+    background: #F2F3F7;
+box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+border-radius: 25px;
+}
+
+.service-card-description{
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 39px;
+
+}
+
+.service-card-title{
+    font-family:'Rubik';
 
 font-weight: 500;
 font-size: 24px;
-line-height: 28px;
+line-height: 120%;
+letter-spacing: 0.02em;
+color: var(--title-second);
+padding-bottom: 12px;
+}
 
-/* Заголовок 2 */
+.service-card-text{
+    z-index: 15;
+    font-family: 'San Francisco Pro Semibold';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: var(--text-second);
+padding-bottom: 18px;
+}
+
+.service-card-button{
+    background: var(--second-accent);
+border-radius: 48px;
+border: none;
+padding: 10px 58px 9px 57px;
+font-family: 'San Francisco Pro Semibold';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
 
 color: var(--title-second);
-
 }
 
-.shop-card-currency{
-font-size: 13px;
-line-height: 15px;
-padding-left: 6px;color: var(--title-second);
+.servise-card-image-wrapper{
+   
+    margin-top: -5%;
+    /* height: 120%; */
 }
 
-.shop-card-button{
-    border:none;
-    background: transparent;
+
+.servise-card-image{
+    margin-left: -15%;
+    height: 90%;
+    margin-bottom: -20%;
+   
+   
 }
