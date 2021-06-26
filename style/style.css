@@ -1253,3 +1253,38 @@ margin-bottom: 4px;
 .footer-line{
     height: 2px;
 }
+
+
+
+
+
+ 
+@media(max-width: 1200px){
+    .footer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+ 
+@media(max-width: 991px){
+   
+    .service-card-description{
+        padding: 30px;
+    }
+}
+
+ 
+@media(max-width:767px){
+    .service-card-button{
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px){
+    .input-wrapper{
+        flex-direction: column;
+    }
+
+   
+}

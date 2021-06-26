@@ -92,7 +92,7 @@ const extraSlider = new Swiper('.swiper-exrta', {
     },
         breakpoints: {
 
-            440:{
+            320:{
                 slidesPerView: 1,
               
             },
