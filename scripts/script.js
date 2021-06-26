@@ -44,18 +44,20 @@ bigSlider.on('beforeTransitionStart', () => {
 })
 
 const tarrifsOptions = {
-    slidesPerView: 4,
+    slidesPerView: 1,
     pagination: {
         el: '.tariffs-swiper-pagination',
         type: 'bullets',
-        // bulletElement:'.tariffs-swiper-bullet',
-        // dynamicBullets:true,
-        
     },
         breakpoints: {
-            300:{
-                slidesPerView: 1.2,
+            320:{
+                slidesPerView: 1,
                 spaceBetween: 0
+            },
+
+            500:{
+                slidesPerView: 1,
+                spaceBetween: 20,
             },
             780: {
                 slidesPerView: 2.3,
@@ -83,13 +85,10 @@ const tarifsSliderTv = new Swiper('#pills-tariff-tv', tarrifsOptions);
 const tarifsSliderHomePhone = new Swiper('#pills-tariff-home-phone', tarrifsOptions);
 
 const extraSlider = new Swiper('.swiper-exrta', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     pagination: {
         el: '.tariffs-swiper-pagination',
-        type: 'bullets',
-        // bulletElement:'.tariffs-swiper-bullet',
-        // dynamicBullets:true,
-        
+        type: 'bullets',       
     },
         breakpoints: {
 
@@ -110,9 +109,6 @@ const extraSlider = new Swiper('.swiper-exrta', {
             },
           
         }, 
-// observer:true,
-// observeParents:true,
-// observeSlideChildren:true,
 });
 
 
