@@ -150,10 +150,10 @@ button {
 .header-dark .header-nav-link, 
 .header-dark .login-text{
 
-    color: #000;
+    color: var(--title-second);
 }
 .header-dark .icon-search, .header-dark .icon-menu-alt, .header-dark .icon-user{
-    fill: #000;
+    fill: var(--title-second);
 }
 
 
@@ -183,6 +183,26 @@ button {
 
 .big-slider .slide-2 {
     background: center no-repeat url(../image/slide-2.jpg);
+    background-size: cover;
+}
+
+.big-slider .slide-3  {
+    background: center no-repeat url(../image/extra-1.jpg);
+    background-size: cover;
+}
+
+.big-slider .slide-4  {
+    background: top no-repeat url(../image/extra-2.jpg);
+    background-size: cover;
+}
+
+.big-slider .slide-5  {
+    background: center no-repeat url(../image/active-5.jpg);
+    background-size: cover;
+}
+
+.big-slider .slide-6  {
+    background: center no-repeat url(../image/active-35.jpg);
     background-size: cover;
 }
 
