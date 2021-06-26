@@ -1276,6 +1276,9 @@ margin-bottom: 4px;
 
  
 @media(max-width:767px){
+    .header-nav-list{   
+        display: none;
+    }
     .service-card-button{
         width: 100%;
     }
