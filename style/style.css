@@ -83,7 +83,7 @@ button {
 }
 
 
-.header-nav-item {
+.header-nav-item {   padding-top: 20px;
     list-style-type: none;
     margin-left: 50px;
     background: linear-gradient(var(--second-accent), var(--second-accent)) center bottom;
@@ -93,6 +93,7 @@ button {
 }
 
 .header-nav-link {
+ 
     font-family: "San Francisco Pro Semibold", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -115,7 +116,7 @@ button {
     border: none;
     margin-right: 30px;
 }
-.icon-search, .icon-menu-alt, .icon-user{
+.icon-search, .icon-menu-alt, .icon-user ,.icon-logo{
     fill:var(--background-color);
 }
 .button-login {
@@ -152,7 +153,7 @@ button {
 
     color: var(--title-second);
 }
-.header-dark .icon-search, .header-dark .icon-menu-alt, .header-dark .icon-user{
+.header-dark .icon-search, .header-dark .icon-menu-alt, .header-dark .icon-user, .icon-logo{
     fill: var(--title-second);
 }
 
@@ -266,7 +267,6 @@ button {
 }
 
 
-
 /* * PROGRESS BAR *  */
 
 .header-end {
@@ -309,14 +309,21 @@ button {
     background: var(--second-accent);
 }
 
-
-
-
 .show-more {
     height: 50px;
     width: 68px;
     background: transparent;
     border: 1px;
+}
+
+.show-more:hover {
+    transform:scale(1.2);
+    transform:translateY(10px);
+    transition: transform 0.5s;
+}
+
+.icon-arrow-down{
+    fill:#C4C4C4;
 }
 
 .slider-prev,
@@ -326,12 +333,12 @@ button {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    margin-left: 25px;
+  
     /* animation:swiper-preloader-spin 2s 1 ease-in-out; */
 
 }
 
-.slider-next {
+.slider-next {  margin-left: 25px;
     margin-right: 110px;
 }
 
@@ -570,7 +577,10 @@ button {
 
     margin: 30px;
 }
-
+#pills-tariff-mobile, #pills-tariff-hits, #pills-tariff-internet, #pills-tariff-tv, #pills-tariff-home-phone{
+    /* min-width: 0; */
+    overflow: hidden;
+}
 .tariffs-list-item {
     padding-bottom: 10px;
     background: linear-gradient(#006285, #006285) center bottom;
@@ -660,6 +670,12 @@ button {
     color: #006285;
 }
 
+/* .tariff-item-slide{
+    width: 370px;
+    margin: 0;
+    padding: 0;
+} */
+
 .tariff-item {
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
     font-family: 'Rubik', sans-serif;
@@ -671,7 +687,7 @@ button {
     min-width: 273px;
     max-width: 300px;
     border-radius: 25px;
-    margin: 25px;
+    margin: 20px;
 }
 
 .tariff-image {
