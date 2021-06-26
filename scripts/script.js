@@ -46,8 +46,8 @@ bigSlider.on('beforeTransitionStart', () => {
 const tarrifsOptions = {
     slidesPerView: 1,
     pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
+        el: '.tariffs-swiper-pagination',
+        type: 'bullets',       
     },
         breakpoints: {
             320:{
@@ -73,6 +73,7 @@ const tarrifsOptions = {
                 spaceBetween: 0
             },
         }, 
+
 observer:true,
 observeParents:true,
 observeSlideChildren:true,
@@ -111,4 +112,33 @@ const extraSlider = new Swiper('.swiper-exrta', {
         }, 
 });
 
+
+const newsSlider = new Swiper('.news-slider', {
+    slidesPerView: 1,
+    watchOverflow: true,
+    pagination: {
+        el: '.tariffs-swiper-pagination',
+        type: 'bullets',  
+        dynamicBullets:true,     
+    },
+        breakpoints: {
+
+            320:{
+                slidesPerView: 1,
+              
+            },
+
+            770:{
+                slidesPerView: 2,
+                spaceBetween:20,
+            },
+            
+            1100: {
+                watchOverflow: true,
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+          
+        }, 
+});
 

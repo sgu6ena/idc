@@ -553,6 +553,19 @@ button {
 
 /* * TARIFFS * */
 
+.swiper-pagination-bullet-active {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: var(--default-color,var(--text-second));
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+margin: 5px;
+}
+
 .tariffs {
     display: block;
     font-family: 'Rubik', sans-serif;
@@ -579,6 +592,7 @@ button {
 }
 #pills-tariff-mobile, #pills-tariff-hits, #pills-tariff-internet, #pills-tariff-tv, #pills-tariff-home-phone{
     /* min-width: 0; */
+    padding-bottom: 20px;
     overflow: hidden;
 }
 .tariffs-list-item {
@@ -683,6 +697,7 @@ button {
     max-width: 300px;
     border-radius: 25px;
     margin: 20px;
+    
 }
 
 .tariff-image {
@@ -1175,7 +1190,10 @@ h3.news-title {
     background: #FFF8BD;
     color: #AB8709;
 }
-
+.news-slider {
+    padding-bottom: 20px;
+    overflow: hidden;
+}
 
 /* * FOOTER * */
 
