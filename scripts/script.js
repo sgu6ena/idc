@@ -46,20 +46,23 @@ bigSlider.on('beforeTransitionStart', () => {
 const tarrifsOptions = {
     slidesPerView: 4,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.tariffs-swiper-pagination',
         type: 'bullets',
+        // bulletElement:'.tariffs-swiper-bullet',
+        // dynamicBullets:true,
+        
     },
         breakpoints: {
-            500:{
+            460:{
                 slidesPerView: 1.2,
                 spaceBetween: 0
             },
-            760: {
-                slidesPerView: 2.1,
+            780: {
+                slidesPerView: 2.3,
                 spaceBetween: 0
             },
-            980: {
-                slidesPerView: 3.1,
+            995: {
+                slidesPerView: 3.4,
                 spaceBetween: 0
             },
             1200: {
@@ -79,8 +82,37 @@ const tarifsSliderInternet = new Swiper('#pills-tariff-internet', tarrifsOptions
 const tarifsSliderTv = new Swiper('#pills-tariff-tv', tarrifsOptions);
 const tarifsSliderHomePhone = new Swiper('#pills-tariff-home-phone', tarrifsOptions);
 
-// if (document.documentElement.scrollWidth > 1200) {
-//     tarifsSLider.destroy();
-//     // swiper1.destroy();
-//     // swiper2.destroy();
-// }
+const extraSlider = new Swiper('.swiper-exrta', {
+    slidesPerView: 3,
+    pagination: {
+        el: '.tariffs-swiper-pagination',
+        type: 'bullets',
+        // bulletElement:'.tariffs-swiper-bullet',
+        // dynamicBullets:true,
+        
+    },
+        breakpoints: {
+
+            440:{
+                slidesPerView: 1,
+              
+            },
+
+            770:{
+                slidesPerView: 2,
+                spaceBetween:20,
+            },
+            
+            1100: {
+                watchOverflow: true,
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+          
+        }, 
+// observer:true,
+// observeParents:true,
+// observeSlideChildren:true,
+});
+
+

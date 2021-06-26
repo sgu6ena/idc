@@ -670,11 +670,6 @@ button {
     color: #006285;
 }
 
-/* .tariff-item-slide{
-    width: 370px;
-    margin: 0;
-    padding: 0;
-} */
 
 .tariff-item {
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
@@ -822,6 +817,21 @@ button {
     background: transparent
 }
 
+.tariffs-swiper-pagination{
+margin-top: 25px;
+  /* +  width: 15px; */
+  text-align: center;
+  font-size: 18px;
+    height: 35px;
+    color: red;
+    /* background-color: #09AB23; */
+}
+.tariffs-swiper-bullet{
+    color: black;
+    margin: 25px;
+}
+
+
 /* * EXTRA * */
 
 .extra {
@@ -830,12 +840,17 @@ padding-bottom: 50px;
     background: var(--background-color-second)
 }
 
+.swiper-exrta{
+    overflow: hidden;
+}
 .extra-item {
-    width: 367px;
+    height: 400px;
+    width: 340px;
     padding: 20px;
     background: #F2F3F7;
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
     border-radius: 25px;
+    margin-bottom: 20px;
 }
 
 .extra-image-wrapper {
