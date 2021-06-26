@@ -21,10 +21,10 @@ const swiper = new Swiper('.big-slider', {
         },
 
     },
-    lazy: {
-        loadPrevNext: true,
+    // lazy: {
+    //     loadPrevNext: true,
 
-    },
+    // },
 
     effect: 'fade',
     fadeEffect: {
@@ -36,10 +36,24 @@ const swiper = new Swiper('.big-slider', {
 
 
 const headerMenu = document.querySelector('.header-menu');
+const swiperPreloader = document.querySelector('.swiper-lazy-preloader');
 swiper.on('slideChange',  ()=> {
+
+  
     if (swiper.slides[swiper.activeIndex].classList.contains('slide-ligth')) 
         headerMenu.classList.add('header-dark');
      else 
         headerMenu.classList.remove('header-dark');
     
 });
+
+swiper.on('beforeTransitionStart',()=>{
+    setTimeout(()=>{ console.log('смена слайда');
+    swiperPreloader.style.display='block';}, 3000);
+    swiperPreloader.style.display='none';
+   
+})
+
+// swiper.on('beforeInit',()=>{
+//     swiperPreloader.style.display='none';
+// })

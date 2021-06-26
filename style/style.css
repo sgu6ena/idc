@@ -340,6 +340,9 @@ button {
 }
 
 .swiper-lazy-preloader {
+    outline:2px;
+
+    /* display: none; */
     z-index: -1;
     /* transform: rotate(45deg); */
     width: 58px;
@@ -347,7 +350,8 @@ button {
     position: absolute;
     top: 17px;
     left: 42px;
-    animation: swiper-preloader-spin 6s infinite ease-in-out;
+    /* transition: opacity 0 1s; */
+    animation: swiper-preloader-spin 4s infinite linear;
 
 }
 
