@@ -1279,6 +1279,9 @@ margin-bottom: 4px;
     .header-nav-list{   
         display: none;
     }
+    .login-text{
+        display: none;
+    }
     .service-card-button{
         width: 100%;
     }

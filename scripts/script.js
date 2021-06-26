@@ -46,7 +46,7 @@ bigSlider.on('beforeTransitionStart', () => {
 const tarrifsOptions = {
     slidesPerView: 1,
     pagination: {
-        el: '.tariffs-swiper-pagination',
+        el: '.swiper-pagination',
         type: 'bullets',
     },
         breakpoints: {
@@ -56,7 +56,7 @@ const tarrifsOptions = {
             },
 
             500:{
-                slidesPerView: 1,
+                slidesPerView: 1.3,
                 spaceBetween: 20,
             },
             780: {
