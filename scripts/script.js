@@ -53,7 +53,7 @@ const tarrifsOptions = {
         
     },
         breakpoints: {
-            460:{
+            300:{
                 slidesPerView: 1.2,
                 spaceBetween: 0
             },
