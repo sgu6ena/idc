@@ -1388,9 +1388,9 @@ h3.news-title {
 
 @media(max-width: 576px) {
      .header-end{
-        transform:translateY(-500px);
+        transform:translateY(-550px);
         margin:  10px;
-        padding-left: 10px;
+        padding: 10px;
     }
     .input-wrapper {
         flex-direction: column;
