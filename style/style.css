@@ -980,13 +980,15 @@ button {
     padding-right: 30px;
     overflow: hidden;
 }
-.swiper-wrapper .swiper-shop-slide{
+
+.swiper-wrapper .swiper-shop-slide {
     display: flex;
     align-self: baseline;
     /* min-height: 0; */
     /* justify-content: center; */
     /* height: 100%; */
 }
+
 .shop-card {
     width: 100%;
     margin-top: 20px;
@@ -1350,67 +1352,82 @@ h3.news-title {
 
 
 @media(max-width:767px) {
-    .header-slider{
+    .big-slider .header-slide {
+        background-color: var(--background-color);
+        background-size: contain;
+        background-position: top;
+    }
+
+    .header-slider {
         margin-left: 30px;
     }
 
     .header-slide {
-        padding-top: 300px;
+        padding-top: 200px;
         padding-right: 40px;
     }
 
     .header-slider-wrapper {
-
-/* transform:translateY(400px); */
         text-transform: uppercase;
-
-        /* Заголовок 2 */
-
         color: var(--title-second);
         margin: 20px;
-
         background: #FFFFFF;
         box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
         border-radius: 8px;
     }
 
-    .button-login{
+    .button-login {
         width: 30px;
     }
+
     .login-text {
         display: none;
     }
 
-    .header-end{
-        transform:translateY(-450px);
-        margin:  20px;
+    .header-end {
+        margin: 20px;
         padding-left: 20px;
     }
+
     .show-more {
-    display: none;
-}
+        display: none;
+    }
+
     .service-card-button {
         width: 100%;
+    }
+
+    .header-end {
+        position: absolute;
+        top: -300px;
+        left: 0;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .big-slider {
+        position: relative;
+
     }
 }
 
 @media(max-width: 576px) {
-     .header-end{
-        transform:translateY(-550px);
-        margin:  10px;
+
+    .header-end {
+
+        margin: 10px;
         padding: 10px;
     }
+
     .input-wrapper {
         flex-direction: column;
     }
 }
 
 @media(max-width: 430px) {
-
-
-    .header-end{
-        transform:translateY(-600px);
-        margin:  10px;
+    .header-end {
+        margin: 10px;
         padding-left: 10px;
     }
 }
