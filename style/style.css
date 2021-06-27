@@ -980,13 +980,21 @@ button {
     padding-right: 30px;
     overflow: hidden;
 }
-
+.swiper-wrapper .swiper-shop-slide{
+    display: flex;
+    align-self: baseline;
+    /* min-height: 0; */
+    /* justify-content: center; */
+    /* height: 100%; */
+}
 .shop-card {
+    width: 100%;
+    margin-top: 20px;
     overflow: hidden;
     background: #FFFFFF;
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
     border-radius: 5px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .shop-image-card-wrapper {
@@ -1366,9 +1374,9 @@ h3.news-title {
         border-radius: 8px;
     }
 
-    /* .login-button{
+    .button-login{
         width: 30px;
-    } */
+    }
     .login-text {
         display: none;
     }
@@ -1398,6 +1406,8 @@ h3.news-title {
 }
 
 @media(max-width: 430px) {
+
+
     .header-end{
         transform:translateY(-600px);
         margin:  10px;

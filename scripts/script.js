@@ -36,7 +36,7 @@ bigSlider.on('slideChange', () => {
 
 bigSlider.on('beforeTransitionStart', () => {
     setTimeout(() => {
-        console.log('смена слайда');
+      
         swiperPreloader.style.display = 'block';
     }, 3000);
     swiperPreloader.style.display = 'none';
@@ -113,30 +113,37 @@ const extraSlider = new Swiper('.swiper-exrta', {
 });
 
 const shopSlider = new Swiper('.shop-slider', {
-    slidesPerView: 3,
-                slidesPerColumn:2,
+    // slidesPerView: 6,
+    // slidesPerColumn:2,
+    // slidesPerView: auto,
     pagination: {
+        clickable:true,
         el: '.tariffs-swiper-pagination',
         type: 'bullets',       
     },
         breakpoints: {
 
             320:{
-                slidesPerView: 1, slidesPerColumn:1,
+                slidesPerView: 1.1, 
+                // slidesPerColumn:1,
+                spaceBetween:20,
               
             },
 
-            770:{ slidesPerColumn:1,
-                slidesPerView: 2,
-                spaceBetween:20,
+            770:{ 
+                // slidesPerColumn:1,
+                slidesPerView: 2.2,
+                spaceBetween:30,
             },
             
-            1200: {
-                watchOverflow: true,
+            1100: {
+                
                 slidesPerView: 3,
-                slidesPerColumn:2,
-                // column:2,
-                // spaceBetween: 20
+                // this.destroy(),
+                watchOverflow: true,
+                // slidesPerView: 4,
+                // slidesPerColumn:2,
+                spaceBetween: 50
             },
           
         }, 
@@ -171,3 +178,8 @@ const newsSlider = new Swiper('.news-slider', {
         }, 
 });
 
+// if (document.documentElement.scrollWidth > 1100) {
+//     shopSlider.destroy();
+    // swiper1.destroy();
+    // swiper2.destroy();
+// }
