@@ -438,11 +438,8 @@ color: var(--background-color);
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
-    font-feature-settings: 'liga'off;
-
-    /* Текст 2 */
-
-    color: #7C7B8A;
+    /* font-feature-settings: 'liga'off; */
+    color: var(--text-second);
 
 }
 
@@ -472,9 +469,7 @@ color: var(--background-color);
     font-family: 'San Francisco Pro Bold';
     font-size: 18px;
     line-height: 21px;
-    /* Заголовок 2 */
-
-    color: #37355B;
+    color: var(--title-second);
     margin: 10px 0;
 }
 
@@ -483,23 +478,20 @@ color: var(--background-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-
-
-    /* Текст 2 */
-
-    color: #7C7B8A;
+    color: var(--text-second);
 }
 
 
 /* * FORM PAYMENT * */
 
 .card-balance-payment {
+    height: auto;
     /* height: 150px; */
-    width: 570px;
+    width: auto;
     background: #FFFFFF;
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
     border-radius: 8px;
-    padding: 20px;
+    /* padding: 20px; */
     margin: 0 30px 50px;
     padding: 15px;
 
@@ -1474,9 +1466,16 @@ line-height: 16px;
 }
 
 @media(max-width: 576px) {
-
+    .card-balance-payment{
+        margin: 0 15px;
+    }
+.balance-tab-button{
+    padding: 5px;
+}
+.button-payment{
+    margin-top: 10px;
+}
     .header-end {
-
         margin: 10px;
         padding: 10px;
     }
