@@ -112,6 +112,35 @@ const extraSlider = new Swiper('.swiper-exrta', {
         }, 
 });
 
+const shopSlider = new Swiper('.shop-slider', {
+    slidesPerView: 3,
+                slidesPerColumn:2,
+    pagination: {
+        el: '.tariffs-swiper-pagination',
+        type: 'bullets',       
+    },
+        breakpoints: {
+
+            320:{
+                slidesPerView: 1, slidesPerColumn:1,
+              
+            },
+
+            770:{ slidesPerColumn:1,
+                slidesPerView: 2,
+                spaceBetween:20,
+            },
+            
+            1200: {
+                watchOverflow: true,
+                slidesPerView: 3,
+                slidesPerColumn:2,
+                // column:2,
+                // spaceBetween: 20
+            },
+          
+        }, 
+});
 
 const newsSlider = new Swiper('.news-slider', {
     slidesPerView: 1,
