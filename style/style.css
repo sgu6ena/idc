@@ -40,7 +40,8 @@
 
     --default-color: #3554D1;
     --first-default: #2B4D5D;
-
+    --second-default: ;
+    --third-default:#006285;
     --first-accent: #F4B366;
     --second-accent: #F8F32B;
 
@@ -82,6 +83,9 @@ button {
     padding-right: 110px;
 }
 
+/* .icon-logo{
+    fill: var(--background-color);
+} */
 
 .header-nav-item {
     padding-top: 20px;
@@ -115,7 +119,35 @@ button {
     transition: all 0.45s;
     background-size: 50% 3px;
 }
+.all-sites-dropdown-toogle{
+    background-color:transparent;
+    border: none;
+}
 
+.all-sites-dropdown{
+    width: 225px;
+   
+background-color: var(--third-default);
+border: none;
+border-radius: 0;
+
+}
+.dropdown-item:hover{
+    background-color: var(--background-color);
+}
+
+.all-sites-dropdown-item{
+    width: 100%;
+font-family:"San Francisco Pro";
+padding: 7px 20px 8px 20px;
+
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+
+color: var(--background-color);
+    background-color: var(--third-default);
+}
 .button-search {
     background: transparent;
     border: none;
@@ -125,9 +157,11 @@ button {
 .icon-search,
 .icon-menu-alt,
 .icon-user,
-.icon-logo {
+.logo-icon {
     fill: var(--background-color);
 }
+
+
 
 .button-login {
     background: transparent;
@@ -167,7 +201,7 @@ button {
 .header-dark .icon-search,
 .header-dark .icon-menu-alt,
 .header-dark .icon-user,
-.icon-logo {
+.header-dark .logo-icon {
     fill: var(--title-second);
 }
 

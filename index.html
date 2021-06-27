@@ -39,10 +39,10 @@
             <div class="row header-menu d-flex justify-content-between align-items-center">
                 <div class="  col-lg-1 col-md-1 col-sm-4 col-3 d-flex justify-content-start">
                     <div class="logo">
-                        <!-- <svg class="icon">
-                            <use xlink:href="./images/sprite.svg#logo" height="40px"></use>
-                          </svg> -->
-                        <img src="image/logo.svg" alt="IDC" class="image-logo">
+                        <svg class="logo-icon" width="75px" height="42px">
+                            <use  xlink:href="image/sprite.svg#logo" ></use>
+                          </svg>
+
                     </div>
                     <!-- /.logo -->
                 </div>
@@ -58,7 +58,26 @@
                             <a href="#" class="header-nav-link">Интернет - магазин</a>
                         </li>
                         <li class="header-nav-item">
-                            <a href="#" class="header-nav-link">Все сайты</a>
+                            <div class="dropdown">
+                                <button class="header-nav-link all-sites-dropdown-toogle dropdown-toggle" type="button" id="allSitesButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Все сайты
+                                </button>
+                                <ul class="dropdown-menu all-sites-dropdown" aria-labelledby="allSitesButton">
+                                  <li  class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item" href="#">Приложения</a></li>
+                                  <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item" href="https://portal.idc.md/">Онлайн-кинотеатр <br>PORTAL</a></li>
+                                  <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item" href="#">Сервисный центр</a></li>
+                                  <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item" href="#">Видеонаблюдение</a></li>
+                                  <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item" href="#">Музей</a></li>
+                                  <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item" href="#">Карта покрытия</a></li>
+                                </ul>
+                              </div>
+
+                            <!-- <a href="#" class="header-nav-link dropdown-toggle"></a> -->
+                            
+
+                            
+
+
                         </li>
                     </ul>
                 </div>

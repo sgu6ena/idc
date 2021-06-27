@@ -95,6 +95,7 @@ const extraSlider = new Swiper('.swiper-exrta', {
 
             320:{
                 slidesPerView: 1,
+                spaceBetween:20,
               
             },
 
