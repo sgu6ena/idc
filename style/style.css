@@ -1376,6 +1376,7 @@ h3.news-title {
     .header-end{
         transform:translateY(-400px);
         margin:  20px;
+        padding-left: 20px;
     }
     .show-more {
     display: none;
