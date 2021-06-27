@@ -41,7 +41,7 @@
     --default-color: #3554D1;
     --first-default: #2B4D5D;
     --second-default: ;
-    --third-default:#006285;
+    --third-default: #006285;
     --first-accent: #F4B366;
     --second-accent: #F8F32B;
 
@@ -119,35 +119,38 @@ button {
     transition: all 0.45s;
     background-size: 50% 3px;
 }
-.all-sites-dropdown-toogle{
-    background-color:transparent;
+
+.all-sites-dropdown-toogle {
+    background-color: transparent;
     border: none;
 }
 
-.all-sites-dropdown{
+.all-sites-dropdown {
     width: 225px;
-   
-background-color: var(--third-default);
-border: none;
-border-radius: 0;
+
+    background-color: var(--third-default);
+    border: none;
+    border-radius: 0;
 
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
     background-color: var(--background-color);
 }
 
-.all-sites-dropdown-item{
+.all-sites-dropdown-item {
     width: 100%;
-font-family:"San Francisco Pro";
-padding: 7px 20px 8px 20px;
+    font-family: "San Francisco Pro";
+    padding: 7px 20px 8px 20px;
 
-font-weight: 500;
-font-size: 18px;
-line-height: 21px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
 
-color: var(--background-color);
+    color: var(--background-color);
     background-color: var(--third-default);
 }
+
 .button-search {
     background: transparent;
     border: none;
@@ -1378,29 +1381,34 @@ h3.news-title {
     .service-card-description {
         padding: 30px;
     }
-   
+
 }
 
 
 @media(max-width:767px) {
-   
-    .big-slider{
+
+    .big-slider {
         background-color: var(--background-color);
     }
+
     .big-slider .header-slide {
         background-color: var(--background-color);
         background-size: contain;
         background-position: top;
     }
+
     .big-slider br {
         display: none;
     }
-.slider-description-image{
-    display: none;
-}
-.slider-description-text{
-    margin-left: 0;
-}
+
+    .slider-description-image {
+        display: none;
+    }
+
+    .slider-description-text {
+        margin-left: 0;
+    }
+
     .header-slider {
         margin: 30px;
     }
@@ -1420,23 +1428,23 @@ h3.news-title {
     }
 
 
-.slider-description-text{
-    font-size: 10px;
-line-height: 140%;
+    .slider-description-text {
+        font-size: 10px;
+        line-height: 140%;
+        letter-spacing: 0.21em;
+    }
 
-letter-spacing: 0.21em;
-}
+    .header-slider-name {
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+    }
 
-.header-slider-name{
-    font-size: 18px;
-line-height: 21px;
-letter-spacing: 0.02em;
-}
+    .button-header-slider {
+        font-size: 12px;
+        line-height: 16px;
+    }
 
-.button-header-slider{
-    font-size: 12px;
-line-height: 16px;
-}
     .header-end {
         margin: 20px;
         padding-left: 20px;
@@ -1449,9 +1457,11 @@ line-height: 16px;
     .service-card-button {
         width: 100%;
     }
+
     .big-slider {
         position: relative;
     }
+
     .header-end {
         position: absolute;
         top: -20px;
@@ -1459,22 +1469,33 @@ line-height: 16px;
         padding: 0;
         margin: 0;
     }
-.balance{
-    padding-top: 10px;
-}
+
+    .balance {
+        padding-top: 10px;
+    }
 
 }
 
 @media(max-width: 576px) {
-    .card-balance-payment{
+    .login-text{
+        display: none;
+    }
+.button-login{
+    width: 25px;
+}
+
+    .card-balance-payment {
         margin: 0 15px;
     }
-.balance-tab-button{
-    padding: 5px;
-}
-.button-payment{
-    margin-top: 10px;
-}
+
+    .balance-tab-button {
+        padding: 5px;
+    }
+
+    .button-payment {
+        margin-top: 10px;
+    }
+
     .header-end {
         margin: 10px;
         padding: 10px;
