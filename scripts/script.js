@@ -1,3 +1,5 @@
+// * * Слайдеры
+
 const bigSlider = new Swiper('.big-slider', {
     speed: 1000,
     loop: true,
@@ -24,7 +26,6 @@ const bigSlider = new Swiper('.big-slider', {
     },
 });
 
-
 const headerMenu = document.querySelector('.header-menu');
 const swiperPreloader = document.querySelector('.swiper-lazy-preloader');
 bigSlider.on('slideChange', () => {
@@ -36,12 +37,40 @@ bigSlider.on('slideChange', () => {
 
 bigSlider.on('beforeTransitionStart', () => {
     setTimeout(() => {
-        console.log('смена слайда');
+      
         swiperPreloader.style.display = 'block';
     }, 3000);
     swiperPreloader.style.display = 'none';
 
 })
+
+
+const balanceSlider = new Swiper('.slider-balance', {
+    slidesPerView: 2,
+    pagination: {
+        el: '.tariffs-swiper-pagination',
+        type: 'bullets',       
+    },
+    // watchOverflow: true,
+        // breakpoints: {
+
+        //     450:{
+        //         slidesPerView: 1,
+        //         spaceBetween:20,
+              
+        //     },
+
+        //     820:{
+        //         watchOverflow: true,
+        //         slidesPerView: 2,
+        //         spaceBetween:20,
+        //     },
+          
+        // }, 
+});
+
+
+
 
 const tarrifsOptions = {
     slidesPerView: 1,
@@ -51,17 +80,17 @@ const tarrifsOptions = {
     },
         breakpoints: {
             320:{
-                slidesPerView: 1,
-                spaceBetween: 0
+                slidesPerView: 1.1,
+                spaceBetween: 10
             },
 
             500:{
-                slidesPerView: 1.3,
+                slidesPerView: 1.4,
                 spaceBetween: 20,
             },
-            780: {
+            770: {
                 slidesPerView: 2.3,
-                spaceBetween: 0
+                spaceBetween: 10
             },
             995: {
                 slidesPerView: 3.4,
@@ -95,6 +124,7 @@ const extraSlider = new Swiper('.swiper-exrta', {
 
             320:{
                 slidesPerView: 1,
+                spaceBetween:20,
               
             },
 
@@ -113,30 +143,37 @@ const extraSlider = new Swiper('.swiper-exrta', {
 });
 
 const shopSlider = new Swiper('.shop-slider', {
-    slidesPerView: 3,
-                slidesPerColumn:2,
+    // slidesPerView: 6,
+    // slidesPerColumn:2,
+    // slidesPerView: auto,
     pagination: {
+        clickable:true,
         el: '.tariffs-swiper-pagination',
         type: 'bullets',       
     },
         breakpoints: {
 
             320:{
-                slidesPerView: 1, slidesPerColumn:1,
+                slidesPerView: 1.1, 
+                // slidesPerColumn:1,
+                spaceBetween:20,
               
             },
 
-            770:{ slidesPerColumn:1,
-                slidesPerView: 2,
-                spaceBetween:20,
+            770:{ 
+                // slidesPerColumn:1,
+                slidesPerView: 2.2,
+                spaceBetween:30,
             },
             
-            1200: {
-                watchOverflow: true,
+            1100: {
+                
                 slidesPerView: 3,
-                slidesPerColumn:2,
-                // column:2,
-                // spaceBetween: 20
+                // this.destroy(),
+                watchOverflow: true,
+                // slidesPerView: 4,
+                // slidesPerColumn:2,
+                spaceBetween: 50
             },
           
         }, 
@@ -171,3 +208,32 @@ const newsSlider = new Swiper('.news-slider', {
         }, 
 });
 
+//* * Табы
+
+const selectTariff = document.querySelector('#select-tariff');
+const tabsTariff = document.querySelectorAll('.tab-tariff');
+
+selectTariff.onchange = () => {
+    const value = selectTariff[selectTariff.options.selectedIndex].value;
+    tabsTariff.forEach(item => item.classList.remove('active'));
+    document.querySelector(`#${value}`).classList.add('active');
+    document.querySelector(`#${value}`).classList.add('show');
+    }
+
+
+const selectPayment = document.querySelector('#select-payment');
+const tabsPayment = document.querySelectorAll('.tab-payment');
+
+selectPayment.onchange = () => {
+    const value = selectPayment[selectPayment.options.selectedIndex].value;
+    tabsPayment.forEach(item => item.classList.remove('active'));
+    document.querySelector(`#${value}`).classList.add('active');
+    document.querySelector(`#${value}`).classList.add('show');
+    }
+
+
+// if (document.documentElement.scrollWidth > 1100) {
+//     shopSlider.destroy();
+    // swiper1.destroy();
+    // swiper2.destroy();
+// }
