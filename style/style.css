@@ -40,8 +40,7 @@
 
     --default-color: #3554D1;
     --first-default: #2B4D5D;
-    --second-default: ;
-    --third-default: #006285;
+
     --first-accent: #F4B366;
     --second-accent: #F8F32B;
 
@@ -83,9 +82,6 @@ button {
     padding-right: 110px;
 }
 
-/* .icon-logo{
-    fill: var(--background-color);
-} */
 
 .header-nav-item {
     padding-top: 20px;
@@ -120,37 +116,6 @@ button {
     background-size: 50% 3px;
 }
 
-.all-sites-dropdown-toogle {
-    background-color: transparent;
-    border: none;
-}
-
-.all-sites-dropdown {
-    width: 225px;
-
-    background-color: var(--third-default);
-    border: none;
-    border-radius: 0;
-
-}
-
-.dropdown-item:hover {
-    background-color: var(--background-color);
-}
-
-.all-sites-dropdown-item {
-    width: 100%;
-    font-family: "San Francisco Pro";
-    padding: 7px 20px 8px 20px;
-
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-
-    color: var(--background-color);
-    background-color: var(--third-default);
-}
-
 .button-search {
     background: transparent;
     border: none;
@@ -160,11 +125,9 @@ button {
 .icon-search,
 .icon-menu-alt,
 .icon-user,
-.logo-icon {
+.icon-logo {
     fill: var(--background-color);
 }
-
-
 
 .button-login {
     background: transparent;
@@ -204,7 +167,7 @@ button {
 .header-dark .icon-search,
 .header-dark .icon-menu-alt,
 .header-dark .icon-user,
-.header-dark .logo-icon {
+.icon-logo {
     fill: var(--title-second);
 }
 
@@ -266,11 +229,7 @@ button {
 }
 
 .header-slider {
-    margin: 49px 120px 95px 130px;
-}
-
-.slider-description-image {
-    fill: var(--second-accent);
+    margin: 49px 51px 95px 130px;
 }
 
 .slider-description-text {
@@ -305,13 +264,6 @@ button {
     background: var(--second-accent);
     border-radius: 48px;
     border: none;
-}
-
-.big-slide-arrow-right {}
-
-.arrow-slider-prev,
-.arrow-slider-next {
-    fill: var(--background-color)
 }
 
 .button-header-slider-text {
@@ -451,8 +403,11 @@ button {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
-    /* font-feature-settings: 'liga'off; */
-    color: var(--text-second);
+    font-feature-settings: 'liga'off;
+
+    /* Текст 2 */
+
+    color: #7C7B8A;
 
 }
 
@@ -482,7 +437,9 @@ button {
     font-family: 'San Francisco Pro Bold';
     font-size: 18px;
     line-height: 21px;
-    color: var(--title-second);
+    /* Заголовок 2 */
+
+    color: #37355B;
     margin: 10px 0;
 }
 
@@ -491,22 +448,21 @@ button {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: var(--text-second);
+
+
+    /* Текст 2 */
+
+    color: #7C7B8A;
 }
 
-
-/* * FORM PAYMENT * */
-
 .card-balance-payment {
-    height: auto;
-    /* height: 150px; */
-    width: auto;
+    height: 150px;
+    width: 570px;
     background: #FFFFFF;
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
     border-radius: 8px;
-    /* padding: 20px; */
+    padding: 20px;
     margin: 0 30px 50px;
-    padding: 15px;
 
 
 }
@@ -520,17 +476,12 @@ button {
     padding-bottom: 10px;
     /* Заголовок 2 */
 
-    color: var(--title-second);
+    color: #37355B;
     margin-bottom: 0;
 }
 
-.select-payment {
-    padding: 12px 15px;
-    background: #FFFFFF;
-
-    border: 1px solid #E0E0E0;
-    border-radius: 8px;
-}
+/* * FORM PAYMENT * */
+/* .balance-payment-form {} */
 
 .balance-tab-button {
 
@@ -571,6 +522,10 @@ button {
     border-radius: 32px;
 }
 
+
+
+
+
 .input-wrapper {
     margin-top: 10px;
 }
@@ -597,13 +552,11 @@ button {
 
     border: 1px solid #E0E0E0;
     border-radius: 8px;
-    /* margin-right: 21px; */
+    margin-right: 21px;
     padding: 16px;
 }
 
 .button-payment {
-    margin-left: 20px;
-    margin-right: 20px;
     background: var(--second-accent);
     border-radius: 48px;
     padding: 10px 40px 9px 40px;
@@ -614,9 +567,6 @@ button {
 
 
 /* * TARIFFS * */
-.chevron_right {
-    fill: var(--third-default);
-}
 
 .swiper-pagination-bullet-active {
     width: 15px;
@@ -640,7 +590,7 @@ button {
 }
 
 .tariffs-head {
-    /* margin-bottom: 30px; */
+    margin-bottom: 30px;
 }
 
 .tariffs-title {
@@ -654,23 +604,6 @@ button {
 .tariffs-item {
 
     margin: 30px;
-}
-
-.select-tariff {
-    filter: drop-shadow(0px 8px 20px rgba(92, 92, 92, 0.25));
-    font-family: "San Francisco Pro";
-    padding: 12px 15px;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: var(--title-second);
-
-    background: #FFFFFF;
-    border: none;
-    border-radius: 8px;
-    width: 327px;
-    height: 40px;
-    display: none;
 }
 
 #pills-tariff-mobile,
@@ -1048,22 +981,12 @@ button {
     overflow: hidden;
 }
 
-.swiper-wrapper .swiper-shop-slide {
-    display: flex;
-    align-self: baseline;
-    /* min-height: 0; */
-    /* justify-content: center; */
-    /* height: 100%; */
-}
-
 .shop-card {
-    width: 100%;
-    margin-top: 20px;
     overflow: hidden;
     background: #FFFFFF;
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
     border-radius: 5px;
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px;
 }
 
 .shop-image-card-wrapper {
@@ -1075,10 +998,6 @@ button {
 .shop-image-card {
 
     height: 100%;
-}
-
-.icon-3d {
-    fill: var(--text-second);
 }
 
 .shop-3d-text {
@@ -1213,6 +1132,8 @@ button {
     margin-left: -15%;
     height: 90%;
     margin-bottom: -20%;
+
+
 }
 
 
@@ -1309,7 +1230,7 @@ h3.news-title {
 
 .footer {
     padding-left: 131px;
-    /* padding-right: 129px; */
+    padding-right: 129px;
     padding-top: 50px;
     background: #006285;
 }
@@ -1383,31 +1304,10 @@ h3.news-title {
 }
 
 .footer-line {
-    color: #BDBDBD;
-    margin-bottom: 15px;
+    height: 2px;
 }
 
-.social {
-    margin-bottom: 10px;
-}
 
-.social-icon-wrapper:not(:last-child) {
-    margin-right: 25px;
-}
-
-.copyright {
-    text-align: center;
-    font-family: "San Francisco Pro";
-
-    font-size: 12px;
-    line-height: 14px;
-
-    text-align: center;
-
-    color: #AAA9BA;
-    margin: 0;
-
-}
 
 @media(max-width: 1420px) {
     .header-menu {
@@ -1438,263 +1338,69 @@ h3.news-title {
     .service-card-description {
         padding: 30px;
     }
-
 }
 
 
 @media(max-width:767px) {
-
-    .big-slider {
-        background-color: var(--background-color);
-    }
-
-    .big-slider .header-slide {
-        background-color: var(--background-color);
-        background-size: contain;
-        background-position: top;
-    }
-
-    .big-slider br {
-        display: none;
-    }
-
-    .slider-description-image {
-        display: none;
-
-    }
-
-    .slider-description-text {
-        margin-left: 0;
-    }
-
-    .header-slider {
-        margin: 30px;
+    .header-slider{
+        margin-left: 30px;
     }
 
     .header-slide {
-        padding-top: 200px;
+        padding-top: 300px;
         padding-right: 40px;
     }
 
     .header-slider-wrapper {
+
+/* transform:translateY(400px); */
         text-transform: uppercase;
+
+        /* Заголовок 2 */
+
         color: var(--title-second);
         margin: 20px;
+
         background: #FFFFFF;
         box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
         border-radius: 8px;
     }
 
-
-    .slider-description-text {
-        font-size: 10px;
-        line-height: 140%;
-        letter-spacing: 0.21em;
-    }
-
-    .header-slider-name {
-        font-size: 18px;
-        line-height: 21px;
-        letter-spacing: 0.02em;
-    }
-
-    .button-header-slider {
-        font-size: 12px;
-        line-height: 16px;
-    }
-
-    .header-end {
-        margin: 20px;
-        padding-left: 20px;
-    }
-
-    .show-more {
-        display: none;
-    }
-
-    .service-card-button {
-        width: 100%;
-    }
-
-    .big-slider {
-        position: relative;
-    }
-
-    .header-end {
-        position: absolute;
-        top: -20px;
-        left: 0;
-        padding: 0;
-        margin: 0;
-    }
-
-    .balance {
-        padding-top: 10px;
-    }
-
-    .payment-options {
-        display: none;
-    }
-
-    .tariffs-options {
-        display: none;
-    }
-
-    .select-payment {
-        display: flex;
-        width: 100%;
-    }
-
-    .select-tariff {
-        display: flex;
-    }
-}
-
-@media(max-width: 576px) {
+    /* .login-button{
+        width: 30px;
+    } */
     .login-text {
         display: none;
     }
 
-    .button-login {
-        width: 25px;
+    .header-end{
+        transform:translateY(-450px);
+        margin:  20px;
+        padding-left: 20px;
     }
-
-    .card-balance-payment {
-        margin: 0 15px;
+    .show-more {
+    display: none;
+}
+    .service-card-button {
+        width: 100%;
     }
+}
 
-    .balance-tab-button {
-        /* padding: 5px; */
-    }
-
-    .button-payment {
-        margin-top: 10px;
-    }
-
-    .header-end {
-        margin: 10px;
+@media(max-width: 576px) {
+     .header-end{
+        transform:translateY(-550px);
+        margin:  10px;
         padding: 10px;
     }
-
     .input-wrapper {
         flex-direction: column;
     }
-
 }
 
 @media(max-width: 430px) {
-    .header-end {
-        margin: 10px;
+    .header-end{
+        transform:translateY(-600px);
+        margin:  10px;
         padding-left: 10px;
     }
-}
-
-
-
-
-
-
-
-/* * select * */
-
-.select {
-    position: relative;
-    width: 100%;
-    z-index: 1000;
-}
-
-.select__trigger {
-    display: flex;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 0.3125rem;
-    cursor: pointer;
-    align-items: center;
-    width: 100%;
-    font-size: 1rem;
-    padding: 0.375rem 0.75rem;
-    line-height: 1.4;
-    user-select: none;
-    font-size: 1rem;
-    justify-content: space-between;
-    font-style: italic;
-}
-
-.select__trigger::after {
-    content: '';
-    width: 0.75rem;
-    height: 0.75rem;
-    background-size: cover;
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100"%3E%3Cpath d="M97.625 25.3l-4.813-4.89c-1.668-1.606-3.616-2.41-5.84-2.41-2.27 0-4.194.804-5.777 2.41L50 52.087 18.806 20.412C17.223 18.805 15.298 18 13.03 18c-2.225 0-4.172.804-5.84 2.41l-4.75 4.89C.813 26.95 0 28.927 0 31.23c0 2.346.814 4.301 2.439 5.865l41.784 42.428C45.764 81.174 47.689 82 50 82c2.268 0 4.215-.826 5.84-2.476l41.784-42.428c1.584-1.608 2.376-3.563 2.376-5.865 0-2.26-.792-4.236-2.375-5.932z"/%3E%3C/svg%3E');
-}
-
-.select__trigger:focus {
-    outline: none;
-}
-
-.select_show .select__trigger::after {
-    transform: rotate(180deg);
-}
-
-.select__dropdown {
-    display: none;
-    position: absolute;
-    top: 2.5rem;
-    left: 0;
-    right: 0;
-    border: 1px solid #ccc;
-    max-height: 10rem;
-    overflow-y: auto;
-    border-radius: 0.3125rem;
-}
-
-.select_show .select__dropdown {
-    display: block;
-}
-
-.select_show .select__backdrop {
-    display: block;
-}
-
-.select__items {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.select__item {
-    padding: 0.375rem 0.75rem;
-}
-
-.select__item_selected {
-    background-color: #e1f5fe;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.select__item_selected::after {
-    content: '';
-    width: 0.75rem;
-    height: 0.75rem;
-    color: #0277bd;
-    background-size: cover;
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-inline--fa fa-check fa-w-16" data-icon="check" data-prefix="fas" aria-hidden="true"%3E%3Cpath d="M33.964 85.547l-32.5-32.251a4.935 4.935 0 010-7.017l7.071-7.017a5.027 5.027 0 017.071 0L37.5 60.987l46.894-46.534a5.028 5.028 0 017.07 0l7.072 7.017a4.935 4.935 0 010 7.017l-57.5 57.06a5.027 5.027 0 01-7.072 0z" fill="%230277bd"/%3E%3C/svg%3E');
-}
-
-.select__item:hover {
-    background-color: #f5f5f5;
-    cursor: pointer;
-    transition: 0.2s background-color ease-in-out;
-}
-
-.select__backdrop {
-    position: fixed;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    display: none;
-    background-color: transparent;
 }
