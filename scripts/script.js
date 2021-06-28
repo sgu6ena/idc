@@ -1,3 +1,5 @@
+// * * Слайдеры
+
 const bigSlider = new Swiper('.big-slider', {
     speed: 1000,
     loop: true,
@@ -23,7 +25,6 @@ const bigSlider = new Swiper('.big-slider', {
         crossFade: true
     },
 });
-
 
 const headerMenu = document.querySelector('.header-menu');
 const swiperPreloader = document.querySelector('.swiper-lazy-preloader');
@@ -179,6 +180,7 @@ const newsSlider = new Swiper('.news-slider', {
         }, 
 });
 
+//* * Табы
 
 const selectTariff = document.querySelector('#select-tariff');
 const tabsTariff = document.querySelectorAll('.tab-tariff');
@@ -189,6 +191,18 @@ selectTariff.onchange = () => {
     document.querySelector(`#${value}`).classList.add('active');
     document.querySelector(`#${value}`).classList.add('show');
     }
+
+
+const selectPayment = document.querySelector('#select-payment');
+const tabsPayment = document.querySelectorAll('.tab-payment');
+
+selectPayment.onchange = () => {
+    const value = selectPayment[selectPayment.options.selectedIndex].value;
+    tabsPayment.forEach(item => item.classList.remove('active'));
+    document.querySelector(`#${value}`).classList.add('active');
+    document.querySelector(`#${value}`).classList.add('show');
+    }
+
 
 // if (document.documentElement.scrollWidth > 1100) {
 //     shopSlider.destroy();

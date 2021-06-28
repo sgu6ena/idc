@@ -406,7 +406,7 @@
 
                 <div class="card-balance card-balance-payment">
                     <h3 class="title-balance-payment">Пополнить баланс онлайн</h3>
-                    <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills payment-options " id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active balance-tab-button" id="#pills-mobile-tab"
                                 data-bs-toggle="pill" data-bs-target="#pills-mobile" type="button" role="tab"
@@ -429,11 +429,21 @@
                     </ul>
 
 
+                    <div class="select-payment-wrapper d-flex justify-content-center">
+                        <select name="select-payment" id="select-payment" class="select-payment">
+                        <option value="pills-mobile">Мобильная связь</option>
+                        <option value="pills-internet">Интернет</option>
+                        <option value="pills-tv">Телевидение</option>
+                        <option value="pills-home-phone">Проводная связь</option>                   
+                    </select>
+                     </div>
+
+
                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active " id="pills-mobile" role="tabpanel"
+                        <div class="tab-pane fade show active tab-payment" id="pills-mobile" role="tabpanel"
                             aria-labelledby="#pills-mobile-tab">
                             <div class="input-wrapper d-flex justify-content-start align-items-center">
-                                <span class="d-flex  justify-content-start align-items-center">
+                                <span class="d-flex  justify-content-center align-items-center">
                                     <input type="number" class="input-number" placeholder="+373-77______">
                                     <input type="number" class="input-sum" placeholder="СУММА">
                                 </span>
@@ -441,7 +451,7 @@
                                 <button class="button-payment" type="submit">Пополнить</button>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-internet" role="tabpanel"
+                        <div class="tab-pane fade tab-payment" id="pills-internet" role="tabpanel"
                             aria-labelledby="pills-internet-tab">
                             <div class="input-wrapper d-flex justify-content-start  align-items-center">
                                 <span class="d-flex  justify-content-start align-items-center"><input type="number"
@@ -452,7 +462,7 @@
                             </div>
 
                         </div>
-                        <div class="tab-pane fade" id="pills-tv" role="tabpanel" aria-labelledby="pills-tv-tab">
+                        <div class="tab-pane fade tab-payment" id="pills-tv" role="tabpanel" aria-labelledby="pills-tv-tab">
                             <div class="input-wrapper d-flex justify-content-start  align-items-center">
                                 <span class="d-flex  justify-content-start align-items-center"><input type="number"
                                         class="input-number" placeholder="12523632514">
@@ -461,7 +471,7 @@
                                 <button class="button-payment" type="submit">Пополнить</button>
                             </div>
                         </div>
-                        <div class="tab-pane fade " id="pills-home-phone" role="tabpanel"
+                        <div class="tab-pane fade tab-payment" id="pills-home-phone" role="tabpanel"
                             aria-labelledby="#pills-home-phone-tab">
                             <div class="input-wrapper d-flex justify-content-start  align-items-center">
                                 <span class="d-flex  justify-content-start align-items-center"> <input type="number"
@@ -530,13 +540,14 @@
 
                 <!-- /.tariffs-options -->
             </div>
-            <div class="celect-tariff-wrapper d-flex justify-content-center"><select name="select-tariff" id="select-tariff" class="select-tariff">
+            <div class="select-tariff-wrapper d-flex justify-content-center"><select name="select-tariff" id="select-tariff" class="select-tariff">
                 <option value="pills-tariff-hits">ХИТЫ</option>
                 <option value="pills-tariff-mobile">Мобильная связь</option>
                 <option value="pills-tariff-internet">Интернет</option>
                 <option value="pills-tariff-tv">Телевидение</option>
                 <option value="pills-tariff-home-phone">Проводная связь</option>                   
-            </select></div>
+            </select>
+        </div>
             
             <div class="tab-content" id="pills-tariff-tabContent">
                 <div class="tab-pane fade tab-tariff show active " id="pills-tariff-hits" role="tabpanel"
