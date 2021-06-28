@@ -495,13 +495,13 @@
                 <div class="tariffs-options tariffs-icon">
                     <ul class="nav nav-pills tariffs-list-item " id="pills-tariff-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link  tariffs-list-button hvr-underline-from-center"
+                            <button class="nav-link active tariffs-list-button hvr-underline-from-center"
                                 id="#pills-tariff-hits-tab" data-bs-toggle="pill" data-bs-target="#pills-tariff-hits"
                                 type="button" role="tab" aria-controls="#pills-tariff-mobile"
                                 aria-selected="true">Хиты</button>
                         </li>
                         <li class="nav-item " role="presentation">
-                            <button class="nav-link active tariffs-list-button hvr-underline-from-center"
+                            <button class="nav-link  tariffs-list-button hvr-underline-from-center"
                                 id="#pills-tariff-mobile-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-tariff-mobile" type="button" role="tab"
                                 aria-controls="#pills-tariff-mobile" aria-selected="true">Мобильная связь</button>
@@ -522,15 +522,24 @@
                             <button class="nav-link tariffs-list-button hvr-underline-from-center"
                                 id="pills-tariff-home-phone-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-tariff-home-phone" type="button" role="tab"
-                                aria-controls="pills-tariff-home-phone" aria-selected="false">Проводная связь</button>
+                                aria-controls="pills-tariff-home-phone" aria-selected="false">Проводная связь</button></li>
                     </ul>
                     <!-- /.tariffs-list -->
                 </div>
+
+
                 <!-- /.tariffs-options -->
             </div>
-
+            <div class="celect-tariff-wrapper d-flex justify-content-center"><select name="select-tariff" id="select-tariff" class="select-tariff">
+                <option value="pills-tariff-hits">ХИТЫ</option>
+                <option value="pills-tariff-mobile">Мобильная связь</option>
+                <option value="pills-tariff-internet">Интернет</option>
+                <option value="pills-tariff-tv">Телевидение</option>
+                <option value="pills-tariff-home-phone">Проводная связь</option>                   
+            </select></div>
+            
             <div class="tab-content" id="pills-tariff-tabContent">
-                <div class="tab-pane fade  " id="pills-tariff-hits" role="tabpanel"
+                <div class="tab-pane fade tab-tariff show active " id="pills-tariff-hits" role="tabpanel"
                     aria-labelledby="#pills-tariff-hits-tab">
 
                     <div class="swiper-wrapper">
@@ -816,7 +825,7 @@
                         <div class="tariffs-swiper-pagination "></div>
                     </div>
                 </div>
-                <div class="tab-pane fade show active" id="pills-tariff-mobile" role="tabpanel"
+                <div class="tab-pane fade tab-tariff " id="pills-tariff-mobile" role="tabpanel"
                     aria-labelledby="pills-tariff-mobile-tab">
 
                     <div class="swiper-wrapper">
@@ -1101,7 +1110,7 @@
                         <div class="tariffs-swiper-pagination "></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="pills-tariff-internet" role="tabpanel"
+                <div class="tab-pane fade tab-tariff"  id="pills-tariff-internet" role="tabpanel"
                     aria-labelledby="pills-tariff-internet-tab">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide d-flex justify-content-center">
@@ -1385,7 +1394,7 @@
                         <div class="tariffs-swiper-pagination "></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="pills-tariff-tv" role="tabpanel" aria-labelledby="pills-tariff-tv-tab">
+                <div class="tab-pane fade tab-tariff" id="pills-tariff-tv" role="tabpanel" aria-labelledby="pills-tariff-tv-tab">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide d-flex justify-content-center">
                             <div class="tariff-item">
@@ -1668,7 +1677,7 @@
                         <div class="tariffs-swiper-pagination "></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="pills-tariff-home-phone" role="tabpanel"
+                <div class="tab-pane fade tab-tariff" id="pills-tariff-home-phone" role="tabpanel"
                     aria-labelledby="pills-tariff-home-phone-tab">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide d-flex justify-content-center">
@@ -2470,8 +2479,8 @@
 
     <footer class="footer">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col contacts">
+            <div class="row d-flex">
+                <div class="col footer-contacts">
                     <h3 class="footer-title">
                         Контактная информация
                     </h3>
@@ -2488,11 +2497,11 @@
                                 справочная служба</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col company">
                     <h3 class="footer-title">
                         Компания
                     </h3>
-                    <div class="company">
+                    <div class="footer-company">
                         <ul class="header-list">
                             <li class="header-list-item">
                                 <a href="#" class="header-link">О компании</a>
@@ -2515,7 +2524,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col footer-tariffs">
                     <h3 class="footer-title">
                         Тарифы
                     </h3>
@@ -2538,7 +2547,7 @@
                     </ul>
                 </div>
 
-                <div class="col">
+                <div class="col ">
                     <h3 class="footer-title">
                         Поддержка
                     </h3>
@@ -2590,52 +2599,60 @@
         <hr class="footer-line">
         <div class="footer-social">
             <div class="row">
-                <div class="col-lg-3 col-md-4 social d-flex align-items-center justify-content-around">
+                <div class="col-lg-3 col-md-4 social d-flex align-items-center justify-content-lg-start">
                     <div class="social-icon-wrapper ">
                         <a href="#" class="social-link"></a>
-                            <svg class="social-icon" width="29px" height="29px" >
-                                <use xlink:href="image/sprite.svg#instagram"></use>
-                            </svg>
-                     
+                        <svg class="social-icon" width="29px" height="29px">
+                            <use xlink:href="image/sprite.svg#instagram"></use>
+                        </svg>
+
                     </div>
                     <div class="social-icon-wrapper">
-                         <a href="#" class="social-link"> <svg class="social-icon" width="29px" height="29px">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" width="29px" height="29px">
                                 <use xlink:href="image/sprite.svg#ok"></use>
                             </svg>
                         </a>
-                           
+
                     </div>
                     <div class="social-icon-wrapper">
-                          <a href="#" class="social-link"><svg class="social-icon" width="29px" height="29px">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" width="29px" height="29px">
                                 <use xlink:href="image/sprite.svg#vk"></use>
-                            </svg></a>
-                            
-                       
+                            </svg>
+                        </a>
                     </div>
                     <div class="social-icon-wrapper">
-                        <a href="#" class="social-link"> <svg class="social-icon" width="29px" height="29px">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" width="29px" height="29px">
                                 <use xlink:href="image/sprite.svg#facebook"></use>
-                            </svg></a>
-                           
-                       
+                            </svg>
+                        </a>
+
+
                     </div>
                     <div class="social-icon-wrapper">
-                         <a href="#" class="social-link"> <svg class="social-icon" width="29px" height="29px">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" width="29px" height="29px">
                                 <use xlink:href="image/sprite.svg#telegram"></use>
-                            </svg></a>
-                           
-                      
+                            </svg>
+                        </a>
+
+
                     </div>
                     <div class="social-icon-wrapper">
-                         <a href="#" class="social-link"> <svg class="social-icon" width="29px" height="29px">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" width="29px" height="29px">
                                 <use xlink:href="image/sprite.svg#messenger"></use>
-                            </svg></a>
-                           
-                       
+                            </svg>
+                        </a>
+
+
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-4">
-                    <p class="copyright">© 2021 СЗАО «Интерднестрком».</p><p class="copyright"> Все права защищены.</p>
+                    <p class="copyright">© 2021 СЗАО «Интерднестрком».</p>
+                    <p class="copyright"> Все права защищены.</p>
                 </div>
             </div>
         </div>

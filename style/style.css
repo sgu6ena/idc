@@ -269,9 +269,10 @@ button {
     margin: 49px 120px 95px 130px;
 }
 
-.slider-description-image{
-    fill:var(--second-accent);
+.slider-description-image {
+    fill: var(--second-accent);
 }
+
 .slider-description-text {
     margin-left: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -305,12 +306,12 @@ button {
     border-radius: 48px;
     border: none;
 }
-.big-slide-arrow-right{
 
-}
+.big-slide-arrow-right {}
+
 .arrow-slider-prev,
-.arrow-slider-next{
-    fill:var(--background-color)
+.arrow-slider-next {
+    fill: var(--background-color)
 }
 
 .button-header-slider-text {
@@ -608,6 +609,7 @@ button {
 .chevron_right {
     fill: var(--third-default);
 }
+
 .swiper-pagination-bullet-active {
     width: 15px;
     height: 15px;
@@ -630,7 +632,7 @@ button {
 }
 
 .tariffs-head {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .tariffs-title {
@@ -644,8 +646,23 @@ button {
 .tariffs-item {
 
     margin: 30px;
-}
+}   
+.select-tariff{
+    filter: drop-shadow(0px 8px 20px rgba(92, 92, 92, 0.25));
+    font-family:"San Francisco Pro";
 
+font-size: 14px;
+line-height: 16px;
+
+color: var(--title-second);
+
+    background: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    width: 327px;
+    height: 40px;
+    display: none;
+}
 #pills-tariff-mobile,
 #pills-tariff-hits,
 #pills-tariff-internet,
@@ -1049,9 +1066,11 @@ button {
 
     height: 100%;
 }
-.icon-3d{
-    fill:var(--text-second);
+
+.icon-3d {
+    fill: var(--text-second);
 }
+
 .shop-3d-text {
     font-family: 'San Francisco Pro';
 
@@ -1184,8 +1203,6 @@ button {
     margin-left: -15%;
     height: 90%;
     margin-bottom: -20%;
-
-
 }
 
 
@@ -1282,7 +1299,7 @@ h3.news-title {
 
 .footer {
     padding-left: 131px;
-    padding-right: 129px;
+    /* padding-right: 129px; */
     padding-top: 50px;
     background: #006285;
 }
@@ -1356,25 +1373,29 @@ h3.news-title {
 }
 
 .footer-line {
-  color: #BDBDBD;
-  margin-bottom: 15px;
+    color: #BDBDBD;
+    margin-bottom: 15px;
 }
-.social{
+
+.social {
     margin-bottom: 10px;
 }
-.social-icon-wrapper:not(:last-child){
+
+.social-icon-wrapper:not(:last-child) {
     margin-right: 25px;
 }
-.copyright{
+
+.copyright {
     text-align: center;
     font-family: "San Francisco Pro";
 
-font-size: 12px;
-line-height: 14px;
+    font-size: 12px;
+    line-height: 14px;
 
-text-align: center;
+    text-align: center;
 
-color: #AAA9BA;margin: 0;
+    color: #AAA9BA;
+    margin: 0;
 
 }
 
@@ -1429,7 +1450,7 @@ color: #AAA9BA;margin: 0;
 
     .slider-description-image {
         display: none;
- 
+
     }
 
     .slider-description-text {
@@ -1501,15 +1522,24 @@ color: #AAA9BA;margin: 0;
         padding-top: 10px;
     }
 
+
+    .tariffs-options{
+        display: none;
+    }
+
+    .select-tariff{
+        display: flex;
+    }
 }
 
 @media(max-width: 576px) {
-    .login-text{
+    .login-text {
         display: none;
     }
-.button-login{
-    width: 25px;
-}
+
+    .button-login {
+        width: 25px;
+    }
 
     .card-balance-payment {
         margin: 0 15px;
@@ -1531,6 +1561,7 @@ color: #AAA9BA;margin: 0;
     .input-wrapper {
         flex-direction: column;
     }
+
 }
 
 @media(max-width: 430px) {
@@ -1539,3 +1570,113 @@ color: #AAA9BA;margin: 0;
         padding-left: 10px;
     }
 }
+
+
+
+
+
+
+
+/* * select * */
+
+.select {
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .select__trigger {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.4;
+    user-select: none;
+    font-size: 1rem;
+    justify-content: space-between;
+    font-style: italic;
+  }
+  
+  .select__trigger::after {
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    background-size: cover;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100"%3E%3Cpath d="M97.625 25.3l-4.813-4.89c-1.668-1.606-3.616-2.41-5.84-2.41-2.27 0-4.194.804-5.777 2.41L50 52.087 18.806 20.412C17.223 18.805 15.298 18 13.03 18c-2.225 0-4.172.804-5.84 2.41l-4.75 4.89C.813 26.95 0 28.927 0 31.23c0 2.346.814 4.301 2.439 5.865l41.784 42.428C45.764 81.174 47.689 82 50 82c2.268 0 4.215-.826 5.84-2.476l41.784-42.428c1.584-1.608 2.376-3.563 2.376-5.865 0-2.26-.792-4.236-2.375-5.932z"/%3E%3C/svg%3E');
+  }
+  
+  .select__trigger:focus {
+    outline: none;
+  }
+  
+  .select_show .select__trigger::after {
+    transform: rotate(180deg);
+  }
+  
+  .select__dropdown {
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    max-height: 10rem;
+    overflow-y: auto;
+    border-radius: 0.3125rem;
+  }
+  
+  .select_show .select__dropdown {
+    display: block;
+  }
+  
+  .select_show .select__backdrop {
+    display: block;
+  }
+  
+  .select__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .select__item {
+    padding: 0.375rem 0.75rem;
+  }
+  
+  .select__item_selected {
+    background-color: #e1f5fe;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .select__item_selected::after {
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    color: #0277bd;
+    background-size: cover;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-inline--fa fa-check fa-w-16" data-icon="check" data-prefix="fas" aria-hidden="true"%3E%3Cpath d="M33.964 85.547l-32.5-32.251a4.935 4.935 0 010-7.017l7.071-7.017a5.027 5.027 0 017.071 0L37.5 60.987l46.894-46.534a5.028 5.028 0 017.07 0l7.072 7.017a4.935 4.935 0 010 7.017l-57.5 57.06a5.027 5.027 0 01-7.072 0z" fill="%230277bd"/%3E%3C/svg%3E');
+  }
+  
+  .select__item:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: 0.2s background-color ease-in-out;
+  }
+  
+  .select__backdrop {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: transparent;
+  }

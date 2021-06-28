@@ -51,17 +51,17 @@ const tarrifsOptions = {
     },
         breakpoints: {
             320:{
-                slidesPerView: 1,
-                spaceBetween: 0
+                slidesPerView: 1.1,
+                spaceBetween: 10
             },
 
             500:{
-                slidesPerView: 1.3,
+                slidesPerView: 1.4,
                 spaceBetween: 20,
             },
-            780: {
+            770: {
                 slidesPerView: 2.3,
-                spaceBetween: 0
+                spaceBetween: 10
             },
             995: {
                 slidesPerView: 3.4,
@@ -178,6 +178,17 @@ const newsSlider = new Swiper('.news-slider', {
           
         }, 
 });
+
+
+const selectTariff = document.querySelector('#select-tariff');
+const tabsTariff = document.querySelectorAll('.tab-tariff');
+
+selectTariff.onchange = () => {
+    const value = selectTariff[selectTariff.options.selectedIndex].value;
+    tabsTariff.forEach(item => item.classList.remove('active'));
+    document.querySelector(`#${value}`).classList.add('active');
+    document.querySelector(`#${value}`).classList.add('show');
+    }
 
 // if (document.documentElement.scrollWidth > 1100) {
 //     shopSlider.destroy();
