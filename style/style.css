@@ -269,7 +269,9 @@ button {
     margin: 49px 120px 95px 130px;
 }
 
-
+.slider-description-image{
+    fill:var(--second-accent);
+}
 .slider-description-text {
     margin-left: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -302,6 +304,13 @@ button {
     background: var(--second-accent);
     border-radius: 48px;
     border: none;
+}
+.big-slide-arrow-right{
+
+}
+.arrow-slider-prev,
+.arrow-slider-next{
+    fill:var(--background-color)
 }
 
 .button-header-slider-text {
@@ -555,10 +564,6 @@ button {
     border-radius: 32px;
 }
 
-
-
-
-
 .input-wrapper {
     margin-top: 10px;
 }
@@ -600,7 +605,9 @@ button {
 
 
 /* * TARIFFS * */
-
+.chevron_right {
+    fill: var(--third-default);
+}
 .swiper-pagination-bullet-active {
     width: 15px;
     height: 15px;
@@ -1042,7 +1049,9 @@ button {
 
     height: 100%;
 }
-
+.icon-3d{
+    fill:var(--text-second);
+}
 .shop-3d-text {
     font-family: 'San Francisco Pro';
 
@@ -1347,10 +1356,27 @@ h3.news-title {
 }
 
 .footer-line {
-    height: 2px;
+  color: #BDBDBD;
+  margin-bottom: 15px;
 }
+.social{
+    margin-bottom: 10px;
+}
+.social-icon-wrapper:not(:last-child){
+    margin-right: 25px;
+}
+.copyright{
+    text-align: center;
+    font-family: "San Francisco Pro";
 
+font-size: 12px;
+line-height: 14px;
 
+text-align: center;
+
+color: #AAA9BA;margin: 0;
+
+}
 
 @media(max-width: 1420px) {
     .header-menu {
@@ -1403,6 +1429,7 @@ h3.news-title {
 
     .slider-description-image {
         display: none;
+ 
     }
 
     .slider-description-text {
