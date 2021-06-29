@@ -42,7 +42,7 @@
     --first-default: #2B4D5D;
     --second-default: ;
     --third-default: #006285;
-   
+
     --first-accent: #F4B366;
     --second-accent: #F8F32B;
 
@@ -78,7 +78,7 @@ button {
 
 .header-menu {
     height: 75px;
-    padding-top:0px;
+    padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 129px;
     padding-right: 110px;
@@ -204,9 +204,112 @@ button {
 .header-dark .logo-icon {
     fill: var(--title-second);
 }
-.header-dark .logo-icon{
-    fill:   #006285;
+
+.header-dark .logo-icon {
+    fill: #006285;
 }
+
+/* * MEGAMENU * */
+
+.megamenu {
+
+    color: var(--background-color);
+}
+.close-menu {
+    color: var(--background-color);
+    fill:var(--background-color);
+}
+
+.offcanvas {
+    padding-left: 130px;
+    padding-right: 130px;
+    background-color: var(--third-default);
+    height: 100%;
+}
+
+.offcanvas-title {
+    font-family: 'San Francisco Pro Semibold';
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.13em;
+}
+hr:not([size]) {
+    height: 3px;
+}
+.offcanvas-title-line{
+    margin: 0;
+    opacity: 1;
+    color:var(--second-accent);
+    width: 60%;  
+    height: 3px;
+}
+
+.menu-item {
+
+    margin-top: 30px;
+}
+
+
+
+.menu-item:hover {
+    transition: all 0.45s;
+    background-size: 50% 3px;
+}
+.menu-item:hover{
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    color: var(--background-color);
+}
+.menu-item-title {
+    display: inline-block;
+    font-family: "San Francisco Pro Semibold";
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    margin-bottom: 23px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid var(--text-second);
+   
+}
+
+.menu-item-list {
+
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.menu-point {
+    background: linear-gradient(var(--second-accent), var(--second-accent)) left bottom;
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    font-family: "San Francisco Pro";
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    list-style: none;
+}
+
+.menu-point-link {
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+
+.menu-point-link:hover {
+    color: var(--background-color);
+}
+
+.menu-point:hover {
+    transition: all 0.45s;
+    background-size: 50% 3px;
+} 
+
+
+
+
+
+
 
 /* * ckfqlth*/
 
@@ -578,7 +681,7 @@ button {
     height: 48px;
     /* width: 209px;
      */
-     width: 100%;
+    width: 100%;
     background: #FFFFFF;
     /* Gray 5 */
 
@@ -611,7 +714,7 @@ button {
     border: none;
 }
 
-.select-payment{
+.select-payment {
     display: none;
 }
 
@@ -1412,6 +1515,9 @@ h3.news-title {
 
 }
 
+
+
+
 @media(max-width: 1420px) {
     .header-menu {
         padding-left: 30px;
@@ -1551,6 +1657,7 @@ h3.news-title {
     .select-tariff {
         display: flex;
     }
+
     .card-balance-payment {
         margin: 0 15px;
     }
@@ -1565,7 +1672,7 @@ h3.news-title {
         width: 25px;
     }
 
-    
+
 
     .balance-tab-button {
         /* padding: 5px; */
@@ -1592,9 +1699,3 @@ h3.news-title {
         padding-left: 10px;
     }
 }
-
-
-
-
-
-
