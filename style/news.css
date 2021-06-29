@@ -33,6 +33,10 @@ hr {
     margin-bottom: 22px;
 }
 
+.news{
+    margin-top: 0;
+}
+
 .navigation-list {
 
     padding-left: 0;
@@ -114,13 +118,16 @@ hr {
 }
 
 .news-text {
-    padding: 70px 100px;
+    padding: 70px 100px 50px 100px;
 }
 
 .news-paragraph {
     text-align: left;
-    margin-bottom: 50px;
+   
     font-family: 'San Francisco Pro';
     font-size: 24px;
     line-height: 37px;
+}
+.news-paragraph:not(:last-child){
+    margin-bottom: 50px;
 }
