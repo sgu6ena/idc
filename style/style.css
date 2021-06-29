@@ -1547,7 +1547,11 @@ h3.news-title {
 
 
 
-@media(max-width: 1200px) {
+@media(max-width: 1199px) {
+    .offcanvas{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .footer {
         padding-left: 15px;
         padding-right: 15px;
