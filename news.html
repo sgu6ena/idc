@@ -97,7 +97,8 @@
 
                         <span class="login-text">Войти</span>
                     </button>
-                    <button class="button-menu">
+                    <button class="button-menu" button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTopMenu"
+                        aria-controls="offcanvasTopMenu">
                         <svg class="icon-menu-alt" width="33px" height="33px">
                             <use xlink:href="image/sprite.svg#menu_alt_01"></use>
                         </svg>
@@ -107,6 +108,140 @@
             </div>
         </div>
     </header>
+
+
+<section class="megamenu">  
+    <div class="offcanvas offcanvas-top  offcanvas-top-menu " tabindex="-1" id="offcanvasTopMenu"
+        aria-labelledby="offcanvasTopMenuLabel">
+        <div class="container-fluid">
+            <div class="offcanvas-header offcanvas-header-menu">
+                <div class="offcanvas-title-wrapper"> 
+                    <h5 id="offcanvasTopLabel-menu" class="offcanvas-title">Меню сайта</h5>
+                    <hr class="offcanvas-title-line" height="3px">
+                </div>
+               
+                <button type="button" class="btn-close btn-close-white text-reset close-menu" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body offcanvas-body-menu">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="menu-item">
+                            <h3 class="menu-item-title">Мобильная связь</h3>
+                            <ul class="menu-item-list">
+                                <li class="menu-point  "><a href="#" class="menu-point-link">Тарифы</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Мобильный интернет</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Роуминг</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="menu-item">
+                            <h3 class="menu-item-title">Интернет и ТВ</h3>
+                            <ul class="menu-item-list">
+                                <li class="menu-point"><a href="#" class="menu-point-link">Домашний интернет</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Тарифы IPTV</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="menu-item">
+                            <h3 class="menu-item-title">Цифровое ТВ</h3>
+                            <ul class="menu-item-list">
+                                <li class="menu-point"><a href="#" class="menu-point-link">Тарифы DVB-C</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Тарифы DVB-T2</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="menu-item">
+                            <h3 class="menu-item-title">Проводная связь</h3>
+                            <ul class="menu-item-list">
+                                <li class="menu-point"><a href="#" class="menu-point-link">Тарифы</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Междугородная и международная
+                                        связь</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Телефония по “Оптике”</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="menu-item">
+                            <h3 class="menu-item-title">Акции и новинки</h3>
+                            <ul class="menu-item-list">
+                                <li class="menu-point"><a href="#" class="menu-point-link">Акции</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Новинки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="menu-item">
+                            <h3 class="menu-item-title">Подключение</h3>
+                            <ul class="menu-item-list">
+                                <li class="menu-point"><a href="#" class="menu-point-link">Мобильная связь</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Домашний интернет и ТВ</a>
+                                </li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">ЦТВ</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Проводная связь</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="menu-item">
+                            <h3 class="menu-item-title">Оплата</h3>
+                            <ul class="menu-item-list">
+                                <li class="menu-point"><a href="#" class="menu-point-link">Пополнение счета</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Денежный перевод</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="menu-item">
+                            <h3 class="menu-item-title">Смартфоны и гаджеты</h3>
+                            <ul class="menu-item-list">
+                                <li class="menu-point"><a href="#" class="menu-point-link">Смартфоны</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Планшеты</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">IPTV приставки</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Декодеры</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Акссесуары</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="menu-item">
+                            <h3 class="menu-item-title">Поддержка</h3>
+                            <ul class="menu-item-list row">
+                                <div class="col-lg-6 col-md-6 p-0"> 
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Мобильная связь и интернет</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Роуминг и межгород</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Домашний Интернет и IPTV</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Цифровое телевидение</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Домашний телефон</a></li>
+                            </div>
+                               <div class="col-lg-6 col-md-6 p-0">
+                                   <li class="menu-point"><a href="#" class="menu-point-link">Оплата счета и тарифы</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Телефонная справочная служба</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Сервисный центр</a></li>
+                                <li class="menu-point"><a href="#" class="menu-point-link">Полезная информация</a></li>
+                                </div>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      
 
     <hr>
 

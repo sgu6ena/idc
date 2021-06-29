@@ -29,6 +29,9 @@
 }
 
 hr {
+   
+    size: 1px;
+    height: 1px;
     margin-top: 22px;
     margin-bottom: 22px;
 }
