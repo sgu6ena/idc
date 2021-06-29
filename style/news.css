@@ -34,7 +34,8 @@ hr {
 }
 
 .news{
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation-list {
@@ -131,3 +132,17 @@ hr {
 .news-paragraph:not(:last-child){
     margin-bottom: 50px;
 }
+
+
+@media(max-width: 1199px) {
+    .news-image-wrapper{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 22px;
+    }
+    .news-text{
+        padding: 70px 0 50px;
+    }
+}
+
+
