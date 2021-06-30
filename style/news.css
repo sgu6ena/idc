@@ -184,7 +184,11 @@ hr {
     background: var(--background-color);
     border: 1px solid var(--text-second);
     border-radius: 32px;
-
+}
+.news-page-button-tag.active{
+    color: #fff;
+    background: var(--third-default);
+border:var(--third-default);
 }
 
 .news-page-item {
