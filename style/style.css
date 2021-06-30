@@ -54,6 +54,8 @@
 
     --swiper-theme-color: #F8F32B;
 
+
+    --gray-first
 }
 
 body {
@@ -197,14 +199,14 @@ button {
 .header-dark .header-nav-link,
 .header-dark .login-text {
 
-    color: var(--title-second);
+    color: #006285;
 }
 
 .header-dark .icon-search,
 .header-dark .icon-menu-alt,
 .header-dark .icon-user,
 .header-dark .logo-icon {
-    fill: var(--title-second);
+    fill: #006285;
 }
 
 .header-dark .logo-icon {
@@ -579,8 +581,8 @@ border-radius: 20px;
 }
 
 .tag {
-    font-family: 'Rubik';
-    font-size: 12px;
+    font-family: 'San Francisco Pro';
+    font-size: 14px;
     line-height: 16px;
     /* identical to box height, or 133% */
 

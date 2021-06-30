@@ -29,14 +29,14 @@
 }
 
 hr {
-   
+
     size: 1px;
     height: 1px;
     margin-top: 22px;
     margin-bottom: 22px;
 }
 
-.news{
+.news {
     margin: 0;
     padding: 0;
 }
@@ -55,13 +55,10 @@ hr {
     color: var(--text-second);
 }
 
-.navigations-item:not(:last-child):after {
-    font-family: 'San Francisco Pro';
-    content: ">";
-    letter-spacing: 0.5;
-    font-size: 18px;
-    margin-left: 10px;
-    margin-right: 10px;
+.navigation-next-icon{
+    margin-left: 17px;
+    margin-right: 17px;
+    fill: var(--text-second);
 }
 
 .navigations-link {
@@ -70,10 +67,11 @@ hr {
 }
 
 .navigations-link:hover {
+    
     color: var(--title-second);
 }
 
-.backward{
+.backward {
     display: inline-block;
     background: linear-gradient(var(--second-accent), var(--second-accent)) left bottom;
     padding-bottom: 5px;
@@ -81,7 +79,7 @@ hr {
     background-repeat: no-repeat;
 }
 
-.backward:hover{
+.backward:hover {
     transition: all 0.45s;
     background-size: 100% 3px;
 }
@@ -94,7 +92,7 @@ hr {
     line-height: 29px;
 }
 
-.backward-link:hover{
+.backward-link:hover {
     color: var(--title-second);
 }
 
@@ -141,27 +139,128 @@ hr {
     margin-top: 12px;
 
 }
+
 .news-paragraph {
     text-align: left;
-   
     font-family: 'San Francisco Pro';
     font-size: 24px;
     line-height: 37px;
 }
-.news-paragraph:not(:last-child){
+
+.news-paragraph:not(:last-child) {
     margin-bottom: 50px;
 }
 
 
+
+
+
+/* * News Page * */
+
+.news-page-title {
+    font-family: 'San Francisco Pro Semibold';
+
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: var(--title-second);
+}
+
+.news-page-buttons-wrapper {
+
+    margin-top: 11px;
+    margin-bottom: -22px;
+    /* max-width: 800px; */
+}
+
+.news-page-button-tag {
+    font-family: 'San Francisco Pro';
+
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--title-second);
+    padding: 8px 16px;
+    margin: 11px 4px;
+    background: var(--background-color);
+    border: 1px solid var(--text-second);
+    border-radius: 32px;
+
+}
+
+.news-page-item {
+    padding: 50px;
+    border-bottom: 1px solid #D1D0D0;
+}
+
+.news-page-item-title {
+    margin-bottom: 25px;
+    font-family: 'San Francisco Pro Bold';
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    color: var(--title-second);
+}
+
+.news-page-item-text {
+    font-family: 'San Francisco Pro';
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--text-second);
+    margin-bottom: 25px;
+}
+
+.news-page-paginations{
+    margin: 45px;
+}
+
+.news-page-buttons-nav{
+    height: 32px;
+    width: 32px;
+    border-radius:50%;
+    border: none;
+    background-color:var(--third-default);
+}
+.news-page-buttons-nav.disabled{
+   
+    background: rgba(0, 98, 133, 0.25);
+}
+
+.news-page-number{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.news-page-buttons-nav-icon {
+    fill: var(--background-color)
+}
+
+.news-page-next{
+    padding-left: 1px;
+}
+.news-page-prev{
+    padding-right: 1px;
+}
+
+.news-page-number{
+    font-family: 'San Francisco Pro';
+
+font-size: 14px;
+line-height: 16px;
+color: var(--title-second);
+
+
+}
+
+
 @media(max-width: 1199px) {
-    .news-image-wrapper{
+    .news-image-wrapper {
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom: 22px;
     }
-    .news-text{
+
+    .news-text {
         padding: 70px 0 50px;
     }
 }
-
-
