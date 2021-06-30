@@ -73,14 +73,28 @@ hr {
     color: var(--title-second);
 }
 
+.backward{
+    background: linear-gradient(var(--second-accent), var(--second-accent)) left bottom;
+    padding-bottom: 5px;
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+}
+
+.backward:hover{
+    transition: all 0.45s;
+    background-size: 170px 3px;
+}
+
 .backward-link {
     text-decoration: none;
     color: var(--title-second);
     font-family: 'San Francisco Pro';
-
     font-size: 24px;
     line-height: 29px;
+}
 
+.backward-link:hover{
+    color: var(--title-second);
 }
 
 .arrow-backward {
