@@ -103,9 +103,6 @@ hr {
     width: 100%;
 }
 
-.news-info {
-    margin-top: 12px;
-}
 
 .news-title {
 
@@ -118,13 +115,17 @@ hr {
 }
 
 .news-date {
-    margin-right: 140px;
+    margin-right: 20px;
 }
 
 .news-text {
     padding: 70px 100px 50px 100px;
 }
 
+.news-info {
+    margin-top: 12px;
+
+}
 .news-paragraph {
     text-align: left;
    
