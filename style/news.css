@@ -74,6 +74,7 @@ hr {
 }
 
 .backward{
+    display: inline-block;
     background: linear-gradient(var(--second-accent), var(--second-accent)) left bottom;
     padding-bottom: 5px;
     background-size: 0% 3px;
@@ -82,7 +83,7 @@ hr {
 
 .backward:hover{
     transition: all 0.45s;
-    background-size: 170px 3px;
+    background-size: 100% 3px;
 }
 
 .backward-link {
