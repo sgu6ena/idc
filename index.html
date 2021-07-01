@@ -91,7 +91,8 @@
                         </svg>
 
                     </button>
-                    <button class="button-login d-flex align-items-center">
+                    <button class="button-login d-flex align-items-center" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdropLogin">
                         <svg class="icon-user" width="22px" height="22px">
                             <use xlink:href="image/sprite.svg#user"></use>
                         </svg>
@@ -2870,10 +2871,84 @@
     </footer>
 
 
+    <!-- Modal -->
+    <div class="modal modal-login fade" id="staticBackdropLogin" tabindex="-1"
+        aria-labelledby="staticBackdropLoginLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-login">
+            <div class="modal-content modal-content-login">
+                <div class="modal-body login-body">
+
+                    <div class="login-logo">
+                        <div class="logo  d-flex justify-content-start">
+                            <svg class="logo-icon login-logo" width="62.55px" height="30px">
+                                <use xlink:href="image/sprite.svg#logo"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="modal-login-text">Введите номер телефона</div>
+                   
+                       
+                        <input type="text" class="input-login input-modal" placeholder="Номер телефона">
+
+               
+<!-- 
+                    <ul class="nav nav-tabs login-tabs d-flex justify-content-around" id="myTab" role="tablist">
+                        <li class="nav-item login-nav-item" role="presentation">
+                            <button class="nav-link tab-login active" id="login-pass-tab" data-bs-toggle="tab"
+                                data-bs-target="#login-pass" type="button" role="tab" aria-controls="home"
+                                aria-selected="true">Вход по паролю</button>
+                        </li>
+                        <li class="nav-item login-nav-item" role="presentation">
+                            <button class="nav-link tab-login" id="login-sms-tab" data-bs-toggle="tab"
+                                data-bs-target="#login-sms" type="button" role="tab" aria-controls="messages"
+                                aria-selected="false">Вход по SMS</button>
+                        </li>
+                    </ul> -->
+
+                    <!-- <div class="tab-content">
+                        <div class="tab-pane tab-pane-login active" id="login-pass" role="tabpanel"
+                            aria-labelledby="login-pass-tab">
+                            <div class="input-group-login d-flex align-items-center ">
+                                <div class="input-group-icon">
+                                    <svg class="icon-phone icon-input " width="24px" height="24px">
+                                        <use xlink:href="image/sprite.svg#phone"></use>
+                                    </svg>
+                                </div>
+                                <input type="text" class="input-login input-modal" placeholder="Номер телефона">
+
+                            </div>
+
+                            <div class="input-group-login d-flex align-items-center  ">
+                                <div class="input-group-icon"> <svg class="icon-lock icon-input " width="24px"
+                                        height="24px">
+                                        <use xlink:href="image/sprite.svg#lock"></use>
+                                    </svg></div>
+                                <input type="password" class="input-password input-modal" placeholder="Пароль">
+                                <butoon class="button-show open">
+                                    <svg class="icon-phone icon-input " width="24px" height="24px">
+                                        <use xlink:href="image/sprite.svg#show"></use>
+                                    </svg>
+                                </butoon>
+                            </div>
+                        </div>
+                        <div class="tab-pane  tab-pane-login" id="login-sms" role="tabpanel"
+                            aria-labelledby="login-sms-tab">смс</div> -->
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
     <!-- 
-      <svg class="icon">
-  <use xlink:href="#appstore"></use>
-</svg>
+
 <svg class="icon">
   <use xlink:href="#googleplay"></use>
 </svg>

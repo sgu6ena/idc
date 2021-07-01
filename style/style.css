@@ -68,16 +68,21 @@ button {
     cursor: pointer;
 }
 
+input,
+textarea {
+    outline: none;
+    border: none;
+    border: solid 1px #f2f2f2;
+}
+
 /* * HEADER * */
 .header.header-big-slider {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 80;
 }
-
-
 
 .header-menu {
     z-index: 120;
@@ -213,15 +218,133 @@ button {
     fill: #006285;
 }
 
+
+/* * LOGIN modal * */
+.modal-login {}
+
+.modal-dialog-login {
+    margin-right: 170px;
+    margin-top: 85px;
+    width: 300px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.modal-content-login {
+    padding: 54px 38px 57px 31px;
+    border: none;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+}
+
+/* .icon-input {
+    fill: #C4C2D9;
+} */
+
+.login-body {
+    padding: 0;
+}
+
+.login-logo {
+    fill: var(--third-default);
+}
+/* 
+    .login-tabs {
+        border: none;
+        margin-top: 40px;
+    }
+
+    .login-nav-item {
+
+        font-family: "San Francisco Pro Semibold";
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #006285;
+
+    }
+
+    .tab-login {   font-family: "San Francisco Pro Semibold";
+        font-size: 14px;
+    line-height: 17px;
+        padding: 0;
+        border: none;
+        margin: 0;
+    }
+
+    .nav-tabs .nav-link.active {
+    color: #006285;
+    border: violet 1px;
+    } 
+
+.tab-pane-login {
+
+    padding-top: 20px;
+}
+*/
+
+
+.modal-login-text{
+ 
+    font-family: "San Francisco Pro Bold";
+font-size: 14px;
+margin-top: 18px;
+margin-bottom: 18px;
+color: var(--title-second);
+}
+/* 
+.input-group-login {
+    padding: 8px 12px;
+    height: 32px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    background: #F8F9FA;
+    border: 1px solid #E4E7EB;
+    box-sizing: border-box;
+    border-radius: 8px; 
+} */
+
+.input-modal {
+    padding: 8px 12px;
+    height: 32px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    background: #F8F9FA;
+    border: 1px solid #E4E7EB;
+    box-sizing: border-box;
+    border-radius: 8px; 
+    font-family: 'Rubik', sans-serif;
+
+    padding: 8px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.input-modal::placeholder {
+
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+
+    color: #C4C2D9;
+
+}
+
+
+
 /* * MEGAMENU + search* */
 
 .megamenu {
 
     color: var(--background-color);
 }
+
 .close-menu {
     color: var(--background-color);
-    fill:var(--background-color);
+    fill: var(--background-color);
 }
 
 .offcanvas {
@@ -238,14 +361,16 @@ button {
     line-height: 43px;
     letter-spacing: 0.13em;
 }
+
 .megamenu hr:not([size]) {
     height: 3px;
 }
-.offcanvas-title-line{
+
+.offcanvas-title-line {
     margin: 0;
     opacity: 1;
-    color:var(--second-accent);
-    width: 60%;  
+    color: var(--second-accent);
+    width: 60%;
     height: 3px;
 }
 
@@ -260,11 +385,13 @@ button {
     transition: all 0.45s;
     background-size: 50% 3px;
 }
-.menu-item:hover{
+
+.menu-item:hover {
     background-size: 0% 3px;
     background-repeat: no-repeat;
     color: var(--background-color);
 }
+
 .menu-item-title {
     display: inline-block;
     font-family: "San Francisco Pro Semibold";
@@ -274,7 +401,7 @@ button {
     margin-bottom: 23px;
     padding-bottom: 7px;
     border-bottom: 2px solid var(--text-second);
-   
+
 }
 
 .menu-item-list {
@@ -308,22 +435,22 @@ button {
 .menu-point:hover {
     transition: all 0.45s;
     background-size: 50% 3px;
-} 
+}
 
-.input-search{
+.input-search {
     font-family: "San Francisco Pro";
     font-weight: 300;
     font-size: 14px;
-    line-height: 14px; 
-    padding:14px;
+    line-height: 14px;
+    padding: 14px;
     background: #F2F3F7;
-border: 1px solid #A5D3FA;
-box-sizing: border-box;
-border-radius: 20px;
+    border: 1px solid #A5D3FA;
+    box-sizing: border-box;
+    border-radius: 20px;
 }
 
-.input-search::placeholder{
-     
+.input-search::placeholder {
+
     color: var(--title-second);
     opacity: 0.5;
 }
@@ -370,8 +497,8 @@ border-radius: 20px;
 
 .big-slider .slide-4 {
     background: top no-repeat url(../image/extra-2.jpg);
-    background-size: cover ;
-  
+    background-size: cover;
+
 }
 
 .big-slider .slide-5 {
@@ -484,32 +611,32 @@ border-radius: 20px;
     margin-left: 10px;
 }
 
-.progress-bar{
-    background-color:#F2F3F7;
-     color: var(--second-accent); 
+.progress-bar {
+    background-color: #F2F3F7;
+    color: var(--second-accent);
     height: 3px;
     border: 1px transparent;
 }
 
-.progress-bar::-webkit-progress-bar { 
+.progress-bar::-webkit-progress-bar {
     -webkit-appearance: none;
-    width: 200px; 
+    width: 200px;
     height: 3px;
-    color: var(--second-accent); 
-    background-color:#F2F3F7; 
+    color: var(--second-accent);
+    background-color: #F2F3F7;
     border: 1px transparent;
 }
 
- 
+
 .progress-bar::-webkit-progress-value {
-    color: var(--second-accent); 
+    color: var(--second-accent);
     height: 3px;
-    background: var(--second-accent); 
+    background: var(--second-accent);
     border: 0px transparent;
 }
 
-.progress-bar::-moz-progress-bar{
-    color: var(--second-accent); 
+.progress-bar::-moz-progress-bar {
+    color: var(--second-accent);
     background: var(--second-accent);
 }
 
@@ -518,7 +645,7 @@ border-radius: 20px;
     height: 50px;
     width: 68px;
     background: transparent;
-    border: 3px ;
+    border: 3px;
 }
 
 .show-more:hover {
@@ -759,6 +886,11 @@ border-radius: 20px;
     display: none;
 }
 
+
+.page {
+    margin: 0;
+    padding: 0;
+} 
 
 /* * TARIFFS * */
 .chevron_right {
@@ -1030,7 +1162,7 @@ border-radius: 20px;
     margin-top: -5px;
 }
 
-.progress-bar-tarriff::-moz-progress-bar{
+.progress-bar-tarriff::-moz-progress-bar {
     border-radius: 5px;
     margin-left: -5px;
     margin-top: -5px;
@@ -1576,10 +1708,11 @@ h3.news-title {
 
 
 @media(max-width: 1199px) {
-    .offcanvas{
+    .offcanvas {
         padding-left: 0;
         padding-right: 0;
     }
+
     .footer {
         padding-left: 15px;
         padding-right: 15px;
