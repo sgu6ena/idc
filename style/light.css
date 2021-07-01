@@ -1,0 +1,42 @@
+.move{
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 500px;
+    font-family: 'San Francisco Pro';
+    font-size: 96px;
+    line-height: 115px;
+    color: transparent;
+    letter-spacing: 0.05em;
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #FFFFFF;
+    animation: moveup 10s infinite reverse linear;
+}
+
+.header{
+width: 100%;
+    position: absolute;top: 0;
+    left:0;
+    z-index: 25;
+}
+
+
+.footer{
+    position: unset;
+    z-index: 25;
+}
+.big-light{
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+@keyframes moveup {
+    from {
+
+    }
+  
+    to {
+        transform:  translateY(115px);
+    }
+    }
