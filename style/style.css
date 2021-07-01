@@ -267,14 +267,16 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 170px;
     margin-top: 85px;
     width: 267px;
+    height: 272px;
     background: #F2F3F7;
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
     border-radius: 5px;
 }
 
 .modal-content-login {
-    padding: 54px 38px 57px 31px;
+    padding: 54px 38px 30px 31px;
     border: none;
+    background: #F2F3F7;
 }
 
 .nav-tabs .nav-link {
@@ -293,11 +295,20 @@ input[type=number]::-webkit-outer-spin-button {
     font-family: "San Francisco Pro Bold";
     font-size: 14px;
     margin-top: 18px;
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
     color: var(--title-second);
 }
 
+.modal-login-text-descr {
+    margin-top: 3px;
+    font-family: "San Francisco Pro";
+    font-size: 12px;
+    line-height: 14px;
+    color: #7C7B8A;
+}
+
 .input-login-wrapper {
+    margin-top: 18px;
     margin-bottom: 18px;
     position: relative;
 }
@@ -306,7 +317,6 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     padding: 8px 12px;
     height: 32px;
-
     background: var(--background-color);
     border: 1px solid #D0D7DD;
     border-radius: 8px;
@@ -322,22 +332,22 @@ input[type=number]::-webkit-outer-spin-button {
     color: var(--text-second);
 }
 
-.input-login:focus {
+.input-modal:focus {
     border: 1px solid #006285;
 }
 
-.input-login:out-of-range {
+.input-modal:out-of-range {
     border: 1px solid red;
 }
 
-.input-login:out-of-range + .login-danger-text {
+.input-login:out-of-range+.login-danger-text {
     display: block;
 }
 
 
 .login-danger-text {
     display: none;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     top: 30px;
     font-family: "San Francisco Pro";
@@ -345,21 +355,45 @@ input[type=number]::-webkit-outer-spin-button {
     color: #FF0000;
 
 }
-.button-modal-login{
+
+.button-modal-login {
     width: 100%;
     background: var(--second-accent);
     border-radius: 8px;
-    border:none;
+    border: none;
     font-family: "San Francisco Pro";
-padding: 5px ;
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-color: #37355B;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #37355B;
+    margin-bottom: 18px;
 }
-.hidden{
-    display: none;
+
+.button-modal-login:disabled {
+    background: #C2C2C2;
+    color: #ffffff;
 }
+
+
+.button-modal-another-login {
+    font-family: "San Francisco Pro";
+    font-size: 14px;
+    line-height: 17px;
+    color: #37355B;
+    border:none;
+    background:transparent;
+}
+
+.button-modal-forgotten-password{
+    font-family: "San Francisco Pro";
+    font-size: 12px;
+    line-height: 14px;
+    color: #7C7B8A;
+    border:none;
+    background:transparent;
+}
+
 /* * MEGAMENU + search* */
 
 .megamenu {
@@ -1908,4 +1942,48 @@ h3.news-title {
         margin: 10px;
         padding-left: 10px;
     }
+}
+
+.scene {
+    /* width: 200px; */
+    height: 260px;
+    perspective: 600px;
+    border: none;
+}
+
+
+.card {
+    border: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    /* background: #F2F3F7; */
+    background: transparent;
+
+}
+
+.card__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+
+.card__face--front {
+    background: transparent;
+    /* background: #F2F3F7; */
+}
+
+.card__face--back {
+    background: #F2F3F7;
+
+    /* background:transparent; */
+    transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
 }

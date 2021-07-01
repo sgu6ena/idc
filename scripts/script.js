@@ -51,22 +51,6 @@ const balanceSlider = new Swiper('.slider-balance', {
         el: '.tariffs-swiper-pagination',
         type: 'bullets',       
     },
-    // watchOverflow: true,
-        // breakpoints: {
-
-        //     450:{
-        //         slidesPerView: 1,
-        //         spaceBetween:20,
-              
-        //     },
-
-        //     820:{
-        //         watchOverflow: true,
-        //         slidesPerView: 2,
-        //         spaceBetween:20,
-        //     },
-          
-        // }, 
 });
 
 
@@ -155,24 +139,20 @@ const shopSlider = new Swiper('.shop-slider', {
 
             320:{
                 slidesPerView: 1.1, 
-                // slidesPerColumn:1,
+
                 spaceBetween:20,
               
             },
 
             770:{ 
-                // slidesPerColumn:1,
+
                 slidesPerView: 2.2,
                 spaceBetween:30,
             },
             
-            1100: {
-                
+            1100: {             
                 slidesPerView: 3,
-                // this.destroy(),
                 watchOverflow: true,
-                // slidesPerView: 4,
-                // slidesPerColumn:2,
                 spaceBetween: 50
             },
           
@@ -191,7 +171,7 @@ const newsSlider = new Swiper('.news-slider', {
 
             320:{
                 slidesPerView: 1,
-              
+
             },
 
             770:{
@@ -230,6 +210,24 @@ selectPayment.onchange = () => {
     document.querySelector(`#${value}`).classList.add('active');
     document.querySelector(`#${value}`).classList.add('show');
     }
+
+
+         // флип логина
+const card = document.querySelector('.card');
+const buttonModalLoginNext = document.querySelector('.button-modal-login-next');
+buttonModalLoginNext.addEventListener( 'click', ()=> {
+    card.classList.toggle('is-flipped');
+});
+
+const buttonModalAnotherLogin = document.querySelector('.button-modal-another-login');
+
+buttonModalAnotherLogin.addEventListener( 'click', ()=> {
+    card.classList.toggle('is-flipped');
+});
+
+
+
+
 
 
 // if (document.documentElement.scrollWidth > 1100) {
