@@ -75,6 +75,13 @@ textarea {
     border: solid 1px #f2f2f2;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
 /* * HEADER * */
 .header.header-big-slider {
     position: absolute;
@@ -218,38 +225,6 @@ textarea {
     fill: #006285;
 }
 
-
-/* * LOGIN modal * */
-.modal-login {}
-
-.modal-dialog-login {
-    margin-right: 170px;
-    margin-top: 85px;
-    width: 300px;
-    background: #FFFFFF;
-    border-radius: 5px;
-}
-
-.modal-content-login {
-    padding: 54px 38px 57px 31px;
-    border: none;
-}
-
-.nav-tabs .nav-link {
-    border: none;
-}
-
-/* .icon-input {
-    fill: #C4C2D9;
-} */
-
-.login-body {
-    padding: 0;
-}
-
-.login-logo {
-    fill: var(--third-default);
-}
 /* 
     .login-tabs {
         border: none;
@@ -285,56 +260,105 @@ textarea {
 }
 */
 
+/* * LOGIN modal * */
+.modal-login {}
 
-.modal-login-text{
- 
-    font-family: "San Francisco Pro Bold";
-font-size: 14px;
-margin-top: 18px;
-margin-bottom: 18px;
-color: var(--title-second);
+.modal-dialog-login {
+    margin-right: 170px;
+    margin-top: 85px;
+    width: 267px;
+    background: #F2F3F7;
+    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    border-radius: 5px;
 }
-/* 
-.input-group-login {
-    padding: 8px 12px;
-    height: 32px;
-    margin-top: 18px;
-    margin-bottom: 18px;
-    background: #F8F9FA;
-    border: 1px solid #E4E7EB;
-    box-sizing: border-box;
-    border-radius: 8px; 
-} */
 
-.input-modal {
-    padding: 8px 12px;
-    height: 32px;
-    margin-top: 18px;
-    margin-bottom: 18px;
-    background: #F8F9FA;
-    border: 1px solid #E4E7EB;
-    box-sizing: border-box;
-    border-radius: 8px; 
-    font-family: 'Rubik', sans-serif;
-
-    padding: 8px;
-    width: 100%;
-    background-color: transparent;
+.modal-content-login {
+    padding: 54px 38px 57px 31px;
     border: none;
 }
 
-.input-modal::placeholder {
+.nav-tabs .nav-link {
+    border: none;
+}
 
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
+.login-body {
+    padding: 0;
+}
 
-    color: #C4C2D9;
+.login-logo {
+    fill: var(--third-default);
+}
 
+.modal-login-text {
+    font-family: "San Francisco Pro Bold";
+    font-size: 14px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    color: var(--title-second);
+}
+
+.input-login-wrapper {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.input-modal {
+    width: 100%;
+    padding: 8px 12px;
+    height: 32px;
+
+    background: var(--background-color);
+    border: 1px solid #D0D7DD;
+    border-radius: 8px;
+    font-family: "San Francisco Pro";
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-second);
+    margin-bottom: 0;
+}
+
+.input-login::placeholder {
+    color: var(--text-second);
+}
+
+.input-login:focus {
+    border: 1px solid #006285;
+}
+
+.input-login:out-of-range {
+    border: 1px solid red;
+}
+
+.input-login:out-of-range + .login-danger-text {
+    display: block;
 }
 
 
+.login-danger-text {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    font-family: "San Francisco Pro";
+    font-size: 10px;
+    color: #FF0000;
 
+}
+.button-modal-login{
+    width: 100%;
+    background: var(--second-accent);
+    border-radius: 8px;
+    border:none;
+    font-family: "San Francisco Pro";
+padding: 5px ;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: #37355B;
+}
+.hidden{
+    display: none;
+}
 /* * MEGAMENU + search* */
 
 .megamenu {
@@ -890,7 +914,7 @@ color: var(--title-second);
 .page {
     margin: 0;
     padding: 0;
-} 
+}
 
 /* * TARIFFS * */
 .chevron_right {
