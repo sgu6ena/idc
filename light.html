@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDC | Интерднестрком</title>
+
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap-grid.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/light.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer>
+    </script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script> -->
+
+    <!-- <script src="scripts/script.js" defer></script> -->
+
+</head>
+
+<body>
+
+
+
+    <header class="header">
+        <div class="container-fluid ">
+            <div class="row header-menu d-flex justify-content-between align-items-center">
+                <div class="  col-lg-1 col-md-1 col-sm-4 col-3 d-flex justify-content-start">
+                    <div class="logo">
+                        <svg class="logo-icon" width="74.52px" height="42px">
+                            <use xlink:href="image/sprite.svg#logo"></use>
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-auto d-none header-nav-list">
+                    <ul class="d-flex justify-content-center align-items-center ">
+                        <li class="header-nav-item">
+                            <a href="#" class="header-nav-link">Для Вас</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#" class="header-nav-link">Для бизнеса</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#" class="header-nav-link">Интернет - магазин</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <div class="dropdown">
+                                <button class="header-nav-link all-sites-dropdown-toogle dropdown-toggle" type="button"
+                                    id="allSitesButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Все сайты
+                                </button>
+                                <ul class="dropdown-menu all-sites-dropdown" aria-labelledby="allSitesButton">
+                                    <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item"
+                                            href="#">Приложения</a></li>
+                                    <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item"
+                                            href="https://portal.idc.md/">Онлайн-кинотеатр <br>PORTAL</a></li>
+                                    <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item"
+                                            href="#">Сервисный центр</a></li>
+                                    <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item"
+                                            href="#">Видеонаблюдение</a></li>
+                                    <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item"
+                                            href="#">Музей</a></li>
+                                    <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item"
+                                            href="#">Карта покрытия</a></li>
+                                </ul>
+                            </div>
+
+
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-2  col-sm-8 col-9 d-flex justify-content-end  align-items-center">
+                    <button class="button-search" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTopSearch"
+                        aria-controls="offcanvasTopSearch">
+                        <svg class="icon-search " width="22px" height="22px">
+                            <use xlink:href="image/sprite.svg#search"></use>
+                        </svg>
+
+                    </button>
+                    <button class="button-login d-flex align-items-center">
+                        <svg class="icon-user" width="22px" height="22px">
+                            <use xlink:href="image/sprite.svg#user"></use>
+                        </svg>
+
+                        <span class="login-text">Войти</span>
+                    </button>
+                    <button class="button-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTopMenu"
+                        aria-controls="offcanvasTopMenu">
+                        <svg class="icon-menu-alt" width="33px" height="33px">
+                            <use xlink:href="image/sprite.svg#menu_alt_01"></use>
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="megamenu">
+        <div class="offcanvas offcanvas-top  offcanvas-top-menu " tabindex="-1" id="offcanvasTopMenu"
+            aria-labelledby="offcanvasTopMenuLabel">
+            <div class="container-fluid">
+                <div class="offcanvas-header offcanvas-header-menu">
+                    <div class="offcanvas-title-wrapper">
+                        <h5 id="offcanvasTopLabel-menu" class="offcanvas-title">Меню сайта</h5>
+                        <hr class="offcanvas-title-line" height="3px">
+                    </div>
+
+                    <button type="button" class="btn-close btn-close-white text-reset close-menu"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body offcanvas-body-menu">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="menu-item">
+                                <h3 class="menu-item-title">Мобильная связь</h3>
+                                <ul class="menu-item-list">
+                                    <li class="menu-point  "><a href="#" class="menu-point-link">Тарифы</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Мобильный интернет</a>
+                                    </li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Роуминг</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="menu-item">
+                                <h3 class="menu-item-title">Интернет и ТВ</h3>
+                                <ul class="menu-item-list">
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Домашний интернет</a>
+                                    </li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Тарифы IPTV</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="menu-item">
+                                <h3 class="menu-item-title">Цифровое ТВ</h3>
+                                <ul class="menu-item-list">
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Тарифы DVB-C</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Тарифы DVB-T2</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="menu-item">
+                                <h3 class="menu-item-title">Проводная связь</h3>
+                                <ul class="menu-item-list">
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Тарифы</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Междугородная и
+                                            международная
+                                            связь</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Телефония по “Оптике”</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="menu-item">
+                                <h3 class="menu-item-title">Акции и новинки</h3>
+                                <ul class="menu-item-list">
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Акции</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Новинки</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="menu-item">
+                                <h3 class="menu-item-title">Подключение</h3>
+                                <ul class="menu-item-list">
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Мобильная связь</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Домашний интернет и
+                                            ТВ</a>
+                                    </li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">ЦТВ</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Проводная связь</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="menu-item">
+                                <h3 class="menu-item-title">Оплата</h3>
+                                <ul class="menu-item-list">
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Пополнение счета</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Денежный перевод</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="menu-item">
+                                <h3 class="menu-item-title">Смартфоны и гаджеты</h3>
+                                <ul class="menu-item-list">
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Смартфоны</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Планшеты</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">IPTV приставки</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Декодеры</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Акссесуары</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="menu-item">
+                                <h3 class="menu-item-title">Поддержка</h3>
+                                <ul class="menu-item-list row">
+                                    <div class="col-lg-6 col-md-6 p-0">
+                                        <li class="menu-point"><a href="#" class="menu-point-link">Мобильная связь и
+                                                интернет</a></li>
+                                        <li class="menu-point"><a href="#" class="menu-point-link">Роуминг и
+                                                межгород</a></li>
+                                        <li class="menu-point"><a href="#" class="menu-point-link">Домашний Интернет и
+                                                IPTV</a></li>
+                                        <li class="menu-point"><a href="#" class="menu-point-link">Цифровое
+                                                телевидение</a></li>
+                                        <li class="menu-point"><a href="#" class="menu-point-link">Домашний телефон</a>
+                                        </li>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 p-0">
+                                        <li class="menu-point"><a href="#" class="menu-point-link">Оплата счета и
+                                                тарифы</a></li>
+                                        <li class="menu-point"><a href="#" class="menu-point-link">Телефонная справочная
+                                                служба</a></li>
+                                        <li class="menu-point"><a href="#" class="menu-point-link">Сервисный центр</a>
+                                        </li>
+                                        <li class="menu-point"><a href="#" class="menu-point-link">Полезная
+                                                информация</a></li>
+                                    </div>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="megamenu search-menu">
+        <div class="offcanvas offcanvas-top  offcanvas-top-menu " tabindex="-1" id="offcanvasTopSearch"
+            aria-labelledby="offcanvasTopSearchLabel">
+            <div class="container-fluid">
+                <div class="offcanvas-header offcanvas-header-menu">
+                    <div class="offcanvas-title-wrapper">
+                        <h5 id="offcanvasTopLabel-menu" class="offcanvas-title">Поиск</h5>
+                        <hr class="offcanvas-title-line" height="3px">
+                    </div>
+
+                    <button type="button" class="btn-close btn-close-white text-reset close-menu"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body offcanvas-body-menu">
+                    <div class="row">
+                        <input type="text" class="input-search" placeholder="Введите запрос">
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="menu-item">
+                            <h3 class="menu-item-title">Результат поиска</h3>
+                            <ul class="menu-item-list row">
+                                <div class="col-lg-6 col-md-6 p-0">
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Тарифы</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Мобильный интернет</a>
+                                    </li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Роуминг</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
+
+                                </div>
+                                <div class="col-lg-6 col-md-6 p-0">
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Тарифы</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Мобильный интернет</a>
+                                    </li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Роуминг</a></li>
+                                    <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <div class="move d-flex">
+            ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>
+        </div>
+    </section>
+
+    <section class="big-light ">
+<img src="image/active-15.jpg" alt="" class="img-light">
+    </section>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div class="col footer-contacts">
+                    <h3 class="footer-title">
+                        Контактная информация
+                    </h3>
+                    <div class="contacts-info">
+                        <p class="contacts-text"> E-mail: <a href="mailto:idc@idknet.com"
+                                class="header-link">idc@idknet.com</a></p>
+                        <p class="contacts-text"> Адрес: ул.Восстания 41, Тирасполь,
+                            3300 Молдова</hr>
+                            <p class="contacts-text"> <a href="tel:1198" class="header-link">1198</a> - единый номер
+                                информационной и
+                                технической поддержки абонентов IDC
+                                по всем услугам связи</p>
+                            <p class="contacts-text"> <a href="tel:199" class="header-link">199</a> - телефонная
+                                справочная служба</p>
+                    </div>
+                </div>
+                <div class="col company">
+                    <h3 class="footer-title">
+                        Компания
+                    </h3>
+                    <div class="footer-company">
+                        <ul class="header-list">
+                            <li class="header-list-item">
+                                <a href="#" class="header-link">О компании</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a href="#" class="header-link">Новости</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a href="#" class="  header-link">Технические работы</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a href="#" class="header-link">Контакты</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a href="#" class=" header-link">Вакансии в IDC</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a href="#" class=" header-link">Форум</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col footer-tariffs">
+                    <h3 class="footer-title">
+                        Тарифы
+                    </h3>
+                    <ul class="header-list">
+                        <li class="header-list-item">
+                            <a href="#" class=" header-link">Мобильная связь</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#" class=" header-link">Домашний интернет и IPTV </a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#" class=" header-link">Телевидение</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#" class=" header-link">Проводная связь</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#" class="header-link">Форум</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col ">
+                    <h3 class="footer-title">
+                        Поддержка
+                    </h3>
+                    <ul class="header-list">
+                        <li class="header-list-item">
+                            <a href="#" class=" header-link">Мобильная связь и интернет</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#" class=" header-link">Роуминг и межгород</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#" class=" header-link">Домашний интернет и IPTV</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#" class=" header-link">Цифровое телевидение </a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#" class="header-link">Домашний телефон</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#" class=" header-link">Оплата счета и тарифы </a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#" class=" header-link">Телефонная справочная служба</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#" class=" header-link">Сервисный центр</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#" class="header-link">Полезная информация</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="footer-title footer-my-idc">Мой IDC</h3>
+
+                    <div class="store-wrapper">
+                        <a href="https://play.google.com/store/apps/details?id=md.idc.my&hl=ru" class="store-link">
+                            <img src="image/google-play.png" alt="" class="store-img">
+                        </a>
+                        <a href="https://apps.apple.com/us/app/%D0%BC%D0%BE%D0%B9-idc/id1298445996" class="store-link">
+                            <img src="image/appstore.png" alt="" class="store-img">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr class="footer-line">
+        <div class="footer-social">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 social d-flex align-items-center justify-content-lg-start">
+                    <div class="social-icon-wrapper ">
+                        <a href="#" class="social-link"></a>
+                        <svg class="social-icon" width="29px" height="29px">
+                            <use xlink:href="image/sprite.svg#instagram"></use>
+                        </svg>
+
+                    </div>
+                    <div class="social-icon-wrapper">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" width="29px" height="29px">
+                                <use xlink:href="image/sprite.svg#ok"></use>
+                            </svg>
+                        </a>
+
+                    </div>
+                    <div class="social-icon-wrapper">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" width="29px" height="29px">
+                                <use xlink:href="image/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="social-icon-wrapper">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" width="29px" height="29px">
+                                <use xlink:href="image/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                    <div class="social-icon-wrapper">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" width="29px" height="29px">
+                                <use xlink:href="image/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                    <div class="social-icon-wrapper">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" width="29px" height="29px">
+                                <use xlink:href="image/sprite.svg#messenger"></use>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-4">
+                    <p class="copyright">© 2021 СЗАО «Интерднестрком».</p>
+                    <p class="copyright"> Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
