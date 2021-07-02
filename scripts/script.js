@@ -220,20 +220,25 @@ const loginBackward = document.querySelectorAll('.login-backward');
 const loginButtonBackward = document.querySelector('.login-button-backward');
 const inputLogin = document.querySelector('.input-login');
 const modalLoginTextDescr = document.querySelector('.modal-login-text-descr');
+
+
 let   maskPhone =  Inputmask(`0(779) 999-99`, { 
     "oncomplete": () => {  
-        buttonModalLoginNext.disabled = false; 
+        buttonModalLoginNext.disabled = false;
+        console.log(inputLogin.value); 
     }, 
+    
     'autoUnmask': true 
 }).mask(document.querySelector("#phone"));
 
 
 
 inputLogin.addEventListener('keyup', () => {
-
-
-        modalLoginTextDescr.innerHTML = `для номера ${inputLogin.value} `
-
+    if (inputLogin.value.length<6) {
+        buttonModalLoginNext.disabled = true;
+    } else { 
+        modalLoginTextDescr.innerHTML = `для номера 077${inputLogin.value} `
+    }
 })
 
 
@@ -246,6 +251,7 @@ buttonModalLoginNext.addEventListener('click', () => {
 });
 
 loginBackward.forEach(item => item.addEventListener('click', () => {
+    buttonModalLoginNext.disabled = false;
     card.classList.toggle('is-flipped');
     loginButtonBackward.disabled = true;
 }));
