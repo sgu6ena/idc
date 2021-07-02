@@ -229,9 +229,11 @@ inputLogin.addEventListener('keyup',()=>{
 })
 
 
+
 buttonModalLoginNext.addEventListener( 'click', ()=> {
     loginButtonBackward.disabled = false;
     card.classList.toggle('is-flipped');
+    buttonModalLoginNext.disabled=true;
     
 });
 
