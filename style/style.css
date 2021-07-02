@@ -1972,7 +1972,7 @@ h3.news-title {
     position: relative;
     transition: transform 1s;
     transform-style: preserve-3d;
-    /* background: #F2F3F7; */
+    background: #F2F3F7;
     background: transparent;
 
 }
@@ -1986,14 +1986,13 @@ h3.news-title {
 
 
 .card__face--front {
-    background: transparent;
-    /* background: #F2F3F7; */
+    background: #F2F3F7;
+  
 }
 
 .card__face--back {
     background: #F2F3F7;
 
-    /* background:transparent; */
     transform: rotateY(180deg);
 }
 
