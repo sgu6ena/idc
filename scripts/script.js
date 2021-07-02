@@ -222,7 +222,7 @@ const modalLoginTextDescr = document.querySelector('.modal-login-text-descr')
 
 inputLogin.addEventListener('keyup',()=>{
     if (inputLogin.value >69999999 && inputLogin.value <80000000 ){
-        console.log(inputLogin.value);
+      
         buttonModalLoginNext.disabled=false;
         modalLoginTextDescr.innerHTML=`для номера ${inputLogin.value} ` 
 }
