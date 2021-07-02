@@ -28,7 +28,7 @@
         defer>
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
-    <script src="scripts/inputmask.phone.extensions.js" ></script>
+    <script src="scripts/inputmask.phone.extensions.js"></script>
 
     <script src="scripts/script.js" defer></script>
 
@@ -702,7 +702,7 @@
                     <svg class="chevron_right" width="43px" height="43px">
                         <use xlink:href="image/sprite.svg#chevron_right"></use>
                     </svg>
-                   
+
                 </div>
                 <!-- /.tariffs-title -->
                 <div class="tariffs-options tariffs-icon">
@@ -2877,24 +2877,97 @@
 
 
     <!-- Modal -->
-    <div class="modal modal-login fade" id="staticBackdropLogin" tabindex="-1"
+    <div class="modal modal-login fade " id="staticBackdropLogin" tabindex="-1"
         aria-labelledby="staticBackdropLoginLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-login">
-            
+        <div class="modal-dialog show active modal-dialog-login">
+
+            <!-- <div class="modal-content modal-content-login">
+        <div class="modal-login-buttons d-flex justify-content-between">
+            <button type="button" class=" login-button-backward login-backward d-flex  justify-content-center align-items-center" disabled >
+                <svg class="icon-backward" height="12px" width="12px">
+                    <use xlink:href="image/sprite.svg#login-backward" ></use>
+                </svg>
+            </button>
+            <button type="button" class="login-button-close d-flex justify-content-center align-items-center" data-bs-dismiss="modal"
+                aria-label="Close">
+                <svg class="icon-close" height="12px" width="12px">
+                    <use xlink:href="image/sprite.svg#login-close"></use>
+                </svg>
+            </button>
+            </div>
+        <div class="modal-body login-body">
+            <div class="login-logo d-flex justify-content-between">
+                <div class="logo d-flex justify-content-start">
+                    <svg class="logo-icon login-logo" width="62.55px" height="30px">
+                        <use xlink:href="image/sprite.svg#logo"></use>
+                    </svg>
+                </div>
+
+
+            </div>
+
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">
+                        <div class="modal-login-text">Введите номер телефона</div>
+                        <div class="input-login-wrapper">
+                            <input type="text" name="phone" id="phone"  class="input-login input-modal" placeholder="0(77_) ___-__">
+                            <span class="login-danger-text ">неверный номер</span>
+                        </div>
+
+                        <button
+                            class="button-modal-login button-modal-login-next d-flex justify-content-center align-items-center " disabled>
+                            Далее
+                        </button>
+
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="modal-login-text">Введите пароль</div>
+                        <div class="modal-login-text-descr">
+                            для номера 771 25545
+                        </div>
+                        <div class="input-login-wrapper">
+                            <input type="password" class="input-password input-modal"
+                                placeholder="Введите пароль">
+                            <span class="login-danger-text ">неверный пароль</span>
+                        </div>
+
+                        <button
+                            class="button-modal-login button-next d-flex justify-content-center align-items-center ">
+                            Войти
+                        </button>
+                        <button class="button-modal-another-login login-backward">
+                            Войти с другим логином
+                        </button>
+                        <button class="button-modal-forgotten-password ">
+                            Забыли пароль
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div> -->
+
             <div class="modal-content modal-content-login">
                 <div class="modal-login-buttons d-flex justify-content-between">
-                    <button type="button" class=" login-button-backward login-backward d-flex  justify-content-center align-items-center" disabled >
+                    <button type="button"
+                        class=" login-button-backward login-backward d-flex  justify-content-center align-items-center"
+                        disabled>
                         <svg class="icon-backward" height="12px" width="12px">
-                            <use xlink:href="image/sprite.svg#login-backward" ></use>
+                            <use xlink:href="image/sprite.svg#login-backward"></use>
                         </svg>
                     </button>
-                    <button type="button" class="login-button-close d-flex justify-content-center align-items-center" data-bs-dismiss="modal"
-                        aria-label="Close">
+                    <button type="button" class="login-button-close d-flex justify-content-center align-items-center"
+                        data-bs-dismiss="modal" aria-label="Close">
                         <svg class="icon-close" height="12px" width="12px">
                             <use xlink:href="image/sprite.svg#login-close"></use>
                         </svg>
                     </button>
-                    </div>
+                </div>
                 <div class="modal-body login-body">
                     <div class="login-logo d-flex justify-content-between">
                         <div class="logo d-flex justify-content-start">
@@ -2908,36 +2981,27 @@
 
                     <div class="scene">
                         <div class="card">
-                            <div class="card__face card__face--front">
-
-
+                            <div class="card-login ">
                                 <div class="modal-login-text">Введите номер телефона</div>
-
                                 <div class="input-login-wrapper">
-
-                                    <input type="text" name="phone" id="phone"  class="input-login input-modal" placeholder="0(77_) ___-__">
-<!-- 
-                                         <script>
-                                            (function(){
-                                              Inputmask(`0(77[4|5|7|8]) 999-99`).mask(document.querySelector("#phone"));
-                                            })();
-                                            </script> -->
-
+                                    <input type="text" name="phone" id="phone" class="input-login input-modal"
+                                        placeholder="0(77_) ___-__">
                                     <span class="login-danger-text ">неверный номер</span>
                                 </div>
 
                                 <button
-                                    class="button-modal-login button-modal-login-next d-flex justify-content-center align-items-center " disabled>
+                                    class="button-modal-login button-modal-login-next d-flex justify-content-center align-items-center "
+                                    disabled>
                                     Далее
                                 </button>
 
-
                             </div>
-                            <div class="card__face card__face--back">
+                            <div class="card-pass hidden">
                                 <div class="modal-login-text">Введите пароль</div>
-                                <div class="modal-login-text-descr">
-                                    для номера 771 25545
+                                <div class="modal-login-text-descr ">
+
                                 </div>
+
                                 <div class="input-login-wrapper">
                                     <input type="password" class="input-password input-modal"
                                         placeholder="Введите пароль">
@@ -2951,11 +3015,30 @@
                                 <button class="button-modal-another-login login-backward">
                                     Войти с другим логином
                                 </button>
+
                                 <button class="button-modal-forgotten-password ">
                                     Забыли пароль
                                 </button>
+                            </div>
+                            <div class="card-sms  hidden">
+                                <div class="modal-login-text">Введите пароль из смс</div>
+                                <div class="modal-login-text-descr modal-login-text-descr-sms"></div>
+                                <div class="input-login-wrapper">
+                                    <input type="password" class="input-password input-modal"
+                                        placeholder="Введите пароль" maxlength="4">
+                                    <span class="login-danger-text">неверный пароль</span>
+                                </div>
+
+                                <button class="button-modal-login button-next d-flex justify-content-center align-items-center ">
+                                    Войти
+                                </button>
+                                <button class="button-modal-another-login login-backward">
+                                    Войти с другим логином
+                                </button>
+
 
                             </div>
+
                         </div>
                     </div>
 
@@ -2963,6 +3046,12 @@
                 </div>
 
             </div>
+
+
+
+
+
+
         </div>
 
 

@@ -411,6 +411,46 @@ input[type=number]::-webkit-outer-spin-button {
     background: transparent;
 }
 
+
+.card {
+    border: none;
+    width: 100%;
+    height: 220px;
+    background: #F2F3F7;
+}
+
+
+.card-login{
+    -webkit-animation: fadeIn 0.8s;
+    animation: fadeIn 0.8s;
+}
+
+.card-pass{
+    -webkit-animation: fadeIn 0.8s;
+    animation: fadeIn 0.8s;
+}
+
+.card-sms{
+    -webkit-animation: fadeIn 0.8s;
+    animation: fadeIn 0.8s;
+}
+
+.hidden{ 
+ 
+    display: none;
+   
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
 /* * MEGAMENU + search* */
 
 .megamenu {
@@ -1811,7 +1851,6 @@ h3.news-title {
 
 }
 
-
 @media(max-width:767px) {
 
     .big-slider {
@@ -1961,45 +2000,4 @@ h3.news-title {
     }
 }
 
-.scene {
-    /* width: 200px; */
-    height: 260px;
-    perspective: 600px;
-    border: none;
-}
 
-
-.card {
-    border: none;
-    width: 100%;
-    height: 200px;
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    background: #F2F3F7;
-    /* background: transparent; */
-
-}
-
-.card__face {
-    position: absolute;
-    height: 200px;
-    width: 100%;
-    backface-visibility: hidden;
-}
-
-
-.card__face--front {
-    background: #F2F3F7;
-
-}
-
-.card__face--back {
-    background: #F2F3F7;
-
-    transform: rotateY(180deg);
-}
-
-.card.is-flipped {
-    transform: rotateY(180deg);
-}

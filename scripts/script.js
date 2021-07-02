@@ -53,9 +53,6 @@ const balanceSlider = new Swiper('.slider-balance', {
     },
 });
 
-
-
-
 const tarrifsOptions = {
     slidesPerView: 1,
     pagination: {
@@ -188,7 +185,7 @@ const newsSlider = new Swiper('.news-slider', {
     },
 });
 
-//* * Табы
+//* * Табы тарифов
 
 const selectTariff = document.querySelector('#select-tariff');
 const tabsTariff = document.querySelectorAll('.tab-tariff');
@@ -200,7 +197,7 @@ selectTariff.onchange = () => {
     document.querySelector(`#${value}`).classList.add('show');
 }
 
-
+//* * табы оплаты
 const selectPayment = document.querySelector('#select-payment');
 const tabsPayment = document.querySelectorAll('.tab-payment');
 
@@ -212,14 +209,23 @@ selectPayment.onchange = () => {
 }
 
 
-// флип логина
+//* * флип логина
 
-const card = document.querySelector('.card');
+// const card = document.querySelector('.card');
 const buttonModalLoginNext = document.querySelector('.button-modal-login-next');
 const loginBackward = document.querySelectorAll('.login-backward');
+
+const buttonModalForgottenPassword = document.querySelector('.button-modal-forgotten-password');
 const loginButtonBackward = document.querySelector('.login-button-backward');
 const inputLogin = document.querySelector('.input-login');
 const modalLoginTextDescr = document.querySelector('.modal-login-text-descr');
+const modalLoginTextDescrSMS = document.querySelector('.modal-login-text-descr-sms');
+
+const cardLogin = document.querySelector('.card-login')
+
+const cardPassword = document.querySelector('.card-pass')
+
+const cardSMS = document.querySelector('.card-sms')
 
 
 let   maskPhone =  Inputmask(`0(779) 999-99`, { 
@@ -237,22 +243,34 @@ inputLogin.addEventListener('keyup', () => {
     if (inputLogin.value.length<6) {
         buttonModalLoginNext.disabled = true;
     } else { 
-        modalLoginTextDescr.innerHTML = `для номера 077${inputLogin.value} `
+        modalLoginTextDescr.innerHTML = `для номера 077${inputLogin.value}`;
+
     }
 })
 
 
 
 buttonModalLoginNext.addEventListener('click', () => {
+    cardLogin.classList.toggle('hidden');
+    cardPassword.classList.toggle('hidden');
     loginButtonBackward.disabled = false;
-    card.classList.toggle('is-flipped');
     buttonModalLoginNext.disabled = true;
+});
 
+
+buttonModalForgottenPassword.addEventListener('click', () => {
+    cardSMS.classList.toggle('hidden');
+    cardPassword.classList.toggle('hidden');
+    buttonModalLoginNext.disabled = true;
+    loginButtonBackward.disabled = false;
 });
 
 loginBackward.forEach(item => item.addEventListener('click', () => {
-    buttonModalLoginNext.disabled = false;
-    card.classList.toggle('is-flipped');
+    cardLogin.classList.remove('hidden');
+    cardPassword.classList.add('hidden');
+    cardSMS.classList.add('hidden');
+    modalLoginTextDescrSMS.innerHTML =  `для номера 077${inputLogin.value} `;
     loginButtonBackward.disabled = true;
+    buttonModalLoginNext.disabled = false;
 }));
 
