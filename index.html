@@ -28,6 +28,7 @@
         defer>
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="scripts/inputmask.phone.extensions.js" ></script>
 
     <script src="scripts/script.js" defer></script>
 
@@ -2879,7 +2880,7 @@
     <div class="modal modal-login fade" id="staticBackdropLogin" tabindex="-1"
         aria-labelledby="staticBackdropLoginLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-login">
-
+            
             <div class="modal-content modal-content-login">
                 <div class="modal-login-buttons d-flex justify-content-between">
                     <button type="button" class=" login-button-backward login-backward d-flex  justify-content-center align-items-center" disabled >
@@ -2913,8 +2914,15 @@
                                 <div class="modal-login-text">Введите номер телефона</div>
 
                                 <div class="input-login-wrapper">
-                                    <input type="number" class="input-login input-modal" placeholder="077_____"
-                                        max="77999999" min="0"  maxlength="9">
+
+                                    <input type="text" name="phone" id="phone"  class="input-login input-modal" placeholder="0(77_) ___-__">
+<!-- 
+                                         <script>
+                                            (function(){
+                                              Inputmask(`0(77[4|5|7|8]) 999-99`).mask(document.querySelector("#phone"));
+                                            })();
+                                            </script> -->
+
                                     <span class="login-danger-text ">неверный номер</span>
                                 </div>
 

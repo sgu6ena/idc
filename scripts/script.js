@@ -37,7 +37,7 @@ bigSlider.on('slideChange', () => {
 
 bigSlider.on('beforeTransitionStart', () => {
     setTimeout(() => {
-      
+
         swiperPreloader.style.display = 'block';
     }, 3000);
     swiperPreloader.style.display = 'none';
@@ -49,7 +49,7 @@ const balanceSlider = new Swiper('.slider-balance', {
     slidesPerView: 2,
     pagination: {
         el: '.tariffs-swiper-pagination',
-        type: 'bullets',       
+        type: 'bullets',
     },
 });
 
@@ -60,36 +60,36 @@ const tarrifsOptions = {
     slidesPerView: 1,
     pagination: {
         el: '.tariffs-swiper-pagination',
-        type: 'bullets',       
+        type: 'bullets',
     },
-        breakpoints: {
-            320:{
-                slidesPerView: 1.1,
-                spaceBetween: 10
-            },
+    breakpoints: {
+        320: {
+            slidesPerView: 1.1,
+            spaceBetween: 10
+        },
 
-            500:{
-                slidesPerView: 1.4,
-                spaceBetween: 20,
-            },
-            770: {
-                slidesPerView: 2.3,
-                spaceBetween: 10
-            },
-            995: {
-                slidesPerView: 3.4,
-                spaceBetween: 0
-            },
-            1200: {
-                watchOverflow: true,
-                slidesPerView: 4,
-                spaceBetween: 0
-            },
-        }, 
+        500: {
+            slidesPerView: 1.4,
+            spaceBetween: 20,
+        },
+        770: {
+            slidesPerView: 2.3,
+            spaceBetween: 10
+        },
+        995: {
+            slidesPerView: 3.4,
+            spaceBetween: 0
+        },
+        1200: {
+            watchOverflow: true,
+            slidesPerView: 4,
+            spaceBetween: 0
+        },
+    },
 
-observer:true,
-observeParents:true,
-observeSlideChildren:true,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
 };
 
 const tarifsSliderHits = new Swiper('#pills-tariff-hits', tarrifsOptions);
@@ -102,28 +102,28 @@ const extraSlider = new Swiper('.swiper-exrta', {
     slidesPerView: 1,
     pagination: {
         el: '.tariffs-swiper-pagination',
-        type: 'bullets',       
+        type: 'bullets',
     },
-        breakpoints: {
+    breakpoints: {
 
-            320:{
-                slidesPerView: 1,
-                spaceBetween:20,
-              
-            },
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
 
-            770:{
-                slidesPerView: 2,
-                spaceBetween:20,
-            },
-            
-            1100: {
-                watchOverflow: true,
-                slidesPerView: 3,
-                spaceBetween: 20
-            },
-          
-        }, 
+        },
+
+        770: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+
+        1100: {
+            watchOverflow: true,
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+
+    },
 });
 
 const shopSlider = new Swiper('.shop-slider', {
@@ -131,32 +131,32 @@ const shopSlider = new Swiper('.shop-slider', {
     // slidesPerColumn:2,
     // slidesPerView: auto,
     pagination: {
-        clickable:true,
+        clickable: true,
         el: '.tariffs-swiper-pagination',
-        type: 'bullets',       
+        type: 'bullets',
     },
-        breakpoints: {
+    breakpoints: {
 
-            320:{
-                slidesPerView: 1.1, 
+        320: {
+            slidesPerView: 1.1,
 
-                spaceBetween:20,
-              
-            },
+            spaceBetween: 20,
 
-            770:{ 
+        },
 
-                slidesPerView: 2.2,
-                spaceBetween:30,
-            },
-            
-            1100: {             
-                slidesPerView: 3,
-                watchOverflow: true,
-                spaceBetween: 50
-            },
-          
-        }, 
+        770: {
+
+            slidesPerView: 2.2,
+            spaceBetween: 30,
+        },
+
+        1100: {
+            slidesPerView: 3,
+            watchOverflow: true,
+            spaceBetween: 50
+        },
+
+    },
 });
 
 const newsSlider = new Swiper('.news-slider', {
@@ -164,28 +164,28 @@ const newsSlider = new Swiper('.news-slider', {
     watchOverflow: true,
     pagination: {
         el: '.tariffs-swiper-pagination',
-        type: 'bullets',  
-        dynamicBullets:true,     
+        type: 'bullets',
+        dynamicBullets: true,
     },
-        breakpoints: {
+    breakpoints: {
 
-            320:{
-                slidesPerView: 1,
+        320: {
+            slidesPerView: 1,
 
-            },
+        },
 
-            770:{
-                slidesPerView: 2,
-                spaceBetween:20,
-            },
-            
-            1100: {
-                watchOverflow: true,
-                slidesPerView: 3,
-                spaceBetween: 20
-            },
-          
-        }, 
+        770: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+
+        1100: {
+            watchOverflow: true,
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+
+    },
 });
 
 //* * Табы
@@ -198,7 +198,7 @@ selectTariff.onchange = () => {
     tabsTariff.forEach(item => item.classList.remove('active'));
     document.querySelector(`#${value}`).classList.add('active');
     document.querySelector(`#${value}`).classList.add('show');
-    }
+}
 
 
 const selectPayment = document.querySelector('#select-payment');
@@ -209,51 +209,44 @@ selectPayment.onchange = () => {
     tabsPayment.forEach(item => item.classList.remove('active'));
     document.querySelector(`#${value}`).classList.add('active');
     document.querySelector(`#${value}`).classList.add('show');
-    }
+}
 
 
 // флип логина
-const card = document.querySelector('.card');  
+
+const card = document.querySelector('.card');
 const buttonModalLoginNext = document.querySelector('.button-modal-login-next');
 const loginBackward = document.querySelectorAll('.login-backward');
 const loginButtonBackward = document.querySelector('.login-button-backward');
-const inputLogin =  document.querySelector('.input-login');
-const modalLoginTextDescr = document.querySelector('.modal-login-text-descr')
+const inputLogin = document.querySelector('.input-login');
+const modalLoginTextDescr = document.querySelector('.modal-login-text-descr');
+let   maskPhone =  Inputmask(`0(77[4|5|7|8]) 999-99`, { 
+    "oncomplete": () => {  
+        buttonModalLoginNext.disabled = false; 
+    }, 
+    'autoUnmask': true 
+}).mask(document.querySelector("#phone"));
 
-inputLogin.addEventListener('keyup',()=>{
-    if (inputLogin.value >69999999 && inputLogin.value <80000000 ){
-      
-        buttonModalLoginNext.disabled=false;
-        modalLoginTextDescr.innerHTML=`для номера ${inputLogin.value} ` 
-}
+
+
+inputLogin.addEventListener('keyup', () => {
+
+
+        modalLoginTextDescr.innerHTML = `для номера ${inputLogin.value} `
+
 })
 
 
 
-buttonModalLoginNext.addEventListener( 'click', ()=> {
+buttonModalLoginNext.addEventListener('click', () => {
     loginButtonBackward.disabled = false;
     card.classList.toggle('is-flipped');
-    buttonModalLoginNext.disabled=true;
-    
+    buttonModalLoginNext.disabled = true;
+
 });
 
-loginBackward.forEach(item=> item.addEventListener('click', ()=>{
+loginBackward.forEach(item => item.addEventListener('click', () => {
     card.classList.toggle('is-flipped');
     loginButtonBackward.disabled = true;
 }));
 
-
-// buttonModalAnotherLogin.addEventListener( 'click', ()=> {
-   
-// });
-
-
-
-
-
-
-// if (document.documentElement.scrollWidth > 1100) {
-//     shopSlider.destroy();
-    // swiper1.destroy();
-    // swiper2.destroy();
-// }
