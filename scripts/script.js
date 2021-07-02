@@ -218,11 +218,13 @@ const buttonModalLoginNext = document.querySelector('.button-modal-login-next');
 const loginBackward = document.querySelectorAll('.login-backward');
 const loginButtonBackward = document.querySelector('.login-button-backward');
 const inputLogin =  document.querySelector('.input-login');
+const modalLoginTextDescr = document.querySelector('.modal-login-text-descr')
 
 inputLogin.addEventListener('keyup',()=>{
     if (inputLogin.value >69999999 && inputLogin.value <80000000 ){
         console.log(inputLogin.value);
         buttonModalLoginNext.disabled=false;
+        modalLoginTextDescr.innerHTML=`для номера ${inputLogin.value} ` 
 }
 })
 
