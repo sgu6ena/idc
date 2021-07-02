@@ -220,7 +220,7 @@ const loginBackward = document.querySelectorAll('.login-backward');
 const loginButtonBackward = document.querySelector('.login-button-backward');
 const inputLogin = document.querySelector('.input-login');
 const modalLoginTextDescr = document.querySelector('.modal-login-text-descr');
-let   maskPhone =  Inputmask(`0(77[4|5|7|8]) 999-99`, { 
+let   maskPhone =  Inputmask(`0(779) 999-99`, { 
     "oncomplete": () => {  
         buttonModalLoginNext.disabled = false; 
     }, 
