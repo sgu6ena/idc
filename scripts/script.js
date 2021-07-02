@@ -212,18 +212,36 @@ selectPayment.onchange = () => {
     }
 
 
-         // флип логина
-const card = document.querySelector('.card');
+// флип логина
+const card = document.querySelector('.card');  
 const buttonModalLoginNext = document.querySelector('.button-modal-login-next');
+const loginBackward = document.querySelectorAll('.login-backward');
+const loginButtonBackward = document.querySelector('.login-button-backward');
+const inputLogin =  document.querySelector('.input-login');
+
+inputLogin.addEventListener('keyup',()=>{
+    if (inputLogin.value >69999999 && inputLogin.value <80000000 ){
+        console.log(inputLogin.value);
+        buttonModalLoginNext.disabled=false;
+}
+})
+
+
 buttonModalLoginNext.addEventListener( 'click', ()=> {
+    loginButtonBackward.disabled = false;
     card.classList.toggle('is-flipped');
+    
 });
 
-const buttonModalAnotherLogin = document.querySelector('.button-modal-another-login');
-
-buttonModalAnotherLogin.addEventListener( 'click', ()=> {
+loginBackward.forEach(item=> item.addEventListener('click', ()=>{
     card.classList.toggle('is-flipped');
-});
+    loginButtonBackward.disabled = true;
+}));
+
+
+// buttonModalAnotherLogin.addEventListener( 'click', ()=> {
+   
+// });
 
 
 
