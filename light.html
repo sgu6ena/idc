@@ -309,194 +309,52 @@
 
     <section>
         <div class="move d-flex">
-            ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>
+            ЛЕГКИЙ <br>
+            ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>
         </div>
+        
     </section>
 
     <section class="big-light ">
-<img src="image/active-15.jpg" alt="" class="img-light">
+<img src="image/cloud.jpg" alt="" class="img-light">
+
+<!-- <div id="cloud-circle"></div>
+  <svg width="0" height="0"> 
+    <filter id="filter">
+      <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="10" />
+      <feDisplacementMap in="SourceGraphic" scale="180" />
+    </filter>
+</svg> -->
+<!--   <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/> -->
+<!-- <h1>10px</h1> -->
+<div class="cloud-wrapper">
+    <div class="cloud" id="cloud-back"></div>
+<div class="cloud" id="cloud-mid"></div>
+<div class="cloud" id="cloud-front"></div>    
+<!--   77, 327,109, 841, 2319, 5032, 1094, 892, 6739, 512, 84 -->
+<svg width="0" height="0"> 
+<!--Top Layer-->
+<filter id="filter-back">
+  <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" 
+seed="0" />     
+  <feDisplacementMap  in="SourceGraphic" scale="170" />
+</filter>
+   <filter id="filter-mid">
+    <feTurbulence type="fractalNoise"  baseFrequency="0.012" numOctaves="2" 
+seed="0"/>
+  <feDisplacementMap  in="SourceGraphic" scale="150" />
+</filter>
+<filter id="filter-front">
+    <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" 
+seed="0"/>
+  <feDisplacementMap  in="SourceGraphic" scale="100" />
+</filter>
+</svg>
+
+</div>
+
     </section>
 
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row d-flex">
-                <div class="col footer-contacts">
-                    <h3 class="footer-title">
-                        Контактная информация
-                    </h3>
-                    <div class="contacts-info">
-                        <p class="contacts-text"> E-mail: <a href="mailto:idc@idknet.com"
-                                class="header-link">idc@idknet.com</a></p>
-                        <p class="contacts-text"> Адрес: ул.Восстания 41, Тирасполь,
-                            3300 Молдова</hr>
-                            <p class="contacts-text"> <a href="tel:1198" class="header-link">1198</a> - единый номер
-                                информационной и
-                                технической поддержки абонентов IDC
-                                по всем услугам связи</p>
-                            <p class="contacts-text"> <a href="tel:199" class="header-link">199</a> - телефонная
-                                справочная служба</p>
-                    </div>
-                </div>
-                <div class="col company">
-                    <h3 class="footer-title">
-                        Компания
-                    </h3>
-                    <div class="footer-company">
-                        <ul class="header-list">
-                            <li class="header-list-item">
-                                <a href="#" class="header-link">О компании</a>
-                            </li>
-                            <li class="header-list-item">
-                                <a href="#" class="header-link">Новости</a>
-                            </li>
-                            <li class="header-list-item">
-                                <a href="#" class="  header-link">Технические работы</a>
-                            </li>
-                            <li class="header-list-item">
-                                <a href="#" class="header-link">Контакты</a>
-                            </li>
-                            <li class="header-list-item">
-                                <a href="#" class=" header-link">Вакансии в IDC</a>
-                            </li>
-                            <li class="header-list-item">
-                                <a href="#" class=" header-link">Форум</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col footer-tariffs">
-                    <h3 class="footer-title">
-                        Тарифы
-                    </h3>
-                    <ul class="header-list">
-                        <li class="header-list-item">
-                            <a href="#" class=" header-link">Мобильная связь</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="#" class=" header-link">Домашний интернет и IPTV </a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="#" class=" header-link">Телевидение</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="#" class=" header-link">Проводная связь</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="#" class="header-link">Форум</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col ">
-                    <h3 class="footer-title">
-                        Поддержка
-                    </h3>
-                    <ul class="header-list">
-                        <li class="header-list-item">
-                            <a href="#" class=" header-link">Мобильная связь и интернет</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="#" class=" header-link">Роуминг и межгород</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="#" class=" header-link">Домашний интернет и IPTV</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="#" class=" header-link">Цифровое телевидение </a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="#" class="header-link">Домашний телефон</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="#" class=" header-link">Оплата счета и тарифы </a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="#" class=" header-link">Телефонная справочная служба</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="#" class=" header-link">Сервисный центр</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="#" class="header-link">Полезная информация</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h3 class="footer-title footer-my-idc">Мой IDC</h3>
-
-                    <div class="store-wrapper">
-                        <a href="https://play.google.com/store/apps/details?id=md.idc.my&hl=ru" class="store-link">
-                            <img src="image/google-play.png" alt="" class="store-img">
-                        </a>
-                        <a href="https://apps.apple.com/us/app/%D0%BC%D0%BE%D0%B9-idc/id1298445996" class="store-link">
-                            <img src="image/appstore.png" alt="" class="store-img">
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <hr class="footer-line">
-        <div class="footer-social">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 social d-flex align-items-center justify-content-lg-start">
-                    <div class="social-icon-wrapper ">
-                        <a href="#" class="social-link"></a>
-                        <svg class="social-icon" width="29px" height="29px">
-                            <use xlink:href="image/sprite.svg#instagram"></use>
-                        </svg>
-
-                    </div>
-                    <div class="social-icon-wrapper">
-                        <a href="#" class="social-link">
-                            <svg class="social-icon" width="29px" height="29px">
-                                <use xlink:href="image/sprite.svg#ok"></use>
-                            </svg>
-                        </a>
-
-                    </div>
-                    <div class="social-icon-wrapper">
-                        <a href="#" class="social-link">
-                            <svg class="social-icon" width="29px" height="29px">
-                                <use xlink:href="image/sprite.svg#vk"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="social-icon-wrapper">
-                        <a href="#" class="social-link">
-                            <svg class="social-icon" width="29px" height="29px">
-                                <use xlink:href="image/sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-
-
-                    </div>
-                    <div class="social-icon-wrapper">
-                        <a href="#" class="social-link">
-                            <svg class="social-icon" width="29px" height="29px">
-                                <use xlink:href="image/sprite.svg#telegram"></use>
-                            </svg>
-                        </a>
-
-
-                    </div>
-                    <div class="social-icon-wrapper">
-                        <a href="#" class="social-link">
-                            <svg class="social-icon" width="29px" height="29px">
-                                <use xlink:href="image/sprite.svg#messenger"></use>
-                            </svg>
-                        </a>
-
-
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-4">
-                    <p class="copyright">© 2021 СЗАО «Интерднестрком».</p>
-                    <p class="copyright"> Все права защищены.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
 
 </body>
 
