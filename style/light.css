@@ -13,7 +13,7 @@
     letter-spacing: 0.05em;
     -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: #FFFFFF;
-    animation: moveup 10s infinite reverse linear;
+    animation: moveup 3s infinite reverse linear;
 }
 
 .header{
@@ -43,7 +43,7 @@ body {
     overflow: hidden;
   }
   
-  /* #cloud-circle {
+ #cloud-circle {
       width: 500px;
       height: 275px;
       border-radius: 50%;
@@ -52,9 +52,11 @@ body {
       position: absolute;
       top: -320px;
       left: 320px;
+      animation: cloudmove 30s infinite alternate-reverse linear;
+      opacity: 0.5;
   }
 
-   */
+   
 
 .cloud-wrapper{
     
