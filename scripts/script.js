@@ -37,7 +37,6 @@ bigSlider.on('slideChange', () => {
 
 bigSlider.on('beforeTransitionStart', () => {
     setTimeout(() => {
-
         swiperPreloader.style.display = 'block';
     }, 3000);
     swiperPreloader.style.display = 'none';
@@ -64,7 +63,6 @@ const tarrifsOptions = {
             slidesPerView: 1.1,
             spaceBetween: 10
         },
-
         500: {
             slidesPerView: 1.4,
             spaceBetween: 20,
@@ -83,7 +81,6 @@ const tarrifsOptions = {
             spaceBetween: 0
         },
     },
-
     observer: true,
     observeParents: true,
     observeSlideChildren: true,
@@ -102,18 +99,14 @@ const extraSlider = new Swiper('.swiper-exrta', {
         type: 'bullets',
     },
     breakpoints: {
-
         320: {
             slidesPerView: 1,
             spaceBetween: 20,
-
         },
-
         770: {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-
         1100: {
             watchOverflow: true,
             slidesPerView: 3,
@@ -124,29 +117,20 @@ const extraSlider = new Swiper('.swiper-exrta', {
 });
 
 const shopSlider = new Swiper('.shop-slider', {
-    // slidesPerView: 6,
-    // slidesPerColumn:2,
-    // slidesPerView: auto,
     pagination: {
         clickable: true,
         el: '.tariffs-swiper-pagination',
         type: 'bullets',
     },
     breakpoints: {
-
         320: {
             slidesPerView: 1.1,
-
             spaceBetween: 20,
-
         },
-
         770: {
-
             slidesPerView: 2.2,
             spaceBetween: 30,
         },
-
         1100: {
             slidesPerView: 3,
             watchOverflow: true,
@@ -165,12 +149,9 @@ const newsSlider = new Swiper('.news-slider', {
         dynamicBullets: true,
     },
     breakpoints: {
-
         320: {
             slidesPerView: 1,
-
         },
-
         770: {
             slidesPerView: 2,
             spaceBetween: 20,
@@ -181,7 +162,6 @@ const newsSlider = new Swiper('.news-slider', {
             slidesPerView: 3,
             spaceBetween: 20
         },
-
     },
 });
 
@@ -211,7 +191,6 @@ selectPayment.onchange = () => {
 
 //* * флип логина
 
-// const card = document.querySelector('.card');
 const buttonModalLoginNext = document.querySelector('.button-modal-login-next');
 const loginBackward = document.querySelectorAll('.login-backward');
 
@@ -220,30 +199,18 @@ const loginButtonBackward = document.querySelector('.login-button-backward');
 const inputLogin = document.querySelector('.input-login');
 const modalLoginTextDescr = document.querySelector('.modal-login-text-descr');
 const modalLoginTextDescrSMS = document.querySelector('.modal-login-text-descr-sms');
-
 const cardLogin = document.querySelector('.card-login')
-
 const cardPassword = document.querySelector('.card-pass')
-
 const cardSMS = document.querySelector('.card-sms')
-
-
-let   maskPhone =  Inputmask(`0(779) 999-99`, { 
-    "oncomplete": () => {  
-        buttonModalLoginNext.disabled = false;
-        console.log(inputLogin.value); 
-    }, 
-    
-    'autoUnmask': true 
-}).mask(document.querySelector("#phone"));
 
 
 
 inputLogin.addEventListener('keyup', () => {
-    if (inputLogin.value.length<6) {
+    console.log(inputLogin.value.length);
+    if (inputLogin.value.length<11) {
         buttonModalLoginNext.disabled = true;
-    } else { 
-        modalLoginTextDescr.innerHTML = `для номера 077${inputLogin.value}`;
+    } else {  buttonModalLoginNext.disabled = false;
+        modalLoginTextDescr.innerHTML = `для номера ${inputLogin.value}`;
 
     }
 })
@@ -269,7 +236,7 @@ loginBackward.forEach(item => item.addEventListener('click', () => {
     cardLogin.classList.remove('hidden');
     cardPassword.classList.add('hidden');
     cardSMS.classList.add('hidden');
-    modalLoginTextDescrSMS.innerHTML =  `для номера 077${inputLogin.value} `;
+    modalLoginTextDescrSMS.innerHTML =  `для номера ${inputLogin.value} `;
     loginButtonBackward.disabled = true;
     buttonModalLoginNext.disabled = false;
 }));
