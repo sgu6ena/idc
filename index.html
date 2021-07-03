@@ -2910,7 +2910,7 @@
 
                     <div class="scene">
                         <div class="card">
-                            <div class="card-login ">
+                            <form class="card-login " onsubmit="return false">
                                 <div class="modal-login-text">Введите номер телефона</div>
                                 <div class="input-login-wrapper">
                                     <input type="text" name="phone" id="phone" class="input-login input-modal"
@@ -2933,12 +2933,18 @@
 
                                 <button
                                     class="button-modal-login button-modal-login-next d-flex justify-content-center align-items-center "
-                                    disabled>
+                                    disabled type="submit">
                                     Далее
                                 </button>
 
-                            </div>
-                            <div class="card-pass hidden">
+                                
+                                    <div class="spinner-border hidden" role="status">
+
+                                    </div>
+
+                                    
+                            </form>
+                            <form class="card-pass hidden" onsubmit="return false">
                                 <div class="modal-login-text">Введите пароль</div>
                                 <div class="modal-login-text-descr ">
 
@@ -2950,7 +2956,7 @@
                                     <span class="login-danger-text ">неверный пароль</span>
                                 </div>
 
-                                <button
+                                <button type="submit"
                                     class="button-modal-login button-next d-flex justify-content-center align-items-center ">
                                     Войти
                                 </button>
@@ -2961,8 +2967,8 @@
                                 <button class="button-modal-forgotten-password ">
                                     Забыли пароль
                                 </button>
-                            </div>
-                            <div class="card-sms  hidden">
+                            </form>
+                            <form class="card-sms  hidden" onsubmit="return false">
                                 <div class="modal-login-text">Введите пароль из смс</div>
                                 <div class="modal-login-text-descr modal-login-text-descr-sms"></div>
                                 <div class="input-login-wrapper">
@@ -2971,7 +2977,7 @@
                                     <span class="login-danger-text">неверный пароль</span>
                                 </div>
 
-                                <button class="button-modal-login button-next d-flex justify-content-center align-items-center ">
+                                <button type="submit" class="button-modal-login button-next d-flex justify-content-center align-items-center ">
                                     Войти
                                 </button>
                                 <button class="button-modal-another-login login-backward">
@@ -2979,7 +2985,7 @@
                                 </button>
 
 
-                            </div>
+                            </form>
 
                         </div>
                     </div>
