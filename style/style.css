@@ -140,10 +140,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 .all-sites-dropdown {
     width: 225px;
-
     background-color: var(--third-default);
     border: none;
     border-radius: 0;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.dropdown-item-li{
 
 }
 
@@ -152,14 +156,13 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .all-sites-dropdown-item {
+
     width: 100%;
     font-family: "San Francisco Pro";
-    padding: 7px 20px 8px 20px;
-
+    padding: 8px 35px 8px 35px;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-
     color: var(--background-color);
     background-color: var(--third-default);
 }
@@ -176,8 +179,6 @@ input[type=number]::-webkit-outer-spin-button {
 .logo-icon {
     fill: var(--background-color);
 }
-
-
 
 .button-login {
     background: transparent;
@@ -225,41 +226,6 @@ input[type=number]::-webkit-outer-spin-button {
     fill: #006285;
 }
 
-/* 
-    .login-tabs {
-        border: none;
-        margin-top: 40px;
-    }
-
-    .login-nav-item {
-
-        font-family: "San Francisco Pro Semibold";
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
-        color: #006285;
-
-    }
-
-    .tab-login {   font-family: "San Francisco Pro Semibold";
-        font-size: 14px;
-    line-height: 17px;
-        padding: 0;
-        border: none;
-        margin: 0;
-    }
-
-    .nav-tabs .nav-link.active {
-    color: #006285;
-    border: violet 1px;
-    } 
-
-.tab-pane-login {
-
-    padding-top: 20px;
-}
-*/
-
 /* * LOGIN modal * */
 
 .modal-dialog-login {
@@ -277,13 +243,15 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
     background: #F2F3F7;
 }
-.spinner-border{
+
+.spinner-border {
     position: absolute;
-display:block;
+    display: block;
     top: 60px;
-    left: 90px;;
+    left: 90px;
     color: rgba(0, 98, 133, 1);
 }
+
 .login-button-backward,
 .login-button-close {
     display: block;
@@ -313,7 +281,6 @@ display:block;
     font-family: "San Francisco Pro Bold";
     font-size: 14px;
     margin-top: 18px;
-    /* margin-bottom: 18px; */
     color: var(--title-second);
 }
 
@@ -342,7 +309,6 @@ display:block;
     font-size: 14px;
     line-height: 16px;
     color: #37355B;
-
     margin-bottom: 0;
 }
 
@@ -421,46 +387,46 @@ display:block;
 }
 
 
-.card-login{
+.card-login {
     position: relative;
-    -webkit-animation: fadeIn 0.8s;
-    animation: fadeIn 0.8s;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1;
 }
 
-.card-pass{
-    -webkit-animation: fadeIn 0.8s;
-    animation: fadeIn 0.8s;
+.card-pass {
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
 
-.card-sms{
-    -webkit-animation: fadeIn 0.8s;
-    animation: fadeIn 0.8s;
+.card-sms {
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
 
-.deactivate{
+.deactivate {
     opacity: .3;
 }
 
-.hidden{ 
- 
+.hidden {
+
     display: none;
-   
+
 }
 
 @-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
+
 @keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 
 /* * MEGAMENU + search* */
 
 .megamenu {
-
     color: var(--background-color);
 }
 
@@ -472,7 +438,7 @@ display:block;
 .offcanvas {
     overflow: auto;
     padding-left: 130px;
-    padding-right: 130px;
+    padding-right: 100px;
     background-color: var(--third-default);
     height: 100%;
 }
@@ -527,7 +493,6 @@ display:block;
 }
 
 .menu-item-list {
-
     margin-left: 0;
     padding-left: 0;
 }
@@ -578,17 +543,11 @@ display:block;
 }
 
 
-
-
-
-
 /* * ckfqlth*/
 
 .big-slider {
-    /* background: #006285; */
     overflow: hidden;
     color: var(--background-color);
-    /* background: center no-repeat url(../image/header-image1.png); */
     background-size: cover;
     position: relative;
 
@@ -604,11 +563,13 @@ display:block;
     background: center no-repeat url(../image/header-image1.png);
     background-size: cover;
 
+
 }
 
 .big-slider .slide-2 {
     background: center no-repeat url(../image/slide-2.jpg);
     background-size: cover;
+
 }
 
 .big-slider .slide-3 {
@@ -1019,6 +980,12 @@ display:block;
     fill: var(--third-default);
 }
 
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+}
+
 .swiper-pagination-bullet-active {
     width: 15px;
     height: 15px;
@@ -1026,11 +993,6 @@ display:block;
     background: var(--default-color, var(--text-second));
 }
 
-.swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-}
 
 .tariffs {
     display: block;
@@ -1053,7 +1015,6 @@ display:block;
 }
 
 .tariffs-item {
-
     margin: 30px;
 }
 
@@ -1160,8 +1121,8 @@ display:block;
 .hvr-underline-from-center:hover:before,
 .hvr-underline-from-center:focus:before,
 .hvr-underline-from-center:active:before {
-    left: 0;
-    right: 0;
+    left: 25%;
+    right: 25%;
 }
 
 
@@ -1633,7 +1594,7 @@ display:block;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 
 }
 
@@ -1717,26 +1678,23 @@ h3.news-title {
 
 .footer {
     padding-left: 131px;
-    /* padding-right: 129px; */
     padding-top: 50px;
     background: #006285;
 }
 
 .footer-title {
+    margin-top: 20px;
     font-family: 'San Francisco Pro Semibold';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
-    /* Фон */
-
     color: #F2F3F7;
 
 }
 
 .contacts-info {
     font-family: 'San Francisco Pro Semibold';
-
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
@@ -1748,9 +1706,12 @@ h3.news-title {
     margin: 0;
 }
 
-.header-link,
-.header-link:hover {
+.footer-link
+{
     color: #AAA9BA;
+}
+.footer-link:hover {
+    color: var(--second-accent);
 }
 
 .header-list {
@@ -1760,7 +1721,6 @@ h3.news-title {
 
 .header-list-item {
     font-family: 'San Francisco Pro Semibold';
-
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
@@ -1771,14 +1731,10 @@ h3.news-title {
 
 .footer-my-idc {
     font-family: Rubik;
-
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-
     letter-spacing: 0.02em;
-
-
     color: #FCF5ED;
     margin-bottom: 4px;
 }
@@ -1801,17 +1757,27 @@ h3.news-title {
 
 .social-icon-wrapper:not(:last-child) {
     margin-right: 25px;
+
+}
+.social-link{
+    fill:var(--background-color);
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.social-link:hover .social-icon{ 
+    fill:var(--second-accent); 
+    transform: translateY(-4px) scale(1.5);
+    transition:0.3s;
 }
 
 .copyright {
     text-align: center;
     font-family: "San Francisco Pro";
-
     font-size: 12px;
     line-height: 14px;
-
     text-align: center;
-
     color: #AAA9BA;
     margin: 0;
 
@@ -1824,6 +1790,11 @@ h3.news-title {
     .header-menu {
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .modal-dialog-login {
+
+        margin-right: 100px;
     }
 }
 
@@ -1978,12 +1949,6 @@ h3.news-title {
         width: 25px;
     }
 
-
-
-    .balance-tab-button {
-        /* padding: 5px; */
-    }
-
     .button-payment {
         margin-top: 10px;
     }
@@ -1997,6 +1962,11 @@ h3.news-title {
         flex-direction: column;
     }
 
+    .modal-dialog-login {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
 
 @media(max-width: 430px) {
@@ -2005,5 +1975,3 @@ h3.news-title {
         padding-left: 10px;
     }
 }
-
-

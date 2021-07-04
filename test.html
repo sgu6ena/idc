@@ -39,13 +39,7 @@
 
 <input type="text" name="phone" placeholder="0(77_)_____" onkeydown="
 
-const phone = this.value;
-if(phone.length<=4) this.value = '0(77';
-if(phone.substring(0,4) !== '0(77') this.value ='0(77';
-if(phone.match(/^0{1}\(7{2}[5789]$/) !== null) this.value = phone+')';
-if(phone.match(/^0{1}\(7{2}[5789]\)*$/) !== null) this.value =  phone.slice(0,5)) ;
-if(phone.match(/^0{1}\(7{2}[^5789]$/) !== null) this.value = phone.slice(0,-1);
-if(phone.match(/^0{1}\(7{2}\d\)\d{0,5}\D$/) !== null) this.value = phone.slice(0,-1);
+
 " 
 onclick="
  this.value.length<=4?this.value = '0(77':'';

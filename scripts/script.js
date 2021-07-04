@@ -60,12 +60,16 @@ const tarrifsOptions = {
     },
     breakpoints: {
         320: {
-            slidesPerView: 1.1,
-            spaceBetween: 10
+            slidesPerView: 1.2,
+            spaceBetween: 5
+        },
+        410:{
+            slidesPerView: 1.4,
+            spaceBetween: 5
         },
         500: {
-            slidesPerView: 1.4,
-            spaceBetween: 20,
+            slidesPerView: 1.6,
+            spaceBetween: 10,
         },
         770: {
             slidesPerView: 2.3,
@@ -146,7 +150,6 @@ const newsSlider = new Swiper('.news-slider', {
     pagination: {
         el: '.tariffs-swiper-pagination',
         type: 'bullets',
-        dynamicBullets: true,
     },
     breakpoints: {
         320: {
@@ -208,6 +211,7 @@ const spinnerBorder = document.querySelector('.spinner-border');
 
 
 inputLogin.addEventListener('keyup', () => {
+    
 
     if (inputLogin.value.length < 11) {
         buttonModalLoginNext.disabled = true;
@@ -222,30 +226,32 @@ inputLogin.addEventListener('keyup', () => {
 )
 
 
-buttonModalLoginNext.addEventListener('click', (e) => {
+buttonModalLoginNext.addEventListener('click', e => {
     e.preventDefault();
     cardLogin.classList.toggle('deactivate');
     spinnerBorder.classList.toggle('hidden');
     setTimeout(()=>{
         cardLogin.classList.toggle('hidden');
         spinnerBorder.classList.toggle('hidden');
-    cardPassword.classList.toggle('hidden');
-    cardLogin.classList.toggle('deactivate');
-    loginButtonBackward.disabled = false;
-    buttonModalLoginNext.disabled = true;
+        cardPassword.classList.toggle('hidden');
+        cardLogin.classList.toggle('deactivate');
+        loginButtonBackward.disabled = false;
+        buttonModalLoginNext.disabled = true;
     },3000);
 
 });
 
 
-buttonModalForgottenPassword.addEventListener('click', () => {
+buttonModalForgottenPassword.addEventListener('click', e => {
+    e.preventDefault();
     cardSMS.classList.toggle('hidden');
     cardPassword.classList.toggle('hidden');
     buttonModalLoginNext.disabled = true;
     loginButtonBackward.disabled = false;
 });
 
-loginBackward.forEach(item => item.addEventListener('click', () => {
+loginBackward.forEach(item => item.addEventListener('click', e => {
+    e.preventDefault();
     cardLogin.classList.remove('hidden');
     cardPassword.classList.add('hidden');
     cardSMS.classList.add('hidden');
