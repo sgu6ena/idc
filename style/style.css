@@ -76,7 +76,9 @@ body {
     background-color: var(--background-color);
     position: relative;
 }
-
+body.modal-open{
+overflow: scroll !important;
+}
 button {
     cursor: pointer;
 }
