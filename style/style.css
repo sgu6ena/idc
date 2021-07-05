@@ -77,13 +77,12 @@ body {
     overflow-y: scroll;
     background-color: var(--background-color);
     position: relative;
-
 }
-
 body.modal-open{
     overflow-y: scroll !important;
     padding-right: 0  !important ;
-    }
+}
+
 
 button {
     cursor: pointer;
