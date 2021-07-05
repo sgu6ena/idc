@@ -77,7 +77,8 @@ body {
     position: relative;
 }
 body.modal-open{
-overflow: scroll !important;
+    overflow-y: scroll !important;
+
 }
 button {
     cursor: pointer;
