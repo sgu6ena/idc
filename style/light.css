@@ -1,43 +1,73 @@
+
 .body{
+  /* padding: 1%; */
+  overflow: hidden;
     position: relative;
 }
 .move{
-    z-index: 20;
+    z-index: 5;
     position: absolute;
     top: 0;
-    right: 500px;
-    font-family: 'San Francisco Pro';
+    right: 350px;
+    font-family: 'San Francisco Pro Semibold';
     font-size: 96px;
     line-height: 115px;
     color: transparent;
     letter-spacing: 0.05em;
     -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: rgba(255, 255, 255, 0.8);
-    animation: moveup 5s infinite reverse linear;
+   -webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
+    animation: moveup 3s infinite reverse linear;
 }
 
 .header{
 width: 100%;
-    position: absolute;top: 0;
+    position: absolute;
+    top: 0;
     left:0;
     z-index: 25;
 }
 
 .big-light{
     position: absolute;
-    top: 0;
+    top: -20px;
     left:0;
+    background: center no-repeat url(../image/cloud.jpg);
+    background-size: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+.big-light-subtitle{
+
+margin-top: 260px;
+margin-bottom: -20px;
+font-family: 'San Francisco Pro';
+font-weight: 500;
+font-size: 64px;
+line-height: 76px;
+letter-spacing: 0.08em;
+color: #FFFFFF;
+}
+
+.big-light-title{
+  position:relative;
+  font-family: 'San Francisco Pro Heavy';
+font-weight: 900;
+font-size: 200px;
+line-height: 239px;
+letter-spacing: 0.1em;
+color: #006285;
+text-transform: uppercase;
+z-index: 40;
+}
+
+.big-light-button{
+
 }
 
 
-body {
-    /* width: 100vw; */
-    /* height: 100vw; */
-    /* background: linear-gradient(165deg, #527785 0%, #7FB4C7 100%); */
-    padding: 1%;
-    overflow: hidden;
-  }
-  
+
+
  #cloud-circle {
       width: 500px;
       height: 275px;
@@ -86,11 +116,11 @@ body {
   }
 @keyframes moveup {
     from {
-
+      transform:  translateY(-115px);
     }
   
     to {
-        transform:  translateY(115px);
+        transform:  translateY(0);
     }
     }
 

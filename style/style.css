@@ -29,6 +29,19 @@
 }
 
 
+@font-face {
+    font-family: 'San Francisco Pro Heavy';
+    src: local('San Francisco Pro Display Heavy'), local('San-Francisco-Pro-Display-Heavy'),
+        url('../fonts/SFProDisplay-Heavy.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Heavy.woff') format('woff'),
+        url('../fonts/SFProDisplay-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
