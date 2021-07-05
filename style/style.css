@@ -71,11 +71,19 @@
 
 }
 
+
 body {
-    overflow-x: hidden;
+    overflow-x: hidden; 
+    overflow-y: scroll;
     background-color: var(--background-color);
     position: relative;
+
 }
+
+body.modal-open{
+    overflow-y: scroll !important;
+    padding-right: 0  !important ;
+    }
 
 button {
     cursor: pointer;
@@ -98,10 +106,10 @@ input[type=number]::-webkit-outer-spin-button {
 /* * HEADER * */
 .header.header-big-slider {
     position: absolute;
-    left: 0;
+    right: 17px;
     top: 0;
     width: 100%;
-    z-index: 80;
+    z-index: 88;
 }
 
 .header-menu {
@@ -240,6 +248,7 @@ padding-bottom: 15px;
 }
 
 /* * LOGIN modal * */
+
 
 .modal-dialog-login {
     margin-right: 170px;
@@ -761,9 +770,6 @@ padding-bottom: 15px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-
-    /* animation:swiper-preloader-spin 2s 1 ease-in-out; */
-
 }
 
 .slider-next {
@@ -778,15 +784,13 @@ padding-bottom: 15px;
 .swiper-lazy-preloader {
     outline: 2px;
 
-    /* display: none; */
     z-index: -1;
-    /* transform: rotate(45deg); */
-    width: 58px;
+ width: 58px;
     height: 58px;
     position: absolute;
     top: 17px;
     left: 42px;
-    /* transition: opacity 0 1s; */
+
     animation: swiper-preloader-spin 4s infinite linear;
 
 }
@@ -799,6 +803,8 @@ padding-bottom: 15px;
 
 }
 
+
+
 .card-balance {
     width: 327px;
     height: 150px;
@@ -807,6 +813,12 @@ padding-bottom: 15px;
     border-radius: 8px;
     padding: 20px;
     margin: 0 30px 30px 30px;
+    text-decoration: none;
+}
+.card-balance:hover{
+    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.5);
+    transform: translateY(-5px) scale(1.00);
+    transition:0.3s;
 }
 
 

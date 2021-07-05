@@ -3,7 +3,7 @@
 const bigSlider = new Swiper('.big-slider', {
     speed: 1000,
     loop: true,
-    slidesPerView: 1,
+    slidesPerView: 2,
     autoplay: {
         delay: 5000,
     },

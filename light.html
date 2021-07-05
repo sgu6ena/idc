@@ -27,15 +27,15 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
         defer>
     </script>
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script> -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="scripts/login.js" defer></script>
+    <script src="scripts/ligth.js" defer></script>
 
 </head>
 
 <body>
-
-
 
     <header class="header">
         <div class="container-fluid ">
@@ -95,7 +95,7 @@
 
                     </button>
                     <button class="button-login d-flex align-items-center" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdropLogin">
+                        data-bs-target="#staticBackdropLogin">
                         <svg class="icon-user" width="22px" height="22px">
                             <use xlink:href="image/sprite.svg#user"></use>
                         </svg>
@@ -114,44 +114,44 @@
         </div>
     </header>
 
-      <!-- Modal -->
-      <div class="modal modal-login fade " id="staticBackdropLogin" tabindex="-1"
-      aria-labelledby="staticBackdropLoginLabel" aria-hidden="true">
-      <div class="modal-dialog show active modal-dialog-login">
-          <div class="modal-content modal-content-login">
-              <div class="modal-login-buttons d-flex justify-content-between">
-                  <button type="button"
-                      class=" login-button-backward login-backward d-flex  justify-content-center align-items-center"
-                      disabled>
-                      <svg class="icon-backward" height="12px" width="12px">
-                          <use xlink:href="image/sprite.svg#login-backward"></use>
-                      </svg>
-                  </button>
-                  <button type="button" class="login-button-close d-flex justify-content-center align-items-center"
-                      data-bs-dismiss="modal" aria-label="Close">
-                      <svg class="icon-close" height="12px" width="12px">
-                          <use xlink:href="image/sprite.svg#login-close"></use>
-                      </svg>
-                  </button>
-              </div>
-              <div class="modal-body login-body">
-                  <div class="login-logo d-flex justify-content-between">
-                      <div class="logo d-flex justify-content-start">
-                          <svg class="logo-icon login-logo" width="62.55px" height="30px">
-                              <use xlink:href="image/sprite.svg#logo"></use>
-                          </svg>
-                      </div>
+    <!-- Modal -->
+    <div class="modal modal-login fade " id="staticBackdropLogin" tabindex="-1"
+        aria-labelledby="staticBackdropLoginLabel" aria-hidden="true">
+        <div class="modal-dialog show active modal-dialog-login">
+            <div class="modal-content modal-content-login">
+                <div class="modal-login-buttons d-flex justify-content-between">
+                    <button type="button"
+                        class=" login-button-backward login-backward d-flex  justify-content-center align-items-center"
+                        disabled>
+                        <svg class="icon-backward" height="12px" width="12px">
+                            <use xlink:href="image/sprite.svg#login-backward"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="login-button-close d-flex justify-content-center align-items-center"
+                        data-bs-dismiss="modal" aria-label="Close">
+                        <svg class="icon-close" height="12px" width="12px">
+                            <use xlink:href="image/sprite.svg#login-close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body login-body">
+                    <div class="login-logo d-flex justify-content-between">
+                        <div class="logo d-flex justify-content-start">
+                            <svg class="logo-icon login-logo" width="62.55px" height="30px">
+                                <use xlink:href="image/sprite.svg#logo"></use>
+                            </svg>
+                        </div>
 
 
-                  </div>
+                    </div>
 
-                  <div class="scene">
-                      <div class="card">
-                          <form class="card-login " onsubmit="return false">
-                              <div class="modal-login-text">Введите номер телефона</div>
-                              <div class="input-login-wrapper">
-                                  <input type="text" name="phone" id="phone" class="input-login input-modal"
-                                  placeholder="0(77_)_____" onkeyup="
+                    <div class="scene">
+                        <div class="card">
+                            <form class="card-login " onsubmit="return false">
+                                <div class="modal-login-text">Введите номер телефона</div>
+                                <div class="input-login-wrapper">
+                                    <input type="text" name="phone" id="phone" class="input-login input-modal"
+                                        placeholder="0(77_)_____" onkeyup="
 
                                   let phone = this.value;
                                   if(phone.length<=4) this.value = '0(77';
@@ -160,80 +160,78 @@
                                   if(phone.match(/^0{1}\(7{2}[^5789]$/) !== null) this.value = phone.slice(0,-1);
                                   if(phone.match(/^0{1}\(7{2}\d$/)!== null && window.event.keyCode==8) this.value ='0(77';
                                   if(phone.match(/^0{1}\(7{2}\d\)\d{0,5}\D$/) !== null) this.value = phone.slice(0,-1);
-                                  " 
-                                  onclick="
+                                  " onclick="
                                    this.value.length<=4?this.value = '0(77':'';
-                                  "
-                                  
-                                  maxlength="11">
-                                  <span class="login-danger-text ">неверный номер</span>
-                              </div>
+                                  " maxlength="11">
+                                    <span class="login-danger-text ">неверный номер</span>
+                                </div>
 
-                              <button
-                                  class="button-modal-login button-modal-login-next d-flex justify-content-center align-items-center "
-                                  disabled type="submit">
-                                  Далее
-                              </button>
-
-                              
-                                  <div class="spinner-border hidden" role="status">
-
-                                  </div>
-
-                                  
-                          </form>
-                          <form class="card-pass hidden" onsubmit="return false">
-                              <div class="modal-login-text">Введите пароль</div>
-                              <div class="modal-login-text-descr ">
-
-                              </div>
-
-                              <div class="input-login-wrapper">
-                                  <input type="password" class="input-password input-modal"
-                                      placeholder="Введите пароль">
-                                  <span class="login-danger-text ">неверный пароль</span>
-                              </div>
-
-                              <button type="submit"
-                                  class="button-modal-login button-next d-flex justify-content-center align-items-center ">
-                                  Войти
-                              </button>
-                              <button class="button-modal-another-login login-backward">
-                                  Войти с другим логином
-                              </button>
-
-                              <button class="button-modal-forgotten-password ">
-                                  Забыли пароль
-                              </button>
-                          </form>
-                          <form class="card-sms  hidden" >
-                              <div class="modal-login-text">Введите пароль из смс</div>
-                              <div class="modal-login-text-descr modal-login-text-descr-sms"></div>
-                              <div class="input-login-wrapper">
-                                  <input type="password" class="input-password input-modal"
-                                      placeholder="Введите пароль" maxlength="4">
-                                  <span class="login-danger-text">неверный пароль</span>
-                              </div>
-
-                              <button type="submit" class="button-modal-login button-next d-flex justify-content-center align-items-center ">
-                                  Войти
-                              </button>
-                              <button class="button-modal-another-login login-backward">
-                                  Войти с другим логином
-                              </button>
+                                <button
+                                    class="button-modal-login button-modal-login-next d-flex justify-content-center align-items-center "
+                                    disabled type="submit">
+                                    Далее
+                                </button>
 
 
-                          </form>
+                                <div class="spinner-border hidden" role="status">
 
-                      </div>
-                  </div>
+                                </div>
 
 
-              </div>
+                            </form>
+                            <form class="card-pass hidden" onsubmit="return false">
+                                <div class="modal-login-text">Введите пароль</div>
+                                <div class="modal-login-text-descr ">
 
-          </div>
-      </div>
-  </div>
+                                </div>
+
+                                <div class="input-login-wrapper">
+                                    <input type="password" class="input-password input-modal"
+                                        placeholder="Введите пароль">
+                                    <span class="login-danger-text ">неверный пароль</span>
+                                </div>
+
+                                <button type="submit"
+                                    class="button-modal-login button-next d-flex justify-content-center align-items-center ">
+                                    Войти
+                                </button>
+                                <button class="button-modal-another-login login-backward">
+                                    Войти с другим логином
+                                </button>
+
+                                <button class="button-modal-forgotten-password ">
+                                    Забыли пароль
+                                </button>
+                            </form>
+                            <form class="card-sms  hidden">
+                                <div class="modal-login-text">Введите пароль из смс</div>
+                                <div class="modal-login-text-descr modal-login-text-descr-sms"></div>
+                                <div class="input-login-wrapper">
+                                    <input type="password" class="input-password input-modal"
+                                        placeholder="Введите пароль" maxlength="4">
+                                    <span class="login-danger-text">неверный пароль</span>
+                                </div>
+
+                                <button type="submit"
+                                    class="button-modal-login button-next d-flex justify-content-center align-items-center ">
+                                    Войти
+                                </button>
+                                <button class="button-modal-another-login login-backward">
+                                    Войти с другим логином
+                                </button>
+
+
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <section class="megamenu">
         <div class="offcanvas offcanvas-top  offcanvas-top-menu " tabindex="-1" id="offcanvasTopMenu"
@@ -426,74 +424,96 @@
         </div>
     </section>
 
-    <hr>
 
     <section>
         <div class="move d-flex">
-            ЛЕГКИЙ <br>
-            ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>
-        </div>    
+            ЛЕГКИЙ <br> ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>
+        </div>
     </section>
 
-    <section class="big-light ">
-<!-- <img src="image/cloud.jpg" alt="" class="img-light"> -->
-<div class="container">
-    <div class="row">
-        <div class="col-10">
-            <h2 class="big-light-subtitle">тариф</h2>
-            <h1 class="big-light-title">легкий</h1>
-            <button class="button-header-slider ">
-                <span class="button-header-slider-text">Подключить</span>
-                <svg class="icon big-slide-arrow-right " height="14px" width="14px">
-                    <use xlink:href="image/sprite.svg#arrow-right"></use>
-                </svg>
-            </button>
+
+    <div class="swiper-container container-fluid mySwiper big-light">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide-1">
+                <div id="cloud-circle">
+                    <svg width="0" height="0">
+                        <filter id="filter">
+                            <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="10" />
+                            <feDisplacementMap in="SourceGraphic" scale="320" />
+                        </filter>
+                    </svg>
+                </div>
+                <div class="container">
+                    <h2 class="big-light-subtitle">тариф</h2>
+                    <h1 class="big-light-title">легкий</h1>
+                    <button class="button-header-slider ">
+                        <span class="button-header-slider-text">Подключить</span>
+                        <svg class="icon big-slide-arrow-right " height="14px" width="14px">
+                            <use xlink:href="image/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+
+
+
+            </div>
+            <div class="swiper-slide slide-2 d-flex">
+                <div class="col-6 big-light-dark">
+                    <div class="container">
+                        <h2 class="big-light-subtitle">Преимущества</h2>
+                        <div class="row">
+                            
+                            <div class="col-6"></div>
+                            <div class="col-6"></div>
+                            <div class="col-6"></div>
+                            <div class="col-6"></div>
+                            <div class="col-6"></div>
+                        </div>
+                    </div>
+                   
+
+                </div>
+                <div class="col-6 big-light-light">
+                   
+                </div>
+
+
+            </div>
+            <div class="swiper-slide slide-3 d-flex">
+                <div class="col-6 big-light-light">
+                    <h2 class="big-light-subtitle">тариф</h2>
+                    <h1 class="big-light-title">легкий</h1>
+                    <button class="button-header-slider ">
+                        <span class="button-header-slider-text">Подключить</span>
+                        <svg class="icon big-slide-arrow-right " height="14px" width="14px">
+                            <use xlink:href="image/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="col-6 big-light-dark">
+dfsd
+                </div>
+            </div>
 
         </div>
-        <div class="col-2"></div>
+
+        <div class="big-light-next-slide d-flex justify-content-center align-items-start show-more-wrapper">
+            <button class="show-more  d-flex flex-column justify-content-center align-items-center " href="">
+                <svg class="icon-arrow-down" width="27px" height="16px">
+                    <use xlink:href="image/sprite.svg#arrow-down"></use>
+                </svg>
+                <svg class="icon-arrow-down" width="27px" height="16px">
+                    <use xlink:href="image/sprite.svg#arrow-down"></use>
+                </svg>
+            </button>
+        </div>
+
+
     </div>
-</div>
 
-<div id="cloud-circle">
-      <svg width="0" height="0"> 
-    <filter id="filter">
-      <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="10" />
-      <feDisplacementMap in="SourceGraphic" scale="180" />
-    </filter>
-</svg>
-</div>
-
-<!--   <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/> -->
-<!-- <h1>10px</h1> -->
-
-
-<!-- <div class="cloud-wrapper">
-    <div class="cloud" id="cloud-back"></div>
-<div class="cloud" id="cloud-mid"></div>
-<div class="cloud" id="cloud-front"></div>    
-
-<svg width="0" height="0"> 
-
-<filter id="filter-back">
-  <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" 
-seed="0" />     
-  <feDisplacementMap  in="SourceGraphic" scale="170" />
-</filter>
-   <filter id="filter-mid">
-    <feTurbulence type="fractalNoise"  baseFrequency="0.012" numOctaves="2" 
-seed="0"/>
-  <feDisplacementMap  in="SourceGraphic" scale="150" />
-</filter>
-<filter id="filter-front">
-    <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" 
-seed="0"/>
-  <feDisplacementMap  in="SourceGraphic" scale="100" />
-</filter>
-</svg>
-
-</div> -->
-
-    </section>
+    <div class="swiper-pagination swiper-pagination-light d-flex flex-column align-items-center justify-content-center">
+    </div>
 
 
 </body>
