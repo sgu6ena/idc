@@ -1,6 +1,6 @@
 .body {
-  /* padding: 1%; */
   overflow: hidden;
+  overflow-y: hidden;
   position: relative;
 }
 
@@ -8,14 +8,14 @@
   z-index: 5;
   position: absolute;
   top: 0;
-  right: 350px;
+  right: 450px;
   font-family: 'San Francisco Pro Semibold';
   font-size: 96px;
   line-height: 115px;
   color: transparent;
   letter-spacing: 0.05em;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.8);
   animation: moveup 3s infinite reverse linear;
   /* mix-blend-mode: soft-light; */
 }
@@ -38,23 +38,18 @@
   overflow-y: hidden;
 }
 
-.big-light .slide-1 {
 
+.big-light .slide-1 {
   background: center no-repeat url(../image/cloud.jpg);
-  background-size: cover;
+  background-size: cover auto;
   background-position: top;
 }
 
 
-.big-light .slide-2 {
-  /* background: center no-repeat url(../image/extra-2.jpg); */
-  background-size: cover;
-  background-position: center;
-
-}
 
 .big-light-subtitle {
-
+  position: relative;
+  z-index: 20;
   margin-top: 260px;
   margin-bottom: -20px;
   font-family: 'San Francisco Pro';
@@ -77,10 +72,6 @@
   z-index: 40;
 }
 
-.big-light-button {}
-
-
-
 
 #cloud-circle {
   width: 500px;
@@ -95,37 +86,6 @@
   opacity: 0.5;
 }
 
-
-
-.cloud-wrapper {}
-
-.cloud {
-  width: 500px;
-  height: 275px;
-  border-radius: 50%;
-  position: absolute;
-  top: -25vh;
-  left: 5vw;
-  /* opacity: 0.8; */
-  animation: cloudmove 30s infinite alternate-reverse linear;
-}
-
-#cloud-back {
-  filter: url(#filter-back);
-  box-shadow: 300px 300px 30px -20px #fff;
-}
-
-#cloud-mid {
-  filter: url(#filter-mid);
-  box-shadow: 300px 340px 70px -60px rgba(158, 168, 179, 0.5);
-  left: 5vw;
-}
-
-#cloud-front {
-  filter: url(#filter-front);
-  box-shadow: 300px 370px 60px -100px rgba(0, 0, 0, 0.3);
-  left: 5vw;
-}
 
 @keyframes moveup {
   from {
@@ -149,18 +109,34 @@
 .swiper-pagination {
   position: absolute;
   top: 200px;
-  right: 80px;
+  right: 50px;
 }
 
 .swiper-pagination-bullet {
-  margin: 50px;
+  margin-right: 50px;
+  margin-bottom: 200px;
   width: 15px;
   height: 15px;
+  background: #006285;
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
   width: 25px;
   height: 25px;
+  background: #006285;
+}
+
+
+.hr-line {
+  z-index: 15;
+  position: absolute;
+  height: 600px;
+  width: 200px;
+  right: 111px;
+  top: 150px;
+  border-right: 3px solid rgba(0, 98, 133, .5);
+
 }
 
 .icon-arrow-down {
@@ -174,38 +150,194 @@
   left: 50%;
 }
 
-.big-light-dark{
-  padding-left: 160px;
+.big-light-dark {
+  padding-left: 130px;
   background-color: #006285;
   padding-right: 30px;
 }
 
-.big-light-subtitle-dark{
-  color: #006285;
+.big-light-light {
   padding-left: 130px;
+  background-color: var(--background-color);
+  padding-right: 30px;
 }
 
-.light-plus-item{
+.big-light-subtitle-dark {
+  position: relative;
+  z-index: 20;
+  color: #006285;
+  margin-left: 20px;
+  margin-bottom: 0px;
+
+}
+
+.light-plus-item {
+
   height: 80%;
   padding: 20px;
   margin-bottom: 30px;
-background: #FFFFFF;
-box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
-border-radius: 8px;
-  background-color:  var(--background-color);
+  background: #FFFFFF;
+  box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+  border-radius: 8px;
+  background-color: var(--background-color);
 }
-.light-plus-title{
+
+.light-plus-title {
   font-family: 'San Francisco Pro Semibold';
   font-size: 18px;
   line-height: 120%;
   letter-spacing: 0.02em;
-    color: #37355B;
-  
+  color: #37355B;
+
 }
 
-.light-plus-description{
+.light-plus-description {
   font-family: 'San Francisco Pro';
   font-size: 14px;
   line-height: 17px;
   color: #7C7B8A;
 }
+
+
+.tariff-item-wrapper {
+  position: relative;
+  width: 300px;
+}
+
+.tariff-item {
+  position: relative;
+  z-index: 50;
+  min-width: 200px;
+  width: 90%;
+}
+
+.light-tariffs-button{
+  margin-top: 14px;
+  background: #F8F32B;
+border-radius: 48px;
+border:none;
+font-family: 'San Francisco Pro';
+padding: 5px 50px;
+font-size: 15px;
+line-height: 18px;
+
+color: #37355B;
+
+}
+
+.light-tariffs-more{
+  margin-top: 12px;
+  font-family: 'San Francisco Pro';
+font-size: 13px;
+line-height: 16px;
+color: #7C7B8A;
+}
+
+.tariff-name-descr{
+  font-family: 'San Francisco Pro';
+font-size: 12px;
+line-height: 14px;
+color: #37355B;
+margin: 0;
+padding: 0;
+
+}
+
+.tariff-name-descr+.tariff-name{
+  margin-bottom: 25px;
+}
+
+
+.big-light-option-subtitle {
+  font-family: 'San Francisco Pro Bold';
+  margin-bottom: 27px;
+  font-size: 48px;
+  line-height: 57px;
+  color: #37355B;
+}
+
+.big-light-text {
+  font-family: 'San Francisco Pro';
+padding-right: 150px;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #7C7B8A;
+  margin-bottom: 50px;
+
+}
+.big-light-button{
+
+  font-family: 'San Francisco Pro';
+  padding: 15px 35px 15px 32px;
+font-size: 24px;
+line-height: 29px;
+border: 3px solid #006285;
+text-decoration: none;
+border-radius: 48px;
+color: #061737;
+}
+
+.big-light-button:hover{
+  color: #061737;
+  box-shadow: 0px 10px 12px rgba(92, 92, 92, 0.2);
+  transform: translateY(-5px);
+  transition:.5s;
+}
+.big-light-options{
+  margin-top: 0px;
+  margin-left: 0;
+  padding: 0;
+}
+.ligth-option-item{
+  position: relative;
+  z-index: 25;
+  padding: 20px;
+  background: #F2F3F7;
+  box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+.light-option-image-wrapper{
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+width: 100%;
+}
+
+.light-option-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.light-option-name{
+  font-family: 'San Francisco Pro Bold';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #37355B;
+  margin: 8px 0px
+}
+
+.light-option-descr{
+  font-family:  'San Francisco Pro Semibold';
+  font-size: 14px;
+  line-height: 17px;
+  color: #7C7B8A;
+  margin: 8px 0px;
+  display: flex;
+  
+}
+
+
+.slide-3 .big-light-dark{
+  padding-left: 50px;
+  padding-top: 150px;
+}
+
+
+
+
+  
