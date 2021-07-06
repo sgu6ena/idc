@@ -433,6 +433,9 @@ flex-direction: column;height: auto;
 }
 
 @media(max-width:575px){
+  .big-light-option-subtitle{
+    font-size: 40px;
+  }
   .big-light-subtitle{
 
     font-size: 40px;
