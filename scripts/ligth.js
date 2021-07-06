@@ -17,6 +17,7 @@ const bigLight = new Swiper(".big-light", {
 // * * перекрашивание заголовка
 const headerMenu = document.querySelector('.header-menu');
 const logo = document.querySelector('.logo-icon');
+
 bigLight.on('slideChange', () => {
     if (bigLight.slides[bigLight.activeIndex].classList.contains('slide-2')){
         headerMenu.classList.add('header-dark');
@@ -30,7 +31,7 @@ bigLight.on('slideChange', () => {
         if (bigLight.slides[bigLight.activeIndex].classList.contains('slide-3')){
             logo.style.fill = '#006285';  
             document.querySelector('.hr-line').style.borderRight ='3px solid rgba(255, 255, 255, .5)'; 
-            document.querySelectorAll('.swiper-pagination-bullet').forEach(item => item.style.background ='#FFF');
+            document.querySelectorAll('.swiper-pagination-bullet').forEach(item => item.style.background ='#F2F3F7');
         }
     }
 });

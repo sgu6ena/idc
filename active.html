@@ -21,7 +21,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/light.css">
+    <link rel="stylesheet" href="style/active.css">
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -31,7 +31,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
-    <script src="scripts/ligth.js" defer></script>
+    <script src="scripts/active.js" defer></script>
 
 </head>
 
@@ -424,55 +424,37 @@
         </div>
     </section>
 
-    <hr>
 
-    <section>
-        <div class="move d-flex">
-            ЛЕГКИЙ <br> ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>ЛЕГКИЙ <br>
-        </div>
-    </section>
-
-
-    <div class="swiper-container container-fluid mySwiper big-light">
+    <div class="big-active">
         <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1" style="background-color:black;">
+  <div class="blur">
 
-            <div class="swiper-slide slide-1">
-                <div id="cloud-circle">
-                    <svg width="0" height="0">
-                        <filter id="filter">
-                            <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="10" />
-                            <feDisplacementMap in="SourceGraphic" scale="320" />
-                        </filter>
-                    </svg>
-                </div>
-                <div class="container">
-                    <h2 class="big-light-subtitle">тариф</h2>
-                    <h1 class="big-light-title">легкий</h1>
-                    <button class="button-header-slider ">
-                        <span class="button-header-slider-text">Подключить</span>
-                        <svg class="icon big-slide-arrow-right " height="14px" width="14px">
-                            <use xlink:href="image/sprite.svg#arrow-right"></use>
-                        </svg>
-                    </button>
-                </div>
-
-
+  </div>
 
             </div>
-            <div class="swiper-slide slide-2">
-
-                <h2 class="big-light-subtitle">тариф</h2>
-                <h1 class="big-light-title">легкий</h1>
-                <button class="button-header-slider ">
-                    <span class="button-header-slider-text">Подключить</span>
-                    <svg class="icon big-slide-arrow-right " height="14px" width="14px">
-                        <use xlink:href="image/sprite.svg#arrow-right"></use>
-                    </svg>
-                </button>
-
+            <div class="swiper-slide slide-2 "  style="background-color:blue;">
+               <div class="blur">
+      
+  </div>
             </div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide slide-3"  style="background-color:yellowgreen;">
+                <div class="blur">
+      
+                </div>
+            </div>
 
+        </div>
+
+        <div class="big-light-next-slide d-flex justify-content-center align-items-start show-more-wrapper">
+            <button class="show-more  d-flex flex-column justify-content-center align-items-center " href="">
+                <svg class="icon-arrow-down" width="27px" height="16px">
+                    <use xlink:href="image/sprite.svg#arrow-down"></use>
+                </svg>
+                <svg class="icon-arrow-down" width="27px" height="16px">
+                    <use xlink:href="image/sprite.svg#arrow-down"></use>
+                </svg>
+            </button>
         </div>
 
 
@@ -480,34 +462,9 @@
 
     <div class="swiper-pagination swiper-pagination-light d-flex flex-column align-items-center justify-content-center">
     </div>
+    <div class="hr-line"></div>
 
-    <div class="big-light-next-slide d-flex justify-content-center align-items-start show-more-wrapper">
-        <button class="show-more  d-flex flex-column justify-content-center align-items-center " href="">
-            <svg class="icon-arrow-down" width="27px" height="16px">
-                <use xlink:href="image/sprite.svg#arrow-down"></use>
-            </svg>
-            <svg class="icon-arrow-down" width="27px" height="16px">
-                <use xlink:href="image/sprite.svg#arrow-down"></use>
-            </svg>
-        </button>
-    </div>
 
-    <!-- <script>
-        var swiper = new Swiper(".mySwiper", {
-            direction: "vertical",
-            slidesPerView: 1,
-            spaceBetween: 0,
-            mousewheel: true,
-            navigation: {
-                nextEl: '.swiper-button-prev',
-                prevEl: '.swiper-button-next',
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script> -->
 </body>
 
 </html>
