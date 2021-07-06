@@ -314,6 +314,7 @@ color: #061737;
   padding: 0;
 }
 .ligth-option-item{
+  max-width: 300px;
   position: relative;
   z-index: 25;
   padding: 20px;
@@ -429,6 +430,10 @@ flex-direction: column;height: auto;
 
   .slide-3 .big-light-text{
     padding-right: 30px;
+  }
+
+  .slide-3{
+    padding-bottom: 0;
   }
 }
 
