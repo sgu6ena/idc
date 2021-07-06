@@ -1,4 +1,4 @@
-const swiper = new Swiper(".big-light", {
+const bigLight = new Swiper(".big-light", {
     speed:700,
     direction: "vertical",
     slidesPerView: 1,
@@ -13,3 +13,7 @@ const swiper = new Swiper(".big-light", {
     },
     effect:'slide',
 });
+
+if (document.documentElement.scrollWidth < 991) {
+    bigLight.destroy();
+}
