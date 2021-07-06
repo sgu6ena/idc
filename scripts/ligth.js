@@ -1,4 +1,4 @@
-const swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".big-light", {
     speed:700,
     direction: "vertical",
     slidesPerView: 1,
@@ -11,5 +11,5 @@ const swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    effect:'fade',
+    effect:'slide',
 });
