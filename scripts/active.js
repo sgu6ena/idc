@@ -69,3 +69,10 @@ const tarrifsOptions = {
 
 const tarifsSliderMain = new Swiper('#pills-tariff-main', tarrifsOptions);
 const tarifsSliderOther = new Swiper('#pills-tariff-other', tarrifsOptions);
+console.log("document.documentElement.scrollWidth",document.documentElement.scrollWidth);
+
+// * * отключение слайдера
+if (document.documentElement.offsetWidth < 991) {
+    bigActive.destroy();
+    console.log("document.documentElement.offsetWidth",document.documentElement.offsetWidth);
+}

@@ -447,11 +447,10 @@
                 </div>
 
             </div>
-            <div class="swiper-slide slide-2 " style="background-color:blue;">
+            <div class="swiper-slide slide-2 " >
                 <div class="blur">
-                   
                         <div class="row">
-                            <div class="col-lg-6 offset-1">
+                            <div class="col-lg-6 offset-lg-1 offset-md-2 col-md-10">
                                 <div class="big-active-slide-title">Тарифы</div>
                                 <div class="big-active-slide-text">Идеальное качество голоса и мгновенное соединение с абонентом</div>
                                 <div class="big-active-slide-link-wrapper">
@@ -459,7 +458,7 @@
                                     <a class="big-active-slide-link">Дополнительные услуги</a>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-5  col-md-10">
                                 <div class="tariffs-options tariffs-icon">
                                     <ul class="nav nav-pills tariffs-list-item " id="pills-tariff-tab" role="tablist">
                                             <li class="nav-item " role="presentation">
@@ -1104,7 +1103,8 @@
                                         if(phone.match(/^0{1}\(7{2}[5789]$/) !== null) this.value = phone+')';
                                         if(phone.match(/^0{1}\(7{2}[^5789]$/) !== null) this.value = phone.slice(0,-1);
                                         if(phone.match(/^0{1}\(7{2}\d$/)!== null && window.event.keyCode==8) this.value ='0(77';
-                                        if(phone.match(/^0{1}\(7{2}\d\)\d{0,5}\D$/) !== null) this.value = phone.slice(0,-1);
+                                        if(phone.match(/^0{1}\(7{2}\d{0,5}\D\)\d{0,5}\D$/) !== null) this.value = phone.slice(0,-1);
+                                        if(phone.match(/^0{1}\(7{2}\d{0,5}\D{0,6}\d{0,5}\D$/) !== null) this.value = phone.slice(0,-1);
                                         " 
                                         onclick="
                                          this.value.length<=4?this.value = '0(77':'';

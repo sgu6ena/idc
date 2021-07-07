@@ -371,5 +371,30 @@
 
 .tariffs-options {
   margin-bottom: 30px;
+}
 
+@media (max-width:719px) {
+  .big-active-title-back{
+
+    visibility: hidden;
+  }
+  .big-active-title{
+
+    font-size:70px;
+  } 
+  .big-active-button{
+    margin-top: 250px;
+  }
+
+  .big-active-slide-title{
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size:40px;
+  }
+  .big-active-slide-text{
+    font-size: 24px;
+  }
+  .big-active-slide-link{
+    font-size: 24px;
+  }
 }
