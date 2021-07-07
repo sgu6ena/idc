@@ -4,6 +4,7 @@ const bigActive = new Swiper(".big-active", {
     autoplay:{
       delay:30000,  
     },
+    simulateTouch:false,
     speed:700,
     sensitivity: 20,
     // direction: 'vertical',
