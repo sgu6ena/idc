@@ -22,11 +22,12 @@ const bigActive = new Swiper(".big-active", {
 
 
 const tarrifsOptions = {
+    centerSlides:true,
     touchRatio: 0.1,
     loop: true,
     autoplay: true,
-    speed:1000,
-    slidesPerView: 2.3,
+    speed:2000,
+    // slidesPerView: 3,
     navigation: {
         prevEl:'.arrow-slider-prev',
         nextEl:'.arrow-slider-next',
@@ -46,11 +47,15 @@ const tarrifsOptions = {
         },
    
         1200: {
-            slidesPerView: 3,
-            spaceBetween: 0,
+            slidesPerView: 2.8,
+            spaceBetween: 30,
         },
     },
     effect:'coverflow',
+    coverflowEffect: {
+        rotate: 30,
+        slideShadows: false,
+      },
     observer: true,
     observeParents: true,
     observeSlideChildren: true,

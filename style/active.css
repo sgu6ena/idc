@@ -325,11 +325,18 @@ border-radius: 48px;
     width: 90%;
   }
 
-  .slide-2 .swiper-slide:not(.swiper-slide-next) .tariff-item{
-      overflow: hidden;
+  .slide-2 .swiper-slide:not(.swiper-slide-next) .tariff-item{ 
+    transform: scale(.8);
+    transition: 2s;
       opacity: .3;
-  }
+ }
 
+  .slide-2 .swiper-slide.swiper-slide-next .tariff-item{
+    transform: scale(1);
+    transition: 2s;
+    opacity: 1;
+
+  }
   .slide-2 .swiper-slide-active{
 
 }
