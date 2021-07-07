@@ -32,7 +32,7 @@ const tarrifsOptions = {
     touchRatio: 0.1,
     loop: true,
     autoplay: true,
-    speed:2000,
+    speed:1000,
     // slidesPerView: 3,
     navigation: {
         prevEl:'.arrow-slider-prev',

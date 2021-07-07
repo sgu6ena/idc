@@ -8,6 +8,8 @@
     font-style: normal;
 }
 
+
+
 @font-face {
     font-family: 'San Francisco Pro Semibold';
     src: local('San Francisco Pro Display Semibold'), local('San-Francisco-Pro-Display-Semibold'),
@@ -1141,7 +1143,7 @@ padding-bottom: 15px;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-
+.hvr-underline-from-center.active:before,
 .hvr-underline-from-center:hover:before,
 .hvr-underline-from-center:focus:before,
 .hvr-underline-from-center:active:before {
