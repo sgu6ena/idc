@@ -50,6 +50,18 @@
     top: 0px;
     /* border-left: 3px solid rgba(255, 255, 255, .5); */
   }
+
+  .big-active-next-slide {
+    z-index: 50;
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+  }
+
+  .tariffs-swiper-pagination-wrapper{
+      margin-top: 50px;
+      margin-left: 20px;
+  }
     .blur {
         background: rgba(0, 0, 0, .2); 
         backdrop-filter: blur(5px); 
@@ -144,6 +156,7 @@ border-radius: 48px;
     transform: translateX(8px);
   }
 
+  
 
 .big-active-title-back{
     z-index: 35;
@@ -161,37 +174,35 @@ border-radius: 48px;
     letter-spacing: 0.08em;
     color: transparent; 
     -webkit-text-stroke:5px  rgba(255, 255, 255, 0.5);
-    animation: pulse 5s infinite ease-in-out;
+    animation: pulse 2s 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 
 @-webkit-keyframes pulse {
     0% {
-      transform:scale(1)
-    }
-    50% {
         font-size: 750px;
         line-height: 895px;
     }
     100% {
-        transform:scale(1)
+        font-size: 350px;
+        line-height: 418px;
     }
   }
   @keyframes pulse {
     0% {
-        transform:scale(1)
-    }
-    50% {
         font-size: 750px;
         line-height: 895px;
     }
     100% {
-        transform:scale(1)
+        font-size: 350px;
+        line-height: 418px;
     }
   }
 
   
-
+.tab-content{
+    overflow: hidden;
+}
 
   .big-active-slide-title{
     font-family: "San Francisco Pro Heavy";
@@ -280,4 +291,40 @@ border-radius: 48px;
     border: none;
     background: #F8F32B;
     border-radius: 8px;
+  }
+  .tariffs-list-item .tariffs-list-button, .tariffs-list-item .tariffs-list-button.active{
+    
+    background-color: transparent;
+}
+.tariffs-list-item .tariffs-list-button.active{
+    color:#F2F3F7;
+}
+
+.tariffs-list-item .tariffs-list-button:hover{
+    color: #F2F3F7;
+
+}
+
+.hvr-underline-from-center:before {
+
+    color: var(--second-accent);
+    background: var(--second-accent);
+      }
+  
+.tariff-item-wrapper {
+    position: relative;
+    width: 300px;
+    
+  }
+  
+  .tariff-item {
+    position: relative;
+    z-index: 50;
+    min-width: 230px;
+    max-width: 260px;
+    width: 90%;
+  }
+
+  .slide-2 .swiper-slide:not(.swiper-slide-active){
+      opacity: .5;
   }

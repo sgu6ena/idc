@@ -3,9 +3,9 @@ const bigActive = new Swiper(".big-active", {
 
     slidesPerView: 1,
     spaceBetween: 0,
-    mousewheel: true,
+    // mousewheel: true,
     navigation: {
-        nextEl: '.big-light-next-slide',
+        nextEl: '.big-active-next-slide',
     },
     pagination: {
         el: ".swiper-pagination",
@@ -13,3 +13,47 @@ const bigActive = new Swiper(".big-active", {
     },
     effect:'slide',
 });
+
+
+
+const tarrifsOptions = {
+    loop: true,
+    autoplay: true,
+    speed:1000,
+    slidesPerView: 1,
+    // pagination: {
+    //     el: '.tariffs-swiper-pagination',
+    //     clickable: true,
+    //     type: 'bullets',
+    // },
+    navigation: {
+        prevEl:'.arrow-slider-prev',
+        nextEl:'.arrow-slider-next',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1.2,
+            spaceBetween: 0
+        },
+        410:{
+            slidesPerView: 1.4,
+            spaceBetween: 0
+        },
+        500: {
+            slidesPerView: 1.6,
+            spaceBetween: 0,
+        },
+   
+        1200: {
+            // watchOverflow: true,
+            slidesPerView: 2.3,
+            spaceBetween: 0,
+        },
+    },
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+};
+
+const tarifsSliderMain = new Swiper('#pills-tariff-main', tarrifsOptions);
+const tarifsSliderOther = new Swiper('#pills-tariff-other', tarrifsOptions);
