@@ -1,5 +1,9 @@
 const bigActive = new Swiper(".big-active", {
     loop: true,
+    autoplay: true,
+    autoplay:{
+      delay:30000,  
+    },
     speed:700,
     sensitivity: 20,
     // direction: 'vertical',
