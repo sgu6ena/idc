@@ -1,9 +1,10 @@
 const bigActive = new Swiper(".big-active", {
     speed:700,
-
+    sensitivity: 20,
+    // direction: 'vertical',
     slidesPerView: 1,
     spaceBetween: 0,
-    // mousewheel: true,
+    mousewheel: true,
     navigation: {
         nextEl: '.big-active-next-slide',
     },
@@ -12,11 +13,16 @@ const bigActive = new Swiper(".big-active", {
         clickable: true,
     },
     effect:'slide',
+    controller: {
+        by: 'container',
+      },
+      touchRatio: 0.1,
 });
 
 
 
 const tarrifsOptions = {
+    touchRatio: 0.1,
     loop: true,
     autoplay: true,
     speed:1000,
@@ -40,10 +46,11 @@ const tarrifsOptions = {
         },
    
         1200: {
-            slidesPerView: 2.3,
+            slidesPerView: 3,
             spaceBetween: 0,
         },
     },
+    effect:'coverflow',
     observer: true,
     observeParents: true,
     observeSlideChildren: true,

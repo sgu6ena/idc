@@ -174,7 +174,7 @@ border-radius: 48px;
     letter-spacing: 0.08em;
     color: transparent; 
     -webkit-text-stroke:5px  rgba(255, 255, 255, 0.5);
-    animation: pulse 2s 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation: pulse 13s 1 linear;
 }
 
 
@@ -325,6 +325,11 @@ border-radius: 48px;
     width: 90%;
   }
 
-  .slide-2 .swiper-slide:not(.swiper-slide-active){
-      opacity: .5;
+  .slide-2 .swiper-slide:not(.swiper-slide-next) .tariff-item{
+      overflow: hidden;
+      opacity: .3;
   }
+
+  .slide-2 .swiper-slide-active{
+
+}
