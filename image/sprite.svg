@@ -29,6 +29,9 @@
   <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="arrow-right">
     <path d="M1 8h14m0 0L8 1m7 7l-7 7" stroke="#37355B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
+   <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="arrow-right-none">
+    <path d="M1 8h14m0 0L8 1m7 7l-7 7"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
   <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 8" id="Check_mark">
     <path d="M8.6 1.257l-5.2 5.2-2.4-2.4" stroke="#006285" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
