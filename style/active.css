@@ -332,7 +332,7 @@ border-radius: 48px;
  }
 
   .slide-2 .swiper-slide.swiper-slide-next .tariff-item{
-    transform: scale(1);
+    transform: scale(1.1);
     transition: 2s;
     opacity: 1;
 
