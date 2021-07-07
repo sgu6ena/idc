@@ -20,12 +20,7 @@ const tarrifsOptions = {
     loop: true,
     autoplay: true,
     speed:1000,
-    slidesPerView: 1,
-    // pagination: {
-    //     el: '.tariffs-swiper-pagination',
-    //     clickable: true,
-    //     type: 'bullets',
-    // },
+    slidesPerView: 2.3,
     navigation: {
         prevEl:'.arrow-slider-prev',
         nextEl:'.arrow-slider-next',
@@ -45,7 +40,6 @@ const tarrifsOptions = {
         },
    
         1200: {
-            // watchOverflow: true,
             slidesPerView: 2.3,
             spaceBetween: 0,
         },
