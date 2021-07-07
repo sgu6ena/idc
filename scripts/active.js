@@ -1,4 +1,5 @@
 const bigActive = new Swiper(".big-active", {
+    loop: true,
     speed:700,
     sensitivity: 20,
     // direction: 'vertical',
