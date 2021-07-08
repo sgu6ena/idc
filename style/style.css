@@ -813,14 +813,14 @@ top: 2px!important;
     width: 327px;
     height: 150px;
     background: #FFFFFF;
-    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    /* box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25); */
     border-radius: 8px;
     padding: 20px;
     margin: 0 30px 30px 30px;
     text-decoration: none;
 }
 .card-balance:hover{
-    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.5);
+    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
     /* transform: translateY(-5px) scale(1.00); */
     transition:0.3s;
 }
@@ -1165,13 +1165,13 @@ top: 2px!important;
 
 .tab-tariff a:hover > .tariff-item{
     text-decoration: none;
-    box-shadow: 0px 20px 12px rgba(92, 92, 92, 0.6);
+    box-shadow: 0px 20px 20px rgba(92, 92, 92, 0.25);
     /* transform: translateY(-5px); */
     transition:.5s;
 }
 
 .tariff-item {
-    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    /* box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25); */
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     background: #FFFFFF;
@@ -1358,7 +1358,7 @@ color: var(--title-second);
     width: 340px;
     padding: 20px;
     background: #F2F3F7;
-    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    /* box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25); */
     border-radius: 25px;
     margin-bottom: 20px;
 }
@@ -1408,7 +1408,7 @@ color: var(--title-second);
 .extra a:hover > .extra-item{
     /* transform: translateY(-5px); */
     transition: 0.5s;
-    box-shadow: 0px 5px 10px rgba(92, 92, 92, 0.5);
+    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
 }
 
 .extra-title {
@@ -1663,7 +1663,7 @@ h2.news-title {
 .news a:hover > .news-item {
     /* transform: translateY(-5px); */
     transition: 0.5s;
-    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.4);
+    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
 }
 
 .news-item {
@@ -1671,7 +1671,7 @@ h2.news-title {
     padding: 20px 40px;
     margin: 0px 25px 25px 25px;
     background: #FFFFFF;
-    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    /* box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25); */
     border-radius: 8px;
 }
 
