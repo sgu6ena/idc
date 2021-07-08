@@ -479,7 +479,7 @@
 
 
 @media(max-width:991px) {
-  .swiper-wrapper {
+  .big-active >.swiper-wrapper {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -491,7 +491,9 @@
     height: auto;
     align-content: flex-start;
   }
-
+.big-active .slide-2{
+  height: 1100px;
+}
   .swiper-pagination,  .show-more,   .hr-line {
     visibility: hidden;
   }
@@ -514,4 +516,19 @@
     width: 100%;
     text-align: center;
   }
+
+  .slide-2 .swiper-slide:not(.swiper-slide-active) .tariff-item,
+  .slide-2 .swiper-slide:not(.swiper-slide-active) .tariff-item {
+    transform: scale(1);
+    transition: 0s;
+    opacity: 0;
+    display: none;
+  }
+  .slide-2 .swiper-slide.swiper-slide-active .tariff-item {
+    transform: scale(1);
+    transition: 0s;
+    opacity: 1;
+  
+  }
+
 }
