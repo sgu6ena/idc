@@ -479,6 +479,9 @@
 
 
 @media(max-width:991px) {
+  body{
+    overflow-x: hidden;
+  }
   .big-active >.swiper-wrapper {
     display: flex;
     flex-direction: column;
