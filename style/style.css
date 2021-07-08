@@ -1950,11 +1950,26 @@ footer {
     text-decoration: none;
     color: #006285;
     font-size: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 10px;transition:0.5s;
+    
 }
 
+.footer-my-idc-link:hover  .fa-apple,
+.footer-my-idc-link:hover  .fa-google-play{
+    transform: rotateY(360deg);
+    transition:0.5s;
+}
+.footer-my-idc-link:hover:before  ,
+.footer-my-idc-link:hover:before {
+    transform: rotateY(360deg);
+    transition:0.5s;
+}
 .footer-my-idc-link:hover {
     color: #006285;
+}
+
+.fa-apple, .fa-google-play{
+    font-size: 35px;
 }
 
 .footer-my-idc-store {
@@ -1964,7 +1979,74 @@ footer {
     font-size: 20px;
 }
 
-.footer-social {}
+	
+
+.footer-social{
+    position: relative;
+}
+
+.footer-social-list {
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+  
+}
+
+ .footer-social-item {
+
+    list-style: none;
+}
+
+.footer-social-item a {
+   
+    width: 45px;
+    height: 45px;
+    background-color: #006285;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    margin: 0 10px;
+    display: block !important;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #006285;
+    z-index: 1;
+}
+
+ .footer-social-item a .icon {
+    position: relative;
+    color: #fff;
+    transition: .5s;
+    z-index: 3;
+}
+
+ .footer-social-item a:hover .icon {
+    color: #006285;
+    transform: rotateY(360deg);
+}
+
+.footer-social-item a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+}
+
+.footer-social-item a:hover:before {
+    top: 0;
+}
+
+.footer-social-item a:before {
+    background: #fff;
+}
+
 
 .footer-social-title {
     font-family: 'San Francisco Pro Bold';
@@ -2178,71 +2260,3 @@ footer {
 
 
 
-	
-
-.footer-social{
-    position: relative;
-}
-
-.footer-social-list {
-    margin-top: 10px;
-    padding: 0;
-    display: flex;
-    position: relative;
-    margin-bottom: 20px;
-  
-}
-
- .footer-social-item {
-
-    list-style: none;
-}
-
-.footer-social-item a {
-   
-    width: 45px;
-    height: 45px;
-    background-color: #006285;
-    text-align: center;
-    line-height: 40px;
-    font-size: 25px;
-    margin: 0 10px;
-    display: block !important;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    border: 3px solid #006285;
-    z-index: 1;
-}
-
- .footer-social-item a .icon {
-    position: relative;
-    color: #fff;
-    transition: .5s;
-    z-index: 3;
-}
-
- .footer-social-item a:hover .icon {
-    color: #006285;
-    transform: rotateY(360deg);
-}
-
-.footer-social-item a:before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f00;
-    transition: .5s;
-    z-index: 2;
-}
-
-.footer-social-item a:hover:before {
-    top: 0;
-}
-
-.footer-social-item a:before {
-    background: #fff;
-}
