@@ -533,5 +533,7 @@
     opacity: 1;
   
   }
-
+.slider-next{
+  margin-right: 15px;
+}
 }

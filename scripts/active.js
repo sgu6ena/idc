@@ -1,9 +1,9 @@
 const bigActive = new Swiper(".big-active", {
     loop: true,
-    autoplay: true,
-    autoplay:{
-      delay:30000,  
-    },
+    // autoplay: true,
+    // autoplay:{
+    //   delay:30000,  
+    // },
     simulateTouch:false,
     speed:700,
     sensitivity: 20,
@@ -40,14 +40,8 @@ const tarrifsOptions = {
         nextEl:'.arrow-slider-next',
     },
     breakpoints: {
-        // 320: {
-        //     slidesPerView: 1.2,
-        //     spaceBetween: 0
-        // },
-        // 410:{
-        //     slidesPerView: 1.4,
-        //     spaceBetween: 0
-        // },
+
+        
         700: {
             slidesPerView: 1,
             spaceBetween: 0,
@@ -57,14 +51,14 @@ const tarrifsOptions = {
         1200: {
             slidesPerView: 2.8,
             spaceBetween: 30,
-            effect:'coverflow',
-            coverflowEffect: {
-                rotate: 30,
-                slideShadows: false,
-              },
+           
         },
     },
-
+    effect:'coverflow',
+    coverflowEffect: {
+        rotate: 30,
+        slideShadows: false,
+      },
     observer: true,
     observeParents: true,
     observeSlideChildren: true,
