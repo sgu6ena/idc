@@ -1876,7 +1876,11 @@ footer {
     margin-bottom: 27px;
 }
 
-.footer-phone-wrapper {}
+.footer-phone-wrapper {
+    font-size: 36px;
+    line-height: 43px;
+    color: #BEBEBE;;
+}
 
 .footer-link-phone {
     text-decoration: none;
@@ -1888,7 +1892,8 @@ footer {
 }
 
 .footer-link-phone:hover {
-    color: #37355B;
+    color: #006285;
+
 }
 
 .footer-link-list {
