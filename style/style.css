@@ -177,7 +177,6 @@ top: 2px!important;
 }
 
 .all-sites-dropdown-item {
-
     width: 100%;
     font-family: "San Francisco Pro";
     padding: 8px 35px 8px 35px;
@@ -186,6 +185,11 @@ top: 2px!important;
     line-height: 21px;
     color: var(--background-color);
     background-color: var(--third-default);
+}
+
+
+.all-sites-dropdown-item:active, .all-sites-dropdown-item:focus, .all-sites-dropdown-item:hover{
+    color: var(--third-default);
 }
 
 .button-search {
