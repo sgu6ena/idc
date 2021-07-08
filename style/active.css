@@ -229,11 +229,10 @@
   color: #FFFFFF;
 }
 
-.big-active-slide-link-wrapper {
-  padding-top: 25px;
-}
+.big-active-slide-link-wrapper {}
 
 .big-active-slide-link {
+  margin-top: 25px;
   display: inline-block;
   font-family: "San Francisco Pro";
   font-size: 24px;
@@ -272,12 +271,24 @@
   color: var(--second-accent);
 }
 
+.form-capability {
+  position: relative;
+  max-width: 570px;
+}
+
 .form-capability-label {
   font-family: "San Francisco Pro Semibold";
-  ;
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+}
+
+.input-wrapper {
+  width: 100%;
+}
+
+.icon-info {
+  fill: #F2F3F7;
 }
 
 .form-capability-input {
@@ -290,6 +301,7 @@
   border-radius: 8px;
   height: 50px;
   margin-right: 26px;
+  width: 100%;
 }
 
 
@@ -304,6 +316,53 @@
   background: #F8F32B;
   border-radius: 8px;
 
+}
+
+
+.form-capability-result {
+  font-family: "San Francisco Pro";
+  font-size: 14px;
+  line-height: 20px;
+  position: absolute;
+  margin-top: 15px;
+  background: #F2F3F7;
+  border: 1px solid #006285;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 17px;
+  color: #37355B;
+
+}
+
+.form-capability-result-icon-wrapper {}
+
+.form-capability-result-icon {
+  background-color: #006285;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+.form-capability-result-text-wrapper {
+  margin-left: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.form-capability-result-list {
+  margin: 0;
+}
+
+.form-capability-result-description {
+  font-family: "San Francisco Pro Bold";
+  display: block;
+
+  margin: 0;
+}
+
+.form-capability-result-boolean {
+  font-family: "San Francisco Pro Bold";
 }
 
 .tariffs-list-item .tariffs-list-button,
@@ -337,7 +396,7 @@
 
 
 .slider-prev:active .arrow-slider-prev,
-.slider-next:active .arrow-slider-next{
+.slider-next:active .arrow-slider-next {
   fill: var(--second-accent);
 }
 
@@ -354,6 +413,21 @@
   max-width: 260px;
   width: 90%;
 }
+
+.active-tariffs-button {
+  margin-top: 14px;
+  background: #F8F32B;
+  border-radius: 48px;
+  border: none;
+  font-family: 'San Francisco Pro';
+  padding: 5px 50px;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #37355B;
+
+}
+
 
 .slide-2 .swiper-slide:not(.swiper-slide-next) .tariff-item,
 .slide-2 .swiper-slide:not(.swiper-slide-next) .tariff-item {
@@ -374,27 +448,70 @@
 }
 
 @media (max-width:719px) {
-  .big-active-title-back{
+  .big-active-title-back {
 
     visibility: hidden;
   }
-  .big-active-title{
 
-    font-size:70px;
-  } 
-  .big-active-button{
+  .big-active-title {
+
+    font-size: 70px;
+  }
+
+  .big-active-button {
     margin-top: 250px;
   }
 
-  .big-active-slide-title{
+  .big-active-slide-title {
     margin-top: 50px;
     margin-left: 50px;
-    font-size:40px;
+    font-size: 40px;
   }
-  .big-active-slide-text{
+
+  .big-active-slide-text {
     font-size: 24px;
   }
-  .big-active-slide-link{
+
+  .big-active-slide-link {
     font-size: 24px;
+  }
+}
+
+
+@media(max-width:991px) {
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-content: flex-start;
+  }
+
+  .swiper-pagination,  .show-more,   .hr-line {
+    visibility: hidden;
+  }
+
+  .big-active {
+    height: auto;
+  }
+
+  .blur {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .form-capability-input {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .big-active-slide-link {
+    width: 100%;
+    text-align: center;
   }
 }

@@ -143,6 +143,8 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="login-backward">
     <path d="M12.834 7H1.167m0 0L7 12.833M1.167 7L7 1.167" stroke="#D0D7DD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
-
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 10" id="info">
+    <path d="M2 1a1 1 0 11-2 0 1 1 0 012 0zM1 4a1 1 0 00-1 1v4a1 1 0 102 0V5a1 1 0 00-1-1z" ></path>
+  </symbol>
 
 </svg>
