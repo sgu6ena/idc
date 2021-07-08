@@ -92,7 +92,7 @@
                         </svg>
 
                     </button>
-                    <button class="button-login d-flex align-items-center" data-bs-toggle="modal"
+                    <button class="button-login d-flex align-items-center hidden" data-bs-toggle="modal"
                         data-bs-target="#staticBackdropLogin">
                         <svg class="icon-user" width="22px" height="22px">
                             <use xlink:href="image/sprite.svg#user"></use>
@@ -100,6 +100,31 @@
 
                         <span class="login-text">Войти</span>
                     </button>
+                    
+
+
+
+                    <button class="button-logout d-flex align-items-center header-nav-link all-sites-dropdown-toogle dropdown-toggle " id="logoutButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="icon-user" width="22px" height="22px">
+                        <use xlink:href="image/sprite.svg#user"></use>
+                    </svg>
+
+                    <span class="login-text">777 77777 </span>
+                </button>
+
+
+            <ul class="dropdown-menu all-sites-dropdown dropdown-login" aria-labelledby="logoutButton">
+                <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item"
+                        href="#">Управление услугами</a></li>
+                <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item"
+                        href="#">Банковские карты</a></li>
+                        <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item"
+                            href="#">Смена пароля</a></li>
+                <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item"
+                        href="#">Выход</a></li>
+            </ul>
+
+
                     <button class="button-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTopMenu"
                         aria-controls="offcanvasTopMenu">
                         <svg class="icon-menu-alt" width="33px" height="33px">

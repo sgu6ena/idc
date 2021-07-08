@@ -169,10 +169,9 @@ padding-top: 15px;
 padding-bottom: 15px;
 }
 
-.dropdown-item-li{
-
+.dropdown-login{
+top: 2px!important;
 }
-
 .dropdown-item:hover {
     background-color: var(--background-color);
 }
@@ -209,6 +208,8 @@ padding-bottom: 15px;
     width: 85px;
     height: 22px;
 }
+
+
 
 .login-text {
     font-size: 18px;
@@ -431,9 +432,7 @@ padding-bottom: 15px;
 }
 
 .hidden {
-
-    display: none;
-
+    display: none !important;
 }
 
 @-webkit-keyframes fadeIn {
@@ -1830,7 +1829,11 @@ h3.news-title {
     margin: 0;
 
 }
+.button-logout{
 
+    display: none ;
+    margin-right: 25px;
+}
 
 
 
