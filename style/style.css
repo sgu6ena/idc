@@ -896,7 +896,7 @@ input[type=number]::-webkit-outer-spin-button {
     /* height: 150px; */
     width: auto;
     background: #FFFFFF;
-    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+
     border-radius: 8px;
     /* padding: 20px; */
     margin: 0 30px 50px;
@@ -2077,6 +2077,11 @@ footer {
     .modal-dialog-login {
         margin-right: 100px;
     }
+
+    footer{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 
@@ -2095,6 +2100,10 @@ footer {
     .header-nev-item {
         margin-left: 10px;
     }
+    footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 
@@ -2106,7 +2115,15 @@ footer {
     .service-card-description {
         padding: 30px;
     }
-
+    footer{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .footer-phone-wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+            }
 }
 
 @media(max-width:767px) {
@@ -2219,7 +2236,16 @@ footer {
     .card-balance-payment {
         margin: 0 15px;
     }
+    footer{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+   
+    .footer-link-item {
+        margin-left: 80px;
+    }
 }
+
 
 @media(max-width: 576px) {
     .login-text {
@@ -2247,6 +2273,10 @@ footer {
         margin-right: auto;
         margin-left: auto;
     }
+    footer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
 }
 
@@ -2254,6 +2284,10 @@ footer {
     .header-end {
         margin: 10px;
         padding-left: 10px;
+    }
+    footer{
+        padding-left: 20px;
+        padding-right:20px;
     }
 }
 
