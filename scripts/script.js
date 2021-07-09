@@ -191,3 +191,9 @@ selectPayment.onchange = () => {
     document.querySelector(`#${value}`).classList.add('show');
 }
 
+// * * likes
+
+const shopCardFavoritesButton = document.querySelectorAll('.shop-card-favorites-button');
+shopCardFavoritesButton.forEach(item => item.addEventListener('click', () =>{
+    item.classList.toggle('favorits');
+}))
