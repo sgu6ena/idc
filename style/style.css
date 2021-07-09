@@ -1047,9 +1047,6 @@ a:title {
     padding-bottom: 50px;
 }
 
-.tariffs-head {
-    /* margin-bottom: 30px; */
-}
 
 .tariffs-title {
     font-weight: 500;
@@ -1180,15 +1177,9 @@ a:title {
     color: #006285;
 }
 
-.tab-tariff a:hover>.tariff-item {
-    text-decoration: none;
-    box-shadow: 0px 20px 20px rgba(92, 92, 92, 0.25);
-    /* transform: translateY(-5px); */
-    transition: .5s;
-}
 
 .tariff-item {
-    /* box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25); */
+
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     background: #FFFFFF;
@@ -1198,10 +1189,15 @@ a:title {
     min-width: 273px;
     max-width: 300px;
     border-radius: 25px;
-    margin: 20px;
+    margin: 30px;
+    margin-bottom: 30px;
 
 }
-
+.tab-tariff a:hover>.tariff-item {
+    text-decoration: none;
+    box-shadow: 0px 20px 30px rgba(92, 92, 92, 0.45);
+    transition: .5s;
+}
 .tariff-image {
     width: 100%;
     border-radius: 25px 25px 0px 0px;
