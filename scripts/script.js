@@ -128,17 +128,30 @@ const shopSlider = new Swiper('.shop-slider', {
     },
     breakpoints: {
         320: {
-            slidesPerView: 1.1,
-            spaceBetween: 20,
+            slidesPerView: 1.2,
+            spaceBetween: 0,
         },
+        440: {
+            slidesPerView: 1.6,
+            spaceBetween: 0,
+        },
+
         770: {
-            slidesPerView: 2.2,
-            spaceBetween: 30,
+            slidesPerView:2.8,
+            spaceBetween: 0,
+        },
+        990: {
+            slidesPerView:3.4,
+            spaceBetween: 0,
         },
         1100: {
-            slidesPerView: 3,
+            slidesPerView: 4,
+            spaceBetween: 0,
+        },
+        1400: {
+            slidesPerView: 5,
             watchOverflow: true,
-            spaceBetween: 50
+            spaceBetween: 0,
         },
 
     },

@@ -1480,10 +1480,18 @@ a:title {
 .swiper-wrapper .swiper-shop-slide {
     display: flex;
     align-self: baseline;
+
+    justify-content: space-evenly
 }
 
 .shop-card {
     --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin: 0 !important;
+
     position: relative;
     padding: 25px 20px;
     height: 407px;
@@ -1491,7 +1499,7 @@ a:title {
     margin: 20px;
     overflow: hidden;
     background: #FFFFFF;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .shop-card:hover {
@@ -1514,15 +1522,29 @@ a:title {
     left: 20px;
     align-items: center;
     padding: 3.5px 21px;
-    background: var(--second-accent);
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
     border-radius: 5px;
     font-family: "San Francisco Pro Bold";
     font-size: 12px;
     line-height: 14px;
-    color: #37355B;
 }
 
+.shop-card-tag-yellow{
+    background: #F8F32B;
+    color: #37355B;
+}
+.shop-card-tag-red{
+    background: #FF0000;
+    color:  #FFFFFF;
+}
+.shop-card-tag-green{
+    background: #00A907;
+    color:  #FFFFFF;
+}
+.shop-card-tag-orange{
+    background: #FF9900;
+    color:  #FFFFFF;
+}
 .shop-card-type {
     padding-top: 9px;
     font-family: "San Francisco Pro";
@@ -1546,7 +1568,11 @@ a:title {
     line-height: 12px;
     color: #7C7B8A;
 }
-
+.shop-card-credit-wrapper{
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
 .shop-card-credit {
     display: inline-block;
     padding: 3px 10px;
@@ -1559,7 +1585,11 @@ a:title {
     color: #FFFFFF;
 }
 
-.shop-card-old-price-wrapper {}
+.shop-card-old-price-wrapper {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
 
 .shop-card-old-price {
     font-family: "San Francisco Pro Semibold";
@@ -1627,7 +1657,7 @@ border-radius: 4px;
     font-size:12px;
     color: transparent; /* прозрачный цвет букв */
     -webkit-text-stroke: 1px #7C7B8A;
-    /* color: #7C7B8A; */
+
   }
   .shop-card-favorites-button:hover:not(.favorits) .fa-heart{
         transition: 0.5s;
@@ -1637,55 +1667,6 @@ border-radius: 4px;
     -webkit-text-stroke: 1px #066285;
     color: #066285;
   }
-/*
-.icon-3d {
-    fill: var(--text-second);
-}
-
-.shop-3d-text {
-    font-family: 'San Francisco Pro';
-
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: var(--text-second);
-}
-
-.shop-card-name {
-    margin-top: 28px;
-    font-family: 'San Francisco Pro';
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    color: var(--text-second);
-
-}
-
-.shop-card-description {
-
-    margin-bottom: 31px;
-
-}
-
-.shop-card-price {
-    font-family: 'Rubik';
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: var(--title-second);
-}
-
-.shop-card-currency {
-    font-size: 13px;
-    line-height: 15px;
-    padding-left: 6px;
-    color: var(--title-second);
-}
-
-.shop-card-button {
-    border: none;
-    background: transparent;
-} */
 
 
 /* * Сервисы * */
@@ -1758,15 +1739,11 @@ border-radius: 4px;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-
-
     color: var(--title-second);
 }
 
 .servise-card-image-wrapper {
-
     margin-top: -5%;
-    /* height: 120%; */
 }
 
 
@@ -1778,16 +1755,11 @@ border-radius: 4px;
 
 
 /* * новости */
-
-
-
 .news {
-
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     padding-top: 50px;
     padding-bottom: 30px;
-
 }
 
 .news-head {
@@ -1810,7 +1782,6 @@ h2.news-title {
 }
 
 .news a:hover>.news-item {
-    /* transform: translateY(-5px); */
     transition: 0.5s;
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
 }
@@ -1820,7 +1791,6 @@ h2.news-title {
     padding: 20px 40px;
     margin: 0px 25px 25px 25px;
     background: #FFFFFF;
-    /* box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25); */
     border-radius: 8px;
 }
 
