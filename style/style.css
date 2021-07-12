@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     
     font-family: 'San Francisco Pro';
     src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
@@ -42,7 +42,7 @@
         url('../fonts/SFProDisplay-Heavy.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
-}
+} */
 
 
 
@@ -148,7 +148,8 @@ a:title {
 
 .header-nav-link {
 
-    font-family: "San Francisco Pro Semibold", sans-serif;
+    font-family:  'Source Sans Pro', sans-serif;
+    font-weight: 600;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.01em;
@@ -193,7 +194,8 @@ a:title {
 
 .all-sites-dropdown-item {
     width: 100%;
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     padding: 8px 35px 8px 35px;
     font-weight: 500;
     font-size: 18px;
@@ -322,7 +324,8 @@ a:title {
 }
 
 .modal-login-text {
-    font-family: "San Francisco Pro Bold";
+  font-family: 'Source Sans Pro', sans-serif;
+font-weight: 700;
     font-size: 14px;
     margin-top: 18px;
     color: var(--title-second);
@@ -330,7 +333,8 @@ a:title {
 
 .modal-login-text-descr {
     margin-top: 3px;
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     color: #7C7B8A;
@@ -349,7 +353,8 @@ a:title {
     background: var(--background-color);
     border: 1px solid #D0D7DD;
     border-radius: 8px;
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #37355B;
@@ -373,7 +378,8 @@ a:title {
 }
 
 .card-registration-link{
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     font-size: 14px;
     color: #37355B;
     text-decoration: none;
@@ -386,7 +392,8 @@ a:title {
     display: none;
     left: 0;
     top: 30px;
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     font-size: 10px;
     color: #FF0000;
 }
@@ -396,7 +403,8 @@ a:title {
     background: var(--second-accent);
     border-radius: 8px;
     border: none;
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     padding: 5px;
     font-weight: 500;
     font-size: 14px;
@@ -412,7 +420,8 @@ a:title {
 
 
 .button-modal-another-login {
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #37355B;
@@ -421,7 +430,8 @@ a:title {
 }
 
 .button-modal-forgotten-password {
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     color: #7C7B8A;
@@ -540,7 +550,8 @@ a:title {
 
 .menu-item-title {
     display: inline-block;
-    font-family: "San Francisco Pro Semibold";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 600;
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.01em;
@@ -558,7 +569,8 @@ a:title {
     background: linear-gradient(var(--second-accent), var(--second-accent)) left bottom;
     background-size: 0% 3px;
     background-repeat: no-repeat;
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     padding-bottom: 8px;
@@ -582,7 +594,8 @@ a:title {
 }
 
 .input-search {
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     font-weight: 300;
     font-size: 14px;
     line-height: 14px;
@@ -1041,7 +1054,8 @@ a:title {
 
 .select-tariff {
     filter: drop-shadow(0px 8px 20px rgba(92, 92, 92, 0.25));
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     padding: 12px 15px;
     font-size: 14px;
     line-height: 16px;
@@ -1223,7 +1237,8 @@ a:title {
 
 
 .tariff-details {
-    font-family: 'San Francisco Pro';
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     color: #37355B;
@@ -1240,7 +1255,8 @@ a:title {
 }
 
 .tariff-details-other {
-    font-family: 'San Francisco Pro';
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     color: #7C7B8A;
@@ -1367,7 +1383,7 @@ a:title {
 }
 
 .extra-subtitle {
-    font-family: 'San Francisco Pro';
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1499,7 +1515,8 @@ a:title {
     padding: 3.5px 21px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
     border-radius: 5px;
-    font-family: "San Francisco Pro Bold";
+  font-family: 'Source Sans Pro', sans-serif;
+font-weight: 700;
     font-size: 12px;
     line-height: 14px;
 }
@@ -1526,7 +1543,8 @@ a:title {
 
 .shop-card-type {
     padding-top: 9px;
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     font-size: 10px;
     line-height: 12px;
     color: #7C7B8A;
@@ -1534,14 +1552,16 @@ a:title {
 
 .shop-card-title {
     padding-top: 7px;
-    font-family: "San Francisco Pro Bold";
+  font-family: 'Source Sans Pro', sans-serif;
+font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     color: #37355B;
 }
 
 .shop-card-color {
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     font-size: 10px;
     line-height: 12px;
     color: #7C7B8A;
@@ -1559,7 +1579,8 @@ a:title {
     background: #00C2FF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
     border-radius: 5px;
-    font-family: "San Francisco Pro Semibold";
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
     font-size: 12px;
     line-height: 14px;
     color: #FFFFFF;
@@ -1572,7 +1593,8 @@ a:title {
 }
 
 .shop-card-old-price {
-    font-family: "San Francisco Pro Semibold";
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
     font-size: 12px;
     line-height: 14px;
     color: #7C7B8A;
@@ -1580,7 +1602,8 @@ a:title {
 }
 
 .shop-card-sale {
-    font-family: "San Francisco Pro Bold";
+  font-family: 'Source Sans Pro', sans-serif;
+font-weight: 700;
     font-size: 12px;
     line-height: 14px;
     height: 18px;
@@ -1592,7 +1615,8 @@ a:title {
 }
 
 .shop-card-price {
-    font-family: "San Francisco Pro Bold";
+  font-family: 'Source Sans Pro', sans-serif;
+font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     color: #37355B;
@@ -1605,7 +1629,8 @@ a:title {
 }
 
 .shop-card-rating {
-    font-family: "San Francisco Pro Heavy";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 900;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 0.1px;
@@ -1618,7 +1643,8 @@ a:title {
     height: 32px;
     border: none;
     border-radius: 5px;
-    font-family: "San Francisco Pro Bold";
+  font-family: 'Source Sans Pro', sans-serif;
+font-weight: 700;
     font-size: 12px;
     line-height: 14px;
     color: #FFFFFF;
@@ -1777,7 +1803,8 @@ h2.news-title {
 }
 
 .news-date {
-    font-family: "San Francisco Pro";
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1788,7 +1815,7 @@ h2.news-title {
 
 h3.news-title {
     margin-bottom: 20px;
-    font-family: "San Francisco Pro Semibold";
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1845,7 +1872,8 @@ footer {
 }
 
 .footer-description {
-    font-family: 'San Francisco Pro';
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #7C7B8A;
@@ -1892,7 +1920,8 @@ footer {
 
 .footer-link {
     display: block;
-    font-family: 'San Francisco Pro';
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     font-size: 15px;
     line-height: 35px;
     color: #7C7B8A;
@@ -2042,7 +2071,8 @@ footer {
 }
 
 .footer-copyright {
-    font-family: 'San Francisco Pro';
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     color: #AAA9BA;
