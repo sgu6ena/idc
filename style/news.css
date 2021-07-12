@@ -29,7 +29,6 @@
 }
 
 hr {
-
     size: 1px;
     height: 1px;
     margin-top: 22px;
@@ -43,7 +42,6 @@ hr {
 }
 
 .navigations-item {
-
     list-style: none;
     font-family: 'San Francisco Pro';
     font-size: 18px;

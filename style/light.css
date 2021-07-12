@@ -3,6 +3,7 @@
   overflow-x: hidden;
   position: relative;
 }
+
 /* ::-webkit-scrollbar {
   width: 0;
 } */
@@ -23,9 +24,10 @@
   /* mix-blend-mode: soft-light; */
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
   height: 100vh;
 }
+
 .header {
   width: 100%;
   position: absolute;
@@ -235,39 +237,39 @@
   width: 90%;
 }
 
-.light-tariffs-button{
+.light-tariffs-button {
   margin-top: 14px;
   background: #F8F32B;
-border-radius: 48px;
-border:none;
-font-family: 'San Francisco Pro';
-padding: 5px 50px;
-font-size: 15px;
-line-height: 18px;
+  border-radius: 48px;
+  border: none;
+  font-family: 'San Francisco Pro';
+  padding: 5px 50px;
+  font-size: 15px;
+  line-height: 18px;
 
-color: #37355B;
+  color: #37355B;
 
 }
 
-.light-tariffs-more{
+.light-tariffs-more {
   margin-top: 12px;
   font-family: 'San Francisco Pro';
-font-size: 13px;
-line-height: 16px;
-color: #7C7B8A;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7C7B8A;
 }
 
-.tariff-name-descr{
+.tariff-name-descr {
   font-family: 'San Francisco Pro';
-font-size: 12px;
-line-height: 14px;
-color: #37355B;
-margin: 0;
-padding: 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: #37355B;
+  margin: 0;
+  padding: 0;
 
 }
 
-.tariff-name-descr+.tariff-name{
+.tariff-name-descr+.tariff-name {
   margin-bottom: 25px;
 }
 
@@ -282,38 +284,38 @@ padding: 0;
 
 .big-light-text {
   font-family: 'San Francisco Pro';
-padding-right: 150px;
+  padding-right: 150px;
   font-size: 24px;
   line-height: 29px;
-
   color: #7C7B8A;
   margin-bottom: 50px;
-
 }
-.big-light-button{
 
+.big-light-button {
   font-family: 'San Francisco Pro';
   padding: 15px 35px 15px 32px;
-font-size: 24px;
-line-height: 29px;
-border: 3px solid #006285;
-text-decoration: none;
-border-radius: 48px;
-color: #061737;
+  font-size: 24px;
+  line-height: 29px;
+  border: 3px solid #006285;
+  text-decoration: none;
+  border-radius: 48px;
+  color: #061737;
 }
 
-.big-light-button:hover{
+.big-light-button:hover {
   color: #061737;
   box-shadow: 0px 10px 12px rgba(92, 92, 92, 0.2);
   transform: translateY(-5px);
-  transition:.5s;
+  transition: .5s;
 }
-.big-light-options{
+
+.big-light-options {
   margin-top: 0px;
   margin-left: 0;
   padding: 0;
 }
-.ligth-option-item{
+
+.ligth-option-item {
   max-width: 300px;
   position: relative;
   z-index: 25;
@@ -324,20 +326,20 @@ color: #061737;
   margin-bottom: 25px;
 }
 
-.light-option-image-wrapper{
+.light-option-image-wrapper {
   height: 200px;
   overflow: hidden;
   border-radius: 10px;
-width: 100%;
+  width: 100%;
 }
 
-.light-option-image{
+.light-option-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.light-option-name{
+.light-option-name {
   font-family: 'San Francisco Pro Bold';
   font-weight: 600;
   font-size: 18px;
@@ -346,26 +348,26 @@ width: 100%;
   margin: 8px 0px
 }
 
-.light-option-descr{
-  font-family:  'San Francisco Pro Semibold';
+.light-option-descr {
+  font-family: 'San Francisco Pro Semibold';
   font-size: 14px;
   line-height: 17px;
   color: #7C7B8A;
   margin: 8px 0px;
   display: flex;
-  
+
 }
 
 
-.slide-3 .big-light-dark{
+.slide-3 .big-light-dark {
   /* padding-left: 50px; */
   padding-top: 50px;
 }
 
 
-.tariff-item{
+.tariff-item {
   min-height: 530px;
-} 
+}
 
 @media(max-width: 1600px) {
   .swiper-pagination {
@@ -373,17 +375,18 @@ width: 100%;
     right: 0px;
   }
 
-  .hr-line{
+  .hr-line {
     top: 100px;
     height: 500px;
     margin-right: -50px;
   }
-  
-  .big-light-light,.big-light-dark{
+
+  .big-light-light,
+  .big-light-dark {
     padding-left: 30px;
   }
 }
-  
+
 @media(max-width: 1400px) {
   .move {
     visibility: hidden;
@@ -391,76 +394,83 @@ width: 100%;
 
 }
 
-@media(max-width:991px){
+@media(max-width:991px) {
   .swiper-wrapper {
     display: flex;
-    flex-direction: column;height: auto;
+    flex-direction: column;
+    height: auto;
   }
-  .swiper-slide{
-   
-    padding-bottom: 100px;
-display: flex;
-flex-direction: column;height: auto;
-  }
-  .swiper-pagination{
-    visibility: hidden;
-  }
-  .hr-line{
-    visibility: hidden;
-  }
-  .show-more{
-    visibility: hidden;
-  }
-  .big-light-subtitle{
 
+  .swiper-slide {
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .swiper-pagination {
+    visibility: hidden;
+  }
+
+  .hr-line {
+    visibility: hidden;
+  }
+
+  .show-more {
+    visibility: hidden;
+  }
+
+  .big-light-subtitle {
     font-size: 60px;
   }
-  .big-light-title{
+
+  .big-light-title {
     line-height: 1.5em;
     font-size: 100px;
   }
 
-  .main-light{
+  .main-light {
     margin-left: 20px;
   }
-  .slide-3 .big-light-light{
+
+  .slide-3 .big-light-light {
     padding-left: 50px;
     padding-bottom: 100px;
   }
 
-  .slide-3 .big-light-text{
+  .slide-3 .big-light-text {
     padding-right: 30px;
   }
 
-  .slide-3{
+  .slide-3 {
     padding-bottom: 0;
   }
 }
 
-@media(max-width:575px){
-  .big-light-option-subtitle{
+@media(max-width:575px) {
+  .big-light-option-subtitle {
     font-size: 40px;
   }
-  .big-light-subtitle{
 
+  .big-light-subtitle {
     font-size: 40px;
   }
-  .big-light-title{
 
+  .big-light-title {
     font-size: 60px;
   }
 
   .big-light-subtitle-ligth {
-    /* margin-left: 10px; */
     text-align: center;
     font-size: 28px;
   }
-.big-light-option-subtitle{
-  line-height: 32px;
-  font-size: 28px;
-}
-  .tariffs-cards{
-    flex-direction: column;
+
+  .big-light-option-subtitle {
+    line-height: 32px;
+    font-size: 28px;
   }
 
+  .tariffs-cards {
+    flex-direction: column;
+  }
 }

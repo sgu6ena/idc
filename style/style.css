@@ -2081,6 +2081,7 @@ footer {
 }
 
 @media(max-width:767px) {
+    
 
     .big-slider {
         background-color: var(--background-color);
@@ -2191,6 +2192,10 @@ footer {
 
 
 @media(max-width: 576px) {
+    .header-menu {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .login-text {
         display: none;
     }
@@ -2218,6 +2223,7 @@ footer {
     .footer-title {
         font-size: 20px;
     }
+
 }
 
 

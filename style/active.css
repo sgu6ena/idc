@@ -1,4 +1,7 @@
 
+body{
+  background-color: #000;
+}
 .header {
   width: 100%;
   position: absolute;
@@ -317,7 +320,6 @@
   border: none;
   background: #F8F32B;
   border-radius: 8px;
-
 }
 
 
@@ -538,4 +540,15 @@
 .slider-next{
   margin-right: 15px;
 }
+}
+
+@media(max-width:576px){
+  
+  .big-active-button{
+    font-size: 28px;
+  }
+  .big-active-slide-title{
+    margin-top: 20px;
+    margin-left: 0;
+  }
 }
