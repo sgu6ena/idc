@@ -1845,7 +1845,6 @@ h3.news-title {
 footer {
     background: rgba(0, 98, 133, 0.15);
     padding: 50px 130px 20px 165px;
-
 }
 
 .footer-title {
@@ -1868,7 +1867,7 @@ footer {
     font-size: 36px;
     line-height: 43px;
     color: #BEBEBE;
-    ;
+    
 }
 
 .footer-link-phone {
@@ -1982,18 +1981,23 @@ footer {
     margin-top: 10px;
     padding: 0;
     display: flex;
+    justify-content: flex-start;
     position: relative;
+
     margin-bottom: 20px;
 
 }
 
 .footer-social-item {
-
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
     list-style: none;
 }
 
 .footer-social-item a {
-
+    display: flex;
+    justify-content: flex-start;
     width: 45px;
     height: 45px;
     background-color: #006285;
@@ -2118,8 +2122,8 @@ footer {
 
     .footer-phone-wrapper {
         display: flex;
-        justify-content: space-evenly;
-        margin-bottom: 50px;
+        justify-content: space-around;
+        margin-bottom: 30px;
     }
 }
 
@@ -2248,6 +2252,12 @@ footer {
     .footer-title{
         font-size: 24px;
     }
+    .footer-my-idc-title,.footer-social{
+        margin-top: 20px;
+    }
+    .footer-link-item {
+        margin-left: 0px;
+    }
 }
 
 
@@ -2282,8 +2292,13 @@ footer {
         padding-left: 30px;
         padding-right: 30px;
     }
+    .footer-title{
+        font-size: 20px;
+    }
+
 
 }
+
 
 @media(max-width: 430px) {
     .header-end {
@@ -2295,9 +2310,11 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+   
 }
 
-
+/* 
 [data-title] {
     position: relative
 }
@@ -2310,14 +2327,14 @@ footer {
     z-index: 1000;
     position: absolute;
     top: 100%;
-    left: -30%;
+    left: -10%;
     line-height: 15px;
     padding: 2px 8px 4px;
     font-size: 13px;
     font-weight: 200;
     letter-spacing: 0.6;
-    min-width: 260px;
-    max-width: 280px;
+    min-width: 200px;
+
     border-radius: 5px;
     color: #F2F3F7;
     background-color: #066285;
@@ -2332,4 +2349,4 @@ footer {
     -o-transition: all 0.2s ease-out 0.5s;
     -ms-transition: all 0.2s ease-out 0.5s;
     transition: all 0.2s ease-out 0.5s;
-}
+} */
