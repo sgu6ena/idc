@@ -76,7 +76,7 @@
 }
 
 .row,.container-fluid {
-    --bs-gutter-x:0;
+    /* --bs-gutter-x:0; */
     margin: 0;
     padding: 0;}
 
