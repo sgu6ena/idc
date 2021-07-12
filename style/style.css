@@ -1,4 +1,5 @@
 @font-face {
+    
     font-family: 'San Francisco Pro';
     src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
         url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
@@ -11,7 +12,8 @@
 
 
 @font-face {
-    font-family: 'San Francisco Pro Semibold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     src: local('San Francisco Pro Display Semibold'), local('San-Francisco-Pro-Display-Semibold'),
         url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
         url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
@@ -21,7 +23,8 @@
 }
 
 @font-face {
-    font-family: 'San Francisco Pro Bold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
     src: local('San Francisco Pro Display Bold'), local('San-Francisco-Pro-Display-Bold'),
         url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
         url('../fonts/SFProDisplay-Bold.woff') format('woff'),
@@ -500,7 +503,8 @@ a:title {
 }
 
 .offcanvas-title {
-    font-family: 'San Francisco Pro Semibold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     font-size: 36px;
     line-height: 43px;
     letter-spacing: 0.13em;
@@ -670,9 +674,9 @@ a:title {
 .header-slider-name {
     margin-top: 17px;
     margin-bottom: 17px;
-    font-family: "San Francisco Pro Bold";
-    font-style: normal;
-    font-weight: 800;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: bold;
+    font-weight: 700;
     font-size: 49px;
     line-height: 58px;
     letter-spacing: 0.02em;
@@ -722,7 +726,8 @@ a:title {
 }
 
 .progress-slider {
-    font-family: 'San Francisco Pro Semibold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -839,7 +844,8 @@ a:title {
 }
 
 .name-balance {
-    font-family: 'San Francisco Pro Semibold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -849,7 +855,8 @@ a:title {
 }
 
 .tag {
-    font-family: 'San Francisco Pro';
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
@@ -868,7 +875,8 @@ a:title {
 }
 
 .title-balance {
-    font-family: 'San Francisco Pro Bold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
     font-size: 18px;
     line-height: 21px;
     color: var(--title-second);
@@ -876,7 +884,8 @@ a:title {
 }
 
 .balance-descrition {
-    font-family: 'San Francisco Pro Semibold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -896,7 +905,8 @@ a:title {
 }
 
 .title-balance-payment {
-    font-family: 'San Francisco Pro Bold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
     font-size: 18px;
     line-height: 21px;
     padding-bottom: 10px;
@@ -912,7 +922,8 @@ a:title {
 }
 
 .balance-tab-button {
-    font-family: 'San Francisco Pro';
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     display: inline-block;
@@ -1066,7 +1077,8 @@ a:title {
 .tariffs-list-button {
     padding-bottom: 10px;
     height: 100%;
-    font-family: 'San Francisco Pro Semibold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -1177,7 +1189,8 @@ a:title {
     display: inline-block;
     padding: 5px 12px 6px 15px;
     background: var(--second-accent);
-    font-family: 'San Francisco Pro Semibold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     color: var(--title-second);
     font-weight: 500;
     font-size: 12px;
@@ -1387,7 +1400,8 @@ a:title {
 .extra-title {
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: 'San Francisco Pro Bold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -1396,7 +1410,8 @@ a:title {
 }
 
 .extra-description {
-    font-family: 'San Francisco Pro Semibold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -1683,7 +1698,8 @@ a:title {
 
 .service-card-text {
     z-index: 15;
-    font-family: 'San Francisco Pro Semibold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1697,7 +1713,8 @@ a:title {
     border-radius: 48px;
     border: none;
     padding: 10px 58px 9px 57px;
-    font-family: 'San Francisco Pro Semibold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -1781,7 +1798,8 @@ h3.news-title {
 }
 
 .news-text {
-    font-family: 'San Francisco Pro Semibold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1818,7 +1836,8 @@ footer {
 }
 
 .footer-title {
-    font-family: 'San Francisco Pro Semibold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     font-size: 21px;
     line-height: 25px;
     color: #37355B;
@@ -1842,7 +1861,8 @@ footer {
 
 .footer-link-phone {
     text-decoration: none;
-    font-family: 'San Francisco Pro Semibold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     font-weight: 600;
     font-size: 36px;
     line-height: 43px;
@@ -2009,7 +2029,8 @@ footer {
 }
 
 .footer-social-title {
-    font-family: 'San Francisco Pro Bold';
+       font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.02em;
