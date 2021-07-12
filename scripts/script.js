@@ -44,34 +44,6 @@ bigSlider.on('beforeTransitionStart', () => {
 })
 
 
-// const balanceSlider = new Swiper('.balance-slider', {
-  
-//     pagination: {
-//         el: '.tariffs-swiper-pagination',
-//         type: 'bullets',
-//     },
-//     breakpoints: {
-//        450: {
-//             slidesPerView: 1.2,
-//             spaceBetween: 20,
-//         },
-//         770:{
-//             slidesPerView: 2,
-//             spaceBetween: 10,
-//             watchOverflow: true,
-//         },
-//         // 1000:{
-//         //     slidesPerView: 1,
-//         //     spaceBetween: 20,
-//         // },
-//         // 1300:{
-//         //     slidesPerView: 2,
-//         //     spaceBetween: 10,
-//         //     watchOverflow: true,
-//         // }
-//     },
-// });
-
 const tarrifsOptions = {
     slidesPerView: 1,
     pagination: {
