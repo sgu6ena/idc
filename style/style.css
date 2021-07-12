@@ -817,28 +817,42 @@ a:title {
 
 
 /* ** BALANCE* * */
-.balance {
+.balance {    
+    /* padding-left: 130px;
+    padding-right: 100px; */
     padding-top: 50px;
 
 }
+.balance-slider .container-fluid{
 
-
-
+}
 .card-balance {
-    width: 327px;
-    height: 150px;
+    display: block;
+    width: 320px;
+    height: auto; 
     background: #FFFFFF;
-    /* box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25); */
     border-radius: 8px;
     padding: 20px;
-    margin: 0 30px 30px 30px;
+    margin: 20px;
     text-decoration: none;
 }
 
 .card-balance:hover {
     box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
-    /* transform: translateY(-5px) scale(1.00); */
     transition: 0.3s;
+}
+.balance-slider{
+    
+overflow: hidden;
+padding: 20px;
+}
+.balance-slider .swiper-wrapper {
+    min-width: 0;   
+
+}
+.balance-slider .swiper-slide {
+    min-width: 0;   
+    margin-right: 10px;
 }
 
 
@@ -849,17 +863,13 @@ a:title {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
-    /* font-feature-settings: 'liga'off; */
     color: var(--text-second);
-
 }
 
 .tag {
     font-family: 'San Francisco Pro';
     font-size: 14px;
     line-height: 16px;
-    /* identical to box height, or 133% */
-
     letter-spacing: 0.02em;
     border-radius: 12px;
     padding: 4px 15px;
@@ -896,17 +906,12 @@ a:title {
 /* * FORM PAYMENT * */
 
 .card-balance-payment {
-    height: auto;
-    /* height: 150px; */
+    height: 100%;
     width: auto;
+    margin: 0 auto;
     background: #FFFFFF;
-
     border-radius: 8px;
-    /* padding: 20px; */
-    margin: 0 30px 50px;
     padding: 15px;
-
-
 }
 
 .title-balance-payment {
@@ -916,8 +921,6 @@ a:title {
     font-size: 18px;
     line-height: 21px;
     padding-bottom: 10px;
-    /* Заголовок 2 */
-
     color: var(--title-second);
     margin-bottom: 0;
 }
@@ -925,13 +928,11 @@ a:title {
 .select-payment {
     padding: 12px 15px;
     background: #FFFFFF;
-
     border: 1px solid #E0E0E0;
     border-radius: 8px;
 }
 
 .balance-tab-button {
-
     font-family: 'San Francisco Pro';
     font-size: 12px;
     line-height: 16px;
@@ -941,11 +942,9 @@ a:title {
     border: 2px solid transparent;
     background: var(--background-color);
     color: #006285;
-
 }
 
 .nav-item {
-
     margin-right: 8px;
 }
 
@@ -963,7 +962,6 @@ a:title {
 }
 
 .nav-pills .nav-link {
-
     background: var(--background-color);
     border: 2px solid var(--background-color);
     border-radius: 32px;
@@ -975,15 +973,10 @@ a:title {
 
 .input-number {
     height: 48px;
-    /* width: 209px;
-     */
     width: 100%;
     background: #FFFFFF;
-    /* Gray 5 */
-
     border: 1px solid #E0E0E0;
     border-radius: 8px;
-
     margin-right: 17px;
     padding: 16px;
 }
@@ -991,13 +984,9 @@ a:title {
 .input-sum {
     height: 48px;
     width: 120px;
-
     background: #FFFFFF;
-    /* Gray 5 */
-
     border: 1px solid #E0E0E0;
     border-radius: 8px;
-    /* margin-right: 21px; */
     padding: 16px;
 }
 
@@ -1066,9 +1055,7 @@ a:title {
     padding: 12px 15px;
     font-size: 14px;
     line-height: 16px;
-
     color: var(--title-second);
-
     background: #FFFFFF;
     border: none;
     border-radius: 8px;
@@ -1512,11 +1499,19 @@ margin: 0 !important;
     height: 100%;
 }
 
-.shop-card-tag {
+.shop-card-tags{
     position: absolute;
-    display: inline-block;
     top: 17px;
     left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.shop-card-tag {
+   
+    display: inline-block;
+  margin-bottom: 5px;
     align-items: center;
     padding: 3.5px 21px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
@@ -1839,113 +1834,7 @@ h3.news-title {
 }
 
 /* * FOOTER * */
-/* 
-.footer {
-    padding-left: 131px;
-    padding-top: 50px;
-    background: #006285;
-}
 
-.footer-title {
-    margin-top: 20px;
-    font-family: 'San Francisco Pro Semibold';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 21px;
-    color: #F2F3F7;
-
-}
-
-.contacts-info {
-    font-family: 'San Francisco Pro Semibold';
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 22px;
-    color: #AAA9BA;
-
-}
-
-.contacts-text {
-    margin: 0;
-}
-
-.footer-link
-{
-    color: #AAA9BA;
-}
-.footer-link:hover {
-    color: var(--second-accent);
-}
-
-.header-list {
-    margin: 0;
-    padding: 0;
-}
-
-.header-list-item {
-    font-family: 'San Francisco Pro Semibold';
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    color: #AAA9BA;
-    list-style-type: none;
-
-}
-
-.footer-my-idc {
-    font-family: Rubik;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.02em;
-    color: #FCF5ED;
-    margin-bottom: 4px;
-}
-
-.store-link {
-    display: block;
-    text-decoration: none;
-    margin-top: 9px;
-    margin-bottom: 9px;
-}
-
-.footer-line {
-    color: #BDBDBD;
-    margin-bottom: 15px;
-}
-
-.social {
-    margin-bottom: 10px;
-}
-
-.social-icon-wrapper:not(:last-child) {
-    margin-right: 25px;
-
-}
-.social-link{
-    fill:var(--background-color);
-    text-decoration: none;
-    cursor: pointer;
-    
-}
-
-.social-link:hover .social-icon{ 
-    fill:var(--second-accent); 
-    transform: translateY(-4px) scale(1.5);
-    transition:0.3s;
-}
-
-.copyright {
-    text-align: center;
-    font-family: "San Francisco Pro";
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    color: #AAA9BA;
-    margin: 0;
-
-}*/
 .button-logout {
 
     margin-right: 25px;
@@ -2186,6 +2075,8 @@ footer {
         padding-left: 50px;
         padding-right: 50px;
     }
+    .balance {padding-left: 30px;
+        padding-right: 30px; 
 }
 
 
@@ -2341,8 +2232,11 @@ footer {
     }
 
     .card-balance-payment {
-        margin: 0 15px;
+        order: 0;
+        width: 90%;
+        margin: auto;
     }
+    
 
     footer {
         padding-left: 50px;
