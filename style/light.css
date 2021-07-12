@@ -447,14 +447,18 @@ flex-direction: column;height: auto;
   }
   .big-light-title{
 
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .big-light-subtitle-ligth {
+    /* margin-left: 10px; */
     text-align: center;
-    font-size: 40px;
+    font-size: 28px;
   }
-
+.big-light-option-subtitle{
+  line-height: 32px;
+  font-size: 28px;
+}
   .tariffs-cards{
     flex-direction: column;
   }
