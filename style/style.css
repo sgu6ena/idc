@@ -369,6 +369,15 @@ a:title {
     display: block;
 }
 
+.card-registration-link{
+    font-family: "San Francisco Pro";
+    font-size: 14px;
+    color: #37355B;
+    text-decoration: none;
+}
+.card-registration-link:hover{
+    color: #37355B;
+}
 
 .login-danger-text {
     display: none;
