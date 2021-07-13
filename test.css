@@ -1,0 +1,74 @@
+.svg-background{
+    position: absolute;
+    animation: space 5s ease-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+.svg-background-image{
+    position: absolute;
+    animation: spaceround 8s ease-out infinite;
+    animation-direction: alternate-reverse;
+   
+}
+
+
+.photo {
+    background-image: url(http://bm.img.com.ua/nxs/img/prikol/images/large/3/9/315193.jpg);
+    background-size: cover;
+    width: 400px;
+    min-height: 300px;
+    position: relative;
+    object-fit: none;
+  }
+  
+  .sprite-container {
+    display: none;
+  }
+  
+  .corner {
+      fill: #edf2f6;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      position: absolute;
+  }
+
+@keyframes space {
+    0% {
+        transform: scaleX(.8);
+    }
+    25% {
+        transform: scaleY(.9);
+    }
+    50% {
+        transform: scaleY(1.2);
+    }
+    75% {
+        transform: scaleX(1.1);
+    }
+    100% {
+       transform:scaleY(.8) ;
+    }
+   
+}
+
+@keyframes spaceround {
+    0% {
+        transform: scaleX(.8);
+    }
+    25% {
+        transform: scaleY(.9);
+    }
+    50% {
+        transform: scaleY(1.2)  rotate(180deg);
+    }
+    75% {
+        transform: scaleX(1.1);
+    }
+    100% {
+       transform:scaleY(.8) rotate(360deg);
+    }
+   
+}
+
