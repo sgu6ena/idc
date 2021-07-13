@@ -1,33 +1,3 @@
-/* @font-face {
-    font-family: 'San Francisco Pro';
-    src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
-        url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Regular.woff') format('woff'),
-        url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'San Francisco Pro Bold';
-    src: local('San Francisco Pro Display Bold'), local('San-Francisco-Pro-Display-Bold'),
-        url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Bold.woff') format('woff'),
-        url('../fonts/SFProDisplay-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'San Francisco Pro Semibold';
-    src: local('San Francisco Pro Display Semibold'), local('San-Francisco-Pro-Display-Semibold'),
-        url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
-        url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-} */
-
 hr {
     size: 1px;
     height: 1px;
@@ -35,21 +5,18 @@ hr {
     margin-bottom: 22px;
 }
 
-
 .navigation-list {
-
     padding-left: 0;
 }
 
 .navigations-item {
     list-style: none;
-    /* font-family: 'San Francisco Pro'; */
     font-size: 18px;
     line-height: 21px;
     color: var(--text-second);
 }
 
-.navigation-next-icon{
+.navigation-next-icon {
     margin-left: 17px;
     margin-right: 17px;
     fill: var(--text-second);
@@ -80,7 +47,6 @@ hr {
 .backward-link {
     text-decoration: none;
     color: var(--title-second);
-    /* font-family: 'San Francisco Pro'; */
     font-size: 24px;
     line-height: 29px;
 }
@@ -111,8 +77,6 @@ hr {
 
 
 .news-title {
-
-    /* font-family: 'San Francisco Pro Bold'; */
     font-weight: 700;
     font-size: 52px;
     line-height: 62px;
@@ -131,12 +95,10 @@ hr {
 
 .news-info {
     margin-top: 12px;
-
 }
 
 .news-paragraph {
     text-align: left;
-    /* font-family: 'San Francisco Pro'; */
     font-size: 24px;
     line-height: 37px;
 }
@@ -146,14 +108,9 @@ hr {
 }
 
 
-
-
-
 /* * News Page * */
-
-.news-page-title {
-    /* font-family: 'San Francisco Pro Semibold'; */
-font-weight: 600;
+.page-title {
+    font-weight: 600;
     font-size: 52px;
     line-height: 62px;
     text-align: center;
@@ -161,16 +118,11 @@ font-weight: 600;
     color: var(--title-second);
 }
 
-.news-page-buttons-wrapper {
-
+.page-buttons-wrapper {
     margin-top: 11px;
-    margin-bottom: -22px;
-    /* max-width: 800px; */
 }
 
-.news-page-button-tag {
-    /* font-family: 'San Francisco Pro'; */
-
+.page-button-tag {
     font-size: 12px;
     line-height: 16px;
     color: var(--title-second);
@@ -180,11 +132,16 @@ font-weight: 600;
     border: 1px solid var(--text-second);
     border-radius: 32px;
 }
-.news-page-button-tag:hover,
-.news-page-button-tag.active{
+
+.page-button-tag:hover,
+.page-button-tag.active {
     color: #fff;
     background: var(--third-default);
-border:1px solid var(--third-default);
+    border: 1px solid var(--third-default);
+}
+
+.page>.container{
+    padding: 25px 100px;
 }
 
 .news-page-item {
@@ -194,7 +151,6 @@ border:1px solid var(--third-default);
 
 .news-page-item-title {
     margin-bottom: 25px;
-    /* font-family: 'San Francisco Pro Bold'; */
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -203,30 +159,29 @@ border:1px solid var(--third-default);
 }
 
 .news-page-item-text {
-    /* font-family: 'San Francisco Pro'; */
     font-size: 18px;
     line-height: 21px;
     color: var(--text-second);
     margin-bottom: 25px;
 }
 
-.news-page-paginations{
+.news-page-paginations {
     margin: 45px;
 }
 
-.news-page-buttons-nav{
+.news-page-buttons-nav {
     height: 32px;
     width: 32px;
-    border-radius:50%;
+    border-radius: 50%;
     border: none;
-    background-color:var(--third-default);
+    background-color: var(--third-default);
 }
-.news-page-buttons-nav.disabled{
-   
+
+.news-page-buttons-nav.disabled {
     background: rgba(0, 98, 133, 0.25);
 }
 
-.news-page-number{
+.news-page-number {
     margin-left: 24px;
     margin-right: 24px;
 }
@@ -235,21 +190,37 @@ border:1px solid var(--third-default);
     fill: var(--background-color)
 }
 
-.news-page-next{
+.news-page-next {
     padding-left: 1px;
 }
-.news-page-prev{
+
+.news-page-prev {
     padding-right: 1px;
 }
 
-.news-page-number{
-    /* font-family: 'San Francisco Pro'; */
+.news-page-number {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--title-second);
+}
+.service-item-wrapper{
+    padding: 10px;
+    text-decoration: none;
+}
 
-font-size: 14px;
-line-height: 16px;
-color: var(--title-second);
+.service-item-wrapper:hover  .service-item{
+    box-shadow: 0 8px 20px rgba(92, 92, 92, 0.25);
+}
+.service-item{
+margin-bottom: 0;
+    background: #fff;
+    height: 344px;
+    width: 100%;
+}
 
-
+.extra-image{
+  border-radius: 25px;
+    max-height: 218px;
 }
 
 

@@ -10,22 +10,14 @@
 :root {
     --background-color: #F2F3F7;
     --background-color-second: rgba(0, 98, 133, 0.15);
-
     --default-color: #3554D1;
     --first-default: #2B4D5D;
-    /*--second-default: ;*/
     --third-default: #006285;
-
     --first-accent: #F4B366;
     --second-accent: #F8F32B;
-
-    /*--title-first: ;*/
-    --title-second: #37355B;
-
-    /*--text-first: ;*/
+    --title-second:#37355B;
     --text-second: #7C7B8A;
     --swiper-theme-color: #F8F32B;
-
 }
 
 .row,
@@ -199,18 +191,18 @@ a:title {
 
 .header-dark .header-nav-link,
 .header-dark .login-text {
-    color: #006285;
+    color: var(--third-default);
 }
 
 .header-dark .icon-search,
 .header-dark .icon-menu-alt,
 .header-dark .icon-user,
 .header-dark .logo-icon {
-    fill: #006285;
+    fill: var(--third-default);
 }
 
 .header-dark .logo-icon {
-    fill: #006285;
+    fill: var(--third-default);
 }
 
 /* * LOGIN modal * */
@@ -221,7 +213,7 @@ a:title {
     margin-top: 85px;
     width: 267px;
     height: 272px;
-    background: #F2F3F7;
+    background: var(--background-color);
     box-shadow: 0 8px 20px rgba(92, 92, 92, 0.25);
     border-radius: 5px;
 }
@@ -229,7 +221,7 @@ a:title {
 .modal-content-login {
     padding: 18px 20px;
     border: none;
-    background: #F2F3F7;
+    background: var(--background-color);
 }
 
 .spinner-border {
@@ -277,7 +269,7 @@ a:title {
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: #7C7B8A;
+    color: var(--text-second);
 }
 
 .input-login-wrapper {
@@ -296,7 +288,7 @@ a:title {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: #37355B;
+    color: var(--title-second);
     margin-bottom: 0;
 }
 
@@ -305,7 +297,7 @@ a:title {
 }
 
 .input-modal:focus {
-    border: 1px solid #006285;
+    border: 1px solid var(--third-default);
 }
 
 .input-modal:out-of-range {
@@ -319,12 +311,12 @@ a:title {
 .card-registration-link {
     font-weight: 500;
     font-size: 14px;
-    color: #37355B;
+    color: var(--title-second);
     text-decoration: none;
 }
 
 .card-registration-link:hover {
-    color: #37355B;
+    color: var(--title-second);
 }
 
 .login-danger-text {
@@ -345,7 +337,7 @@ a:title {
     padding: 5px;
     font-size: 14px;
     line-height: 17px;
-    color: #37355B;
+    color: var(--title-second);
     margin-bottom: 18px;
 }
 
@@ -359,7 +351,7 @@ a:title {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: #37355B;
+    color: var(--title-second);
     border: none;
     background: transparent;
 }
@@ -368,7 +360,7 @@ a:title {
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: #7C7B8A;
+    color: var(--text-second);
     border: none;
     background: transparent;
 }
@@ -378,7 +370,7 @@ a:title {
     border: none;
     width: 100%;
     height: 220px;
-    background: #F2F3F7;
+    background: var(--background-color);
 }
 
 
@@ -529,7 +521,7 @@ a:title {
     font-size: 14px;
     line-height: 14px;
     padding: 14px;
-    background: #F2F3F7;
+    background: var(--background-color);
     border: 1px solid #A5D3FA;
     border-radius: 20px;
 }
@@ -620,7 +612,7 @@ a:title {
     font-size: 16px;
     line-height: 16px;
     text-align: center;
-    color: #37355B;
+    color: var(--title-second);
     margin-right: 24px;
     margin-top: 16px;
     margin-bottom: 16px;
@@ -655,7 +647,7 @@ a:title {
 }
 
 .progress-bar {
-    background-color: #F2F3F7;
+    background-color: var(--background-color);
     color: var(--second-accent);
     height: 3px;
     border: 1px transparent;
@@ -666,7 +658,7 @@ a:title {
     width: 200px;
     height: 3px;
     color: var(--second-accent);
-    background-color: #F2F3F7;
+    background-color: var(--background-color);
     border: 1px transparent;
 }
 
@@ -830,7 +822,7 @@ a:title {
     padding: 8px 16px;
     border: 2px solid transparent;
     background: var(--background-color);
-    color: #006285;
+    color: var(--third-default);
 }
 
 .nav-item {
@@ -843,8 +835,8 @@ a:title {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-    color: #006285;
-    border: 2px solid #006285;
+    color: var(--third-default);
+    border: 2px solid var(--third-default);
     background: var(--background-color);
     border-radius: 32px;
 
@@ -964,7 +956,7 @@ a:title {
 
 .tariffs-list-item {
     padding-bottom: 10px;
-    background: linear-gradient(#006285, #006285) center bottom;
+    background: linear-gradient(var(--third-default), var(--third-default)) center bottom;
     background-size: 0% 3px;
     background-repeat: no-repeat;
     z-index: 1;
@@ -981,7 +973,7 @@ a:title {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    color: #7C7B8A;
+    color: var(--text-second);
     background: transparent;
     border: none;
 }
@@ -989,8 +981,8 @@ a:title {
 
 .tariffs-list-item .tariffs-list-button.active,
 .tariffs-list-item .show > .tariffs-list-button {
-    color: #006285;
-    border: 0 solid #006285;
+    color: var(--third-default);
+    border: 0 solid var(--third-default);
     background: var(--background-color);
     border-radius: 0;
 }
@@ -1021,8 +1013,8 @@ a:title {
     left: 50%;
     right: 50%;
     bottom: 0;
-    color: #006285;
-    background: #006285;
+    color: var(--third-default);
+    background: var(--third-default);
     height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -1042,11 +1034,11 @@ a:title {
 
 
 .tariffs-list-button:hover {
-    color: #006285;
+    color: var(--third-default);
 }
 
 .tariffs-list-button:focus {
-    color: #006285;
+    color: var(--third-default);
 }
 
 
@@ -1106,14 +1098,14 @@ a:title {
     font-weight: 500;
     font-size: 36px;
     line-height: 43px;
-    color: #006285;
+    color: var(--third-default);
 }
 
 
 .tariff-details {
     font-size: 12px;
     line-height: 14px;
-    color: #37355B;
+    color: var(--title-second);
     width: 190px;
     margin-bottom: 32px;
 }
@@ -1129,7 +1121,7 @@ a:title {
 .tariff-details-other {
     font-size: 13px;
     line-height: 16px;
-    color: #7C7B8A;
+    color: var(--text-second);
     margin-bottom: 23px;
 }
 
@@ -1231,7 +1223,7 @@ a:title {
     height: 400px;
     width: 340px;
     padding: 20px;
-    background: #F2F3F7;
+    background: var(--background-color);
     border-radius: 25px;
     margin-bottom: 20px;
 }
@@ -1383,8 +1375,8 @@ a:title {
 }
 
 .shop-card-tag-yellow {
-    background: #F8F32B;
-    color: #37355B;
+    background: var(--second-accent);
+    color: var(--title-second);
 }
 
 .shop-card-tag-red {
@@ -1407,7 +1399,7 @@ a:title {
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;
-    color: #7C7B8A;
+    color: var(--text-second);
 }
 
 .shop-card-title {
@@ -1415,14 +1407,14 @@ a:title {
     font-weight: 700;
     font-size: 16px;
     line-height: 17px;
-    color: #37355B;
+    color: var(--title-second);
 }
 
 .shop-card-color {
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;
-    color: #7C7B8A;
+    color: var(--text-second);
 }
 
 .shop-card-credit-wrapper {
@@ -1453,7 +1445,7 @@ margin-bottom: 3px;
     font-weight: 600;
     font-size: 12px;
     line-height: 14px;
-    color: #7C7B8A;
+    color: var(--text-second);
     text-decoration: line-through;
 }
 
@@ -1462,8 +1454,8 @@ margin-bottom: 3px;
     font-size: 12px;
     line-height: 14px;
     height: 18px;
-    color: #37355B;
-    background: #F8F32B;
+    color: var(--title-second);
+    background: var(--second-accent);
     padding: 2px 3px 0;
     border-radius: 5px;
     margin-left: 3px;
@@ -1474,7 +1466,7 @@ margin-bottom: 3px;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    color: #37355B;
+    color: var(--title-second);
 }
 
 .shop-card-rating-star .fa-star {
@@ -1492,7 +1484,7 @@ margin-bottom: 3px;
 }
 
 .shop-card-button-pay {
-    background: #006285;
+    background: var(--third-default);
     width: 100%;
     height: 32px;
     border: none;
@@ -1515,12 +1507,12 @@ margin-bottom: 3px;
 .fa-heart {
     font-size: 12px;
     color: transparent;
-    -webkit-text-stroke: 1px #7C7B8A;
+    -webkit-text-stroke: 1px var(--text-second);
 }
 
 .shop-card-favorites-button:hover:not(.favorits) .fa-heart {
     transition: 0.3s;
-    color: #7C7B8A;
+    color: var(--text-second);
 }
 
 .favorits .fa-heart {
@@ -1554,7 +1546,7 @@ margin-bottom: 3px;
 .servise-card {
     min-height: 300px;
     overflow: hidden;
-    background: #F2F3F7;
+    background: var(--background-color);
     border-radius: 25px;
 }
 
@@ -1707,14 +1699,14 @@ footer {
     font-weight: 700;
     font-size: 21px;
     line-height: 25px;
-    color: #37355B;
+    color: var(--title-second);
     margin-bottom: 27px;
 }
 
 .footer-description {
     font-size: 18px;
     line-height: 21px;
-    color: #7C7B8A;
+    color: var(--text-second);
     margin-bottom: 27px;
 }
 
@@ -1730,11 +1722,11 @@ footer {
     font-weight: 600;
     font-size: 36px;
     line-height: 43px;
-    color: #37355B;
+    color: var(--title-second);
 }
 
 .footer-link-phone:hover {
-    color: #006285;
+    color: var(--third-default);
 }
 
 .footer-link-list {
@@ -1743,7 +1735,7 @@ footer {
 }
 
 .footer-link-item {
-    background: linear-gradient(#006285, #006285) left bottom;
+    background: linear-gradient(var(--third-default), var(--third-default)) left bottom;
     background-size: 0% 3px;
     background-repeat: no-repeat;
     margin-bottom: 0;
@@ -1758,12 +1750,12 @@ footer {
     display: block;
     font-size: 15px;
     line-height: 35px;
-    color: #7C7B8A;
+    color: var(--text-second);
     text-decoration: none;
 }
 
 .footer-link:hover {
-    color: #006285;
+    color: var(--third-default);
 }
 
 .footer-my-idc-title {
@@ -1773,7 +1765,7 @@ footer {
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.02em;
-    color: #37355B;
+    color: var(--title-second);
     margin: 27px 0 20px;
 }
 
@@ -1782,11 +1774,11 @@ footer {
     width: 170px;
     height: 50px;
     padding: 5px 0 5px 7px;
-    border: 1px solid #006285;
+    border: 1px solid var(--third-default);
     border-radius: 8px;
     font-family: 'Rubik';
     text-decoration: none;
-    color: #006285;
+    color: var(--third-default);
     font-size: 10px;
     margin-bottom: 10px;
     transition: 0.5s;
@@ -1849,7 +1841,7 @@ footer {
 .footer-social-item a {
     width: 45px;
     height: 45px;
-    background-color: #006285;
+    background-color: var(--third-default);
     text-align: center;
     line-height: 40px;
     font-size: 25px;
@@ -1858,7 +1850,7 @@ footer {
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-    border: 3px solid #006285;
+    border: 3px solid var(--third-default);
     z-index: 1;
 }
 
@@ -1870,7 +1862,7 @@ footer {
 }
 
 .footer-social-item a:hover .icon {
-    color: #006285;
+    color: var(--third-default);
     transform: rotateY(360deg);
 }
 
@@ -1898,7 +1890,7 @@ footer {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.02em;
-    color: #7C7B8A;
+    color: var(--text-second);
 }
 
 .fa-instagram:before {
