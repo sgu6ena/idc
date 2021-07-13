@@ -655,11 +655,11 @@ a:title {
 
 .progress-bar::-webkit-progress-bar {
     -webkit-appearance: none;
-    width: 200px;
+    width: 240px;
     height: 3px;
     color: var(--second-accent);
     background-color: var(--background-color);
-    border: 1px transparent;
+    border: 0px transparent;
 }
 
 
