@@ -45,8 +45,6 @@
 } */
 
 
-
-
 * {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -229,7 +227,6 @@ a:title {
 }
 
 
-
 .login-text {
     font-size: 18px;
     line-height: 21px;
@@ -369,7 +366,7 @@ a:title {
     border: 1px solid red;
 }
 
-.input-login:out-of-range+.login-danger-text {
+.input-login:out-of-range + .login-danger-text {
     display: block;
 }
 
@@ -823,7 +820,6 @@ a:title {
 }
 
 
-
 /* ** BALANCE* * */
 .balance {
     padding-top: 50px;
@@ -943,7 +939,7 @@ a:title {
 }
 
 .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
+.nav-pills .show > .nav-link {
     color: #006285;
     border: 2px solid #006285;
     background: var(--background-color);
@@ -1090,7 +1086,7 @@ a:title {
 
 
 .tariffs-list-item .tariffs-list-button.active,
-.tariffs-list-item .show>.tariffs-list-button {
+.tariffs-list-item .show > .tariffs-list-button {
     color: #006285;
     border: 0 solid #006285;
     background: var(--background-color);
@@ -1165,7 +1161,7 @@ a:title {
     margin: 30px;
 }
 
-.tab-tariff a:hover>.tariff-item {
+.tab-tariff a:hover > .tariff-item {
     text-decoration: none;
     box-shadow: 0 20px 30px rgba(92, 92, 92, 0.45);
     transition: .3s;
@@ -1192,10 +1188,7 @@ a:title {
 }
 
 .tariff-description {
-    padding-top: 10px;
-    padding-left: 19px;
-    padding-right: 19px;
-    padding-bottom: 21px;
+    padding: 10px 19px 21px;
     width: 100%;
     z-index: 8;
     display: block;
@@ -1256,7 +1249,6 @@ a:title {
     width: 200px;
     height: 10px;
 }
-
 
 
 .progress-bar-tarriff::-webkit-progress-value {
@@ -1369,7 +1361,7 @@ a:title {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    font-feature-settings: 'liga'off;
+    font-feature-settings: 'liga' off;
     color: var(--text-second);
 }
 
@@ -1388,7 +1380,7 @@ a:title {
     text-decoration: none;
 }
 
-.extra a:hover>.extra-item {
+.extra a:hover > .extra-item {
     transition: 0.3s;
     box-shadow: 0 8px 20px rgba(92, 92, 92, 0.25);
 }
@@ -1434,8 +1426,7 @@ a:title {
 }
 
 .shop-slider {
-    padding: 20px;
-    padding-right: 30px;
+    padding: 20px 30px 20px 20px;
     overflow: hidden;
 }
 
@@ -1453,7 +1444,7 @@ a:title {
     justify-content: space-between;
     margin: 0 !important;
     position: relative;
-    padding: 25px 20px;
+    padding: 25px 20px 10px;
     height: 407px;
     width: 220px;
     margin: 20px;
@@ -1531,7 +1522,7 @@ a:title {
     padding-top: 7px;
     /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
     color: #37355B;
 }
@@ -1759,7 +1750,7 @@ h2.news-title {
     padding-top: 20px;
 }
 
-.news a:hover>.news-item {
+.news a:hover > .news-item {
     transition: 0.3s;
     box-shadow: 0 8px 20px rgba(92, 92, 92, 0.25);
 }
@@ -2043,7 +2034,7 @@ footer {
     color: #AAA9BA;
 }
 
-@media(max-width: 1420px) {
+@media (max-width: 1420px) {
     .header-menu {
         padding-left: 30px;
         padding-right: 30px;
@@ -2060,8 +2051,7 @@ footer {
 }
 
 
-
-@media(max-width: 1199px) {
+@media (max-width: 1199px) {
     .offcanvas {
         padding-left: 0;
         padding-right: 0;
@@ -2083,7 +2073,7 @@ footer {
 }
 
 
-@media(max-width: 991px) {
+@media (max-width: 991px) {
     .header-nav-list {
         display: none;
     }
@@ -2104,7 +2094,7 @@ footer {
     }
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
 
 
     .big-slider {
@@ -2241,7 +2231,7 @@ footer {
 }
 
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
     .header-menu {
         padding-left: 0;
         padding-right: 0;
@@ -2285,7 +2275,7 @@ footer {
 }
 
 
-@media(max-width: 430px) {
+@media (max-width: 430px) {
     .header-end {
         margin: 10px;
         padding-left: 10px;
