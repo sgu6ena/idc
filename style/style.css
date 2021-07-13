@@ -1821,16 +1821,19 @@ footer {
 .footer-my-idc-link:hover .fa-google-play {
     transform: rotateY(360deg);
     transition: 0.5s;
+    color: var(--background-color);
 }
 
 .footer-my-idc-link:hover:before,
 .footer-my-idc-link:hover:before {
     transform: rotateY(360deg);
     transition: 0.5s;
+
 }
 
 .footer-my-idc-link:hover {
-    color: #006285;
+    background: var(--third-default);
+    color: var(--background-color);
 }
 
 .fa-apple,
@@ -1839,10 +1842,11 @@ footer {
 }
 
 .footer-my-idc-store {
+    font-weight: 600;
     margin: 0;
     padding: 0;
     line-height: 18px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .footer-social {
