@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'San Francisco Pro';
     src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
         url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
@@ -26,7 +26,7 @@
         url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
-}
+} */
 
 hr {
     size: 1px;
@@ -43,7 +43,7 @@ hr {
 
 .navigations-item {
     list-style: none;
-    font-family: 'San Francisco Pro';
+    /* font-family: 'San Francisco Pro'; */
     font-size: 18px;
     line-height: 21px;
     color: var(--text-second);
@@ -80,7 +80,7 @@ hr {
 .backward-link {
     text-decoration: none;
     color: var(--title-second);
-    font-family: 'San Francisco Pro';
+    /* font-family: 'San Francisco Pro'; */
     font-size: 24px;
     line-height: 29px;
 }
@@ -112,7 +112,8 @@ hr {
 
 .news-title {
 
-    font-family: 'San Francisco Pro Bold';
+    /* font-family: 'San Francisco Pro Bold'; */
+    font-weight: 700;
     font-size: 52px;
     line-height: 62px;
     text-align: center;
@@ -135,7 +136,7 @@ hr {
 
 .news-paragraph {
     text-align: left;
-    font-family: 'San Francisco Pro';
+    /* font-family: 'San Francisco Pro'; */
     font-size: 24px;
     line-height: 37px;
 }
@@ -151,8 +152,8 @@ hr {
 /* * News Page * */
 
 .news-page-title {
-    font-family: 'San Francisco Pro Semibold';
-
+    /* font-family: 'San Francisco Pro Semibold'; */
+font-weight: 600;
     font-size: 52px;
     line-height: 62px;
     text-align: center;
@@ -168,7 +169,7 @@ hr {
 }
 
 .news-page-button-tag {
-    font-family: 'San Francisco Pro';
+    /* font-family: 'San Francisco Pro'; */
 
     font-size: 12px;
     line-height: 16px;
@@ -193,7 +194,8 @@ border:1px solid var(--third-default);
 
 .news-page-item-title {
     margin-bottom: 25px;
-    font-family: 'San Francisco Pro Bold';
+    /* font-family: 'San Francisco Pro Bold'; */
+    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     letter-spacing: 0.01em;
@@ -201,7 +203,7 @@ border:1px solid var(--third-default);
 }
 
 .news-page-item-text {
-    font-family: 'San Francisco Pro';
+    /* font-family: 'San Francisco Pro'; */
     font-size: 18px;
     line-height: 21px;
     color: var(--text-second);
@@ -241,7 +243,7 @@ border:1px solid var(--third-default);
 }
 
 .news-page-number{
-    font-family: 'San Francisco Pro';
+    /* font-family: 'San Francisco Pro'; */
 
 font-size: 14px;
 line-height: 16px;

@@ -13,7 +13,9 @@
   position: absolute;
   top: 0;
   right: 450px;
-  font-family: 'San Francisco Pro Semibold';
+  /* font-family: 'San Francisco Pro Semibold';
+   */
+   font-weight: 600;
   font-size: 96px;
   line-height: 115px;
   color: transparent;
@@ -61,7 +63,7 @@
   z-index: 20;
   margin-top: 260px;
   margin-bottom: -20px;
-  font-family: 'San Francisco Pro';
+  /* font-family: 'San Francisco Pro'; */
   font-weight: 500;
   font-size: 64px;
   line-height: 76px;
@@ -75,7 +77,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   z-index: 20;
-  font-family: 'San Francisco Pro';
+  /* font-family: 'San Francisco Pro'; */
   font-weight: 500;
   font-size: 64px;
   line-height: 76px;
@@ -87,7 +89,7 @@
 
 .big-light-title {
   position: relative;
-  font-family: 'San Francisco Pro Heavy';
+  /* font-family: 'San Francisco Pro Heavy'; */
   font-weight: 900;
   font-size: 200px;
   line-height: 239px;
@@ -209,7 +211,8 @@
 }
 
 .light-plus-title {
-  font-family: 'San Francisco Pro Semibold';
+  /* font-family: 'San Francisco Pro Semibold'; */
+  font-weight: 600;
   font-size: 18px;
   line-height: 120%;
   letter-spacing: 0.02em;
@@ -218,7 +221,7 @@
 }
 
 .light-plus-description {
-  font-family: 'San Francisco Pro';
+  /* font-family: 'San Francisco Pro'; */
   font-size: 14px;
   line-height: 17px;
   color: #7C7B8A;
@@ -242,7 +245,7 @@
   background: #F8F32B;
   border-radius: 48px;
   border: none;
-  font-family: 'San Francisco Pro';
+  /* font-family: 'San Francisco Pro'; */
   padding: 5px 50px;
   font-size: 15px;
   line-height: 18px;
@@ -253,14 +256,14 @@
 
 .light-tariffs-more {
   margin-top: 12px;
-  font-family: 'San Francisco Pro';
+  /* font-family: 'San Francisco Pro'; */
   font-size: 13px;
   line-height: 16px;
   color: #7C7B8A;
 }
 
 .tariff-name-descr {
-  font-family: 'San Francisco Pro';
+  /* font-family: 'San Francisco Pro'; */
   font-size: 12px;
   line-height: 14px;
   color: #37355B;
@@ -275,7 +278,8 @@
 
 
 .big-light-option-subtitle {
-  font-family: 'San Francisco Pro Bold';
+  /* font-family: 'San Francisco Pro Bold'; */
+  font-weight: 700;
   margin-bottom: 27px;
   font-size: 48px;
   line-height: 57px;
@@ -283,7 +287,7 @@
 }
 
 .big-light-text {
-  font-family: 'San Francisco Pro';
+  /* font-family: 'San Francisco Pro'; */
   padding-right: 150px;
   font-size: 24px;
   line-height: 29px;
@@ -292,7 +296,7 @@
 }
 
 .big-light-button {
-  font-family: 'San Francisco Pro';
+  /* font-family: 'San Francisco Pro'; */
   padding: 15px 35px 15px 32px;
   font-size: 24px;
   line-height: 29px;
@@ -340,8 +344,8 @@
 }
 
 .light-option-name {
-  font-family: 'San Francisco Pro Bold';
-  font-weight: 600;
+  /* font-family: 'San Francisco Pro Bold'; */
+  font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   color: #37355B;
@@ -349,7 +353,8 @@
 }
 
 .light-option-descr {
-  font-family: 'San Francisco Pro Semibold';
+  /* font-family: 'San Francisco Pro Semibold'; */
+  font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   color: #7C7B8A;
