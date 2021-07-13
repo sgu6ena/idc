@@ -1,5 +1,3 @@
-
-
 * {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -8,7 +6,6 @@
     padding: 0;
 
 }
-
 
 :root {
     --background-color: #F2F3F7;
@@ -97,8 +94,6 @@ a:title {
 }
 
 .header-nav-link {
-
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
@@ -144,7 +139,6 @@ a:title {
 
 .all-sites-dropdown-item {
     width: 100%;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     padding: 8px 35px 8px 35px;
     font-size: 18px;
@@ -272,7 +266,6 @@ a:title {
 }
 
 .modal-login-text {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 700;
     font-size: 14px;
     margin-top: 18px;
@@ -281,7 +274,6 @@ a:title {
 
 .modal-login-text-descr {
     margin-top: 3px;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
@@ -301,7 +293,6 @@ a:title {
     background: var(--background-color);
     border: 1px solid #D0D7DD;
     border-radius: 8px;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -326,7 +317,6 @@ a:title {
 }
 
 .card-registration-link {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 14px;
     color: #37355B;
@@ -341,7 +331,6 @@ a:title {
     display: none;
     left: 0;
     top: 30px;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 10px;
     color: #FF0000;
@@ -352,7 +341,6 @@ a:title {
     background: var(--second-accent);
     border-radius: 8px;
     border: none;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     padding: 5px;
     font-size: 14px;
@@ -368,7 +356,6 @@ a:title {
 
 
 .button-modal-another-login {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -378,7 +365,6 @@ a:title {
 }
 
 .button-modal-forgotten-password {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
@@ -461,7 +447,6 @@ a:title {
 }
 
 .offcanvas-title {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 36px;
     line-height: 43px;
@@ -498,7 +483,6 @@ a:title {
 
 .menu-item-title {
     display: inline-block;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -517,7 +501,6 @@ a:title {
     background: linear-gradient(var(--second-accent), var(--second-accent)) left bottom;
     background-size: 0% 3px;
     background-repeat: no-repeat;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -542,7 +525,6 @@ a:title {
 }
 
 .input-search {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
@@ -632,7 +614,6 @@ a:title {
 .header-slider-name {
     margin-top: 17px;
     margin-bottom: 17px;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 700;
     font-size: 49px;
     line-height: 58px;
@@ -683,7 +664,6 @@ a:title {
 }
 
 .progress-slider {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -797,7 +777,6 @@ a:title {
 }
 
 .name-balance {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -806,8 +785,6 @@ a:title {
 }
 
 .tag {
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    /* font-weight: 400; */
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
@@ -826,7 +803,6 @@ a:title {
 }
 
 .title-balance {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
@@ -835,7 +811,6 @@ a:title {
 }
 
 .balance-descrition {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-weight: 500;
     font-size: 14px;
@@ -856,7 +831,6 @@ a:title {
 }
 
 .title-balance-payment {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
@@ -873,8 +847,6 @@ a:title {
 }
 
 .balance-tab-button {
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    /* font-weight: 400; */
     font-size: 12px;
     line-height: 16px;
     display: inline-block;
@@ -992,7 +964,6 @@ a:title {
 
 .select-tariff {
     filter: drop-shadow(0px 8px 20px rgba(92, 92, 92, 0.25));
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     padding: 12px 15px;
     font-size: 14px;
@@ -1135,7 +1106,6 @@ a:title {
     display: inline-block;
     padding: 5px 12px 6px 15px;
     background: var(--second-accent);
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     color: var(--title-second);
     font-size: 12px;
@@ -1165,8 +1135,6 @@ a:title {
 
 
 .tariff-details {
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    /* font-weight: 400; */
     font-size: 12px;
     line-height: 14px;
     color: #37355B;
@@ -1183,8 +1151,6 @@ a:title {
 }
 
 .tariff-details-other {
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    /* font-weight: 400; */
     font-size: 13px;
     line-height: 16px;
     color: #7C7B8A;
@@ -1310,7 +1276,6 @@ a:title {
 }
 
 .extra-subtitle {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1343,7 +1308,6 @@ a:title {
 .extra-title {
     padding-top: 10px;
     padding-bottom: 10px;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
@@ -1351,7 +1315,6 @@ a:title {
 }
 
 .extra-description {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -1438,7 +1401,6 @@ a:title {
     padding: 4px 21px;
     box-shadow: 0 0px 40px rgba(0, 0, 0, 0.12);
     border-radius: 5px;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
@@ -1594,7 +1556,6 @@ margin-bottom: 3px;
 /* * Сервисы * */
 
 .services {
-
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     padding-top: 50px;
@@ -1639,7 +1600,6 @@ margin-bottom: 3px;
 
 .service-card-text {
     z-index: 15;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-style: normal;
     font-size: 18px;
@@ -1653,7 +1613,6 @@ margin-bottom: 3px;
     border-radius: 48px;
     border: none;
     padding: 10px 58px 9px 57px;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-style: normal;
     font-size: 14px;
@@ -1716,7 +1675,6 @@ h2.news-title {
 }
 
 .news-date {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0.02em;
@@ -1725,7 +1683,6 @@ h2.news-title {
 
 h3.news-title {
     margin-bottom: 20px;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1735,7 +1692,6 @@ h3.news-title {
 }
 
 .news-text {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -1780,8 +1736,6 @@ footer {
 }
 
 .footer-description {
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    /* font-weight: 400; */
     font-size: 18px;
     line-height: 21px;
     color: #7C7B8A;
@@ -1797,7 +1751,6 @@ footer {
 
 .footer-link-phone {
     text-decoration: none;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 600;
     font-size: 36px;
     line-height: 43px;
@@ -1827,8 +1780,6 @@ footer {
 
 .footer-link {
     display: block;
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    /* font-weight: 400; */
     font-size: 15px;
     line-height: 35px;
     color: #7C7B8A;
@@ -1963,7 +1914,6 @@ footer {
 }
 
 .footer-social-title {
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
@@ -1976,8 +1926,6 @@ footer {
 }
 
 .footer-copyright {
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    /* font-weight: 400; */
     font-size: 12px;
     line-height: 14px;
     color: #AAA9BA;
@@ -2236,39 +2184,3 @@ footer {
     }
 }
 
-/* 
-[data-title] {
-    position: relative
-}
-
-[data-title]:after {
-    font-family: 'Inter';
-    content: attr(data-title);
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-    position: absolute;
-    top: 100%;
-    left: -10%;
-    line-height: 15px;
-    padding: 2px 8px 4px;
-    font-size: 13px;
-    font-weight: 200;
-    letter-spacing: 0.6;
-    min-width: 200px;
-
-    border-radius: 5px;
-    color: #F2F3F7;
-    background-color: #066285;
-
-}
-
-[data-title]:hover:after {
-    opacity: 1;
-    visibility: visible;
-    -moz-transition: all 0.2s ease-out 0.5s;
-    -webkit-transition: all 0.2s ease-out 0.5s;
-    -o-transition: all 0.2s ease-out 0.5s;
-    -ms-transition: all 0.2s ease-out 0.5s;
-    transition: all 0.2s ease-out 0.5s;
-} */
