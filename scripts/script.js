@@ -1,9 +1,12 @@
 // * * Слайдеры
 
 const bigSlider = new Swiper('.big-slider', {
+//   preloadImages: false,
+//   lazy: true,
+
     speed: 1000,
     loop: true,
-    slidesPerView: 2,
+    slidesPerView: 1,
     autoplay: {
         delay: 5000,
     },
