@@ -1,7 +1,7 @@
 .svg-background{
     position: absolute;
-    animation: space 5s ease-out infinite;
-    animation-direction: alternate-reverse;
+    /* animation: space 5s ease-out infinite;
+    animation-direction: alternate-reverse; */
 }
 
 .svg-background-image{
