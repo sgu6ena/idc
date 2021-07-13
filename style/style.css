@@ -71,7 +71,7 @@ a:title {
 /* * HEADER * */
 .header.header-big-slider {
     position: absolute;
-    right: 17px;
+    right: 0;
     top: 0;
     width: 100%;
     z-index: 88;
@@ -1982,6 +1982,18 @@ footer {
         background-color: var(--background-color);
         background-size: contain;
         background-position: top;
+    }
+.header-slide{
+    position: relative;
+}
+    .header-slide-image{
+        object-fit: contain;
+        object-position: top;
+        width: 105%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    
     }
 
     .big-slider br {

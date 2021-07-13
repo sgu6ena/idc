@@ -1,8 +1,12 @@
 // * * Слайдеры
 
 const bigSlider = new Swiper('.big-slider', {
-//   preloadImages: false,
-//   lazy: true,
+  preloadImages: false,
+  lazy: true,
+lazy: {
+    loadPrevNext: true,
+    checkInView:true,
+  },
 
     speed: 1000,
     loop: true,
@@ -39,10 +43,13 @@ bigSlider.on('slideChange', () => {
 });
 
 bigSlider.on('beforeTransitionStart', () => {
+
     setTimeout(() => {
-        swiperPreloader.style.display = 'block';
+ 
+        swiperPreloader.style.visibility = 'visible';
     }, 3000);
-    swiperPreloader.style.display = 'none';
+    swiperPreloader.style.visibility = 'hidden';
+
 
 })
 
