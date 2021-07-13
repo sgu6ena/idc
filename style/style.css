@@ -48,6 +48,8 @@
 
 
 * {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -61,20 +63,18 @@
 
     --default-color: #3554D1;
     --first-default: #2B4D5D;
-    --second-default: ;
+    /*--second-default: ;*/
     --third-default: #006285;
 
     --first-accent: #F4B366;
     --second-accent: #F8F32B;
 
-    --title-first: ;
+    /*--title-first: ;*/
     --title-second: #37355B;
 
-    --text-first: ;
+    /*--text-first: ;*/
     --text-second: #7C7B8A;
-
     --swiper-theme-color: #F8F32B;
-
 
 }
 
@@ -85,6 +85,7 @@
 }
 
 body {
+
     overflow-x: hidden;
     overflow-y: scroll;
     background-color: var(--background-color);
@@ -105,7 +106,6 @@ input,
 textarea {
     outline: none;
     border: none;
-    border: solid 1px #f2f2f2;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -130,10 +130,7 @@ a:title {
 .header-menu {
     z-index: 120;
     height: 75px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 129px;
-    padding-right: 110px;
+    padding: 0 110px 0 129px;
 }
 
 .header-nav-item {
@@ -148,7 +145,7 @@ a:title {
 
 .header-nav-link {
 
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
@@ -194,10 +191,9 @@ a:title {
 
 .all-sites-dropdown-item {
     width: 100%;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     padding: 8px 35px 8px 35px;
-    font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     color: var(--background-color);
@@ -280,7 +276,7 @@ a:title {
     width: 267px;
     height: 272px;
     background: #F2F3F7;
-    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    box-shadow: 0 8px 20px rgba(92, 92, 92, 0.25);
     border-radius: 5px;
 }
 
@@ -324,7 +320,7 @@ a:title {
 }
 
 .modal-login-text {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 700;
     font-size: 14px;
     margin-top: 18px;
@@ -333,7 +329,7 @@ a:title {
 
 .modal-login-text-descr {
     margin-top: 3px;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
@@ -353,7 +349,7 @@ a:title {
     background: var(--background-color);
     border: 1px solid #D0D7DD;
     border-radius: 8px;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -378,7 +374,7 @@ a:title {
 }
 
 .card-registration-link {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 14px;
     color: #37355B;
@@ -393,7 +389,7 @@ a:title {
     display: none;
     left: 0;
     top: 30px;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 10px;
     color: #FF0000;
@@ -404,10 +400,9 @@ a:title {
     background: var(--second-accent);
     border-radius: 8px;
     border: none;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     padding: 5px;
-    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #37355B;
@@ -421,7 +416,7 @@ a:title {
 
 
 .button-modal-another-login {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -431,7 +426,7 @@ a:title {
 }
 
 .button-modal-forgotten-password {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
@@ -514,7 +509,7 @@ a:title {
 }
 
 .offcanvas-title {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 36px;
     line-height: 43px;
@@ -551,7 +546,7 @@ a:title {
 
 .menu-item-title {
     display: inline-block;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -570,7 +565,7 @@ a:title {
     background: linear-gradient(var(--second-accent), var(--second-accent)) left bottom;
     background-size: 0% 3px;
     background-repeat: no-repeat;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -595,20 +590,17 @@ a:title {
 }
 
 .input-search {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
-    font-weight: 300;
     font-size: 14px;
     line-height: 14px;
     padding: 14px;
     background: #F2F3F7;
     border: 1px solid #A5D3FA;
-    box-sizing: border-box;
     border-radius: 20px;
 }
 
 .input-search::placeholder {
-
     color: var(--title-second);
     opacity: 0.5;
 }
@@ -688,8 +680,7 @@ a:title {
 .header-slider-name {
     margin-top: 17px;
     margin-bottom: 17px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: bold;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 700;
     font-size: 49px;
     line-height: 58px;
@@ -702,7 +693,7 @@ a:title {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px 16px 0px 32px;
+    padding: 0 16px 0 32px;
     background: var(--second-accent);
     border-radius: 48px;
     border: none;
@@ -740,9 +731,7 @@ a:title {
 }
 
 .progress-slider {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 500;
-    font-style: normal;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -778,7 +767,7 @@ a:title {
     color: var(--second-accent);
     height: 3px;
     background: var(--second-accent);
-    border: 0px transparent;
+    border: 0 transparent;
 }
 
 .progress-bar::-moz-progress-bar {
@@ -842,7 +831,7 @@ a:title {
 
 .card-balance {
     display: block;
-    width: 320px;
+    width: 300px;
     height: auto;
     background: #FFFFFF;
     border-radius: 8px;
@@ -852,15 +841,13 @@ a:title {
 }
 
 .card-balance:hover {
-    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    box-shadow: 0 8px 20px rgba(92, 92, 92, 0.25);
     transition: 0.3s;
 }
 
 .name-balance {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
@@ -868,8 +855,8 @@ a:title {
 }
 
 .tag {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-weight: 400; */
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
@@ -888,7 +875,7 @@ a:title {
 }
 
 .title-balance {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
@@ -897,7 +884,7 @@ a:title {
 }
 
 .balance-descrition {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-weight: 500;
     font-size: 14px;
@@ -918,7 +905,7 @@ a:title {
 }
 
 .title-balance-payment {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
@@ -935,8 +922,8 @@ a:title {
 }
 
 .balance-tab-button {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-weight: 400; */
     font-size: 12px;
     line-height: 16px;
     display: inline-block;
@@ -1054,7 +1041,7 @@ a:title {
 
 .select-tariff {
     filter: drop-shadow(0px 8px 20px rgba(92, 92, 92, 0.25));
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     padding: 12px 15px;
     font-size: 14px;
@@ -1090,8 +1077,6 @@ a:title {
 .tariffs-list-button {
     padding-bottom: 10px;
     height: 100%;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 500;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -1101,23 +1086,21 @@ a:title {
     color: #7C7B8A;
     background: transparent;
     border: none;
-    text-transform: uppercase;
 }
 
 
 .tariffs-list-item .tariffs-list-button.active,
 .tariffs-list-item .show>.tariffs-list-button {
     color: #006285;
-    border: 0px solid #006285;
+    border: 0 solid #006285;
     background: var(--background-color);
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .tariffs-list-item .tariffs-list-button {
-
     background: var(--background-color);
-    border: 0px solid var(--background-color);
-    border-radius: 0px;
+    border: 0 solid var(--background-color);
+    border-radius: 0;
 }
 
 /* *Underline From Center */
@@ -1180,18 +1163,17 @@ a:title {
     max-width: 300px;
     border-radius: 25px;
     margin: 30px;
-    margin-bottom: 30px;
 }
 
 .tab-tariff a:hover>.tariff-item {
     text-decoration: none;
-    box-shadow: 0px 20px 30px rgba(92, 92, 92, 0.45);
+    box-shadow: 0 20px 30px rgba(92, 92, 92, 0.45);
     transition: .3s;
 }
 
 .tariff-image {
     width: 100%;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 25px 25px 0 0;
 }
 
 .tariff-label {
@@ -1202,10 +1184,9 @@ a:title {
     display: inline-block;
     padding: 5px 12px 6px 15px;
     background: var(--second-accent);
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     color: var(--title-second);
-    font-weight: 500;
     font-size: 12px;
     line-height: 14px;
 }
@@ -1236,8 +1217,8 @@ a:title {
 
 
 .tariff-details {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-weight: 400; */
     font-size: 12px;
     line-height: 14px;
     color: #37355B;
@@ -1254,8 +1235,8 @@ a:title {
 }
 
 .tariff-details-other {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-weight: 400; */
     font-size: 13px;
     line-height: 16px;
     color: #7C7B8A;
@@ -1382,7 +1363,7 @@ a:title {
 }
 
 .extra-subtitle {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1409,24 +1390,21 @@ a:title {
 
 .extra a:hover>.extra-item {
     transition: 0.3s;
-    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    box-shadow: 0 8px 20px rgba(92, 92, 92, 0.25);
 }
 
 .extra-title {
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-weight: 600;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     color: var(--title-second);
 }
 
 .extra-description {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 500;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -1485,7 +1463,7 @@ a:title {
 }
 
 .shop-card:hover {
-    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    box-shadow: 0 8px 20px rgba(92, 92, 92, 0.25);
     transition: .3s;
 }
 
@@ -1511,10 +1489,10 @@ a:title {
     display: inline-block;
     margin-bottom: 5px;
     align-items: center;
-    padding: 3.5px 21px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
+    padding: 4px 21px;
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.12);
     border-radius: 5px;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
@@ -1542,7 +1520,7 @@ a:title {
 
 .shop-card-type {
     padding-top: 9px;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;
@@ -1551,7 +1529,7 @@ a:title {
 
 .shop-card-title {
     padding-top: 7px;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
@@ -1559,7 +1537,7 @@ a:title {
 }
 
 .shop-card-color {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;
@@ -1576,9 +1554,9 @@ a:title {
     display: inline-block;
     padding: 3px 10px;
     background: #00C2FF;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.12);
     border-radius: 5px;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 600;
     font-size: 12px;
     line-height: 14px;
@@ -1592,7 +1570,6 @@ a:title {
 }
 
 .shop-card-old-price {
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 14px;
@@ -1601,7 +1578,7 @@ a:title {
 }
 
 .shop-card-sale {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
@@ -1614,7 +1591,7 @@ a:title {
 }
 
 .shop-card-price {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
@@ -1628,7 +1605,7 @@ a:title {
 }
 
 .shop-card-rating {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 900;
     font-size: 14px;
     line-height: 22px;
@@ -1642,7 +1619,7 @@ a:title {
     height: 32px;
     border: none;
     border-radius: 5px;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
@@ -1723,10 +1700,9 @@ a:title {
 
 .service-card-text {
     z-index: 15;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-style: normal;
-    font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     color: var(--text-second);
@@ -1738,10 +1714,9 @@ a:title {
     border-radius: 48px;
     border: none;
     padding: 10px 58px 9px 57px;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-style: normal;
-    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: var(--title-second);
@@ -1786,13 +1761,13 @@ h2.news-title {
 
 .news a:hover>.news-item {
     transition: 0.3s;
-    box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+    box-shadow: 0 8px 20px rgba(92, 92, 92, 0.25);
 }
 
 .news-item {
     height: 100%;
     padding: 20px 40px;
-    margin: 0px 25px 25px 25px;
+    margin: 0 25px 25px 25px;
     background: #FFFFFF;
     border-radius: 8px;
 }
@@ -1802,11 +1777,8 @@ h2.news-title {
 }
 
 .news-date {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: var(--text-second);
@@ -1814,7 +1786,7 @@ h2.news-title {
 
 h3.news-title {
     margin-bottom: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1824,9 +1796,7 @@ h3.news-title {
 }
 
 .news-text {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 500;
-    font-style: normal;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -1862,7 +1832,7 @@ footer {
 }
 
 .footer-title {
-    font-family: 'Source Sans Pro', sans-serif;
+
     font-weight: 700;
     font-size: 21px;
     line-height: 25px;
@@ -1871,8 +1841,8 @@ footer {
 }
 
 .footer-description {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-weight: 400; */
     font-size: 18px;
     line-height: 21px;
     color: #7C7B8A;
@@ -1888,8 +1858,7 @@ footer {
 
 .footer-link-phone {
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 500;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 600;
     font-size: 36px;
     line-height: 43px;
@@ -1909,7 +1878,7 @@ footer {
     background: linear-gradient(#006285, #006285) left bottom;
     background-size: 0% 3px;
     background-repeat: no-repeat;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .footer-link-item:hover {
@@ -1919,8 +1888,8 @@ footer {
 
 .footer-link {
     display: block;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-weight: 400; */
     font-size: 15px;
     line-height: 35px;
     color: #7C7B8A;
@@ -1933,14 +1902,13 @@ footer {
 
 .footer-my-idc-title {
     padding: 0;
-    margin: 0;
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.02em;
     color: #37355B;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 }
 
 .footer-my-idc-link {
@@ -2008,8 +1976,6 @@ footer {
 }
 
 .footer-social-item a {
-    display: flex;
-    justify-content: flex-start;
     width: 45px;
     height: 45px;
     background-color: #006285;
@@ -2017,7 +1983,7 @@ footer {
     line-height: 40px;
     font-size: 25px;
     margin: 0 10px;
-    display: block !important;
+    display: block;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
@@ -2057,7 +2023,7 @@ footer {
 }
 
 .footer-social-title {
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
@@ -2070,8 +2036,8 @@ footer {
 }
 
 .footer-copyright {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-weight: 400; */
     font-size: 12px;
     line-height: 14px;
     color: #AAA9BA;
@@ -2178,7 +2144,7 @@ footer {
         color: var(--title-second);
         margin: 20px;
         background: #FFFFFF;
-        box-shadow: 0px 8px 20px rgba(92, 92, 92, 0.25);
+        box-shadow: 0 8px 20px rgba(92, 92, 92, 0.25);
         border-radius: 8px;
     }
 
@@ -2270,7 +2236,7 @@ footer {
     }
 
     .footer-link-item {
-        margin-left: 0px;
+        margin-left: 0;
     }
 }
 
