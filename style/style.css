@@ -1716,16 +1716,16 @@ footer {
     color: #BEBEBE;
 }
 
-
-
-.footer-phone-wrapper .footer-social-link{
-    line-height:34px;
+.footer-social-link{
+    color: #fff;text-decoration: none;
 }
-.footer-phone-wrapper:hover  .icon {
+
+
+/* .footer-phone-wrapper:hover  .icon {
     transform: rotateY(360deg);
     transition: 0.5s;
     color: var(--background-color);
-}
+} */
 
 .footer-link-phone {
     text-decoration: none;
@@ -1733,6 +1733,8 @@ footer {
     font-size: 36px;
     line-height: 43px;
     color: var(--third-default);
+
+    margin-right: 20px;
 }
 
 .footer-link-phone:hover {
@@ -1759,7 +1761,7 @@ footer {
 .footer-link {
     display: block;
     font-size: 15px;
-    line-height: 35px;
+    line-height: 34px;
     color: var(--text-second);
     text-decoration: none;
 }
