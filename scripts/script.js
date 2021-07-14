@@ -8,7 +8,7 @@ lazy: {
     checkInView:true,
   },
 
-    speed: 1000,
+    speed: 2000,
     loop: true,
     slidesPerView: 1,
     autoplay: {
@@ -31,6 +31,7 @@ lazy: {
     fadeEffect: {
         crossFade: true
     },
+    
 });
 
 const headerMenu = document.querySelector('.header-menu');
@@ -42,13 +43,13 @@ bigSlider.on('slideChange', () => {
         headerMenu.classList.remove('header-dark');
 });
 
-bigSlider.on('slideChangeTransitionStart', () => {
-
+bigSlider.on('beforeTransitionStart', () => {
+            swiperPreloader.classList.toggle('animated');
     setTimeout(() => {
-        swiperPreloader.classList.add('animated');
+        swiperPreloader.classList.toggle('animated');
 
-    }, 5000);
-    swiperPreloader.classList.remove('animated');
+     }, 1000);
+
 })
 
 
