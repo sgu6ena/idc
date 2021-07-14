@@ -74,7 +74,11 @@ a:title {
     height: 75px;
     padding: 0 110px 0 129px;
 }
-
+.header-dark .header-nav-item {
+    background: linear-gradient(var(--third-default), var(--third-default)) center bottom;
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+}
 .header-nav-item {
     padding-top: 20px;
     list-style-type: none;
@@ -1733,7 +1737,6 @@ footer {
     font-size: 36px;
     line-height: 43px;
     color: var(--third-default);
-
     margin-right: 20px;
 }
 
