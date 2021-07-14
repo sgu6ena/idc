@@ -34,7 +34,7 @@ lazy: {
 });
 
 const headerMenu = document.querySelector('.header-menu');
-const swiperPreloader = document.querySelector('.swiper-lazy-preloader');
+const swiperPreloader = document.querySelector('.slider-next');
 bigSlider.on('slideChange', () => {
     if (bigSlider.slides[bigSlider.activeIndex].classList.contains('slide-ligth'))
         headerMenu.classList.add('header-dark');
@@ -42,15 +42,13 @@ bigSlider.on('slideChange', () => {
         headerMenu.classList.remove('header-dark');
 });
 
-bigSlider.on('beforeTransitionStart', () => {
+bigSlider.on('slideChangeTransitionStart', () => {
 
     setTimeout(() => {
- 
-        swiperPreloader.style.visibility = 'visible';
-    }, 3000);
-    swiperPreloader.style.visibility = 'hidden';
+        swiperPreloader.classList.add('animated');
 
-
+    }, 5000);
+    swiperPreloader.classList.remove('animated');
 })
 
 
