@@ -131,6 +131,7 @@ hr {
     background: var(--background-color);
     border: 1px solid var(--text-second);
     border-radius: 32px;
+    transition: background 0.3s;
 }
 
 .page-button-tag:hover,
@@ -138,6 +139,7 @@ hr {
     color: #fff;
     background: var(--third-default);
     border: 1px solid var(--third-default);
+
 }
 
 .page>.container{

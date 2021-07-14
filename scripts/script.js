@@ -212,3 +212,6 @@ const shopCardFavoritesButton = document.querySelectorAll('.shop-card-favorites-
 shopCardFavoritesButton.forEach(item => item.addEventListener('click', () =>{
     item.classList.toggle('favorits');
 }))
+
+
+
