@@ -1469,7 +1469,7 @@ margin-bottom: 3px;
     color: var(--title-second);
 }
 
-.shop-card-rating-star .fa-star {
+.shop-card-rating-star .icon {
     font-size: 12px;
     color: #FB8200;
     margin-right: 4px;
@@ -1504,20 +1504,20 @@ margin-bottom: 3px;
 }
 
 
-.fa-heart {
-    font-size: 12px;
+.heart {
     color: transparent;
-    -webkit-text-stroke: 1px var(--text-second);
+    -webkit-text-stroke:var(--text-second)1px;
+    font-size: 14px;
 }
 
-.shop-card-favorites-button:hover:not(.favorits) .fa-heart {
+.shop-card-favorites-button:hover:not(.favorits) .heart {
     transition: 0.3s;
     color: var(--text-second);
 }
 
-.favorits .fa-heart {
-    -webkit-text-stroke: 1px #066285;
+.favorits .heart   {
     color: #066285;
+    -webkit-text-stroke:#066285 1px;
 }
 
 
@@ -1785,8 +1785,8 @@ footer {
 
 }
 
-.footer-my-idc-link:hover .fa-apple,
-.footer-my-idc-link:hover .fa-google-play {
+.footer-my-idc-link:hover .icon,
+.footer-my-idc-link:hover .icon {
     transform: rotateY(360deg);
     transition: 0.5s;
     color: var(--background-color);
@@ -1843,8 +1843,7 @@ footer {
     height: 45px;
     background-color: var(--third-default);
     text-align: center;
-    line-height: 40px;
-    font-size: 25px;
+    line-height: 35px;
     margin: 0 10px;
     display: block;
     border-radius: 50%;
