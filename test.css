@@ -6,7 +6,7 @@
 
 .svg-background-image{
     position: absolute;
-    animation: spaceround 8s ease-out infinite;
+    animation: spaceround 20s ease-out infinite;
     animation-direction: alternate-reverse;
    
 }
@@ -15,10 +15,10 @@
 .photo {
     background-image: url(http://bm.img.com.ua/nxs/img/prikol/images/large/3/9/315193.jpg);
     background-size: cover;
-    width: 400px;
-    min-height: 300px;
+    width: 888px;
+    min-height: 871px;
     position: relative;
-    object-fit: none;
+    /* object-fit: none; */
   }
   
   .sprite-container {
@@ -55,10 +55,10 @@
 
 @keyframes spaceround {
     0% {
-        transform: scaleX(.8);
+        transform: scaleX(.9) ;
     }
     25% {
-        transform: scaleY(.9);
+        transform: scaleY(.9) rotate(45deg);
     }
     50% {
         transform: scaleY(1.2)  rotate(180deg);
