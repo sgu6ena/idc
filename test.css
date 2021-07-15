@@ -1,4 +1,6 @@
 .family-image-wrapper{
+    margin-top: 40px;
+    z-index: 10;
 position: relative;
 height: 900px;
 }
@@ -7,46 +9,21 @@ height: 900px;
     position: absolute;
     top: 0;
     left: -50%;
-    /* animation: space 5s ease-out infinite;
-    animation-direction: alternate-reverse; */
 }
 
 .mask-amination{
        animation: space 15s ease-out infinite;
     animation-direction: alternate-reverse;
+    transform-origin: center center;
 }
-
 .svg-background-image{
     position: absolute;
     top: 0;
     left: -50%;
-    animation: spaceround 20s ease-out infinite;
+    animation: space 5s ease-out infinite;
     animation-direction: alternate-reverse;
     transform-origin: center center;
 }
-
-
-.photo {
-    background-image: url(http://bm.img.com.ua/nxs/img/prikol/images/large/3/9/315193.jpg);
-    background-size: cover;
-    width: 888px;
-    min-height: 871px;
-    position: relative;
-    /* object-fit: none; */
-  }
-  
-  .sprite-container {
-    display: none;
-  }
-  
-  .corner {
-      fill: #edf2f6;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      position: absolute;
-  }
 
 
   @keyframes space {
@@ -80,13 +57,52 @@ height: 900px;
         transform: scaleY(.9) rotate(45deg);
     }
     50% {
-        transform: scaleY(1.2)  rotate(180deg);
+        transform: scaleY(.8)  rotate(180deg);
     }
     75% {
-        transform: scaleX(1.1);
+        transform: scaleX(1);
     }
     100% {
-       transform:scaleY(.8) rotate(360deg);
+       transform:scaleY(1) rotate(360deg);
     }
 }
 
+
+.page .nav-tabs{
+z-index: 30;
+text-transform: uppercase;
+
+font-size:  14px;
+}
+.page .nav-item{
+    margin: -2px 2px;
+
+    background: linear-gradient(var(--third-default), var(--third-default)) center bottom;
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+}
+.page .nav-item a{
+    font-weight: 500;
+    margin: 0 5px;
+    text-decoration: none;
+    color: var(--text-second);
+    line-height: 4;
+}
+
+.page .nav-item a.active{
+    text-decoration: none;
+    color: var(--third-default);   background-size: 0% 3px;
+    background-repeat: no-repeat;
+}
+
+.hvr-underline-from-center.active:before,
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+    left: 0px;
+    right: 0px;
+}
+
+.page .container{
+    padding: 0;
+} 
