@@ -51,7 +51,7 @@ height: 900px;
 
   @keyframes space {
     0% {
-        transform: scaleX(.9) rotate(15deg);
+        transform: scaleX(.9) rotate(45deg);
         transform-origin: center center;
     }
     25% {
@@ -59,7 +59,7 @@ height: 900px;
         transform-origin: center center;
     }
     50% {
-        transform: scaleY(.8) rotate(10deg);
+        transform: scaleY(.8) rotate(30deg);
         transform-origin: center center;
     }
     75% {
@@ -67,7 +67,7 @@ height: 900px;
         transform-origin: center center;
     }
     100% {
-       transform:scaleY(.9) rotate(45deg) ;
+       transform:scaleY(.9) rotate(15deg) ;
        transform-origin: center center;
     }
 }
