@@ -12,7 +12,7 @@ height: 900px;
 }
 
 .mask-amination{
-       animation: space 5s ease-out infinite;
+       animation: space 15s ease-out infinite;
     animation-direction: alternate-reverse;
 }
 
