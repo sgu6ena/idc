@@ -8,7 +8,7 @@ height: 900px;
 .svg-background{
     position: absolute;
     top: 0;
-    left: -50%;
+    left:0%;
 }
 
 .mask-amination{
@@ -19,7 +19,7 @@ height: 900px;
 .svg-background-image{
     position: absolute;
     top: 0;
-    left: -50%;
+    left: 0%;
     animation: space 5s ease-out infinite;
     animation-direction: alternate-reverse;
     transform-origin: center center;
@@ -106,3 +106,73 @@ font-size:  14px;
 .page .container{
     padding: 0;
 } 
+
+.family-title{
+    margin: 30px 0 0;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 62px;
+    color: var(--title-second);
+}
+
+.family-subtitle-wrapper{
+margin-bottom: 30px;
+}
+
+.family-subtitle{
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--text-second);
+    
+}
+.family-subtitle:not(:last-child):after{
+    margin-left:10px;
+    margin-right: 10px;
+    content:'|';
+}
+.family-item-wrapper{
+border-bottom: 1px solid #D1D0D0;
+margin-bottom: 30px;
+}
+
+.family-item{
+    font-size: 18px;
+    line-height: 21px;
+
+color: var(--text-second);
+
+}
+.family-item-title{
+    font-size: 1em;
+    text-transform: uppercase;
+   letter-spacing: 0.08em;
+   margin-bottom: 30px;
+}
+.family-item-point-wrapper{
+    display: flex;
+    flex-direction:row;
+    justify-content:start;
+    align-items: center;
+    margin-top: 13px;
+    margin-bottom: 12px;
+}
+
+.family-item-icon-wrapper{
+    font-weight: 700;
+    color: var(--third-default);
+margin-right: 2px;
+}
+
+.family-item-icon-wrapper .icon{
+    margin-right: 13px;
+}
+
+.family-item-point{
+    margin-right: 13px;
+}
+.exclude{
+    color: #D0D7DD;
+    display: flex;
+    align-items: center;
+
+}
