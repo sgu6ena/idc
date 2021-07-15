@@ -1785,8 +1785,6 @@ footer {
     font-size: 36px;
     line-height: 43px;
     color: var(--third-default);
-    margin-right: 20px;
-    margin-left: 20px;
 }
 
 .footer-link-phone:hover {
