@@ -1,14 +1,28 @@
+.family-image-wrapper{
+position: relative;
+height: 900px;
+}
+
 .svg-background{
     position: absolute;
+    top: 0;
+    left: -50%;
     /* animation: space 5s ease-out infinite;
     animation-direction: alternate-reverse; */
 }
 
+.mask-amination{
+       animation: space 5s ease-out infinite;
+    animation-direction: alternate-reverse;
+}
+
 .svg-background-image{
     position: absolute;
+    top: 0;
+    left: -50%;
     animation: spaceround 20s ease-out infinite;
     animation-direction: alternate-reverse;
-   
+    transform-origin: center center;
 }
 
 
@@ -34,23 +48,28 @@
       position: absolute;
   }
 
-@keyframes space {
+
+  @keyframes space {
     0% {
-        transform: scaleX(.8);
+        transform: scaleX(.9) rotate(15deg);
+        transform-origin: center center;
     }
     25% {
-        transform: scaleY(.9);
+        transform: scaleY(.9) rotate(45deg);
+        transform-origin: center center;
     }
     50% {
-        transform: scaleY(1.2);
+        transform: scaleY(.8) rotate(10deg);
+        transform-origin: center center;
     }
     75% {
-        transform: scaleX(1.1);
+        transform: scaleX(.8);
+        transform-origin: center center;
     }
     100% {
-       transform:scaleY(.8) ;
+       transform:scaleY(.9) rotate(45deg) ;
+       transform-origin: center center;
     }
-   
 }
 
 @keyframes spaceround {
@@ -69,6 +88,5 @@
     100% {
        transform:scaleY(.8) rotate(360deg);
     }
-   
 }
 

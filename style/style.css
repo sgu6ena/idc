@@ -607,7 +607,7 @@ a:title {
 
 .arrow-slider-prev,
 .arrow-slider-next {
-    fill: var(--background-color)
+    fill: var(--background-color);
 }
 
 
