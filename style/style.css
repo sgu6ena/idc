@@ -38,7 +38,7 @@ body.modal-open {
   padding-right: 0 !important;
 }
 
-button {
+button, a {
   cursor: pointer;
 }
 
