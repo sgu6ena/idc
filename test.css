@@ -20,7 +20,7 @@ max-width:1600px;
 }
 
 .mask-amination {
-  animation: space 15s ease-out infinite;
+  animation: spaceround 15s ease-out infinite;
   animation-direction: alternate-reverse;
   transform-origin: center center;
 }
@@ -28,7 +28,7 @@ max-width:1600px;
   position: absolute;
   top: 0;
   left: 0%;
-  animation: space 5s ease-out infinite;
+  animation: spaceround 5s ease-out infinite;
   animation-direction: alternate-reverse;
   transform-origin: center center;
 }
