@@ -3,10 +3,9 @@ max-width:1600px;
 }
 .family-image-wrapper {
   margin-top: 40px;
-
   z-index: -1;
   position: relative;
-  height: 700px;
+min-height: 700px;
 }
 
 .family-info{
@@ -148,14 +147,14 @@ max-width:1600px;
 .family-item {
   font-size: 18px;
   line-height: 21px;
-
+padding-bottom: 6px;
   color: var(--text-second);
 }
 .family-item-title {
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 .family-item-point-wrapper {
   display: flex;
