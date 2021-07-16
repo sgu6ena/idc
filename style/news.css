@@ -254,7 +254,7 @@ hr {
   left: 0%;
 }
 .mask-amination {
-  animation: spaceround 15s ease-out infinite;
+  animation: space 15s ease-out infinite;
   animation-direction: alternate-reverse;
   transform-origin: center center;
 }
@@ -262,7 +262,7 @@ hr {
   position: absolute;
   top: 0;
   left: 0%;
-  animation: spaceround 5s ease-out infinite;
+  animation: spaceround 25s ease-out infinite;
   animation-direction: alternate-reverse;
   transform-origin: center center;
 }
