@@ -42,12 +42,26 @@
 
     <!-- <script src="scripts/script.js" defer></script> -->
     <script src="scripts/price.js" defer></script>
+
+    <style>
+        .container{
+            display:flex;
+            flex-wrap: wrap;
+        }
+       .element{
+         max-width:400px;
+    border: solid 1px #DDD !important;
+    padding: 0 10px 10px 10px;
+    margin: 5px;
+    border-bottom: none;
+}
+
+
+    </style>
 </head>
 
 <body class="container">
-
-
-    <div>
+    <div class='element'>
         иконка с крутяшкой
         <div class="footer-social-item"> <a href="#" class="footer-social-link">
                 <svg class="logo-icon icon" width="25px" height="25px">
@@ -61,13 +75,15 @@
 
 
 
-    <div>
+    <div  class='element'>
         элемент или
+        <br><br>
         <div class="or ">или</div>
+
     </div>
 
 
-    <div>
+    <div  class='element'>
         вопрос с подсказкой
         <div class="exclude">
             <svg class="icon" width="15px" height="15px">
@@ -79,7 +95,7 @@
     </div>
 
 
-    <div>
+    <div  class='element'>
         Информационное сообщение
         <div class=" info-message ">
             <div class="info-message-icon-wrapper ">
@@ -99,16 +115,215 @@
         </div>
     </div>
 
-    <div>   
+    <div  class='element'>
         цена с перерасчетом
         <div class="price">
-            <span class="price-count">270</span> 
+            <span class="price-count">270</span>
             <span class="price-currency"> руб.</span>
 
         </div>
     </div>
-     
-    
+
+<div  class='element'>
+     карточка магазина
+        <div class="shop-card">
+            <div class="row m-0 p-0 align-self-start">
+                <div class="col-12 p-0 shop-card-image-wrapper d-flex align-items-center justify-content-center">
+                    <img src="image/mobile-2.jpg" alt="" class="shop-card-image">
+                    <div class="shop-card-tags">
+                        <span class="shop-card-tag shop-card-tag-yellow">Акция</span>
+                        <span class="shop-card-tag shop-card-tag-red">Хит продаж</span>
+                        <span class="shop-card-tag shop-card-tag-orange">Товар месяца</span>
+                        <span class="shop-card-tag shop-card-tag-green">Новинка</span>
+                    </div>
+
+                </div>
+
+                <div class="col-12 p-0">
+                    <div class="shop-card-type">Смартфон</div>
+                    <div class="shop-card-title">Xiaomi Mi 11 Ultra</div>
+                    <div class="shop-card-color">Красный</div>
+                </div>
+                <div class="col-12 p-0 shop-card-credit-wrapper">
+                    <div class="shop-card-credit">Рассрочка</div>
+                </div>
+            </div>
+            <div class="row m-0 p-0 align-self-end">
+                <div class="col-12 p-0 d-flex  shop-card-old-price-wrapper align-items-center">
+                    <div class="shop-card-old-price">15000 руб.</div>
+                    <div class="shop-card-sale">-2010</div>
+                </div>
+                <div class="col-9 p-0">
+                    <div class="shop-card-price">12990 руб.</div>
+                </div>
+                <div class="col-3 p-0 d-flex align-items-center shop-card-rating-star">
+                    <svg class="logo-icon icon" width="12px" height="12px">
+                        <use xlink:href="image/sprite.svg#star-solid"></use>
+                    </svg>
+                    <div class="shop-card-rating">4.8</div>
+                </div>
+                <div class="col-9 p-0 mt-2">
+                    <button class="shop-card-button-pay">Купить</button>
+                </div>
+                <div class="col-3 p-0 mt-2">
+                    <div class="shop-card-like d-flex justify-content-end">
+                        <button class="shop-card-favorites-button" height="24px" width="24px">
+                            <span class="heart" aria-hidden="true">❤</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</div>
+       
+
+
+<div  class='element'>
+
+</div>
+<div  class='element'>
+    <div class="tariff-item">
+        <div class="tariff-image-wrapper">
+            <img src="image/active-5.jpg" alt="" class="tariff-image">
+        </div>
+
+        <div class="tariff-label">+ 5 Гб на 2 месяца</div>
+        <div class="tariff-description">
+            <h3 class="tariff-name">Active 5</h3>
+
+            <div class="tariff-details">
+                <div class="tariff-details-item">
+                    <div class="tariff-details-name">Безлимитные звонки</div>
+                    <div class="tariff-details-progressbar">
+                        <progress class="progress-bar-tarriff" max="190" value="190"></progress>
+                    </div>
+                </div>
+                <div class="tariff-details-item">
+                    <div class="tariff-details-name d-flex justify-content-between">
+                        <span>Интернет</span><span>5 ГБ</span></div>
+                    <div class="tariff-details-progressbar">
+                        <progress class="progress-bar-tarriff" max="190" value="90"></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="tariff-details-other">
+                <div class="tariff-details-other-item d-flex align-items-center">
+                    <div class="tariff-details-other-icon">
+                        <svg class="icon" width="10px" height="7px">
+                            <use xlink:href="image/sprite.svg#check_mark">
+                            </use> </svg>
+                    </div>
+                    <div class="tariff-details-other-name">300 SMS</div>
+
+                </div>
+                <div class="tariff-details-other-item d-flex align-items-center">
+                    <div class="tariff-details-other-icon">
+                        <svg class="icon" width="10px" height="7px">
+                            <use xlink:href="image/sprite.svg#check_mark"></use>
+                        </svg>
+                    </div>
+
+                    <div class="tariff-details-other-name">Бесплатное IP-телевидение</div>
+
+                </div>
+            </div>
+            <hr class="tariff-hr">
+            <div class="tariff-price-wrapper d-flex align-items-center justify-content-between">
+                <div class="tariff-price d-flex justify-content-start align-items-center">
+                    <div class="tariff-price-count">160</div>
+                    <div class="tariff-price-currency">рублей в месяц</div>
+                </div>
+                <button class="tariffs-button">
+                    <svg class="icon big-slide-arrow-right" height="14px" width="14px">
+                        <use xlink:href="image/sprite.svg#arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div  class='element'>
+    <div class="tariff-item">
+        <div class="tariff-image-wrapper"> <img src="image/active-2.jpg" alt=""
+                class="tariff-image">
+
+        </div>
+
+        <div class="tariff-label">+ 2 Гб на 2 месяца</div>
+
+        <div class="tariff-description">
+            <h3 class="tariff-name">Active 2</h3>
+
+            <div class="tariff-details">
+                <div class="tariff-details-item">
+                    <div class="tariff-details-name">Безлимитные звонки</div>
+                    <div class="tariff-details-progressbar">
+                        <progress class="progress-bar-tarriff" max="100"
+                            value="100"></progress>
+                    </div>
+                </div>
+                <div class="tariff-details-item">
+                    <div
+                        class="tariff-details-name d-flex justify-content-between">
+                        <span>Интернет</span><span>2 ГБ</span> </div>
+                    <div class="tariff-details-progressbar">
+                        <progress class="progress-bar-tarriff" max="190"
+                            value="41"></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="tariff-details-other">
+                <div
+                    class="tariff-details-other-item d-flex align-items-center">
+                    <div class="tariff-details-other-icon">
+                        <svg class="icon" width="10px" height="7px">
+                            <use xlink:href="image/sprite.svg#check_mark"></use>
+                        </svg>
+                    </div>
+                    <div class="tariff-details-other-name">100 SMS</div>
+                </div>
+                <div
+                    class="tariff-details-other-item d-flex align-items-center">
+                    <div class="tariff-details-other-icon">
+                        <svg class="icon" width="10px" height="7px">
+                            <use xlink:href="image/sprite.svg#check_mark"></use>
+                        </svg>
+                    </div>
+
+                    <div class="tariff-details-other-name">Бесплатное
+                        IP-телевидение</div>
+
+                </div>
+            </div>
+            <hr class="tariff-hr">
+            <div
+                class="tariff-price-wrapper d-flex flex-column align-items-center justify-content-center">
+                <div
+                    class="tariff-price d-flex justify-content-center align-items-center">
+                    <div class="tariff-price-count">100</div>
+                    <div class="tariff-price-currency">рублей в месяц</div>
+                </div>
+                <button class="tariffs-button">Купить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div  class='element'>
+
+</div>
+<div  class='element'>
+
+</div>
+<div  class='element'>
+
+</div>
+<div  class='element'>
+
+</div>
+
 
 
 </body>

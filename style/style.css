@@ -1088,7 +1088,7 @@ a:title {
   margin: 30px;
 }
 
-.tab-tariff a:hover > .tariff-item {
+.tariff-item:hover {
   text-decoration: none;
   box-shadow: 0 20px 30px rgba(92, 92, 92, 0.45);
   transition: 0.3s;
@@ -1133,7 +1133,16 @@ a:title {
   line-height: 43px;
   color: var(--third-default);
 }
-
+.tariffs-button {
+    margin-top: 14px;
+    background: #F8F32B;
+    border-radius: 48px;
+    border: none;
+    padding: 5px 50px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #37355B;
+  }
 .tariff-details {
   font-size: 12px;
   line-height: 14px;
