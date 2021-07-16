@@ -11,5 +11,61 @@
     <script type="text/javascript">
         showSpin("https://fdn.gsmarena.com/vv/spin/apple-iphone-x.swf");
         </script>
+
+
+
+
+
+<style>
+    
+
+
+
+
+.exclude {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.exclude .exclude-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.exclude .exclude-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.exclude:hover .exclude-text {
+    visibility: visible;
+    opacity: 1;
+}
+</style>
+<body style="text-align:center;">
+
+<div class="exclude">
+    
+   
+</div>
 </body>
 </html>

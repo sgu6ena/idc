@@ -326,37 +326,7 @@ body{
 }
 
 
-.form-capability-result {
-  /* font-family: "San Francisco Pro"; */
 
-  font-size: 14px;
-  line-height: 20px;
-  position: absolute;
-  margin-top: 15px;
-  background: #F2F3F7;
-  border: 1px solid #006285;
-  box-sizing: border-box;
-  border-radius: 8px;
-  padding: 17px;
-  color: #37355B;
-
-}
-
-.form-capability-result-icon-wrapper {}
-
-.form-capability-result-icon {
-  background-color: #006285;
-  border: none;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-}
-
-.form-capability-result-text-wrapper {
-  margin-left: 8px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
 .form-capability-result-list {
   margin: 0;
