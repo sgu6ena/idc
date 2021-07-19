@@ -477,8 +477,8 @@ hr {
   margin-bottom: 50px;
 }
  /* * support * */
-.support{
-/* position: relative; */
+.support .container{
+max-width: 1600px;
 }
 .support-title{
   font-weight: 600;
@@ -495,9 +495,11 @@ background:linear-gradient(0deg, rgba(0, 98, 133, 0.5), rgba(0, 98, 133, 0.5)), 
 display: flex;
 flex-direction: column;
 align-items:center;
+margin: 50px 40px;
 }
 
 .support-card-icon-wrapper{
+  margin-bottom: 40px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -509,6 +511,7 @@ background: rgba(255, 255, 255, 0.5);
 }
 
 .support-card-title{
+  margin-bottom: 35px;
   font-weight: 500;
 font-size: 24px;
 line-height: 29px;
@@ -517,6 +520,7 @@ letter-spacing: 0.01em;
 color: #37355B
 }
 .support-card-link-wrapper{
+
   padding: 10px 0 10px;
   width: 100%;
   display: block;
