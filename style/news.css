@@ -516,10 +516,30 @@ text-align: center;
 letter-spacing: 0.01em;
 color: #37355B
 }
-
+.support-card-link-wrapper{
+  padding: 10px 0 10px;
+  width: 100%;
+  display: block;
+}
 .support-card-link{
+  color: #7C7B8A;
   width: 100%;
   text-decoration: none;
-  display: block;
+padding-bottom: 5px;
   text-align: left;
+  background: linear-gradient(var(--third-default), var(--third-default)) left
+    bottom;
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+}
+
+.support-card-link:hover{
+  color:#006285;
+  transition: all 0.45s;
+  background-size: 100% 3px;
+}
+
+.support-card-link-wrapper:not(:last-child){
+  border-bottom: 1px solid #D0D7DD;
 }
