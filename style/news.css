@@ -594,11 +594,37 @@ ul.collapsing {
 
 .support-menu-link-item:hover .support-menu-link {
   transition: all 0.45s;
+  transition-delay:0.2s ;
   background-size: 100% 3px;
   color: #006285;
 }
 
+.support-description{
+font-size: 21px;
+line-height: 30px;
+color: #37355B;
+margin-bottom: 30px;
+margin-top: 10px;
+
+}
+.support-description ul li{
+  list-style-type: none;
+}
+
+.support-description ul li:before { 
+  content:"·";
+  margin-left: 15px;
+margin-right: 15px;
+font-weight: 600;
+}
+.support-description ul, .support-description ol{
+margin: 0;
+}
+.support-description p{
+  margin-top: 15px;
+}
 /* * accordion * */
+
 .accordion-menu .support-card-link-wrapper.collapsed,
 .accordion-menu .accordion-button:not(.collapsed) {
   font-size: 21px;
@@ -613,8 +639,10 @@ ul.collapsing {
 .accordion-menu .support-card-link-wrapper:hover{
   color:#006285;
 }
+.accordion-faq .accordion-button{
+font-weight: 600;
+}
 .accordion-button {
-  font-weight: 500;
   color: #37355b;
   font-size: 21px;
   line-height: 25px;
@@ -634,6 +662,7 @@ ul.collapsing {
   background-color: transparent;
   box-shadow: none;
 }
+
 .accordion-button:after {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='6' height='6' viewBox='-6 0 24 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.752601 0.335647C1.11952 -0.0771359 1.75159 -0.114317 2.16437 0.252601L6.00001 3.66206L9.83565 0.252601C10.2484 -0.114317 10.8805 -0.0771359 11.2474 0.335647C11.6143 0.74843 11.5772 1.3805 11.1644 1.74742L6.66437 5.74742C6.28549 6.08421 5.71453 6.08421 5.33565 5.74742L0.835647 1.74742C0.422864 1.3805 0.385683 0.74843 0.752601 0.335647Z' fill='%2337355B'/%3e%3c/svg%3e ");
 }
