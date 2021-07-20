@@ -610,15 +610,18 @@ margin-top: 10px;
 .support-description ul li{
   list-style-type: none;
 }
-
+.support-description ul{
+  padding-left: 20px;
+}
 .support-description ul li:before { 
   content:"·";
-  margin-left: 15px;
 margin-right: 15px;
 font-weight: 600;
 }
-.support-description ul, .support-description ol{
+.support-description > ul, 
+.support-description > ol{
 margin: 0;
+
 }
 .support-description p{
   margin-top: 15px;
