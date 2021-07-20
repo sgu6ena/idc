@@ -603,7 +603,8 @@ ul.collapsing {
 font-size: 21px;
 line-height: 30px;
 color: #37355B;
-margin-bottom: 30px;
+padding-left: 50px;
+margin-bottom: 100px;
 margin-top: 10px;
 
 }
@@ -627,9 +628,6 @@ margin: 0;
   margin-top: 15px;
 }
 
-.accordion-faq{
-  margin-bottom: 200px;
-}
 /* * accordion * */
 
 .accordion-menu .support-card-link-wrapper.collapsed,
