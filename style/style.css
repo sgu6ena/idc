@@ -267,10 +267,16 @@ a:title {
   margin: auto;
 }
 .login .modal-content-login{
+  font-family: "", sans-serif;
   margin: auto;
 border: 1px solid #006285;
 }
+
+.login .modal-login-text{
+  /* font-size: 1em; */
+}
 .modal-login-text {
+  font-family: "Inter", serif;
   font-weight: 700;
   font-size: 14px;
   margin-top: 18px;
@@ -278,6 +284,7 @@ border: 1px solid #006285;
 }
 
 .modal-login-text-descr {
+  font-family: "Inter", serif;
   margin-top: 3px;
   font-weight: 500;
   font-size: 12px;
@@ -292,6 +299,7 @@ border: 1px solid #006285;
 }
 
 .input-modal {
+  font-family: "Inter", serif;
   width: 100%;
   padding: 8px 12px;
   height: 32px;
@@ -322,6 +330,7 @@ border: 1px solid #006285;
 }
 
 .card-registration-link {
+  font-family: "Inter", serif;
   font-weight: 500;
   font-size: 14px;
   color: var(--title-second);
@@ -333,6 +342,7 @@ border: 1px solid #006285;
 }
 
 .login-danger-text {
+  font-family: "Inter", serif;
   display: none;
   left: 0;
   top: 30px;
@@ -342,6 +352,7 @@ border: 1px solid #006285;
 }
 
 .button-modal-login {
+  font-family: "Inter", serif;
   width: 100%;
   background: var(--second-accent);
   border-radius: 8px;
@@ -360,6 +371,7 @@ border: 1px solid #006285;
 }
 
 .button-modal-another-login {
+  font-family: "Inter", serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -369,6 +381,7 @@ border: 1px solid #006285;
 }
 
 .button-modal-forgotten-password {
+  font-family: "Inter", serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
