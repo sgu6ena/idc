@@ -623,6 +623,10 @@ margin: 0;
 .support-description p{
   margin-top: 15px;
 }
+
+.accordion-faq{
+  margin-bottom: 200px;
+}
 /* * accordion * */
 
 .accordion-menu .support-card-link-wrapper.collapsed,
