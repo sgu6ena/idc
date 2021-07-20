@@ -552,32 +552,67 @@ hr {
   border-bottom: 1px solid #d0d7dd;
 }
 
-/* * support item */ 
+/* * support item */
 
-.support-item-title{
+.support-item-title {
   font-weight: 600;
-font-size: 52px;
-line-height: 62px;
-text-align: center;
-letter-spacing: 0.01em;
-color: #37355B;
-margin-bottom: 70px;
+  font-size: 52px;
+  line-height: 62px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #37355b;
+  margin-bottom: 70px;
+}
+
+ul.collapse,
+ul.collapsing {
+  padding: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #d0d7dd;
+}
+
+.support-menu-link-item {
+  list-style-type: none;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.support-menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #37355b;
+  text-decoration: none;
+  padding-bottom: 5px;
+  background: linear-gradient(var(--third-default), var(--third-default)) left
+    bottom;
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+
+.support-menu-link-item:hover .support-menu-link {
+  transition: all 0.45s;
+  background-size: 100% 3px;
+  color: #006285;
 }
 
 /* * accordion * */
 .accordion-menu .support-card-link-wrapper.collapsed,
-.accordion-menu .accordion-button:not(.collapsed){
+.accordion-menu .accordion-button:not(.collapsed) {
   font-size: 21px;
-line-height: 25px;
-letter-spacing: 0.01em;
-color: #7C7B8A;
-
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  color: #7c7b8a;
 }
 .accordion-item {
   background-color: transparent;
   border: none;
 }
-
+.accordion-menu .support-card-link-wrapper:hover{
+  color:#006285;
+}
 .accordion-button {
   font-weight: 500;
   color: #37355b;
@@ -585,14 +620,14 @@ color: #7C7B8A;
   line-height: 25px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #D0D7DD;
+  border-bottom: 1px solid #d0d7dd;
 }
 
 .accordion-button:focus {
   box-shadow: none;
   outline: none;
   border: none;
-  border-bottom: 1px solid #D0D7DD;
+  border-bottom: 1px solid #d0d7dd;
 }
 .accordion-button:not(.collapsed) {
   color: #37355b;
@@ -608,12 +643,12 @@ color: #7C7B8A;
 
 .accordion-body {
   font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 19px;
-letter-spacing: 0.01em;
-color: #7C7B8A;
-border-bottom: 1px solid #D0D7DD;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #7c7b8a;
+  border-bottom: 1px solid #d0d7dd;
 }
 
 footer .container {
