@@ -653,14 +653,14 @@ font-weight: 600;
   line-height: 25px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #d0d7dd;
+  /* border-top: 1px solid #d0d7dd; */
 }
 
 .accordion-button:focus {
   box-shadow: none;
   outline: none;
   border: none;
-  border-bottom: 1px solid #d0d7dd;
+  /* border-top: 1px solid #d0d7dd; */
 }
 .accordion-button:not(.collapsed) {
   color: #37355b;
@@ -682,7 +682,7 @@ font-weight: 600;
   line-height: 19px;
   letter-spacing: 0.01em;
   color: #7c7b8a;
-  border-bottom: 1px solid #d0d7dd;
+  /* border-bottom: 1px solid #d0d7dd; */
 }
 
 footer .container {

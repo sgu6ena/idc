@@ -257,6 +257,19 @@ a:title {
   fill: var(--third-default);
 }
 
+.login-wrapper{
+  height: 100vh;
+  width: 100vw;
+  background:#006285
+}
+.login .modal-dialog{
+  height:auto;
+  margin: auto;
+}
+.login .modal-content-login{
+  margin: auto;
+border: 1px solid #006285;
+}
 .modal-login-text {
   font-weight: 700;
   font-size: 14px;
