@@ -627,6 +627,16 @@ margin: 0;
   margin-top: 15px;
 }
 
+.support-description h4{
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.01em;
+color: #37355B;
+margin-top: 30px;
+margin-bottom: 25px;
+}
+
 /* * accordion * */
 
 .accordion-menu .support-card-link-wrapper.collapsed,
@@ -644,7 +654,7 @@ margin: 0;
   color:#006285;
 }
 .accordion-faq .accordion-button{
-font-weight: 600;
+font-weight: 500;
 }
 .accordion-button {
   color: #37355b;
