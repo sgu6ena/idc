@@ -260,7 +260,7 @@ a:title {
 .login-wrapper{
   height: 100vh;
   width: 100vw;
-  background:#006285
+  background:rgba(0, 98, 133, .2);
 }
 .login .modal-dialog{
   height:auto;
