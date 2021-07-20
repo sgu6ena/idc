@@ -547,6 +547,28 @@ padding-bottom: 5px;
 .support-card-link-wrapper:not(:last-child){
   border-bottom: 1px solid #D0D7DD;
 }
+/* * accordion * */
+
+.accordion-item{
+
+}
+
+.accordion-header{
+
+}
+
+.accordion-button{
+
+}
+
+.accordion-collapse{
+
+}
+
+.accordion-body{
+  
+}
+
 
 footer .container{
   max-width: 1600px;
