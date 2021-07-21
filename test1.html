@@ -20,51 +20,56 @@
     
 
 
-
-
-.exclude {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+ .__select__input {
+	 display: none;
 }
-
-.exclude .exclude-text {
-    visibility: hidden;
-    width: 120px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
+ .__select__input:checked + label {
+	 background-color: #dedede;
 }
-
-.exclude .exclude-text::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
+ .__select__input:disabled + label {
+	 opacity: 0.6;
+	 pointer-events: none;
 }
-
-.exclude:hover .exclude-text {
-    visibility: visible;
-    opacity: 1;
+ .__select__label__multi {
+	 display: flex;
+	 align-items: center;
+	 flex-shrink: 0;
+	 height: 40px;
+	 padding: 0 16px;
+	 transition: all 0.2s ease-out;
+	 cursor: pointer;
 }
+.__select__label__multi  + input +.__select__label__multi  {
+	 border-top: 1px solid #c7ccd1 60;
+}
+.__select__label__multi:hover {
+	 background-color: #006285 !important;
+	 color: #fff;
+}
+ 
 </style>
 <body style="text-align:center;">
 
-<div class="exclude">
-    
+    <div class="__select">
+        <div class="__select__content__multi">
+          <input id="singleSelect0" class="__select__input" type="checkbox" name="singleSelect"  />
+          <label for="singleSelect0" class="__select__label__multi ">Option 0</label>
+          <input id="singleSelect1" class="__select__input" type="checkbox" name="singleSelect" />
+          <label for="singleSelect1" class="__select__label__multi ">Option 1</label>
+          <input id="singleSelect2" class="__select__input" type="checkbox" name="singleSelect" disabled />
+          <label for="singleSelect2" class="__select__label__multi ">Option 2 (disabled)</label>
+          <input id="singleSelect3" class="__select__input" type="checkbox" name="singleSelect" />
+          <label for="singleSelect3" class="__select__label__multi ">Option 3</label>
+          <input id="singleSelect4" class="__select__input" type="checkbox" name="singleSelect" />
+          <label for="singleSelect4" class="__select__label__multi ">Option 4</label>
+          <input id="singleSelect5" class="__select__input" type="checkbox" name="singleSelect" />
+          <label for="singleSelect5" class="__select__label__multi ">Option 5</label>
+          <input id="singleSelect6" class="__select__input" type="checkbox" name="singleSelect" />
+          <label for="singleSelect6" class="__select__label__multi ">Option 6</label>
+          <input id="singleSelect7" class="__select__input" type="checkbox" name="singleSelect" />
+          <label for="singleSelect7" class="__select__label__multi ">Option 7</label>
+        </div>
+      </div>
    
 </div>
 </body>
