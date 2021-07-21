@@ -1,6 +1,6 @@
 /* * input text * */
-input[type="text"], input[type="number"],  input[type="date"] {
-
+.input-text, .input-number,  input[type="date"] {
+display: inline-block;
   outline: none;
   margin: 5px;
   color: #37355B;
@@ -11,20 +11,20 @@ input[type="text"], input[type="number"],  input[type="date"] {
   border: 1px solid #D0D7DD;
   border-radius: 8px;
 }
-input[type="number"]{
+.input-number{
   text-align: right; 
 }
-input[type="text"]:focus, input[type="number"]:focus,  input[type="date"]:focus {
+.input-text:focus, .input-number:focus,  input[type="date"]:focus {
   border: 1px solid #006285;
 }
 
-input[type="text"]:disabled, input[type="number"]:disabled,  input[type="date"]:disabled {
+.input-text:disabled, .input-number:disabled,  input[type="date"]:disabled {
   color: #7C7B8A;
   background: #F2F3F7;
   border: 1px solid #D0D7DD;
 }
 
-input[type="text"]:invalid, input[type="number"]:invalid ,input[type="date"]:invalid  {
+.input-text:invalid, .input-number:invalid ,input[type="date"]:invalid  {
   border: 1px solid #FF0000;
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
