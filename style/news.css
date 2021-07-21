@@ -667,11 +667,16 @@ font-weight: 500;
   /* border-top: 1px solid #d0d7dd; */
 }
 
-.accordion-button:focus {
+.accordion-faq .accordion-button:focus {
   box-shadow: none;
   outline: none;
   border: none;
   border-top: 1px solid #d0d7dd;
+}
+.accordion-menu .accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+  border: none;
 }
 .accordion-button:not(.collapsed) {
   color: #37355b;
