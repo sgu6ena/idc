@@ -245,7 +245,7 @@ padding-bottom: 20px;
   width: 10px;
   height: 2px;
   transition: all 0.3s ease-out;
-  background-color: #333;
+  background-color: #006285;
   transform: translate(-3px, -50%) rotate(45deg);
 }
 .__select__title::after {
@@ -253,10 +253,10 @@ padding-bottom: 20px;
 }
 .__select__title:hover {
 
-  border-color: #37355B;
+  border-color: #006285;
 }
 .__select__title:hover::before, .__select__title:hover::after {
-  background-color: #37355B;
+  background-color: #006285;
 }
 
 .__select__content {
