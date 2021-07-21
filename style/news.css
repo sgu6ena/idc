@@ -548,7 +548,7 @@ hr {
   background-size: 100% 3px;
 }
 
-.support-card-link-wrapper:not(:last-child) {
+.support-card .support-card-link-wrapper:not(:last-child) {
   border-bottom: 1px solid #d0d7dd;
 }
 
@@ -568,7 +568,7 @@ ul.collapse,
 ul.collapsing {
   padding: 0;
   margin-bottom: 0;
-  border-bottom: 1px solid #d0d7dd;
+
 }
 
 .support-menu-link-item {
@@ -585,17 +585,17 @@ ul.collapsing {
   color: #37355b;
   text-decoration: none;
   padding-bottom: 5px;
-  background: linear-gradient(var(--third-default), var(--third-default)) left
+  /* background: linear-gradient(var(--third-default), var(--third-default)) left
     bottom;
   background-size: 0% 3px;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   margin-bottom: 0;
 }
 
 .support-menu-link-item:hover .support-menu-link {
   transition: all 0.45s;
-  transition-delay:0.2s ;
-  background-size: 100% 3px;
+  /* transition-delay:0.2s ;
+  background-size: 100% 3px; */
   color: #006285;
 }
 
@@ -646,16 +646,20 @@ margin-bottom: 25px;
   letter-spacing: 0.01em;
   color: #7c7b8a;
 }
+
 .accordion-item {
   background-color: transparent;
   border: none;
+ 
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #d0d7dd; 
 }
 .accordion-menu .support-card-link-wrapper:hover{
   color:#006285;
 }
 
 .accordion-faq .accordion-button{
-  border-top: 1px solid #d0d7dd;
 font-weight: 500;
 }
 .accordion-button {
@@ -664,20 +668,16 @@ font-weight: 500;
   line-height: 25px;
   background-color: transparent;
   border: none;
-  /* border-top: 1px solid #d0d7dd; */
 }
 
-.accordion-faq .accordion-button:focus {
-  box-shadow: none;
-  outline: none;
-  border: none;
-  border-top: 1px solid #d0d7dd;
-}
-.accordion-menu .accordion-button:focus {
+ .accordion-button:focus{
   box-shadow: none;
   outline: none;
   border: none;
 }
+
+
+
 .accordion-button:not(.collapsed) {
   color: #37355b;
   background-color: transparent;
@@ -698,7 +698,6 @@ font-weight: 500;
   line-height: 19px;
   letter-spacing: 0.01em;
   color: #7c7b8a;
-  /* border-bottom: 1px solid #d0d7dd; */
 }
 
 footer .container {
