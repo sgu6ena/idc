@@ -45,19 +45,18 @@
     <script src="scripts/price.js" defer></script>
 
     <style>
-        .container{
+        .container {
             /* display:flex; */
             /* flex-wrap: column; */
 
         }
-       .element{
 
-    padding: 10px 50px 40px;
-    margin: 5px;
-    border-bottom: 1px solid #00628536;
-}
+        .element {
 
-
+            padding: 10px 50px 40px;
+            margin: 5px;
+            border-bottom: 1px solid #00628536;
+        }
     </style>
 </head>
 
@@ -65,17 +64,17 @@
 
 
 
-        цена с перерасчетом
-        <!-- цена с перерасчетом  -->
-        <div class="price">
-            <span class="price-count">270</span>
-            <span class="price-currency"> руб.</span>
-        </div>
-        <!-- цена с перерасчетом -->
+    цена с перерасчетом
+    <!-- цена с перерасчетом  -->
+    <div class="price">
+        <span class="price-count">270</span>
+        <span class="price-currency"> руб.</span>
+    </div>
+    <!-- цена с перерасчетом -->
 
-<div  class='element'>
-    карточка магазина
-     <!-- карточка магазина -->
+    <div class='element'>
+        карточка магазина
+        <!-- карточка магазина -->
         <div class="shop-card">
             <div class="row m-0 p-0 align-self-start">
                 <div class="col-12 p-0 shop-card-image-wrapper d-flex align-items-center justify-content-center">
@@ -125,326 +124,416 @@
             </div>
         </div>
 
-  <!--/.карточка магазина -->
-</div>
-       
+        <!--/.карточка магазина -->
+    </div>
 
 
-<div  class='element d-flex flex-column'>
-    <!-- инпут -->
-    <label class="input-text-label">   обычный инпут
-        <input type="text" id="text" name="text" value="" placeholder="Введите значение" class="input-text">
-    </label>
+
+    <div class='element '>
         <!-- инпут -->
-    <label class="input-text-label" >
-        со значением
-    <input type="text" id="text" name="text" value="Значение" placeholder="Введите значение" class="input-text">
-    </label>
-    <!-- инпут -->
-   <label class="input-text-label" >  disabled
-    <input type="text" id="text" name="text" value="Значение" placeholder="Введите значение" disabled class="input-text"></label>
-  
+        <label class="input-text-label"> обычный инпут
+            <input type="text" id="text" name="text" value="" placeholder="Введите значение" class="input-text">
+        </label>
         <!-- инпут -->
-   <label  class="input-text-label">  invalid
-    <input type="text" id="text" name="text" value="Неверное значение" placeholder="Введите значение" pattern="Значение" class="input-text"></label>
-    <!-- инпут -->
-</div>
-<div  class='element d-flex flex-column'>
-    <!-- input number  -->
-    <label class="input-number-label">   обычный инпут
-        <input type="number" id="text" name="text" value="" placeholder="31" class="input-number">
-    </label>
+        <label class="input-text-label">
+            со значением
+            <input type="text" id="text" name="text" value="Значение" placeholder="Введите значение" class="input-text">
+        </label>
+        <!-- инпут -->
+        <label class="input-text-label"> disabled
+            <input type="text" id="text" name="text" value="Значение" placeholder="Введите значение" disabled
+                class="input-text"></label>
+
+        <!-- инпут -->
+        <label class="input-text-label"> invalid
+            <input type="text" id="text" name="text" value="Неверное значение" placeholder="Введите значение"
+                pattern="Значение" class="input-text"></label>
+        <!-- инпут -->
+    </div>
+    <div class='element '>
         <!-- input number  -->
-    <label class="input-number-label">
-        со значением
-    <input type="number" id="text" name="text" value="31" placeholder="31" class="input-number">
-    </label>
-    <!-- input number  -->
-   <label class="input-number-label">  disabled
-    <input type="number" id="text" name="text" value="Значение" placeholder="31" class="input-number" disabled></label>
-      <!-- input number  -->
-    
-   <label class="input-number-label">  invalid
-    <input type="number" id="text" name="text" value="31" placeholder="31" pattern="Значение" max=10 class="input-number"></label>
-    <!-- input number  -->
-</div>
+        <label class="input-number-label"> обычный инпут
+            <input type="number" id="text" name="text" value="" placeholder="31" class="input-number">
+        </label>
+        <!-- input number  -->
+        <label class="input-number-label">
+            со значением
+            <input type="number" id="text" name="text" value="31" placeholder="31" class="input-number">
+        </label>
+        <!-- input number  -->
+        <label class="input-number-label"> disabled
+            <input type="number" id="text" name="text" value="Значение" placeholder="31" class="input-number"
+                disabled></label>
+        <!-- input number  -->
 
-<div  class='element d-flex flex-column'>
+        <label class="input-number-label"> invalid
+            <input type="number" id="text" name="text" value="31" placeholder="31" pattern="Значение" max=10
+                class="input-number"></label>
+        <!-- input number  -->
+    </div>
+
+    <div class='element '>
         <!-- input date  -->
-    <label    class="input-date-label">   обычный инпут
-        <input type="date" id="text" name="text" value="" placeholder="31" >
-    </label>
-            <!-- input date  -->
-    <label  class="input-date-label">
-        со значением
-    <input type="date" id="text" name="text" value="31" placeholder="31" class="input-date">
-    </label>
+        <label class="input-date-label"> обычный инпут
+            <input type="date" value="" placeholder="31" class="input-date">
+        </label>
         <!-- input date  -->
-   <label  class="input-date-label">  disabled
-    <input type="date" id="text" name="text" value="Значение" placeholder="31"  class="input-date"disabled></label>
-  
-            <!-- input date  -->
-   <label  class="input-date-label">  invalid
-    <input type="date" id="text" name="text" value="31" placeholder="31" pattern="Значение" class="input-date" max=10></label>
+        <label class="input-date-label">
+            со значением
+            <input type="date" value="31" placeholder="31" class="input-date">
+        </label>
         <!-- input date  -->
-</div>
-<div  class='element d-flex flex-column'>
+        <label class="input-date-label"> disabled
+            <input type="date" value="Значение" placeholder="31" class="input-date" disabled></label>
+
+        <!-- input date  -->
+        <label class="input-date-label"> invalid
+            <input type="date" value="31" placeholder="31" pattern="Значение" class="input-date" max=10></label>
+        <!-- input date  -->
+    </div>
+    <div class='element'>
+
+        <!-- checkbox -->
+
+        <label class="check ">
+
+            <input class="check-input" type="checkbox">
+            <span class="check-box"></span>
+            Первый
+        </label>
+        <!-- checkbox -->
+        <label class="check ">
+            <input class="check-input" type="checkbox" checked>
+            <span class="check-box"></span>
+            Второй
+        </label>
+        <!-- checkbox -->
+        <label class="check ">
+            <input class="check-input" type="checkbox" disabled>
+            <span class="check-box"></span>
+            Третий
+        </label>
+        <!-- checkbox -->
+        <label class="check ">
+            <input class="check-input" type="checkbox" checked disabled>
+            <span class="check-box"></span>
+            Четвёртый
+        </label>
+        <!-- checkbox -->
+        <label class="check ">
+            <input class="check-input indeterminate" type="checkbox" checked disabled>
+            <span class="check-box check-box-minus"></span>
+            Пятый
+        </label>
+        <!-- checkbox -->
+        <label class="check ">
+            <input class="check-input" type="checkbox" checked>
+            <span class="check-box check-box-minus"></span>
+            Шестой
+        </label>
+        <!-- checkbox -->
+    </div>
 
 
+    <div class='element'>
+        <!-- radiogroup -->
+        <label class="radio ">
+            <input class="radio-input" type="radio" name="radiogroup" checked>
+            <span class="radio-box"></span>
+            Первый
+        </label>
 
-    <label class="check ">
-        <input class="check-input" type="checkbox">
-        <span class="check-box"></span>
-        Первый
-    </label>
-    <label class="check ">
-        <input class="check-input" type="checkbox" checked>
-        <span class="check-box"></span>
-        Второй
-    </label>
-    <label class="check ">
-        <input class="check-input" type="checkbox" disabled>
-        <span class="check-box"></span>
-        Третий
-    </label>
-    <label class="check ">
-        <input class="check-input" type="checkbox" checked disabled>
-        <span class="check-box"></span>
-        Четвёртый
-    </label>
-    <label class="check ">
-        <input class="check-input" type="checkbox"  checked disabled>
-        <span class="check-box check-box-minus"></span>
-        Пятый
-    </label>
-    <label class="check ">
-        <input class="check-input" type="checkbox" checked>
-        <span class="check-box check-box-minus"></span>
-        Шестой
-    </label>
-</div>
+        <label class="radio ">
+            <input class="radio-input" type="radio" name="radiogroup" id='radio2'>
+            <span class="radio-box"></span>
+            Второй
+        </label>
+
+        <label class="radio ">
+            <input class="radio-input" type="radio" name="radiogroup" id='radio3' disabled>
+            <span class="radio-box"></span>
+            Третий
+        </label>
+        <!-- radiogroup -->
+
+        <!-- radio -->
+        <label class="radio ">
+            <input class="radio-input" type="radio" name="radio" id='radio'>
+            <span class="radio-box"></span>
+            Одиночный
+        </label>
+        <!-- radio -->
+    </div>
 
 
-<div  class='element'>
-    <label class="radio ">
-        <input class="radio-input" type="radio" name="radiogroup"  checked>
-        <span class="radio-box"></span>
-        Первый
-    </label>
-    <label class="radio ">
-        <input class="radio-input" type="radio"    name="radiogroup"  id='radio2'>
-        <span class="radio-box"></span>
-        Второй
-    </label>
-    <label class="radio ">
-        <input class="radio-input" type="radio"  name="radiogroup"   id='radio3' disabled>
-        <span class="radio-box"></span>
-        Третий
-    </label>
-</div>
-
-
-<div  class='element'>
-<textarea name="text" id="" cols="30" rows="10" placeholder="Введите текст">
+    <div class='element'>
+        <!-- textarea -->
+        <textarea name="text" id="" cols="30" rows="10" placeholder="Введите текст" class="textarea">
 </textarea>
-<textarea name="" id="" cols="30" rows="10" placeholder="Введите текст" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum maxime veritatis. Fugiat consectetur quisquam reiciendis animi tenetur vero? Dolorem, similique praesentium est eligendi alias voluptatem tempore repellendus voluptate nam?</textarea>
-<textarea name="" id="" cols="30" rows="10" placeholder="Введите текст">
+        <!-- textarea -->
+        <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст" class="textarea"
+            disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum maxime veritatis. Fugiat consectetur quisquam reiciendis animi tenetur vero? Dolorem, similique praesentium est eligendi alias voluptatem tempore repellendus voluptate nam?</textarea>
+        <!-- textarea -->
+        <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст" class="textarea">
 Текст
 </textarea>
-<textarea name="" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
-</div>
-<div  class='element'>
-
-</div>
-<div  class='element'>
-
-</div>
-
-<div class='element'>
-    иконка с крутяшкой
-    <div class="footer-social-item"> <a href="#" class="footer-social-link">
-            <svg class="logo-icon icon" width="25px" height="25px">
-                <use xlink:href="image/sprite.svg#vk"></use>
-            </svg>
-
-        </a>
-    </div>
-</div>
-
-
-
-<div  class='element'>
-    элемент или
-    <br><br>
-    <div class="or ">или</div>
-
-</div>
-
-
-
-
-
-
-
-
-<div  class='element'>
-    вопрос с подсказкой
-    <div class="exclude">
-        <svg class="icon" width="15px" height="15px">
-            <use xlink:href="image/sprite.svg#exclude"></use>
-        </svg>
-        <span class="exclude-text">какая-то информация</span>
+        <!-- textarea -->
+        <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст" class="textarea"></textarea>
+        <!-- textarea -->
     </div>
 
-</div>
+    <div class='element'>
+        <label>Выберите значение
 
+            <select class="select" value="" placeholder="Выберите значение">
+                <option selected disabled hidden style='display: none' value=''>Выберите значение</option>
 
-<div  class='element'>
-    Информационное сообщение
-    <div class=" info-message ">
-        <div class="info-message-icon-wrapper ">
-            <div class=" info-message-icon ">
-                <svg class="icon-info" width="2px" height="10px">
-                    <use xlink:href="image/sprite.svg#info"></use>
+                <option class="" value="EuropeSouth"><span class="select-options">Europe South</span> </option>
+                <option class="select-options" value="EuropeMiddle">Europe Middle</option>
+                <option class="select-options" value="EuropeNorth">Europe North</option>
+                <option class="select-options" value="USAEastCoast">USA East Coast</option>
+                <option class="select-options" value="USAWestCoast">USA West Coast</option>
+                <option class="select-options" value="USANorth"> USA North</option>
+                <option class="select-options" value="MiddleEast">Middle East</option>
+            </select>
+        </label>
+    </div>
+    <div class='element'>
+        <div class="__select" data-state="">
+            <div class="__select__title" data-default="Option 0">Выберите значение</div>
+            <div class="__select__content">
+
+                <input id="Select1" class="__select__input" type="radio" name="Select" />
+                <label for="Select1" class="__select__label">Текст строки меню 0</label>
+                <input id="Select2" class="__select__input" type="radio" name="Select" disabled />
+                <label for="Select2" class="__select__label">Текст строки меню 1</label>
+                <input id="Select3" class="__select__input" type="radio" name="Select" />
+                <label for="Select3" class="__select__label">Текст строки меню 2</label>
+                <input id="Select4" class="__select__input" type="radio" name="Select" />
+                <label for="Select4" class="__select__label">Текст строки меню 3</label>
+               
+            </div>
+        </div>
+
+        <div class="__select" data-state="">
+            <div class="__select__title" data-default="Option 0">Выберите значение</div>
+            <div class="__select__content">
+                 <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                 <label for="singleSelect1" class="__select__label">Текст строки меню 0</label>
+                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" disabled />
+                <label for="singleSelect2" class="__select__label">Текст строки меню 1</label>                
+                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect3" class="__select__label">Текст строки меню 2</label>
+               <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Текст строки меню 3</label>
+                   <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect5" class="__select__label">Текст строки меню 4</label>
+              <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect"  />
+                <label for="singleSelect6" class="__select__label">Текст строки меню 5</label>
+                <input id="singleSelect7" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect7" class="__select__label">Текст строки меню 6</label>
+               <input id="singleSelect8" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect8" class="__select__label">Текст строки меню 7</label>             
+                
+            </div>
+        </div>
+
+        <script>
+                document.querySelectorAll('.__select').forEach(item => {
+                const selectSingle_title = item.querySelector('.__select__title');
+                const selectSingle_labels = item.querySelectorAll('.__select__label');
+               
+                selectSingle_title.addEventListener('click', () => 'active' === item.getAttribute('data-state') ?  item.setAttribute('data-state', '') : item.setAttribute('data-state', 'active'));
+
+                for (let i = 0; i < selectSingle_labels.length; i++) {
+                    selectSingle_labels[i].addEventListener('click', (event) => {
+                        selectSingle_title.textContent = event.target.textContent;
+                        item.setAttribute('data-state', '');
+                    });
+                }
+            });
+        </script>
+    </div>
+
+    <div class='element'>
+        иконка с крутяшкой
+        <div class="footer-social-item"> <a href="#" class="footer-social-link">
+                <svg class="logo-icon icon" width="25px" height="25px">
+                    <use xlink:href="image/sprite.svg#vk"></use>
                 </svg>
-            </div>
-        </div>
-        <div class=" info-message-text-wrapper ">
-            Скорость передачи данных, указанная в пакете, является максимально доступной с учетом скорости доступа к
-            локальным ресурсам. Скорость доступа к внешним ресурсам может отличаться и меняться в зависимости от
-            посещаемых сайтов.
-            Скорость передачи данных для технологии ADSL указана в максимальных значениях и зависит от технических
-            параметров телефонной линии.
+
+            </a>
         </div>
     </div>
-</div>
 
 
 
-<div  class='element d-flex ' height="600px" width="600px">
-    <div class="tariff-item">
-        <div class="tariff-image-wrapper">
-            <img src="image/active-5.jpg" alt="" class="tariff-image">
+    <div class='element'>
+        элемент или
+        <br><br>
+        <div class="or ">или</div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class='element'>
+        вопрос с подсказкой
+        <div class="exclude">
+            <svg class="icon" width="15px" height="15px">
+                <use xlink:href="image/sprite.svg#exclude"></use>
+            </svg>
+            <span class="exclude-text">какая-то информация</span>
         </div>
 
-        <div class="tariff-label">+ 5 Гб на 2 месяца</div>
-        <div class="tariff-description">
-            <h3 class="tariff-name">Active 5</h3>
+    </div>
 
-            <div class="tariff-details">
-                <div class="tariff-details-item">
-                    <div class="tariff-details-name">Безлимитные звонки</div>
-                    <div class="tariff-details-progressbar">
-                        <progress class="progress-bar-tarriff" max="190" value="190"></progress>
-                    </div>
-                </div>
-                <div class="tariff-details-item">
-                    <div class="tariff-details-name d-flex justify-content-between">
-                        <span>Интернет</span><span>5 ГБ</span></div>
-                    <div class="tariff-details-progressbar">
-                        <progress class="progress-bar-tarriff" max="190" value="90"></progress>
-                    </div>
-                </div>
-            </div>
-            <div class="tariff-details-other">
-                <div class="tariff-details-other-item d-flex align-items-center">
-                    <div class="tariff-details-other-icon">
-                        <svg class="icon" width="10px" height="7px">
-                            <use xlink:href="image/sprite.svg#check_mark">
-                            </use> </svg>
-                    </div>
-                    <div class="tariff-details-other-name">300 SMS</div>
 
-                </div>
-                <div class="tariff-details-other-item d-flex align-items-center">
-                    <div class="tariff-details-other-icon">
-                        <svg class="icon" width="10px" height="7px">
-                            <use xlink:href="image/sprite.svg#check_mark"></use>
-                        </svg>
-                    </div>
-
-                    <div class="tariff-details-other-name">Бесплатное IP-телевидение</div>
-
-                </div>
-            </div>
-            <hr class="tariff-hr">
-            <div class="tariff-price-wrapper d-flex align-items-center justify-content-between">
-                <div class="tariff-price d-flex justify-content-start align-items-center">
-                    <div class="tariff-price-count">160</div>
-                    <div class="tariff-price-currency">рублей в месяц</div>
-                </div>
-                <button class="tariff-button">
-                    <svg class="icon big-slide-arrow-right" height="14px" width="14px">
-                        <use xlink:href="image/sprite.svg#arrow-right"></use>
+    <div class='element'>
+        Информационное сообщение
+        <div class=" info-message ">
+            <div class="info-message-icon-wrapper ">
+                <div class=" info-message-icon ">
+                    <svg class="icon-info" width="2px" height="10px">
+                        <use xlink:href="image/sprite.svg#info"></use>
                     </svg>
-                </button>
-            </div>
-        </div>
-    </div>    <div class="tariff-item">
-        <div class="tariff-image-wrapper"> <img src="image/active-2.jpg" alt=""
-                class="tariff-image">
-
-        </div>
-
-        <div class="tariff-label ">+ 2 Гб на 2 месяца</div>
-
-        <div class="tariff-description">
-            <h3 class="tariff-name">Active 2</h3>
-
-            <div class="tariff-details">
-                <div class="tariff-details-item">
-                    <div class="tariff-details-name">Безлимитные звонки</div>
-                    <div class="tariff-details-progressbar">
-                        <progress class="progress-bar-tarriff" max="100"
-                            value="100"></progress>
-                    </div>
-                </div>
-                <div class="tariff-details-item">
-                    <div
-                        class="tariff-details-name d-flex justify-content-between">
-                        <span>Интернет</span><span>2 ГБ</span> </div>
-                    <div class="tariff-details-progressbar">
-                        <progress class="progress-bar-tarriff" max="190"
-                            value="41"></progress>
-                    </div>
                 </div>
             </div>
-            <div class="tariff-details-other">
-                <div
-                    class="tariff-details-other-item d-flex align-items-center">
-                    <div class="tariff-details-other-icon">
-                        <svg class="icon" width="10px" height="7px">
-                            <use xlink:href="image/sprite.svg#check_mark"></use>
-                        </svg>
-                    </div>
-                    <div class="tariff-details-other-name">100 SMS</div>
-                </div>
-                <div
-                    class="tariff-details-other-item d-flex align-items-center">
-                    <div class="tariff-details-other-icon">
-                        <svg class="icon" width="10px" height="7px">
-                            <use xlink:href="image/sprite.svg#check_mark"></use>
-                        </svg>
-                    </div>
-
-                    <div class="tariff-details-other-name">Бесплатное
-                        IP-телевидение</div>
-
-                </div>
-            </div>
-            <hr class="tariff-hr">
-            <div
-                class="tariff-price-wrapper d-flex flex-column align-items-center justify-content-center">
-                <div
-                    class="tariff-price d-flex justify-content-center align-items-center">
-                    <div class="tariff-price-count">100</div>
-                    <div class="tariff-price-currency">рублей в месяц</div>
-                </div>
-                <button class="tariffs-button">Купить</button>
+            <div class=" info-message-text-wrapper ">
+                Скорость передачи данных, указанная в пакете, является максимально доступной с учетом скорости доступа к
+                локальным ресурсам. Скорость доступа к внешним ресурсам может отличаться и меняться в зависимости от
+                посещаемых сайтов.
+                Скорость передачи данных для технологии ADSL указана в максимальных значениях и зависит от технических
+                параметров телефонной линии.
             </div>
         </div>
     </div>
-</div>
+
+
+
+    <div class='element d-flex ' height="600px" width="600px">
+        <div class="tariff-item">
+            <div class="tariff-image-wrapper">
+                <img src="image/active-5.jpg" alt="" class="tariff-image">
+            </div>
+
+            <div class="tariff-label">+ 5 Гб на 2 месяца</div>
+            <div class="tariff-description">
+                <h3 class="tariff-name">Active 5</h3>
+
+                <div class="tariff-details">
+                    <div class="tariff-details-item">
+                        <div class="tariff-details-name">Безлимитные звонки</div>
+                        <div class="tariff-details-progressbar">
+                            <progress class="progress-bar-tarriff" max="190" value="190"></progress>
+                        </div>
+                    </div>
+                    <div class="tariff-details-item">
+                        <div class="tariff-details-name d-flex justify-content-between">
+                            <span>Интернет</span><span>5 ГБ</span></div>
+                        <div class="tariff-details-progressbar">
+                            <progress class="progress-bar-tarriff" max="190" value="90"></progress>
+                        </div>
+                    </div>
+                </div>
+                <div class="tariff-details-other">
+                    <div class="tariff-details-other-item d-flex align-items-center">
+                        <div class="tariff-details-other-icon">
+                            <svg class="icon" width="10px" height="7px">
+                                <use xlink:href="image/sprite.svg#check_mark">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="tariff-details-other-name">300 SMS</div>
+
+                    </div>
+                    <div class="tariff-details-other-item d-flex align-items-center">
+                        <div class="tariff-details-other-icon">
+                            <svg class="icon" width="10px" height="7px">
+                                <use xlink:href="image/sprite.svg#check_mark"></use>
+                            </svg>
+                        </div>
+
+                        <div class="tariff-details-other-name">Бесплатное IP-телевидение</div>
+
+                    </div>
+                </div>
+                <hr class="tariff-hr">
+                <div class="tariff-price-wrapper d-flex align-items-center justify-content-between">
+                    <div class="tariff-price d-flex justify-content-start align-items-center">
+                        <div class="tariff-price-count">160</div>
+                        <div class="tariff-price-currency">рублей в месяц</div>
+                    </div>
+                    <button class="tariff-button">
+                        <svg class="icon big-slide-arrow-right" height="14px" width="14px">
+                            <use xlink:href="image/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="tariff-item">
+            <div class="tariff-image-wrapper"> <img src="image/active-2.jpg" alt="" class="tariff-image">
+
+            </div>
+
+            <div class="tariff-label ">+ 2 Гб на 2 месяца</div>
+
+            <div class="tariff-description">
+                <h3 class="tariff-name">Active 2</h3>
+
+                <div class="tariff-details">
+                    <div class="tariff-details-item">
+                        <div class="tariff-details-name">Безлимитные звонки</div>
+                        <div class="tariff-details-progressbar">
+                            <progress class="progress-bar-tarriff" max="100" value="100"></progress>
+                        </div>
+                    </div>
+                    <div class="tariff-details-item">
+                        <div class="tariff-details-name d-flex justify-content-between">
+                            <span>Интернет</span><span>2 ГБ</span> </div>
+                        <div class="tariff-details-progressbar">
+                            <progress class="progress-bar-tarriff" max="190" value="41"></progress>
+                        </div>
+                    </div>
+                </div>
+                <div class="tariff-details-other">
+                    <div class="tariff-details-other-item d-flex align-items-center">
+                        <div class="tariff-details-other-icon">
+                            <svg class="icon" width="10px" height="7px">
+                                <use xlink:href="image/sprite.svg#check_mark"></use>
+                            </svg>
+                        </div>
+                        <div class="tariff-details-other-name">100 SMS</div>
+                    </div>
+                    <div class="tariff-details-other-item d-flex align-items-center">
+                        <div class="tariff-details-other-icon">
+                            <svg class="icon" width="10px" height="7px">
+                                <use xlink:href="image/sprite.svg#check_mark"></use>
+                            </svg>
+                        </div>
+
+                        <div class="tariff-details-other-name">Бесплатное
+                            IP-телевидение</div>
+
+                    </div>
+                </div>
+                <hr class="tariff-hr">
+                <div class="tariff-price-wrapper d-flex flex-column align-items-center justify-content-center">
+                    <div class="tariff-price d-flex justify-content-center align-items-center">
+                        <div class="tariff-price-count">100</div>
+                        <div class="tariff-price-currency">рублей в месяц</div>
+                    </div>
+                    <button class="tariffs-button">Купить</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

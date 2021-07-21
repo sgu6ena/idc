@@ -1,5 +1,5 @@
 /* * input text * */
-.input-text, .input-number,  .input-date {
+.input-text, .input-number,  .input-date, .select  {
 display: inline-block;
   outline: none;
   margin: 5px;
@@ -14,19 +14,21 @@ display: inline-block;
 .input-number{
   text-align: right; 
 }
-input[type=number] {-moz-appearance: textfield;}
-.input-text:focus, .input-number:focus,  .input-date:focus {
+.input-number {
+  -moz-appearance: textfield;
+}
+.input-text:focus, .input-number:focus,  .input-date:focus,.select:focus {
   border: 1px solid #006285;
 }
 
 
-.input-text:disabled, .input-number:disabled,  .input-date:disabled {
+.input-text:disabled, .input-number:disabled,  .input-date:disabled, .select:disabled {
   color: #7C7B8A;
   background: #F2F3F7;
   border: 1px solid #D0D7DD;
 }
 
-.input-text:invalid, .input-number:invalid ,.input-date:invalid  {
+.input-text:invalid, .input-number:invalid, .input-date:invalid, .select:invalid  {
   border: 1px solid #FF0000;
 }
 .input-date::-webkit-calendar-picker-indicator {
@@ -40,15 +42,15 @@ input[type=number] {-moz-appearance: textfield;}
   color: #7C7B8A;
 }
 
-label {
-
-  font-size: 18px;
+.input-label, .input-number-label, .input-text-label, .input-date-label {
+  font-size: 16px;
   cursor: pointer;
 }
 
 /* * Check * */
 
 .check {
+  display: block;
   padding-left: 0.2em;
 }
 
@@ -63,8 +65,8 @@ label {
   position: absolute;
   margin-top: 0.4em;
   margin-left: -1em;
-  width: 0.8em;
-  height: 0.8em;
+  width: 14px;
+  height: 14px;
   overflow: hidden;
   background: #FFFFFF;
   border: 1px solid #D0D7DD;
@@ -97,7 +99,8 @@ label {
 
  /* * Radio * */
  .radio{
-   padding: 1em;
+   display: block;
+   padding: .2em;
  }
 
  .radio-input{
@@ -139,7 +142,7 @@ label {
 
 /* * Textarea* */
 
-textarea{
+.textarea{
   resize: none;
   font-size: 14px;
 line-height: 20px;
@@ -152,18 +155,154 @@ border: 1px solid #D0D7DD;
 border-radius: 8px;
 }
 
-textarea::placeholder{
+.textarea::placeholder{
   color: #7D838A;
 }
 
-textarea:focus{
+.textarea:focus{
   background: #FFFFFF;
   border-color: #006285;
 border-radius: 8px;
 }
 
-textarea:disabled{
+.textarea:disabled{
   background: #F2F4F7;
   border: 1px solid #D0D7DD;
   border-radius: 8px;
+}
+
+.select{  
+  font-size: 14px;
+  line-height: 16px;
+    color: #37355B;
+    font-weight: 400;
+ 
+
+ 
+
+  padding-right: 36px;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;       
+   background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='6' height='6' viewBox='0 0 24 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.752601 0.335647C1.11952 -0.0771359 1.75159 -0.114317 2.16437 0.252601L6.00001 3.66206L9.83565 0.252601C10.2484 -0.114317 10.8805 -0.0771359 11.2474 0.335647C11.6143 0.74843 11.5772 1.3805 11.1644 1.74742L6.66437 5.74742C6.28549 6.08421 5.71453 6.08421 5.33565 5.74742L0.835647 1.74742C0.422864 1.3805 0.385683 0.74843 0.752601 0.335647Z' fill='%23006285'/%3e%3c/svg%3e ") 96% / 10% no-repeat #fff;
+}
+
+.select:active{
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='6' height='6' viewBox='0 0 24 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.752601 0.335647C1.11952 -0.0771359 1.75159 -0.114317 2.16437 0.252601L6.00001 3.66206L9.83565 0.252601C10.2484 -0.114317 10.8805 -0.0771359 11.2474 0.335647C11.6143 0.74843 11.5772 1.3805 11.1644 1.74742L6.66437 5.74742C6.28549 6.08421 5.71453 6.08421 5.33565 5.74742L0.835647 1.74742C0.422864 1.3805 0.385683 0.74843 0.752601 0.335647Z' fill='%23006285'/%3e%3c/svg%3e ") 96% / 10% no-repeat #fff;
+}
+
+.select-options:hover{
+
+  border: 1px solid red;
+  font-size: 16px;
+padding-bottom: 20px;
+  color: #37355B;
+  background-color: green;
+  border-radius: 8px;
+  padding-top: 6px;
+}
+
+
+/* * селект *  */
+
+.__select {
+  margin: 5px;
+  color:#37355B;
+  position: relative;
+  width:300px;
+  height: 48px;
+}
+.__select[data-state="active"] .__select__title::before {
+  transform: translate(-3px, -50%) rotate(-45deg);
+}
+.__select[data-state="active"] .__select__title::after {
+  transform: translate(3px, -50%) rotate(45deg);
+}
+.__select[data-state="active"] .__select__content {
+  opacity: 1;
+}
+.__select[data-state="active"] .__select__label + .__select__input + .__select__label {
+  max-height: 40px;
+  border-top-width: 1px;
+}
+.__select__title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: solid 1px #D0D7DD;
+  cursor: pointer;
+  background-color: #fff;
+}
+.__select__title::before, .__select__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  display: block;
+  width: 10px;
+  height: 2px;
+  transition: all 0.3s ease-out;
+  background-color: #333;
+  transform: translate(-3px, -50%) rotate(45deg);
+}
+.__select__title::after {
+  transform: translate(3px, -50%) rotate(-45deg);
+}
+.__select__title:hover {
+
+  border-color: #37355B;
+}
+.__select__title:hover::before, .__select__title:hover::after {
+  background-color: #37355B;
+}
+
+.__select__content {
+  padding: 4px;
+  position: absolute;
+  top: 50px;
+  left: 3px;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 6px);
+  background-color: #fff;
+  border: 1px solid #c7ccd1;
+  border-radius: 8px;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  z-index: 8;
+  box-shadow: 0px 2px 7px rgba(31, 31, 34, 0.25);
+}
+.__select__input {
+  display: none;
+}
+.__select__input:checked + label {
+  background-color: #dedede;
+}
+.__select__input:disabled + label {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+
+.__select__label {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  max-height: 0;
+  padding: 0 16px;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+.__select__label + input + .__select__label {
+  border-top: 0 solid #c7ccd1 60;
+}
+.__select__label:hover {
+  background-color: #F2F4F7 !important;
+
 }
