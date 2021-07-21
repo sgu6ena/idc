@@ -170,7 +170,7 @@ border-radius: 8px;
   border: 1px solid #D0D7DD;
   border-radius: 8px;
 }
-
+/* 
 .select{  
   font-size: 14px;
   line-height: 16px;
@@ -201,7 +201,7 @@ padding-bottom: 20px;
   border-radius: 8px;
   padding-top: 6px;
 }
-
+ */
 
 /* * селект *  */
 
@@ -307,7 +307,7 @@ padding-bottom: 20px;
 
 
 /* * */
-
+.__select__multi_check,
 .__select__multi {
 
   display: inline-block;
@@ -318,13 +318,17 @@ padding-bottom: 20px;
   height: 48px;
 }
 
+
 .__select__content__multi{
+  background-color: #fff;
   overflow: hidden;
   border: 1px solid #c7ccd1;
   border-radius: 8px;
 }
 .__select__label__multi {
-  background-color: #fff;
+  /* background-color: #fff; */
+  margin: 5px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   flex-shrink: 0;
@@ -337,6 +341,13 @@ padding-bottom: 20px;
   border-top: 1px solid #c7ccd1 60;
 }
 .__select__label__multi:hover {
-  background-color: #006285 !important;
-  color: #fff;
+  background-color: #dedede !important;
+
+}
+.__select__multi_check .check-box{
+  margin-left: -20px;
+  margin-top: -1px;
+}
+.__select__multi_check .__select__label__multi{
+  padding-left: 30px;
 }

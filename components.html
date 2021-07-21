@@ -300,7 +300,7 @@
     </div>
     <div class='element'>
         Select через radio + js
-       <!-- Select через radio + js -->
+        <!-- Select через radio + js -->
 
         <div class="__select" data-state="">
             <div class="__select__title" data-default="Option 0">Выберите значение</div>
@@ -314,40 +314,43 @@
                 <label for="Select3" class="__select__label">Текст строки меню 2</label>
                 <input id="Select4" class="__select__input" type="radio" name="Select" />
                 <label for="Select4" class="__select__label">Текст строки меню 3</label>
-               
+
             </div>
         </div>
         <!-- Select через radio + js -->
         <div class="__select" data-state="">
             <div class="__select__title" data-default="Option 0">Выберите значение</div>
             <div class="__select__content">
-                 <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-                 <label for="singleSelect1" class="__select__label">Текст строки меню 0</label>
+                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect1" class="__select__label">Текст строки меню 0</label>
                 <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" disabled />
-                <label for="singleSelect2" class="__select__label">Текст строки меню 1</label>                
+                <label for="singleSelect2" class="__select__label">Текст строки меню 1</label>
                 <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
                 <label for="singleSelect3" class="__select__label">Текст строки меню 2</label>
-               <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
                 <label for="singleSelect4" class="__select__label">Текст строки меню 3</label>
-                   <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
                 <label for="singleSelect5" class="__select__label">Текст строки меню 4</label>
-              <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect"  />
+                <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
                 <label for="singleSelect6" class="__select__label">Текст строки меню 5</label>
                 <input id="singleSelect7" class="__select__input" type="radio" name="singleSelect" />
                 <label for="singleSelect7" class="__select__label">Текст строки меню 6</label>
-               <input id="singleSelect8" class="__select__input" type="radio" name="singleSelect" />
-                <label for="singleSelect8" class="__select__label">Текст строки меню 7</label>             
-                
+                <input id="singleSelect8" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect8" class="__select__label">Текст строки меню 7</label>
+
             </div>
         </div>
- <!-- Select через radio + js -->
-  <!-- Select js -->
+        <!-- Select через radio + js -->
+        <!-- Select js -->
         <script>
-                document.querySelectorAll('.__select').forEach(item => {
+            document.querySelectorAll('.__select').forEach(item => {
                 const selectSingle_title = item.querySelector('.__select__title');
                 const selectSingle_labels = item.querySelectorAll('.__select__label');
-               
-                selectSingle_title.addEventListener('click', () => 'active' === item.getAttribute('data-state') ?  item.setAttribute('data-state', '') : item.setAttribute('data-state', 'active'));
+
+                selectSingle_title.addEventListener('click', () => 'active' === item.getAttribute(
+                    'data-state') ? item.setAttribute('data-state', '') : item.setAttribute(
+                    'data-state',
+                    'active'));
 
                 for (let i = 0; i < selectSingle_labels.length; i++) {
                     selectSingle_labels[i].addEventListener('click', (event) => {
@@ -357,36 +360,87 @@
                 }
             });
         </script>
-          <!-- Select js -->
+        <!-- Select js -->
     </div>
 
     <div class="element">
+
+        <!-- мультиселект -->
         <div class="__select__multi">
             <div class="__select__content__multi">
-              <input id="multiSelect0" class="__select__input" type="checkbox" name="multiSelect"  />
-              <label for="multiSelect0" class="__select__label__multi ">Option 0</label>
-              <input id="multiSelect1" class="__select__input" type="checkbox" name="multiSelect" />
-              <label for="multiSelect1" class="__select__label__multi ">Option 1</label>
-              <input id="multiSelect2" class="__select__input" type="checkbox" name="multiSelect" disabled />
-              <label for="multiSelect2" class="__select__label__multi ">Option 2 (disabled)</label>
-              <input id="multiSelect3" class="__select__input" type="checkbox" name="multiSelect" />
-              <label for="multiSelect3" class="__select__label__multi ">Option 3</label>
-              <input id="multiSelect4" class="__select__input" type="checkbox" name="multiSelect" />
-              <label for="multiSelect4" class="__select__label__multi ">Option 4</label>
-              <input id="multiSelect5" class="__select__input" type="checkbox" name="multiSelect" />
-              <label for="multiSelect5" class="__select__label__multi ">Option 5</label>
-              <input id="multiSelect6" class="__select__input" type="checkbox" name="multiSelect" />
-              <label for="multiSelect6" class="__select__label__multi ">Option 6</label>
-              <input id="multiSelect7" class="__select__input" type="checkbox" name="multiSelect" />
-              <label for="multiSelect7" class="__select__label__multi ">Option 7</label>
+                <input id="multiSelect0" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+                <label for="multiSelect0" class="__select__label__multi">Значение 0</label>
+                <input id="multiSelect1" class="__select__input" type="checkbox" name="multiSelect" />
+                <label for="multiSelect1" class="__select__label__multi ">Значение 1</label>
+                <input id="multiSelect2" class="__select__input" type="checkbox" name="multiSelect" disabled />
+                <label for="multiSelect2" class="__select__label__multi ">Значение 2 (недоступно)</label>
+                <input id="multiSelect3" class="__select__input" type="checkbox" name="multiSelect" />
+                <label for="multiSelect3" class="__select__label__multi ">Значение 3</label>
+                <input id="multiSelect4" class="__select__input" type="checkbox" name="multiSelect" />
+                <label for="multiSelect4" class="__select__label__multi ">Значение 4</label>
+                <input id="multiSelect5" class="__select__input" type="checkbox" name="multiSelect" />
+                <label for="multiSelect5" class="__select__label__multi ">Значение 5</label>
+                <input id="multiSelect6" class="__select__input" type="checkbox" name="multiSelect" />
+                <label for="multiSelect6" class="__select__label__multi ">Значение 6</label>
+                <input id="multiSelect7" class="__select__input" type="checkbox" name="multiSelect" />
+                <label for="multiSelect7" class="__select__label__multi ">Значение 7</label>
             </div>
-          </div>
-       
+        </div>
+        <!-- мультиселект -->
+
+        <!-- мультиселект -->
+        <div class="__select__multi_check">
+            <div class="__select__content__multi">
+                <label for="multiSelect01" class="__select__label__multi">
+                    <input id="multiSelect01" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+
+                    Значение 06
+                    <span class="check-box"></span>
+                </label>
+                <label for="multiSelect02" class="__select__label__multi">
+                    <input id="multiSelect02" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+
+                    Значение 80
+                    <span class="check-box"></span>
+                </label>
+                <label for="multiSelect03" class="__select__label__multi">
+                    <input id="multiSelect03" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+
+                    Значение 06
+                    <span class="check-box"></span>
+                </label>
+                <label for="multiSelect04" class="__select__label__multi">
+                    <input id="multiSelect04" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+
+                    Значение 4
+                    <span class="check-box"></span>
+                </label>
+                <label for="multiSelect05" class="__select__label__multi">
+                    <input id="multiSelect05" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+
+                    Значение 54
+                    <span class="check-box"></span>
+                </label>
+                <label for="multiSelect06" class="__select__label__multi">
+                    <input id="multiSelect06" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+
+                    Значение 7
+                    <span class="check-box"></span>
+                </label>
+                <label for="multiSelect07" class="__select__label__multi">
+                    <input id="multiSelect07" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+
+                    Значение 8
+                    <span class="check-box"></span>
+                </label>
+            </div>
+        </div>
+        <!-- мультиселект -->
     </div>
 
-<div class="element">
-    
-</div>
+    <div class="element">
+
+    </div>
 
 
 
