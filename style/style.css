@@ -2,7 +2,7 @@
 
 * {
   font-family: "Open Sans", sans-serif;
-  /* font-weight: 400; */
+  font-weight: 400;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -1724,7 +1724,7 @@ h2.news-title {
 h3.news-title {
   margin-bottom: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
@@ -1891,7 +1891,8 @@ footer {
   margin: 0;
   padding: 0;
   line-height: 18px;
-  font-size: 22px;
+  font-size: 20px;
+
 }
 
 .footer-social {
