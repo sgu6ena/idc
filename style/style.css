@@ -2258,15 +2258,36 @@ footer {
   text-align: center;
   border-radius: 6px;
   padding: 16px;
-  position: absolute;
-
-  bottom: 125%;
-  left: 50%;
+  padding-bottom: 16px;
   margin-left: -96px;
   opacity: 0;
   transition: opacity 0.3s;
 }
 
+.exclude-top .exclude-text, .step .step-text {
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+}
+.exclude-bottom .exclude-text {
+  margin-top: 10px;
+  position: absolute;
+  top: 125% ;
+  left: 50%;
+}
+.exclude-left  .exclude-text{
+  margin:auto;
+  position: absolute;
+  top: -50%;
+  right: 28px;
+
+}
+.exclude-right  .exclude-text{
+  position: absolute;
+
+  top: -50%;
+  left:   122px;
+}
 .exclude .exclude-text::after, .step .step-text::after {
   content: "";
   position: absolute;
@@ -2278,7 +2299,28 @@ footer {
   border-color: var(--third-default) transparent transparent transparent;
 }
 
-.exclude:hover .exclude-text, .step:hover .step-text {
+.exclude-bottom .exclude-text::after{
+  border-color: transparent transparent   var(--third-default)  transparent;
+  top: -16px;
+}
+
+.exclude-left .exclude-text::after{
+  border-color: transparent transparent   transparent var(--third-default)  ;
+  top: 50%;
+  left: 100%;
+  margin-top: -8px;
+  margin-left: 0px;
+}
+
+.exclude-right .exclude-text::after{
+  border-color: transparent var(--third-default)  transparent   transparent;
+  margin-top: -8px;
+  top:50%;
+right: 100%;
+margin-left: -154px;
+}
+
+.exclude:hover .exclude-text, .exclude:hover .step-text {
   visibility: visible;
   opacity: 1;
 }

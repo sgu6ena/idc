@@ -293,46 +293,6 @@
 }
 
 /* * */
-.__select__multi_check,
-.__select__multi {
-  display: inline-block;
-  margin: 5px;
-  color: #37355b;
-  position: relative;
-  width: 300px;
-  height: 48px;
-}
-
-.__select__content__multi {
-  background-color: #fff;
-  overflow: hidden;
-  border: 1px solid #c7ccd1;
-  border-radius: 8px;
-}
-.__select__label__multi {
-  margin: 5px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  height: 40px;
-  padding: 0 16px;
-  transition: all 0.2s ease-out;
-  cursor: pointer;
-}
-.__select__label__multi + input + .__select__label__multi {
-  border-top: 1px solid #c7ccd1 60;
-}
-.__select__label__multi:hover {
-  background-color: #dedede !important;
-}
-.__select__multi_check .check-box {
-  margin-left: -20px;
-  margin-top: -1px;
-}
-.__select__multi_check .__select__label__multi {
-  padding-left: 30px;
-}
 
 /* * step* */
 
@@ -441,4 +401,77 @@ z-index: 25;
 
 .step-descr{
   color: #006285;
+}
+
+
+
+/* * мультиселект * */
+.multiselect-group{
+  border-radius: 8px;
+  padding: 10px;
+  background:#fff;
+}
+.multiselect-rezult{
+
+margin-bottom: 15px;
+
+  display: block;
+  /* border: 1px solid #d5d5d5; */
+  height: 40px;
+  border-radius: 8px;
+  background:#fff;
+}
+
+.__select__multi_check,
+.__select__multi {
+  display: inline-block;
+margin-top: 15px;
+
+  color: #37355b;
+  position: relative;
+  /* height: 48px; */
+}
+.__select__multi_check{
+  width: 100%;
+
+}
+.__select__content__multi {
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.__select__label__multi {
+  margin: 5px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 40px;
+  padding: 0 16px;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.__select__label__multi + input + .__select__label__multi {
+  border-top: 1px solid #c7ccd1 60;
+}
+.__select__label__multi:hover {
+  background-color: #dedede !important;
+}
+.__select__multi_check .check-box {
+  margin-left: -20px;
+  margin-top: -1px;
+}
+.__select__multi_check .__select__label__multi {
+  padding-left: 30px;
+}
+.options{
+  margin-left: 10px;
+  padding: 10px 15px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 12px;
+  border-radius: 16px;
+  background-color: #f0f0f0;
 }

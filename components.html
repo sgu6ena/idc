@@ -132,22 +132,22 @@
     <div class='element '>
         <!-- инпут -->
         <label class="input-text-label"> обычный инпут
-            <input type="text" id="text" name="text" value="" placeholder="Введите значение" class="input-text">
+            <input type="text" name="text" value="" placeholder="Введите значение" class="input-text">
         </label>
         <!-- инпут -->
         <label class="input-text-label">
             со значением
-            <input type="text" id="text" name="text" value="Значение" placeholder="Введите значение" class="input-text">
+            <input type="text" name="text" value="Значение" placeholder="Введите значение" class="input-text">
         </label>
         <!-- инпут -->
         <label class="input-text-label"> disabled
-            <input type="text" id="text" name="text" value="Значение" placeholder="Введите значение" disabled
+            <input type="text" name="text" value="Значение" placeholder="Введите значение" disabled
                 class="input-text"></label>
 
         <!-- инпут -->
         <label class="input-text-label"> invalid
-            <input type="text" id="text" name="text" value="Неверное значение" placeholder="Введите значение"
-                pattern="Значение" class="input-text"></label>
+            <input type="text" name="text" value="Неверное значение" placeholder="Введите значение" pattern="Значение"
+                class="input-text"></label>
         <!-- инпут -->
     </div>
     <div class='element '>
@@ -367,7 +367,9 @@
 
         <!-- мультиселект -->
         <div class="__select__multi">
+
             <div class="__select__content__multi">
+
                 <input id="multiSelect0" class="__select__input  check-input" type="checkbox" name="multiSelect" />
                 <label for="multiSelect0" class="__select__label__multi">Значение 0</label>
                 <input id="multiSelect1" class="__select__input" type="checkbox" name="multiSelect" />
@@ -389,52 +391,84 @@
         <!-- мультиселект -->
 
         <!-- мультиселект -->
-        <div class="__select__multi_check">
-            <div class="__select__content__multi">
-                <label for="multiSelect01" class="__select__label__multi">
-                    <input id="multiSelect01" class="__select__input  check-input" type="checkbox" name="multiSelect" />
 
-                    Значение 06
-                    <span class="check-box"></span>
-                </label>
-                <label for="multiSelect02" class="__select__label__multi">
-                    <input id="multiSelect02" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+        <div class="multiselect-group">
+            <div class="multiselect-rezult">
+                <div class="__select__title" data-default="Option 0">Выберите значение
 
-                    Значение 80
-                    <span class="check-box"></span>
-                </label>
-                <label for="multiSelect03" class="__select__label__multi">
-                    <input id="multiSelect03" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+                </div>
+            </div>
+            <div class="__select__multi_check">
+                <div class="__select__content__multi">
+                    <label for="multiSelect01" class="__select__label__multi">
+                        <input id="multiSelect01" class="__select__input  check-input" type="checkbox"
+                            name="multiSelect" />
+                        Значение 06
+                        <span class="check-box"></span>
+                    </label>
+                    <label for="multiSelect02" class="__select__label__multi">
+                        <input id="multiSelect02" class="__select__input  check-input" type="checkbox"
+                            name="multiSelect" />
 
-                    Значение 06
-                    <span class="check-box"></span>
-                </label>
-                <label for="multiSelect04" class="__select__label__multi">
-                    <input id="multiSelect04" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+                        Значение 80
+                        <span class="check-box"></span>
+                    </label>
+                    <label for="multiSelect03" class="__select__label__multi">
+                        <input id="multiSelect03" class="__select__input  check-input" type="checkbox"
+                            name="multiSelect" />
 
-                    Значение 4
-                    <span class="check-box"></span>
-                </label>
-                <label for="multiSelect05" class="__select__label__multi">
-                    <input id="multiSelect05" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+                        Значение 06
+                        <span class="check-box"></span>
+                    </label>
+                    <label for="multiSelect04" class="__select__label__multi">
+                        <input id="multiSelect04" class="__select__input  check-input" type="checkbox"
+                            name="multiSelect" />
 
-                    Значение 54
-                    <span class="check-box"></span>
-                </label>
-                <label for="multiSelect06" class="__select__label__multi">
-                    <input id="multiSelect06" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+                        Значение 4
+                        <span class="check-box"></span>
+                    </label>
+                    <label for="multiSelect05" class="__select__label__multi">
+                        <input id="multiSelect05" class="__select__input  check-input" type="checkbox"
+                            name="multiSelect" />
 
-                    Значение 7
-                    <span class="check-box"></span>
-                </label>
-                <label for="multiSelect07" class="__select__label__multi">
-                    <input id="multiSelect07" class="__select__input  check-input" type="checkbox" name="multiSelect" />
+                        Значение 54
+                        <span class="check-box"></span>
+                    </label>
+                    <label for="multiSelect06" class="__select__label__multi">
+                        <input id="multiSelect06" class="__select__input  check-input" type="checkbox"
+                            name="multiSelect"  />
 
-                    Значение 8
-                    <span class="check-box"></span>
-                </label>
+                        Значение 7
+                        <span class="check-box"></span>
+                    </label>
+                    <label for="multiSelect07" class="__select__label__multi"> Значение 8
+                        <input id="multiSelect07" class="__select__input  check-input" type="checkbox"
+                            name="multiSelect"  />
+
+
+                        <span class="check-box"></span>
+                    </label>
+                </div>
             </div>
         </div>
+        <script>
+            document.querySelectorAll('.multiselect-group').forEach(item => {
+                const selectSingle_title = item.querySelector('.__select__title');
+                const selectMultiCheck = item.querySelector('.__select__multi_check');
+                const selectSingle_labels = item.querySelectorAll('.__select__label__multi');
+                const checkInput = item.querySelectorAll('.check-input');
+                selectMultiCheck.addEventListener('click', () => {
+                    selectSingle_title.textContent ='';
+                    checkInput.forEach((item, index) => {
+                        if (item.checked) {
+                            selectSingle_title.insertAdjacentHTML('beforeend', ` 
+                        <div class="options">${selectSingle_labels[index].textContent.trim()}</div>
+                        `);
+                        }
+                    })
+                })
+            });
+        </script>
         <!-- мультиселект -->
     </div>
 
@@ -947,64 +981,96 @@
     </div>
 
 
-<div class="element">
-    <!-- пагинация -->
-    <div class="page-paginations ">
-        <button class="page-buttons-nav page-prev disabled ">
-            <svg class="page-buttons-nav-icon"  width="7px" height="12px">
-                <use xlink:href="image/sprite.svg#button-nav-prev"></use>
-            </svg>
-        </button> 
-        <span class="page-number">1</span>
-        <button class="page-buttons-nav page-next ">
-            <svg class="page-buttons-nav-icon" width="7px" height="12px">
-            <use xlink:href="image/sprite.svg#button-nav-next"></use>
-        </svg></button>
-    </div>
-    <!-- пагинация -->
-    <div class="page-paginations ">
-        <button class="page-buttons-nav page-prev ">
-            <svg class="page-buttons-nav-icon"  width="7px" height="12px">
-                <use xlink:href="image/sprite.svg#button-nav-prev"></use>
-            </svg>
-        </button> 
-        <span class="page-number">2</span>
-        <button class="page-buttons-nav page-next ">
-            <svg class="page-buttons-nav-icon" width="7px" height="12px">
-            <use xlink:href="image/sprite.svg#button-nav-next"></use>
-        </svg></button>
-    </div>
-    <!-- пагинация -->
-    <div class="page-paginations ">
-        <button class="page-buttons-nav page-prev">
-            <svg class="page-buttons-nav-icon"  width="7px" height="12px">
-                <use xlink:href="image/sprite.svg#button-nav-prev"></use>
-            </svg>
-        </button> 
-        <span class="page-number">26</span>
-        <button class="page-buttons-nav page-next disabled ">
-            <svg class="page-buttons-nav-icon" width="7px" height="12px">
-            <use xlink:href="image/sprite.svg#button-nav-next"></use>
-        </svg></button>
-    </div>
+    <div class="element">
         <!-- пагинация -->
-</div>
+        <div class="page-paginations ">
+            <button class="page-buttons-nav page-prev disabled ">
+                <svg class="page-buttons-nav-icon" width="7px" height="12px">
+                    <use xlink:href="image/sprite.svg#button-nav-prev"></use>
+                </svg>
+            </button>
+            <span class="page-number">1</span>
+            <button class="page-buttons-nav page-next ">
+                <svg class="page-buttons-nav-icon" width="7px" height="12px">
+                    <use xlink:href="image/sprite.svg#button-nav-next"></use>
+                </svg></button>
+        </div>
+        <!-- пагинация -->
+        <div class="page-paginations ">
+            <button class="page-buttons-nav page-prev ">
+                <svg class="page-buttons-nav-icon" width="7px" height="12px">
+                    <use xlink:href="image/sprite.svg#button-nav-prev"></use>
+                </svg>
+            </button>
+            <span class="page-number">2</span>
+            <button class="page-buttons-nav page-next ">
+                <svg class="page-buttons-nav-icon" width="7px" height="12px">
+                    <use xlink:href="image/sprite.svg#button-nav-next"></use>
+                </svg></button>
+        </div>
+        <!-- пагинация -->
+        <div class="page-paginations ">
+            <button class="page-buttons-nav page-prev">
+                <svg class="page-buttons-nav-icon" width="7px" height="12px">
+                    <use xlink:href="image/sprite.svg#button-nav-prev"></use>
+                </svg>
+            </button>
+            <span class="page-number">26</span>
+            <button class="page-buttons-nav page-next disabled ">
+                <svg class="page-buttons-nav-icon" width="7px" height="12px">
+                    <use xlink:href="image/sprite.svg#button-nav-next"></use>
+                </svg></button>
+        </div>
+        <!-- пагинация -->
+    </div>
 
 
     <div class='element'>
-        вопрос с подсказкой
-        <div class="exclude">
+
+
+        подсказка сверху
+        <!-- подсказка сверху -->
+        <div class="exclude  exclude-top">
             <svg class="icon" width="15px" height="15px">
                 <use xlink:href="image/sprite.svg#exclude"></use>
             </svg>
             <span class="exclude-text">какая-то информация</span>
         </div>
+        <!-- подсказка сверху -->
+        подсказка снизу
+        <!-- подсказка снизу -->
+        <div class="exclude exclude-bottom">
+            <svg class="icon" width="15px" height="15px">
+                <use xlink:href="image/sprite.svg#exclude"></use>
+            </svg>
+            <span class="exclude-text">что-то написано какие-то слова</span>
+        </div>
+        <!-- подсказка снизу -->
 
+        подсказка слева
+        <!-- подсказка слева -->
+        <div class="exclude exclude-left">
+            <svg class="icon" width="15px" height="15px">
+                <use xlink:href="image/sprite.svg#exclude"></use>
+            </svg>
+            <span class="exclude-text">опять что-то</span>
+        </div>
+        <!-- подсказка слева -->
+        подсказка справа
+        <!-- подсказка справа -->
+        <div class="exclude exclude-right">
+            <svg class="icon" width="15px" height="15px">
+                <use xlink:href="image/sprite.svg#exclude"></use>
+            </svg>
+            <span class="exclude-text">и еще что-то </span>
+        </div>
+        <!-- подсказка справа -->
     </div>
 
 
     <div class='element'>
         Информационное сообщение
+        <!--   Информационное сообщение -->
         <div class=" info-message ">
             <div class="info-message-icon-wrapper ">
                 <div class=" info-message-icon ">
@@ -1021,6 +1087,7 @@
                 параметров телефонной линии.
             </div>
         </div>
+        <!-- Информационное сообщение -->
     </div>
 
 
