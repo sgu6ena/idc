@@ -403,49 +403,42 @@
                     <label for="multiSelect01" class="__select__label__multi">
                         <input id="multiSelect01" class="__select__input  check-input" type="checkbox"
                             name="multiSelect" />
-                        Значение 06
+                            Проверка состояния счёта
                         <span class="check-box"></span>
                     </label>
                     <label for="multiSelect02" class="__select__label__multi">
                         <input id="multiSelect02" class="__select__input  check-input" type="checkbox"
                             name="multiSelect" />
-
-                        Значение 80
+                            Восстановление договора (без изменения адреса установки)
                         <span class="check-box"></span>
                     </label>
                     <label for="multiSelect03" class="__select__label__multi">
                         <input id="multiSelect03" class="__select__input  check-input" type="checkbox"
                             name="multiSelect" />
-
-                        Значение 06
+                            Восстановление договора (без изменения адреса установки)
                         <span class="check-box"></span>
                     </label>
                     <label for="multiSelect04" class="__select__label__multi">
                         <input id="multiSelect04" class="__select__input  check-input" type="checkbox"
                             name="multiSelect" />
-
-                        Значение 4
+                            Восстановление контрактных условий
                         <span class="check-box"></span>
                     </label>
                     <label for="multiSelect05" class="__select__label__multi">
                         <input id="multiSelect05" class="__select__input  check-input" type="checkbox"
                             name="multiSelect" />
-
-                        Значение 54
+                            Досрочное погашение рассрочки (в т.ч. и за установку проводного телефона)
                         <span class="check-box"></span>
                     </label>
                     <label for="multiSelect06" class="__select__label__multi">
                         <input id="multiSelect06" class="__select__input  check-input" type="checkbox"
                             name="multiSelect"  />
-
-                        Значение 7
+                            Временное прекращение договора (бронирование)
                         <span class="check-box"></span>
                     </label>
-                    <label for="multiSelect07" class="__select__label__multi"> Значение 8
+                    <label for="multiSelect07" class="__select__label__multi"> Смена валюты обслуживания
                         <input id="multiSelect07" class="__select__input  check-input" type="checkbox"
                             name="multiSelect"  />
-
-
                         <span class="check-box"></span>
                     </label>
                 </div>
@@ -459,14 +452,18 @@
                 const checkInput = item.querySelectorAll('.check-input');
                 selectMultiCheck.addEventListener('click', () => {
                     selectSingle_title.textContent ='';
+                    let count = 0;
                     checkInput.forEach((item, index) => {
                         if (item.checked) {
+                            count++;
                             selectSingle_title.insertAdjacentHTML('beforeend', ` 
-                        <div class="options">${selectSingle_labels[index].textContent.trim()}</div>
-                        `);
+                        <div class="options">${selectSingle_labels[index].textContent.trim()}</div>`);
                         }
-                    })
-                })
+                    });
+                    !count?selectSingle_title.textContent="Введите значение":
+                        count>3?  selectSingle_title.innerHTML = ` 
+                        <div class="options">выбрано ${count} значений</div>`:'';
+                                })
             });
         </script>
         <!-- мультиселект -->
