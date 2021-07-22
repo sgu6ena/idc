@@ -2247,7 +2247,7 @@ footer {
   color: #37355b;
 }
 
-.exclude .exclude-text {
+.exclude .exclude-text, .step .step-text  {
   z-index: 100;
   font-size: 14px;
   line-height: 20px;
@@ -2267,7 +2267,7 @@ footer {
   transition: opacity 0.3s;
 }
 
-.exclude .exclude-text::after {
+.exclude .exclude-text::after, .step .step-text::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -2278,7 +2278,7 @@ footer {
   border-color: var(--third-default) transparent transparent transparent;
 }
 
-.exclude:hover .exclude-text {
+.exclude:hover .exclude-text, .step:hover .step-text {
   visibility: visible;
   opacity: 1;
 }
