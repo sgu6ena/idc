@@ -367,9 +367,10 @@ padding-bottom: 20px;
   padding-left: 30px;
 }
 /* * step* */
-.steps {
+.stepper {
   display: flex;
   justify-content: space-between;
+  margin:  50px 0;
 }
 .step-wrapper {
   position: relative;
@@ -379,6 +380,7 @@ padding-bottom: 20px;
   width: 90%;
 }
 .step {  
+  cursor: pointer;
   position: relative;
   display: inline-block;
   font-size: 14px;
@@ -408,12 +410,16 @@ padding-bottom: 20px;
   position: absolute;
   content: "";
   height: 2px;
-
-  background-color: #006285;
+  background-color: #ffffff;
   width: calc(100% - 30px);
   margin-left: 5px;
   margin-top: 0px;
   top: 50%;
+}
+
+.step-wrapper.passed:after{
+  background-color: #006285;
+ 
 }
 
 .step .step-text {
