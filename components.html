@@ -450,7 +450,7 @@
                         event.target.attributes.value?
                             event.target.attributes.value.textContent == item.value ? item.checked = false :'' :
                             item.checked = false;
-                            document.querySelector('.multiselect-group').querySelector('.__select__title').textContent='';
+                            document.querySelector('.multiselect-group').querySelector('.__select__title').textContent='Выберите значение';
                         })
                         selectSingle_title.innerHTML =
                             `<div class="options">выбрано значений: 0</div>`;
@@ -493,7 +493,7 @@
                                 `<div class="options">выбрано значений: ${document.querySelector('.multiselect-group').querySelector('.__select__title').querySelectorAll('.options').length} </div>`;
                     });
                     if(!count ){
-                        selectMulti_title.textContent = "Введите значение";
+                        selectMulti_title.textContent = "Выберите значение";
                     }
                 }
 
