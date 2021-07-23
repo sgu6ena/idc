@@ -474,4 +474,10 @@ margin-top: 15px;
   line-height: 12px;
   border-radius: 16px;
   background-color: #f0f0f0;
+  white-space: nowrap;
+}
+.options:after{
+  content:"X";
+  margin-left: 15px;
+  color:gray;
 }
