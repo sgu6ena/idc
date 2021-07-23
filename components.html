@@ -63,7 +63,68 @@
 <body class="container">
 
 
-
+<div class="element">
+    <table class="idc-table  ">
+        <thead>
+            <tr>
+                <th >ТВ-пакет</th>
+                <th >Описание </th>
+                <th>Подключить </th>
+                <th >Стоимость</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >Super Deluxe</td>
+                <td>An unfaithful newly-wed wife, an estranged father, a priest and an angry son suddenly find themselves in the most unexpected predicaments, each poised to experience their destiny, all on one fateful day.</td>
+                <td>  <button class="tariffs-button">Подключить</button></td>
+                <td>8.50 RUP</td>
+                <td> <a href="#">Подробнее</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Years after taking up normal lives incognito, the cyborgs are forced to fight again when the superhuman Blessed appear with a plan for humanity.</td>
+                <td><button class="tariffs-button">Подключить</button></td>
+                <td>12.70 RUP</td>
+                <td> <a href="#">Подробнее</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td >Grocery store products come to life, along with caricatures of Jack Benny, Rochester and Ned Sparks, and take-offs on Superman and King Kong.</td>
+                <td><button class="tariffs-button">Подключить</button></td>
+                <td>438.50 RUP</td>
+                <td> <a href="#">Подробнее</a></td>
+            </tr>
+            <tr>
+                <th >1</th>
+                <td>Grocery store products come to life, along with caricatures of Jack Benny, Rochester and Ned Sparks, and take-offs on Superman and King Kong.</td>
+                <td><button class="tariffs-button">Подключить</button></td>
+                <td>82.00 RUP</td>
+                <td> <a href="#">Подробнее</a></td>
+            </tr>
+            <tr>
+                <th >2</th>
+                <td>Grocery store products come to life, along with caricatures of Jack Benny, Rochester and Ned Sparks, and take-offs on Superman and King Kong.</td>
+                <td><button class="tariffs-button">Подключить</button></td>
+                <td>@</td>
+                <td>
+                    <a href="#">Подробнее</a>
+                </td>
+            </tr>
+     
+        </tbody>
+        <tfoot>
+            <tr>
+                <th >итог</th>
+                <th >итог</th>
+                <th >итог</th>
+                <th >итог</th>
+                <th> итог</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
     цена с перерасчетом
     <!-- цена с перерасчетом  -->
     <div class="price">
@@ -443,27 +504,28 @@
                 const selectSingle_title = item.querySelector('.__select__title');
                 const selectSingle_labels = item.querySelectorAll('.__select__label');
                 const checkInput = item.querySelectorAll('.check-input');
-                
+
                 selectSingle_title.addEventListener('click', event => {
-                    if(event.target.classList.contains('options')) {
+                    if (event.target.classList.contains('options')) {
                         checkInput.forEach((item) => {
-                        event.target.attributes.value?
-                            event.target.attributes.value.textContent == item.value ? item.checked = false :'' :
-                            item.checked = false;
-                            document.querySelector('.multiselect-group').querySelector('.__select__title').textContent='Выберите значение';
+                            event.target.attributes.value ?
+                                event.target.attributes.value.textContent == item.value ? item
+                                .checked = false : '' :
+                                item.checked = false;
+                            document.querySelector('.multiselect-group').querySelector(
+                                '.__select__title').textContent = 'Выберите значение';
                         })
                         selectSingle_title.innerHTML =
                             `<div class="options">выбрано значений: 0</div>`;
                     } else {
-                                    'active' === item.getAttribute('data-state') ?
+                        'active' === item.getAttribute('data-state') ?
                             item.setAttribute('data-state', '') :
                             item.setAttribute('data-state', 'active');
-                    }            
-                        if (item.querySelector('.multiselect-group'))
-                            selectSingle_title.innerHTML =
-                            `<div class="options">выбрано значений: ${document.querySelector('.multiselect-group').querySelector('.__select__title').querySelectorAll('.options').length} </div>`;
                     }
-                );
+                    if (item.querySelector('.multiselect-group'))
+                        selectSingle_title.innerHTML =
+                        `<div class="options">выбрано значений: ${document.querySelector('.multiselect-group').querySelector('.__select__title').querySelectorAll('.options').length} </div>`;
+                });
 
                 for (let i = 0; i < selectSingle_labels.length; i++) {
                     selectSingle_labels[i].addEventListener('click', (event) => {
@@ -471,7 +533,6 @@
                         item.setAttribute('data-state', '');
                     });
                 }
-
             });
             document.querySelectorAll('.multiselect-group').forEach(item => {
                 const selectMulti_title = item.querySelector('.__select__title');
@@ -487,27 +548,28 @@
                     checkInput.forEach((item, index) => {
                         if (item.checked) {
                             count++;
-                            selectMulti_title.insertAdjacentHTML('beforeend', ` <div class="options" value="${item.value}">${selectMulti_labels[index].textContent.trim()}</div>`);
+                            selectMulti_title.insertAdjacentHTML('beforeend',
+                                ` <div class="options" value="${item.value}">${selectMulti_labels[index].textContent.trim()}</div>`
+                                );
                         }
                         selectSingle_title.innerHTML =
-                                `<div class="options">выбрано значений: ${document.querySelector('.multiselect-group').querySelector('.__select__title').querySelectorAll('.options').length} </div>`;
+                            `<div class="options">выбрано значений: ${document.querySelector('.multiselect-group').querySelector('.__select__title').querySelectorAll('.options').length} </div>`;
                     });
-                    if(!count ){
+                    if (!count) {
                         selectMulti_title.textContent = "Выберите значение";
                     }
                 }
 
-
-
                 selectMulti_title.addEventListener('click', (event) => {
                     checkInput.forEach((item) => {
-                        event.target.attributes.value?
-                            event.target.attributes.value.textContent == item.value ? item.checked = false :'' :
+                        event.target.attributes.value ?
+                            event.target.attributes.value.textContent == item.value ? item
+                            .checked = false : '' :
                             item.checked = false;
                         refresh();
                     })
                 })
-                selectMultiCheck.addEventListener('click', () =>   refresh())
+                selectMultiCheck.addEventListener('click', () => refresh())
             });
         </script>
         <!-- мультиселект -->
@@ -933,89 +995,89 @@
         <table class="table table-striped table-hover">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th >#</th>
+                    <th >First</th>
+                    <th >Last</th>
+                    <th >Handle</th>
                 </tr>
             </thead>
             <tbody>
 
                 <tr>
-                    <th scope="row">1</th>
+                    <th >1</th>
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
                 </tr>
                 <tr>
-                    <th scope="row">2</th>
+                    <th >2</th>
                     <td>Jacob</td>
                     <td>Thornton</td>
-                    <td>@fat</td>
+                    <td> <a href="#">Подробнее</a></td>
                 </tr>
                 <tr>
-                    <th scope="row">3</th>
+                    <th >3</th>
                     <td colspan="2">Larry the Bird</td>
                     <td>@twitter</td>
                 </tr>
                 <tr>
-                    <th scope="row">1</th>
+                    <th >1</th>
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
                 </tr>
                 <tr>
-                    <th scope="row">2</th>
+                    <th >2</th>
                     <td>Jacob</td>
                     <td>Thornton</td>
-                    <td>@fat</td>
+                    <td> <a href="#">Подробнее</a></td>
                 </tr>
                 <tr>
-                    <th scope="row">3</th>
+                    <th >3</th>
                     <td colspan="2">Larry the Bird</td>
                     <td>@twitter</td>
                 </tr>
                 <tr>
-                    <th scope="row">1</th>
+                    <th >1</th>
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
                 </tr>
                 <tr>
-                    <th scope="row">2</th>
+                    <th >2</th>
                     <td>Jacob</td>
                     <td>Thornton</td>
-                    <td>@fat</td>
+                    <td> <a href="#">Подробнее</a></td>
                 </tr>
                 <tr>
-                    <th scope="row">3</th>
+                    <th >3</th>
                     <td colspan="2">Larry the Bird</td>
                     <td>@twitter</td>
                 </tr>
                 <tr>
-                    <th scope="row">1</th>
+                    <th >1</th>
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
                 </tr>
                 <tr>
-                    <th scope="row">2</th>
+                    <th >2</th>
                     <td>Jacob</td>
                     <td>Thornton</td>
-                    <td>@fat</td>
+                    <td> <a href="#">Подробнее</a></td>
                 </tr>
                 <tr>
-                    <th scope="row">3</th>
+                    <th >3</th>
                     <td colspan="2">Larry the Bird</td>
                     <td>@twitter</td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th >#</th>
+                    <th >First</th>
+                    <th >Last</th>
+                    <th >Handle</th>
                 </tr>
             </tfoot>
         </table>
