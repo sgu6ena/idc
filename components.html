@@ -487,22 +487,17 @@
                     }
                 }
 
-                selectMulti_title.addEventListener('click', (event) => {
 
+
+                selectMulti_title.addEventListener('click', (event) => {
                     checkInput.forEach((item) => {
-                        if (event.target.attributes.value) {
-                            if (event.target.attributes.value.textContent == item.value) {
-                                item.checked = false;
-                            }
-                        } else {
+                        event.target.attributes.value?
+                            event.target.attributes.value.textContent == item.value ? item.checked = false :'' :
                             item.checked = false;
-                        }
                         refresh();
                     })
                 })
-                selectMultiCheck.addEventListener('click', () => {
-                    refresh();
-                })
+                selectMultiCheck.addEventListener('click', () =>   refresh())
             });
         </script>
         <!-- мультиселект -->
