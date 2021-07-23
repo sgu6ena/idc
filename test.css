@@ -194,7 +194,7 @@
   margin: 5px;
   color: #37355b;
   position: relative;
-  width: 300px;
+  width: 100%;
   height: 48px;
 }
 .__select[data-state="active"] .__select__title::before {

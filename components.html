@@ -342,24 +342,7 @@
         </div>
         <!-- Select через radio + js -->
         <!-- Select js -->
-        <script>
-            document.querySelectorAll('.__select').forEach(item => {
-                const selectSingle_title = item.querySelector('.__select__title');
-                const selectSingle_labels = item.querySelectorAll('.__select__label');
-
-                selectSingle_title.addEventListener('click', () => 'active' === item.getAttribute(
-                    'data-state') ? item.setAttribute('data-state', '') : item.setAttribute(
-                    'data-state',
-                    'active'));
-
-                for (let i = 0; i < selectSingle_labels.length; i++) {
-                    selectSingle_labels[i].addEventListener('click', (event) => {
-                        selectSingle_title.textContent = event.target.textContent;
-                        item.setAttribute('data-state', '');
-                    });
-                }
-            });
-        </script>
+       
         <!-- Select js -->
     </div>
 
@@ -392,8 +375,15 @@
 
         <!-- мультиселект -->
 
-        <div class="multiselect-group">
-            <div class="multiselect-rezult">
+
+
+
+        <div class="__select" data-state="">
+            <div class="__select__title" data-default="Option 0">Выберите значение</div>
+            <div class="__select__content">
+               
+        <div class="multiselect-group" >
+            <div class="multiselect-rezult ">
                 <div class="__select__title" data-default="Option 0">Выберите значение
 
                 </div>
@@ -444,7 +434,37 @@
                 </div>
             </div>
         </div>
+            </div>
+        </div>
+
+
         <script>
+      document.querySelectorAll('.__select').forEach(item => {
+                const selectSingle_title = item.querySelector('.__select__title');
+                const selectSingle_labels = item.querySelectorAll('.__select__label');
+
+                selectSingle_title.addEventListener('click', () => {
+                    'active' === item.getAttribute('data-state') ? 
+                    item.setAttribute('data-state', '') : 
+                    item.setAttribute('data-state', 'active') ;
+                    if(item.querySelector('.multiselect-group')){
+
+                        selectSingle_title.innerHTML =   `<div class="options">выбрано значений: ${document.querySelector('.multiselect-group').querySelector('.__select__title').querySelectorAll('.options').length} </div>`;
+}
+                }
+               
+                    );
+
+
+                for (let i = 0; i < selectSingle_labels.length; i++) {
+                    selectSingle_labels[i].addEventListener('click', (event) => {
+                        selectSingle_title.textContent = event.target.textContent;
+                        item.setAttribute('data-state', '');
+                    });
+                }
+
+            });
+
             document.querySelectorAll('.multiselect-group').forEach(item => {
                 const selectMulti_title = item.querySelector('.__select__title');
                 const selectMultiCheck = item.querySelector('.__select__multi_check');
@@ -458,8 +478,7 @@
                         if (item.checked) {
                             count++;
                             selectMulti_title.insertAdjacentHTML('beforeend',
-                                ` 
-                        <div class="options" value="${item.value}">${selectMulti_labels[index].textContent.trim()}</div>`);
+                                ` <div class="options" value="${item.value}">${selectMulti_labels[index].textContent.trim()}</div>`);
                         }
                     });
                     !count ? selectMulti_title.textContent = "Введите значение" :
@@ -484,6 +503,7 @@
                     refresh();
                 })
             });
+
         </script>
         <!-- мультиселект -->
     </div>
