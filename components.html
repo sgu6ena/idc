@@ -442,18 +442,28 @@
             document.querySelectorAll('.__select').forEach(item => {
                 const selectSingle_title = item.querySelector('.__select__title');
                 const selectSingle_labels = item.querySelectorAll('.__select__label');
-
-                selectSingle_title.addEventListener('click', () => {
-                        'active' === item.getAttribute('data-state') ?
+                const checkInput = item.querySelectorAll('.check-input');
+                
+                selectSingle_title.addEventListener('click', event => {
+                    if(event.target.classList.contains('options')) {
+                        checkInput.forEach((item) => {
+                        event.target.attributes.value?
+                            event.target.attributes.value.textContent == item.value ? item.checked = false :'' :
+                            item.checked = false;
+                            document.querySelector('.multiselect-group').querySelector('.__select__title').textContent='';
+                        })
+                        selectSingle_title.innerHTML =
+                            `<div class="options">выбрано значений: 0</div>`;
+                    } else {
+                                    'active' === item.getAttribute('data-state') ?
                             item.setAttribute('data-state', '') :
                             item.setAttribute('data-state', 'active');
+                    }            
                         if (item.querySelector('.multiselect-group'))
                             selectSingle_title.innerHTML =
                             `<div class="options">выбрано значений: ${document.querySelector('.multiselect-group').querySelector('.__select__title').querySelectorAll('.options').length} </div>`;
                     }
-
                 );
-
 
                 for (let i = 0; i < selectSingle_labels.length; i++) {
                     selectSingle_labels[i].addEventListener('click', (event) => {
