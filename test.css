@@ -469,7 +469,7 @@
   white-space: nowrap;
 }
 .options:after {
-  opacity: .5;
+  opacity: .3;
   transition: all 0.3s;
   content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='10' viewBox='0 0 10 10'    fill='gray' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.59 0L5 3.59L1.41 0L0 1.41L3.59 5L0 8.59L1.41 10L5 6.41L8.59 10L10 8.59L6.41 5L10 1.41L8.59 0Z' /%3e%3c/svg%3e ");;
   margin-left: 15px;
@@ -478,7 +478,7 @@
 .options:hover::after {
   opacity: 1;
   transition: all 0.3s;
-  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='10' viewBox='0 0 10 10'    fill='red' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.59 0L5 3.59L1.41 0L0 1.41L3.59 5L0 8.59L1.41 10L5 6.41L8.59 10L10 8.59L6.41 5L10 1.41L8.59 0Z' /%3e%3c/svg%3e ");
+  
 }
 
 /* * * table* */
