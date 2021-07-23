@@ -342,7 +342,7 @@
         </div>
         <!-- Select через radio + js -->
         <!-- Select js -->
-       
+
         <!-- Select js -->
     </div>
 
@@ -381,79 +381,78 @@
         <div class="__select" data-state="">
             <div class="__select__title" data-default="Option 0">Выберите значение</div>
             <div class="__select__content">
-               
-        <div class="multiselect-group" >
-            <div class="multiselect-rezult ">
-                <div class="__select__title" data-default="Option 0">Выберите значение
 
+                <div class="multiselect-group">
+                    <div class="multiselect-rezult ">
+                        <div class="__select__title" data-default="Option 0">Выберите значение
+
+                        </div>
+                    </div>
+                    <div class="__select__multi_check">
+                        <div class="__select__content__multi">
+                            <label for="multiSelect01" class="__select__label__multi" value="0">
+                                <input id="multiSelect01" class="__select__input  check-input" type="checkbox"
+                                    name="multiSelect" value="20" />
+                                Проверка состояния счёта
+                                <span class="check-box"></span>
+                            </label>
+                            <label for="multiSelect02" class="__select__label__multi">
+                                <input id="multiSelect02" class="__select__input  check-input" type="checkbox"
+                                    name="multiSelect" value="32" />
+                                Восстановление договора (без изменения адреса установки)
+                                <span class="check-box"></span>
+                            </label>
+                            <label for="multiSelect03" class="__select__label__multi">
+                                <input id="multiSelect03" class="__select__input  check-input" type="checkbox"
+                                    name="multiSelect" value="45" />
+                                Восстановление договора (без изменения адреса установки)
+                                <span class="check-box"></span>
+                            </label>
+                            <label for="multiSelect04" class="__select__label__multi">
+                                <input id="multiSelect04" class="__select__input  check-input" type="checkbox"
+                                    name="multiSelect" value="2" />
+                                Восстановление контрактных условий
+                                <span class="check-box"></span>
+                            </label>
+                            <label for="multiSelect05" class="__select__label__multi">
+                                <input id="multiSelect05" class="__select__input  check-input" type="checkbox"
+                                    name="multiSelect" value="8" />
+                                Досрочное погашение рассрочки (в т.ч. и за установку проводного телефона)
+                                <span class="check-box"></span>
+                            </label>
+                            <label for="multiSelect06" class="__select__label__multi">
+                                <input id="multiSelect06" class="__select__input  check-input" type="checkbox"
+                                    name="multiSelect" value="5" />
+                                Временное прекращение договора (бронирование)
+                                <span class="check-box"></span>
+                            </label>
+                            <label for="multiSelect07" class="__select__label__multi"> Смена валюты обслуживания
+                                <input id="multiSelect07" class="__select__input  check-input" type="checkbox"
+                                    name="multiSelect" value="6" />
+                                <span class="check-box"></span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="__select__multi_check">
-                <div class="__select__content__multi">
-                    <label for="multiSelect01" class="__select__label__multi" value="0">
-                        <input id="multiSelect01" class="__select__input  check-input" type="checkbox"
-                            name="multiSelect" value="20" />
-                        Проверка состояния счёта
-                        <span class="check-box"></span>
-                    </label>
-                    <label for="multiSelect02" class="__select__label__multi">
-                        <input id="multiSelect02" class="__select__input  check-input" type="checkbox"
-                            name="multiSelect" value="32" />
-                        Восстановление договора (без изменения адреса установки)
-                        <span class="check-box"></span>
-                    </label>
-                    <label for="multiSelect03" class="__select__label__multi">
-                        <input id="multiSelect03" class="__select__input  check-input" type="checkbox"
-                            name="multiSelect" value="45" />
-                        Восстановление договора (без изменения адреса установки)
-                        <span class="check-box"></span>
-                    </label>
-                    <label for="multiSelect04" class="__select__label__multi">
-                        <input id="multiSelect04" class="__select__input  check-input" type="checkbox"
-                            name="multiSelect" value="2" />
-                        Восстановление контрактных условий
-                        <span class="check-box"></span>
-                    </label>
-                    <label for="multiSelect05" class="__select__label__multi">
-                        <input id="multiSelect05" class="__select__input  check-input" type="checkbox"
-                            name="multiSelect" value="8" />
-                        Досрочное погашение рассрочки (в т.ч. и за установку проводного телефона)
-                        <span class="check-box"></span>
-                    </label>
-                    <label for="multiSelect06" class="__select__label__multi">
-                        <input id="multiSelect06" class="__select__input  check-input" type="checkbox"
-                            name="multiSelect" value="5" />
-                        Временное прекращение договора (бронирование)
-                        <span class="check-box"></span>
-                    </label>
-                    <label for="multiSelect07" class="__select__label__multi"> Смена валюты обслуживания
-                        <input id="multiSelect07" class="__select__input  check-input" type="checkbox"
-                            name="multiSelect" value="6" />
-                        <span class="check-box"></span>
-                    </label>
-                </div>
-            </div>
-        </div>
             </div>
         </div>
 
 
         <script>
-      document.querySelectorAll('.__select').forEach(item => {
+            document.querySelectorAll('.__select').forEach(item => {
                 const selectSingle_title = item.querySelector('.__select__title');
                 const selectSingle_labels = item.querySelectorAll('.__select__label');
 
                 selectSingle_title.addEventListener('click', () => {
-                    'active' === item.getAttribute('data-state') ? 
-                    item.setAttribute('data-state', '') : 
-                    item.setAttribute('data-state', 'active') ;
-                    if(item.querySelector('.multiselect-group')){
+                        'active' === item.getAttribute('data-state') ?
+                            item.setAttribute('data-state', '') :
+                            item.setAttribute('data-state', 'active');
+                        if (item.querySelector('.multiselect-group'))
+                            selectSingle_title.innerHTML =
+                            `<div class="options">выбрано значений: ${document.querySelector('.multiselect-group').querySelector('.__select__title').querySelectorAll('.options').length} </div>`;
+                    }
 
-                        selectSingle_title.innerHTML =   `<div class="options">выбрано значений: ${document.querySelector('.multiselect-group').querySelector('.__select__title').querySelectorAll('.options').length} </div>`;
-}
-                }
-               
-                    );
+                );
 
 
                 for (let i = 0; i < selectSingle_labels.length; i++) {
@@ -464,12 +463,13 @@
                 }
 
             });
-
             document.querySelectorAll('.multiselect-group').forEach(item => {
                 const selectMulti_title = item.querySelector('.__select__title');
                 const selectMultiCheck = item.querySelector('.__select__multi_check');
                 const selectMulti_labels = item.querySelectorAll('.__select__label__multi');
                 const checkInput = item.querySelectorAll('.check-input');
+                const selectSingle_title = item.parentNode.parentNode.querySelector('.__select__title');
+
 
                 const refresh = () => {
                     selectMulti_title.textContent = '';
@@ -477,23 +477,24 @@
                     checkInput.forEach((item, index) => {
                         if (item.checked) {
                             count++;
-                            selectMulti_title.insertAdjacentHTML('beforeend',
-                                ` <div class="options" value="${item.value}">${selectMulti_labels[index].textContent.trim()}</div>`);
+                            selectMulti_title.insertAdjacentHTML('beforeend', ` <div class="options" value="${item.value}">${selectMulti_labels[index].textContent.trim()}</div>`);
                         }
+                        selectSingle_title.innerHTML =
+                                `<div class="options">выбрано значений: ${document.querySelector('.multiselect-group').querySelector('.__select__title').querySelectorAll('.options').length} </div>`;
                     });
-                    !count ? selectMulti_title.textContent = "Введите значение" :
-                        count > 3 ? selectMulti_title.innerHTML = ` 
-                        <div class="options">выбрано ${count} значений</div>` : '';
+                    if(!count ){
+                        selectMulti_title.textContent = "Введите значение";
+                    }
                 }
 
                 selectMulti_title.addEventListener('click', (event) => {
 
                     checkInput.forEach((item) => {
-                        if(event.target.attributes.value){
-                            if (event.target.attributes.value.textContent == item.value){
-                            item.checked = false;
-                        } 
-                        } else{
+                        if (event.target.attributes.value) {
+                            if (event.target.attributes.value.textContent == item.value) {
+                                item.checked = false;
+                            }
+                        } else {
                             item.checked = false;
                         }
                         refresh();
@@ -503,7 +504,6 @@
                     refresh();
                 })
             });
-
         </script>
         <!-- мультиселект -->
     </div>
