@@ -2320,7 +2320,7 @@ right: 100%;
 margin-left: -154px;
 }
 
-.exclude:hover .exclude-text, .exclude:hover .step-text {
+.exclude:hover .exclude-text, .step:hover .step-text {
   visibility: visible;
   opacity: 1;
 }
