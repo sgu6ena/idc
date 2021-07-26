@@ -2357,7 +2357,7 @@ visibility: visible;
   stroke-dasharray: 288.5;
   stroke-linecap: round;
   transform-origin: 50px 50px;
-  animation:  pathStroke 10s infinite linear;
+  animation:  pathStroke 3s 1 linear;
 }
 
 @keyframes pathStroke {

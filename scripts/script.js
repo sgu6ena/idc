@@ -7,16 +7,15 @@ lazy: {
     loadPrevNext: true,
     checkInView:true,
   },
-
     speed: 2000,
     loop: true,
     slidesPerView: 1,
     autoplay: {
-        delay: 10000,
+        delay: 3000,
     },
     navigation: {
-        nextEl: '.arrow-slider-next',
-        prevEl: '.arrow-slider-prev',
+        nextEl: '.slider-next',
+        prevEl: '.slider-prev',
     },
     pagination: {
         el: '.progress-slider',
@@ -31,7 +30,6 @@ lazy: {
     fadeEffect: {
         crossFade: true
     },
-    
 });
 
 const headerMenu = document.querySelector('.header-menu');
@@ -44,14 +42,19 @@ bigSlider.on('slideChange', () => {
         headerMenu.classList.remove('header-dark');
 });
 
-bigSlider.on('transitionStart', () => {
-   swiperPreloader.classList.toggle('active');  
-})
+bigSlider.on('autoplay',()=>{
+    swiperPreloader.classList.toggle('active');   
+ });
 
-bigSlider.on('transitionEnd', () => {
-   swiperPreloader.classList.toggle('active');  
-})
-
+  bigSlider.on('transitionEnd', () => {
+      if(bigSlider.autoplay.running)
+            swiperPreloader.classList.toggle('active');  
+}) 
+        
+ bigSlider.on('autoplayStop', () => {
+    swiperPreloader.classList.remove('active');  
+ });
+        
 
 const tarrifsOptions = {
     slidesPerView: 1,
