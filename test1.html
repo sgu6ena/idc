@@ -9,10 +9,10 @@
 </head>
 
 <body style="text-align:center;">
-    <script type="text/javascript" src="https://fdn.gsmarena.com/vv/assets12/js/3dspinhelp.js?v=2"></script>
+    <!-- <script type="text/javascript" src="https://fdn.gsmarena.com/vv/assets12/js/3dspinhelp.js?v=2"></script>
     <script type="text/javascript">
         showSpin("https://fdn.gsmarena.com/vv/spin/apple-iphone-x.swf");
-    </script>
+    </script> -->
 
 
 
@@ -60,7 +60,6 @@
             stroke-dashoffset: 60;
             transform: rotate(-90deg);
             transform-origin: 50% 50%;
-            /* animation: big 1.5s ease-in-out; */
         }
 
         .circle-big .text {
@@ -86,30 +85,35 @@
             stroke: #006582;
         }
     </style>
-
-    <div class="circle-big" data-value='16' data-max-value='25'>
+<!-- /* * минуты * */  -->
+    <div class="circle-big" data-value='142' data-max-value='200'>
         <div class="text">
-            16<div class="small">мин</div>
+            <span class="value">16</span>
+            <div class="small">мин</div>
         </div>
         <svg>
             <circle class="bg" cx="57" cy="57" r="52"></circle>
             <circle class="progress" cx="57" cy="57" r="52"></circle>
         </svg>
     </div>
-
+    <!-- /* * минуты * */  -->
+<!-- /* * гб * */  -->
     <div class="circle-big orange" data-value='3.2' data-max-value='5'>
         <div class="text">
-            3.2<div class="small">Гб</div>
+            <span class="value">3.2</span>
+            <div class="small">Гб</div>
         </div>
         <svg>
             <circle class="bg" cx="57" cy="57" r="52"></circle>
             <circle class="progress " cx="57" cy="57" r="52"></circle>
         </svg>
     </div>
-
-    <div class="circle-big blue" data-value='146' data-max-value='300'>
+    <!-- /* * гб * */  -->
+<!-- /* * смс * */  -->
+    <div class="circle-big blue" data-value='170' data-max-value='300'>
         <div class="text">
-            146<div class="small">sms</div>
+            <span class="value">16</span>
+            <div class="small">sms</div>
         </div>
         <svg>
             <circle class="bg" cx="57" cy="57" r="52"></circle>
@@ -117,23 +121,26 @@
             </circle>
         </svg>
     </div>
+<!-- /* * смс * */  -->
+    <script>
+        const circlesBig = document.querySelectorAll('.circle-big');
 
- <script>
-
-const circlesBig = document.querySelectorAll('.circle-big');
-
-circlesBig.forEach(circle =>{
-     const value = circle.getAttribute('data-value');
-     const maxValue = circle.getAttribute('data-max-value');
-     const progress = circle.querySelector('.progress');
-progress.style.strokeDashoffset =  315 / maxValue * value;
-progress.animate([ {strokeDashoffset:315},
-  {strokeDashoffset :315 / maxValue * value}], {
-  duration: 1000,
-  iterations: 1
-});
-});
- </script>
+        circlesBig.forEach(circle => {
+            const value = circle.getAttribute('data-value');
+            const maxValue = circle.getAttribute('data-max-value');
+            const progress = circle.querySelector('.progress');
+            progress.style.strokeDashoffset =  (325 - (325 / maxValue * value));
+            progress.animate([{
+                strokeDashoffset: 325
+            }, {
+                strokeDashoffset: (325 - (325 / maxValue * value))
+            }], {
+                duration: 1000,
+                iterations: 1
+            });
+            circle.querySelector('.value').textContent=value;
+        });
+    </script>
 
 </body>
 
