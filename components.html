@@ -62,6 +62,104 @@
 
 <body class="container">
 
+<div class="element" >
+    <div class="my-idc-card">
+        <div class="my-idc-tariff">
+            <div class="col-6 ">
+                <div class="my-idc-tariff-subtitle">Мой тариф</div>
+                <h3 class="my-idc-tariff-title">Active 5</h3>
+                <div class="my-idc-expiration">Активный срок до 14.08.2021  <button class="my-idc-expiration-button">
+                    <svg class="icon" width="15px" height="15px">
+                    <use xlink:href="image/sprite.svg#arrow.triangle"></use>
+                </svg>
+                </button> 
+            </div> 
+             
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+                <a href="#" class="my-idc-button">Сменить тариф</a>
+            </div>
+        </div>
+        <div class="counter-wrapper">
+              <!-- /* * минуты * */  -->
+  <div class="circle-big" data-value='150' data-max-value='300'>
+    <div class="text">
+        <svg class="icon" width="28px" height="28px">
+            <use xlink:href="image/sprite.svg#phone.connection"></use>
+        </svg>
+        <span class="value">16</span>
+        <div class="small">Мин.</div>
+    </div>
+    <svg class="round">
+        <circle class="bg" cx="75" cy="75" r="65"></circle>
+        <circle class="progress" cx="75" cy="75" r="65"></circle>
+    </svg>
+</div>
+<!-- /* * минуты * */  -->
+<!-- /* * гб * */  -->
+<div class="circle-big orange" data-value='3.2' data-max-value='5'>
+    <div class="text">
+        <svg class="icon" width="28px" height="28px">
+            <use xlink:href="image/sprite.svg#dot.radiowaves"></use>
+        </svg>
+        <span class="value">3.2</span>
+        <div class="small">ГБ</div>
+    </div>
+    <svg class="round">
+        <circle class="bg" cx="75" cy="75" r="65"></circle>
+        <circle class="progress " cx="75" cy="75" r="65"></circle>
+    </svg>
+</div>
+<!-- /* * гб * */  -->
+<!-- /* * смс * */  -->
+<div class="circle-big blue" data-value='170' data-max-value='500'>
+    <div class="text">
+        <svg class="icon" width="28px" height="28px">
+            <use xlink:href="image/sprite.svg#mail"></use>
+        </svg>
+        <span class="value">16</span>
+        <div class="small">SMS</div>
+    </div>
+    <svg class="round">
+        <circle class="bg" cx="75" cy="75" r="65"></circle>
+        <circle class="progress" cx="75" cy="75" r="65">
+        </circle>
+    </svg>
+</div>
+<!-- /* * смс * */  -->
+        </div>
+
+    </div>
+
+
+
+    
+
+   
+    <script>
+        const circlesBig = document.querySelectorAll('.circle-big');
+        // const max =75(радиус)*2*3.14(пи);   2pi*r
+        const max = 408.5;
+        circlesBig.forEach(circle => {
+            const value = circle.getAttribute('data-value');
+            const maxValue = circle.getAttribute('data-max-value');
+            const progress = circle.querySelector('.progress');
+            progress.style.strokeDashoffset = max - (max * value / maxValue)
+            progress.animate([{
+                strokeDashoffset: 471
+            }, {
+                strokeDashoffset: max - (max * value / maxValue)
+            }], {
+                duration: 1000,
+                iterations: 1
+            });
+            circle.querySelector('.value').textContent = value;
+        });
+    </script>
+</div>
+
+
+
 <div class="element d-flex justify-content-center flex-wrap" >
     <div class="tracker ">
         <div class="tracker-card">

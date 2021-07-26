@@ -21,43 +21,33 @@
     <style>
         body {
             font-family: sans-serif;
+            display: ;
         }
-
-        /* @keyframes big {
-            from {
-                stroke-dashoffset: 326.56;
-            }
-
-            to {
-                stroke-dashoffset: 60;
-            }
-        } */
 
         .circle-big {
             position: relative;
-            width: 114px;
-            height: 114px;
-            margin: 30px auto 25px auto;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
         }
 
-        .circle-big svg {
-            width: 114px;
-            height: 114px;
+        .circle-big .round {
+            width: 150px;
+            height: 150px;
         }
 
         .circle-big .bg {
             fill: none;
-            stroke-width: 10px;
+            stroke-width: 15px;
             stroke: #F2F4F7;
         }
 
         .circle-big .progress {
             fill: none;
-            stroke-width: 10px;
+            stroke-width: 15px;
             stroke: #37355B;
             stroke-linecap: round;
-            stroke-dasharray: 326.56;
-            stroke-dashoffset: 60;
+            stroke-dasharray: 408.2;
             transform: rotate(-90deg);
             transform-origin: 50% 50%;
         }
@@ -65,18 +55,24 @@
         .circle-big .text {
             position: absolute;
             width: 100%;
-            top: 37px;
+            top: 35px;
+            font-weight: 900;
             font-size: 24px;
-            text-align: center;
-            font-weight: 400;
-            line-height: 22px;
+            line-height: 29px;
+            color: #006285;
         }
 
         .circle-big .text .small {
+            font-weight: 500;
             font-size: 14px;
-            color: #006582;
+            line-height: 17px;
+            color: #006285;
         }
+.circle-big .icon{
 
+    margin: 0 auto 8px;
+    display: block;
+}
         .orange .progress {
             stroke: #FF9900;
         }
@@ -84,61 +80,99 @@
         .blue .progress {
             stroke: #006582;
         }
+
+        .mini {
+            width: 114px;
+            height: 114px;
+        }
+
+        .mini .round {
+            width: 114px;
+            height: 114px;
+        }
+
+        .mini .text {
+            top: 35px;
+        }
     </style>
-<!-- /* * минуты * */  -->
-    <div class="circle-big" data-value='142' data-max-value='200'>
+    <!-- /* * минуты * */  -->
+    <div class="circle-big" data-value='150' data-max-value='300'>
         <div class="text">
+            <svg class="icon" width="28px" height="28px">
+                <use xlink:href="image/sprite.svg#phone.connection"></use>
+            </svg>
             <span class="value">16</span>
-            <div class="small">мин</div>
+            <div class="small">Мин.</div>
         </div>
-        <svg>
-            <circle class="bg" cx="57" cy="57" r="52"></circle>
-            <circle class="progress" cx="57" cy="57" r="52"></circle>
+        <svg class="round">
+            <circle class="bg" cx="75" cy="75" r="65"></circle>
+            <circle class="progress" cx="75" cy="75" r="65"></circle>
         </svg>
     </div>
     <!-- /* * минуты * */  -->
-<!-- /* * гб * */  -->
+    <!-- /* * гб * */  -->
     <div class="circle-big orange" data-value='3.2' data-max-value='5'>
         <div class="text">
+            <svg class="icon" width="28px" height="28px">
+                <use xlink:href="image/sprite.svg#dot.radiowaves"></use>
+            </svg>
             <span class="value">3.2</span>
-            <div class="small">Гб</div>
+            <div class="small">ГБ</div>
         </div>
-        <svg>
-            <circle class="bg" cx="57" cy="57" r="52"></circle>
-            <circle class="progress " cx="57" cy="57" r="52"></circle>
+        <svg class="round">
+            <circle class="bg" cx="75" cy="75" r="65"></circle>
+            <circle class="progress " cx="75" cy="75" r="65"></circle>
         </svg>
     </div>
     <!-- /* * гб * */  -->
-<!-- /* * смс * */  -->
-    <div class="circle-big blue" data-value='170' data-max-value='300'>
+    <!-- /* * смс * */  -->
+    <div class="circle-big blue" data-value='170' data-max-value='500'>
+        <div class="text">
+            <svg class="icon" width="28px" height="28px">
+                <use xlink:href="image/sprite.svg#mail"></use>
+            </svg>
+            <span class="value">16</span>
+            <div class="small">SMS</div>
+        </div>
+        <svg class="round">
+            <circle class="bg" cx="75" cy="75" r="65"></circle>
+            <circle class="progress" cx="75" cy="75" r="65">
+            </circle>
+        </svg>
+    </div>
+    <!-- /* * смс * */  -->
+
+    <!-- /* * смс мини вариант* */  -->
+    <div class="circle-big mini blue" data-value='188' data-max-value='300'>
         <div class="text">
             <span class="value">16</span>
             <div class="small">sms</div>
         </div>
-        <svg>
-            <circle class="bg" cx="57" cy="57" r="52"></circle>
-            <circle class="progress" cx="57" cy="57" r="52">
+        <svg class="round">
+            <circle class="bg" cx="57" cy="57" r="47"></circle>
+            <circle class="progress" cx="57" cy="57" r="47">
             </circle>
         </svg>
     </div>
-<!-- /* * смс * */  -->
+    <!-- /* * смс * */  -->
     <script>
         const circlesBig = document.querySelectorAll('.circle-big');
-
+        // const max =75(радиус)*2*3.14(пи);   2pi*r
+        const max = 408.2;
         circlesBig.forEach(circle => {
             const value = circle.getAttribute('data-value');
             const maxValue = circle.getAttribute('data-max-value');
             const progress = circle.querySelector('.progress');
-            progress.style.strokeDashoffset =  (325 - (325 / maxValue * value));
+            progress.style.strokeDashoffset = max - (max * value / maxValue)
             progress.animate([{
-                strokeDashoffset: 325
+                strokeDashoffset: 471
             }, {
-                strokeDashoffset: (325 - (325 / maxValue * value))
+                strokeDashoffset: max - (max * value / maxValue)
             }], {
                 duration: 1000,
                 iterations: 1
             });
-            circle.querySelector('.value').textContent=value;
+            circle.querySelector('.value').textContent = value;
         });
     </script>
 

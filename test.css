@@ -651,3 +651,114 @@ content:url("data:image/svg+xml;charset=UTF-8,%3csvg width='41' height='24' view
   right: 10px;
 opacity: .3;
 }
+
+
+/* * личный кабинет* */
+.my-idc-card{
+  max-width: 640px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+}
+.my-idc-tariff{
+  display: flex;
+  align-items: center;
+}
+.my-idc-tariff-subtitle{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #37355B;
+}
+.my-idc-tariff-title{
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 43px;
+  color: #006285;
+}
+.my-idc-expiration{
+  font-size: 12px;
+  line-height: 14px;
+  color: #7C7B8A;
+}
+.my-idc-expiration-button{
+  border:none;
+  color: #7C7B8A;
+  background: transparent;
+}
+.my-idc-button{
+  border: 2px solid #006285;
+  border-radius: 48px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #006285;
+  padding: 8px 25px;
+  text-decoration: none;
+}
+.counter-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* * круглые прогресс бары* */
+.circle-big {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+.circle-big .round {
+  width: 150px;
+  height: 150px;
+}
+
+.circle-big .bg {
+  fill: none;
+  stroke-width: 15px;
+  stroke: #F2F4F7;
+}
+
+.circle-big .progress {
+  fill: none;
+  stroke-width: 15px;
+  stroke: #37355B;
+  stroke-linecap: round;
+  stroke-dasharray: 408.5;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.circle-big .text {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 35px;
+  font-size: 24px;
+  line-height: 29px;
+  color: #006285;
+}
+
+.circle-big .text .value {
+  font-weight: 900;
+}
+
+.circle-big .text .small {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #006285;
+}
+.circle-big .icon{
+
+margin: 0 auto 8px;
+display: block;
+}
+.orange .progress {
+  stroke: #FF9900;
+}
+
+.blue .progress {
+  stroke: #006582;
+}
