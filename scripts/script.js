@@ -11,7 +11,7 @@ lazy: {
     loop: true,
     slidesPerView: 1,
     autoplay: {
-        delay: 3000,
+        delay: 10000,
     },
     navigation: {
         nextEl: '.slider-next',
