@@ -547,16 +547,19 @@
 }
 
 .tracker-card {
+  width: 300px;
   margin: 5px;
   padding: 10px 0;
   background-color: #fff;
   border-radius: 8px;
 }
 
-.tracker-card .stepper .step-wrapper:not(:last-child):after {
+.tracker-card .stepper .step-wrapper:after {
   background-color: #d0d7dd;
 }
-
+.tracker-card .stepper .step-wrapper.passed:after{
+  background-color: #006285;
+}
 .tracker-card .stepper{
   margin: 20px;
   filter: drop-shadow(0px 2px 7px rgba(31, 31, 34, 0.08));
@@ -586,6 +589,10 @@
   background: red;
 }
 
+.tracker-icon-wrapper.passed{
+  background: #006582;
+}
+
 
 .tracker-icon {
   margin-left: 10px;
@@ -598,8 +605,7 @@
 }
 
 .error .tracker-icon{
-  margin-left: 0px;
-  margin-top: 0px;
+  margin:0;
   content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M27.4142 3.41421C28.1953 2.63317 28.1953 1.36684 27.4142 0.585787C26.6332 -0.195262 25.3668 -0.195262 24.5858 0.585786L14 11.1716L3.41422 0.585787C2.63317 -0.195262 1.36684 -0.195262 0.585789 0.585787C-0.19526 1.36684 -0.19526 2.63317 0.585789 3.41421L11.1716 14L0.585787 24.5858C-0.195262 25.3668 -0.195262 26.6332 0.585787 27.4142C1.36684 28.1953 2.63317 28.1953 3.41421 27.4142L14 16.8284L24.5858 27.4142C25.3668 28.1953 26.6332 28.1953 27.4142 27.4142C28.1953 26.6332 28.1953 25.3668 27.4142 24.5858L16.8284 14L27.4142 3.41421Z' fill='white'/%3e%3c/svg%3e ");
 }
 .tracker-status {
@@ -610,6 +616,11 @@
   color: #37355b;
   border-bottom: 1px solid #d0d7dd;
   padding-bottom: 48px;
+}
+
+.passed .tracker-icon{
+  margin: 0;
+content:url("data:image/svg+xml;charset=UTF-8,%3csvg width='41' height='24' viewBox='0 0 41 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M39.6935 0.731035C40.4324 1.55205 40.3658 2.81663 39.5448 3.55555L17.4758 23.4176C16.7368 24.0828 15.6214 24.104 14.8575 23.4675L1.61617 12.433C0.767612 11.7259 0.652964 10.4647 1.36009 9.61618C2.06722 8.76763 3.32835 8.65298 4.1769 9.36011L16.0875 19.2856L36.8689 0.582376C37.69 -0.156542 38.9545 -0.0899855 39.6935 0.731035Z' fill='white'/%3e%3c/svg%3e ");
 }
 
 .tracker-status-description {
