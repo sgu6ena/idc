@@ -18,58 +18,97 @@
 
 <style>
     
+.round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    background:red;
+    border-radius: 50%;
+    transition: 5s;
+animation: roundprogress 15s infinite;
+transition: all 5s;
+}
 
+.mini-round{
+    width: 150px;
+    height: 150px;
+        background:white;
+        border-radius: 50%;
+}
 
- .__select__input {
-	 display: none;
-}
- .__select__input:checked + label {
-	 background-color: #dedede;
-}
- .__select__input:disabled + label {
-	 opacity: 0.6;
-	 pointer-events: none;
-}
- .__select__label__multi {
-	 display: flex;
-	 align-items: center;
-	 flex-shrink: 0;
-	 height: 40px;
-	 padding: 0 16px;
-	 transition: all 0.2s ease-out;
-	 cursor: pointer;
-}
-.__select__label__multi  + input +.__select__label__multi  {
-	 border-top: 1px solid #c7ccd1 60;
-}
-.__select__label__multi:hover {
-	 background-color: #006285 !important;
-	 color: #fff;
-}
+@keyframes roundprogress {
+    0%{
  
+        background: conic-gradient(gold 0%, #f06 100%);
+
+    }
+    25%{   
+        
+        transition: all 5s;
+        background: conic-gradient(gold 25%,#f06 75%);
+        
+    }
+    
+    50%{   
+        
+       
+        background: conic-gradient(gold 50%,#f06 50%);
+        
+    }
+    
+   75%{   
+        
+       
+        background: conic-gradient(gold 75%, #f06 50%);
+        
+    }
+    
+
+    100%{  
+        /* transform: rotate(-360deg); */
+        transition: all 5s;
+        background: conic-gradient(gold 100%, #f06 50%);
+       
+    }
+}
+
+
+.aminate {
+  max-width: 240px;
+}
+
+.aminate path {
+  transform: rotate(180deg);
+  stroke: black;
+  stroke-width: 2;
+  stroke-dasharray: 288.5;
+  stroke-linecap: round;
+  fill: none;
+  transform-origin: 50px 50px;
+
+}
+.aminatse.active  path{
+  animation:
+    pathStroke 6s infinite ease-in-out;
+}
+@keyframes pathStroke {
+  0% {  stroke-dashoffset: 288.5; }
+   /*70%{  stroke-dashoffset: 288.5; ;} */
+  70%, 100% { stroke-dashoffset: 0;}
+}
+
+
+
 </style>
 <body style="text-align:center;">
 
-    <div class="__select">
-        <div class="__select__content__multi">
-          <input id="singleSelect0" class="__select__input" type="checkbox" name="singleSelect"  />
-          <label for="singleSelect0" class="__select__label__multi ">Option 0</label>
-          <input id="singleSelect1" class="__select__input" type="checkbox" name="singleSelect" />
-          <label for="singleSelect1" class="__select__label__multi ">Option 1</label>
-          <input id="singleSelect2" class="__select__input" type="checkbox" name="singleSelect" disabled />
-          <label for="singleSelect2" class="__select__label__multi ">Option 2 (disabled)</label>
-          <input id="singleSelect3" class="__select__input" type="checkbox" name="singleSelect" />
-          <label for="singleSelect3" class="__select__label__multi ">Option 3</label>
-          <input id="singleSelect4" class="__select__input" type="checkbox" name="singleSelect" />
-          <label for="singleSelect4" class="__select__label__multi ">Option 4</label>
-          <input id="singleSelect5" class="__select__input" type="checkbox" name="singleSelect" />
-          <label for="singleSelect5" class="__select__label__multi ">Option 5</label>
-          <input id="singleSelect6" class="__select__input" type="checkbox" name="singleSelect" />
-          <label for="singleSelect6" class="__select__label__multi ">Option 6</label>
-          <input id="singleSelect7" class="__select__input" type="checkbox" name="singleSelect" />
-          <label for="singleSelect7" class="__select__label__multi ">Option 7</label>
-        </div>
-      </div>
+
+        <svg viewBox="0 0 100 100" class="aminate">
+            <path d="M 50 96 a 46 46 0 0 1 0 -92 46 46 0 0 1 0 92" />
+          </svg>
+  
    
 </div>
 </body>

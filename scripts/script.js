@@ -12,7 +12,7 @@ lazy: {
     loop: true,
     slidesPerView: 1,
     autoplay: {
-        delay: 5000,
+        delay: 10000,
     },
     navigation: {
         nextEl: '.arrow-slider-next',
@@ -35,7 +35,8 @@ lazy: {
 });
 
 const headerMenu = document.querySelector('.header-menu');
-const swiperPreloader = document.querySelector('.slider-next');
+const swiperPreloader = document.querySelector('.aminatse');
+
 bigSlider.on('slideChange', () => {
     if (bigSlider.slides[bigSlider.activeIndex].classList.contains('slide-ligth'))
         headerMenu.classList.add('header-dark');
@@ -43,13 +44,12 @@ bigSlider.on('slideChange', () => {
         headerMenu.classList.remove('header-dark');
 });
 
-bigSlider.on('beforeTransitionStart', () => {
-            swiperPreloader.classList.toggle('animated');
-    setTimeout(() => {
-        swiperPreloader.classList.toggle('animated');
+bigSlider.on('transitionStart', () => {
+   swiperPreloader.classList.toggle('active');  
+})
 
-     }, 1000);
-
+bigSlider.on('transitionEnd', () => {
+   swiperPreloader.classList.toggle('active');  
 })
 
 
