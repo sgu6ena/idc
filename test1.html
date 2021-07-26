@@ -1,115 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+
+<body style="text-align:center;">
     <script type="text/javascript" src="https://fdn.gsmarena.com/vv/assets12/js/3dspinhelp.js?v=2"></script>
     <script type="text/javascript">
         showSpin("https://fdn.gsmarena.com/vv/spin/apple-iphone-x.swf");
-        </script>
+    </script>
 
 
 
 
 
-<style>
-    
-.round{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 180px;
-    background:red;
-    border-radius: 50%;
-    transition: 5s;
-animation: roundprogress 15s infinite;
-transition: all 5s;
-}
+    <style>
+        body {
+            font-family: sans-serif;
+        }
 
-.mini-round{
-    width: 150px;
-    height: 150px;
-        background:white;
-        border-radius: 50%;
-}
+        /* @keyframes big {
+            from {
+                stroke-dashoffset: 326.56;
+            }
 
-@keyframes roundprogress {
-    0%{
- 
-        background: conic-gradient(gold 0%, #f06 100%);
+            to {
+                stroke-dashoffset: 60;
+            }
+        } */
 
-    }
-    25%{   
-        
-        transition: all 5s;
-        background: conic-gradient(gold 25%,#f06 75%);
-        
-    }
-    
-    50%{   
-        
-       
-        background: conic-gradient(gold 50%,#f06 50%);
-        
-    }
-    
-   75%{   
-        
-       
-        background: conic-gradient(gold 75%, #f06 50%);
-        
-    }
-    
+        .circle-big {
+            position: relative;
+            width: 114px;
+            height: 114px;
+            margin: 30px auto 25px auto;
+        }
 
-    100%{  
-        /* transform: rotate(-360deg); */
-        transition: all 5s;
-        background: conic-gradient(gold 100%, #f06 50%);
-       
-    }
-}
+        .circle-big svg {
+            width: 114px;
+            height: 114px;
+        }
 
+        .circle-big .bg {
+            fill: none;
+            stroke-width: 10px;
+            stroke: #F2F4F7;
+        }
 
-.aminate {
-  max-width: 240px;
-}
+        .circle-big .progress {
+            fill: none;
+            stroke-width: 10px;
+            stroke: #37355B;
+            stroke-linecap: round;
+            stroke-dasharray: 326.56;
+            stroke-dashoffset: 60;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+            /* animation: big 1.5s ease-in-out; */
+        }
 
-.aminate path {
-  transform: rotate(180deg);
-  stroke: black;
-  stroke-width: 2;
-  stroke-dasharray: 288.5;
-  stroke-linecap: round;
-  fill: none;
-  transform-origin: 50px 50px;
+        .circle-big .text {
+            position: absolute;
+            width: 100%;
+            top: 37px;
+            font-size: 24px;
+            text-align: center;
+            font-weight: 400;
+            line-height: 22px;
+        }
 
-}
-.aminatse.active  path{
-  animation:
-    pathStroke 6s infinite ease-in-out;
-}
-@keyframes pathStroke {
-  0% {  stroke-dashoffset: 288.5; }
-   /*70%{  stroke-dashoffset: 288.5; ;} */
-  70%, 100% { stroke-dashoffset: 0;}
-}
+        .circle-big .text .small {
+            font-size: 14px;
+            color: #006582;
+        }
 
+        .orange .progress {
+            stroke: #FF9900;
+        }
 
+        .blue .progress {
+            stroke: #006582;
+        }
+    </style>
 
-</style>
-<body style="text-align:center;">
+    <div class="circle-big" data-value='16' data-max-value='25'>
+        <div class="text">
+            16<div class="small">мин</div>
+        </div>
+        <svg>
+            <circle class="bg" cx="57" cy="57" r="52"></circle>
+            <circle class="progress" cx="57" cy="57" r="52"></circle>
+        </svg>
+    </div>
 
+    <div class="circle-big orange" data-value='3.2' data-max-value='5'>
+        <div class="text">
+            3.2<div class="small">Гб</div>
+        </div>
+        <svg>
+            <circle class="bg" cx="57" cy="57" r="52"></circle>
+            <circle class="progress " cx="57" cy="57" r="52"></circle>
+        </svg>
+    </div>
 
-        <svg viewBox="0 0 100 100" class="aminate">
-            <path d="M 50 96 a 46 46 0 0 1 0 -92 46 46 0 0 1 0 92" />
-          </svg>
-  
-   
-</div>
+    <div class="circle-big blue" data-value='146' data-max-value='300'>
+        <div class="text">
+            146<div class="small">sms</div>
+        </div>
+        <svg>
+            <circle class="bg" cx="57" cy="57" r="52"></circle>
+            <circle class="progress" cx="57" cy="57" r="52">
+            </circle>
+        </svg>
+    </div>
+
+ <script>
+
+const circlesBig = document.querySelectorAll('.circle-big');
+
+circlesBig.forEach(circle =>{
+     const value = circle.getAttribute('data-value');
+     const maxValue = circle.getAttribute('data-max-value');
+     const progress = circle.querySelector('.progress');
+progress.style.strokeDashoffset =  315 / maxValue * value;
+progress.animate([ {strokeDashoffset:315},
+  {strokeDashoffset :315 / maxValue * value}], {
+  duration: 1000,
+  iterations: 1
+});
+});
+ </script>
+
 </body>
+
 </html>

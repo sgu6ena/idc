@@ -640,3 +640,14 @@ content:url("data:image/svg+xml;charset=UTF-8,%3csvg width='41' height='24' view
   text-decoration: none;
   text-align: center;
 }
+.info-message{
+  position: relative;
+  padding-right: 40px;
+}
+
+.info-message .btn-close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+opacity: .3;
+}
