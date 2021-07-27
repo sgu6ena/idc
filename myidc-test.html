@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDC | Интерднестрком</title>
+
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap-grid.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/news.css">
+    <link rel="stylesheet" href="test.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer>
+    </script>
+    <script src="scripts/price.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        .my-idc-panel {
+            display: flex;
+            align-items: start;
+            background: #006582;
+            padding: 20px;
+            height: 100vh;
+        }
+
+        .my-idc-panel .nav {
+            padding-top: 250px;
+            width: 300px;
+        }
+
+        .my-idc-panel .nav-link {
+            background: #006582;
+            border: #006582;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            padding: 17px 26px 16px;
+            text-align: left;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #FFFFFF;
+        }
+
+        .my-idc-panel .nav-link.active {
+            position: relative;
+            background: #F2F3F7;
+            border: #F2F3F7;
+            border-radius: 32px 0px 0px 32px;
+            transition: background 0s ;
+        }
+
+        .my-idc-panel .nav-link.active::before{
+            top:-60px;
+            right: 0;
+            position: absolute;
+            content:'';
+            display: inline-block;
+            background: #F2F3F7;
+            height: 60px;
+            width: 60px;
+            transition: background 2s ;
+            border-radius: 32px 32px 0px 32px;
+            -webkit-mask-image: radial-gradient(circle 34px at 50% 50%, transparent 0, transparent 30px, black 31px);
+
+        }
+
+        .my-idc-panel .nav-link.active::after{
+            top:60px;
+            right: 0;
+            position: absolute;
+            content:'';
+            display: inline-block;
+            background: #F2F3F7;
+            height: 60px;
+            width: 60px;
+            border-radius: 32px  0 32px 32px;
+            -webkit-mask-image:radial-gradient(circle 30px at 30px 30px, transparent 0, transparent 30px, black 31px);
+       
+
+        }
+        .my-idc-panel .tab-content {
+            background: #F2F3F7;
+            border-radius: 25px;
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
+        }
+
+        .my-idc-panel .tab-pane {
+            width: 100%;
+            height: 100%;
+            padding: 35px 68px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-idc-panel">
+        <div class="nav flex-column nav-pills" id="v-pills-tab">
+            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button">Главная</button>
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button">Профиль</button>
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button">Сообщения</button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+                type="button">Настройки</button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home">
+                <div class="my-idc-card">
+                    <div class="my-idc-tariff">
+                        <div class="col-6 ">
+                            <div class="my-idc-tariff-subtitle">Мой тариф</div>
+                            <h3 class="my-idc-tariff-title">Active 5</h3>
+                            <div class="my-idc-expiration">Активный срок до 14.08.2021 <button
+                                    class="my-idc-expiration-button">
+                                    <svg class="icon" width="15px" height="15px">
+                                        <use xlink:href="image/sprite.svg#arrow.triangle"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                            <a href="#" class="my-idc-button">Сменить тариф</a>
+                        </div>
+                    </div>
+                    <div class="counter-wrapper">
+                        <!-- /* * минуты * */  -->
+                        <div class="circle-big" data-value='150' data-max-value='300'>
+                            <div class="text">
+                                <svg class="icon" width="28px" height="28px">
+                                    <use xlink:href="image/sprite.svg#phone.connection"></use>
+                                </svg>
+                                <span class="value">16</span>
+                                <div class="small">Мин.</div>
+                            </div>
+                            <svg class="round">
+                                <circle class="bg" cx="75" cy="75" r="65"></circle>
+                                <circle class="progress" cx="75" cy="75" r="65"></circle>
+                            </svg>
+                        </div>
+                        <!-- /* * минуты * */  -->
+                        <!-- /* * гб * */  -->
+                        <div class="circle-big orange" data-value='3.2' data-max-value='5'>
+                            <div class="text">
+                                <svg class="icon" width="28px" height="28px">
+                                    <use xlink:href="image/sprite.svg#dot.radiowaves"></use>
+                                </svg>
+                                <span class="value">3.2</span>
+                                <div class="small">ГБ</div>
+                            </div>
+                            <svg class="round">
+                                <circle class="bg" cx="75" cy="75" r="65"></circle>
+                                <circle class="progress " cx="75" cy="75" r="65"></circle>
+                            </svg>
+                        </div>
+                        <!-- /* * гб * */  -->
+                        <!-- /* * смс * */  -->
+                        <div class="circle-big blue" data-value='170' data-max-value='500'>
+                            <div class="text">
+                                <svg class="icon" width="28px" height="28px">
+                                    <use xlink:href="image/sprite.svg#mail"></use>
+                                </svg>
+                                <span class="value">16</span>
+                                <div class="small">SMS</div>
+                            </div>
+                            <svg class="round">
+                                <circle class="bg" cx="75" cy="75" r="65"></circle>
+                                <circle class="progress" cx="75" cy="75" r="65">
+                                </circle>
+                            </svg>
+                        </div>
+                        <!-- /* * смс * */  -->
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile">
+                <table class="idc-table  ">
+                    <thead>
+                        <tr>
+                            <th>ТВ-пакет</th>
+                            <th>Описание </th>
+                            <th>Подключить </th>
+                            <th width="150px">Стоимость</th>
+                            <!-- <th></th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Super Deluxe</td>
+                            <td>An unfaithful newly-wed wife, an estranged father, a priest and an angry son suddenly
+                                find themselves in the most unexpected predicaments, each poised to experience their
+                                destiny, all on one fateful day.</td>
+                            <td> <button class="tariffs-button">Подключить</button></td>
+                            <td>
+                                <div class="price">
+                                    <span class="price-count">270</span>
+                                    <span class="price-currency"> RUP</span>
+                                </div>
+                            </td>
+                            <td> <a href="#">Подробнее</a></td>
+                        </tr>
+                        <tr>
+                            <td>The Fall - The Untold Story of Jade</td>
+                            <td>Years after taking up normal lives incognito, the cyborgs are forced to fight again when
+                                the superhuman Blessed appear with a plan for humanity.</td>
+                            <td><button class="tariffs-button">Подключить</button></td>
+                            <td>
+                                <div class="price">
+                                    <span class="price-count">270</span>
+                                    <span class="price-currency"> RUP</span>
+                                </div>
+                            </td>
+                            <td> <a href="#">Подробнее</a></td>
+                        </tr>
+                        <tr>
+                            <td>La Rue et La Croissant</td>
+                            <td>Grocery store products come to life, along with caricatures of Jack Benny, Rochester and
+                                Ned Sparks, and take-offs on Superman and King Kong.</td>
+                            <td><button class="tariffs-button">Подключить</button></td>
+                            <td>
+                                <div class="price">
+                                    <span class="price-count">270</span>
+                                    <span class="price-currency"> RUP</span>
+                                </div>
+                            </td>
+                            <td> <a href="#">Подробнее</a></td>
+                        </tr>
+                        <tr>
+                            <td>La Rue et La Croissant</td>
+                            <td>Grocery store products come to life, along with caricatures of Jack Benny, Rochester and
+                                Ned Sparks, and take-offs on Superman and King Kong.</td>
+                            <td><button class="tariffs-button">Подключить</button></td>
+                            <td>
+                                <div class="price">
+                                    <span class="price-count">270</span>
+                                    <span class="price-currency"> RUP</span>
+                                </div>
+                            </td>
+                            <td> <a href="#">Подробнее</a></td>
+                        </tr>
+                        <tr>
+                            <td>Social Animal</td>
+                            <td>Grocery store products come to life, along with caricatures of Jack Benny, Rochester and
+                                Ned Sparks, and take-offs on Superman and King Kong.</td>
+                            <td><button class="tariffs-button">Подключить</button></td>
+                            <td>
+                                <div class="price">
+                                    <span class="price-count">270</span>
+                                    <span class="price-currency"> RUP</span>
+                                </div>
+                            <td>
+                                <a href="#">Подробнее</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>#</th>
+                            <th>итог</th>
+                            <th>итог</th>
+                            <th>итог</th>
+                            <th> итог</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages">
+                <div class="shop-card">
+                    <div class="row m-0 p-0 align-self-start">
+                        <div
+                            class="col-12 p-0 shop-card-image-wrapper d-flex align-items-center justify-content-center">
+                            <img src="image/mobile-2.jpg" alt="" class="shop-card-image">
+                            <div class="shop-card-tags">
+                                <span class="shop-card-tag shop-card-tag-yellow">Акция</span>
+                                <span class="shop-card-tag shop-card-tag-red">Хит продаж</span>
+                                <span class="shop-card-tag shop-card-tag-orange">Товар месяца</span>
+                                <span class="shop-card-tag shop-card-tag-green">Новинка</span>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 p-0">
+                            <div class="shop-card-type">Смартфон</div>
+                            <div class="shop-card-title">Xiaomi Mi 11 Ultra</div>
+                            <div class="shop-card-color">Красный</div>
+                        </div>
+                        <div class="col-12 p-0 shop-card-credit-wrapper">
+                            <div class="shop-card-credit">Рассрочка</div>
+                        </div>
+                    </div>
+                    <div class="row m-0 p-0 align-self-end">
+                        <div class="col-12 p-0 d-flex  shop-card-old-price-wrapper align-items-center">
+                            <div class="shop-card-old-price">15000 RUP</div>
+                            <div class="shop-card-sale">-2010</div>
+                        </div>
+                        <div class="col-9 p-0">
+                            <div class="shop-card-price">12990 RUP</div>
+                        </div>
+                        <div class="col-3 p-0 d-flex align-items-center shop-card-rating-star">
+                            <svg class="logo-icon icon" width="12px" height="12px">
+                                <use xlink:href="image/sprite.svg#star-solid"></use>
+                            </svg>
+                            <div class="shop-card-rating">4.8</div>
+                        </div>
+                        <div class="col-9 p-0 mt-2">
+                            <button class="shop-card-button-pay">Купить</button>
+                        </div>
+                        <div class="col-3 p-0 mt-2">
+                            <div class="shop-card-like d-flex justify-content-end">
+                                <button class="shop-card-favorites-button" height="24px" width="24px">
+                                    <span class="heart" aria-hidden="true">❤</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings">
+                <table class="idc-table  ">
+                    <thead>
+                        <tr>
+                            <th>ТВ-пакет</th>
+                            <th>Описание </th>
+                            <th>Подключить </th>
+                            <th width="150px">Стоимость</th>
+                            <!-- <th></th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Super Deluxe</td>
+                            <td>An unfaithful newly-wed wife, an estranged father, a priest and an angry son suddenly
+                                find themselves in the most unexpected predicaments, each poised to experience their
+                                destiny, all on one fateful day.</td>
+                            <td> <button class="tariffs-button">Подключить</button></td>
+                            <td>
+                                <div class="price">
+                                    <span class="price-count">270</span>
+                                    <span class="price-currency"> RUP</span>
+                                </div>
+                            </td>
+                            <td> <a href="#">Подробнее</a></td>
+                        </tr>
+                        <tr>
+                            <td>The Fall - The Untold Story of Jade</td>
+                            <td>Years after taking up normal lives incognito, the cyborgs are forced to fight again when
+                                the superhuman Blessed appear with a plan for humanity.</td>
+                            <td><button class="tariffs-button">Подключить</button></td>
+                            <td>
+                                <div class="price">
+                                    <span class="price-count">270</span>
+                                    <span class="price-currency"> RUP</span>
+                                </div>
+                            </td>
+                            <td> <a href="#">Подробнее</a></td>
+                        </tr>
+                        <tr>
+                            <td>La Rue et La Croissant</td>
+                            <td>Grocery store products come to life, along with caricatures of Jack Benny, Rochester and
+                                Ned Sparks, and take-offs on Superman and King Kong.</td>
+                            <td><button class="tariffs-button">Подключить</button></td>
+                            <td>
+                                <div class="price">
+                                    <span class="price-count">270</span>
+                                    <span class="price-currency"> RUP</span>
+                                </div>
+                            </td>
+                            <td> <a href="#">Подробнее</a></td>
+                        </tr>
+                        <tr>
+                            <td>La Rue et La Croissant</td>
+                            <td>Grocery store products come to life, along with caricatures of Jack Benny, Rochester and
+                                Ned Sparks, and take-offs on Superman and King Kong.</td>
+                            <td><button class="tariffs-button">Подключить</button></td>
+                            <td>
+                                <div class="price">
+                                    <span class="price-count">270</span>
+                                    <span class="price-currency"> RUP</span>
+                                </div>
+                            </td>
+                            <td> <a href="#">Подробнее</a></td>
+                        </tr>
+                        <tr>
+                            <td>Social Animal</td>
+                            <td>Grocery store products come to life, along with caricatures of Jack Benny, Rochester and
+                                Ned Sparks, and take-offs on Superman and King Kong.</td>
+                            <td><button class="tariffs-button">Подключить</button></td>
+                            <td>
+                                <div class="price">
+                                    <span class="price-count">270</span>
+                                    <span class="price-currency"> RUP</span>
+                                </div>
+                            <td>
+                                <a href="#">Подробнее</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>#</th>
+                            <th>итог</th>
+                            <th>итог</th>
+                            <th>итог</th>
+                            <th> итог</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const circlesBig = document.querySelectorAll('.circle-big');
+        // const max =75(радиус)*2*3.14(пи);   2pi*r
+        const max = 408.5;
+        circlesBig.forEach(circle => {
+            const value = circle.getAttribute('data-value');
+            const maxValue = circle.getAttribute('data-max-value');
+            const progress = circle.querySelector('.progress');
+            progress.style.strokeDashoffset = max - (max * value / maxValue)
+            progress.animate([{
+                strokeDashoffset: 471
+            }, {
+                strokeDashoffset: max - (max * value / maxValue)
+            }], {
+                duration: 1000,
+                iterations: 1
+            });
+            circle.querySelector('.value').textContent = value;
+        });
+    </script>
+</body>
+
+</html>
