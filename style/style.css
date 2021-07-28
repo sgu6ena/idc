@@ -263,7 +263,6 @@ a:title {
 .login-wrapper{
   height: 100vh;
   width: 100vw;
-  background:
 }
 .login .modal-dialog{
   height:auto;
@@ -279,9 +278,7 @@ border-radius: 5px;
 /* background: #F2F3F7; */
 }
 
-.login .modal-login-text{
-  /* font-size: 1em; */
-}
+
 .modal-login-text {
   font-family: "Inter", serif;
   font-weight: 700;
@@ -2381,7 +2378,7 @@ visibility: visible;
 
 
 
-./* * input text * */
+/* * input text * */
 .input-text,
 .input-number,
 .input-date,
