@@ -3203,8 +3203,18 @@ flex-wrap: wrap;
 .tariff .tariff-item .tariff-description{
   
   top: 10px;
-  /* max-height: 200px; */
+
 }
 .tariff .tariff-item-long{
   min-height: 370px;
+}
+
+.tariff-long .tariff-item .tariff-description{
+  top: 140px;
+}
+.tariff-long .tariff-item{
+  min-height: 450px;
+}
+.tariff-long .tariff-item-long{
+  min-height: 500px;
 }
