@@ -3188,7 +3188,7 @@ flex-wrap: wrap;
 .tariff .tariff-item{
   min-width: 250px;
   max-width:250px;
-  /* min-height: 350px; */
+  min-height: 320px;
   margin: 10px;
   margin-bottom: 50px;
 } 
@@ -3197,14 +3197,14 @@ flex-wrap: wrap;
 } */
 
 .tariff-item-long{
-  min-height: 500px;
+  min-height: 450px;
 }
-/*
+
 .tariff .tariff-item .tariff-description{
   
   top: 10px;
-  max-height: 200px;
+  /* max-height: 200px; */
 }
-.tariff:hover .tariff-item  .tariff-description{
-  top: 152px;
-} */
+.tariff .tariff-item-long{
+  min-height: 370px;
+}
