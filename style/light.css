@@ -242,23 +242,8 @@
   color: #7C7B8A;
 }
 
-.tariff-name-descr {
- 
-  font-size: 12px;
-  line-height: 14px;
-  color: #37355B;
-  margin: 0;
-  padding: 0;
-
-}
-
-.tariff-name-descr+.tariff-name {
-  margin-bottom: 25px;
-}
-
-
 .big-light-option-subtitle {
-   
+  
   font-weight: 700;
   margin-bottom: 27px;
   font-size: 48px;

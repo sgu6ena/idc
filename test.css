@@ -2,7 +2,7 @@
 .input-text,
 .input-number,
 .input-date,
-.select {
+.select{
   display: inline-block;
   outline: none;
   margin: 5px;
@@ -761,4 +761,34 @@ display: block;
 
 .blue .progress {
   stroke: #006582;
+}
+
+/*  * sms* * */
+.input-sms {
+height: 32px;
+width: 170px;
+background-color: #fff;
+border-radius: 16px;
+display: flex;
+padding:  6px;
+}
+
+.input-sms button{
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-sms input{
+  width: 120px;
+}
+
+.input-sms .confirm{
+ fill: #fff;
+ color:#fff;
+  background: #90D0CC;
 }
