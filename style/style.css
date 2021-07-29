@@ -2631,10 +2631,19 @@ footer {
   font-size: 14px;
   line-height: 17px;
 }
-.idc-table span {
-  background: #00a907;
+.idc-table :not(.price) span {
   padding: 3px;
+  background: transparent;
+  border: 1px solid #006582;
+  padding: 3px;
+  border-radius: 12px;
+  margin: 3px;
 }
+
+.idc-table span a {
+  display: inline;
+}
+
 .idc-table tr:nth-child(odd) {
   background-color: #f2f3f7;
 }
