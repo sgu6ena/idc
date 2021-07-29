@@ -76,7 +76,7 @@ hr {
   width: 100%;
 }
 
-.news-title {
+.page .news-title {
   font-weight: 700;
   font-size: 52px;
   line-height: 62px;
@@ -85,15 +85,15 @@ hr {
   color: var(--title-second);
 }
 
-.news-date {
+.page .news-date {
   margin-right: 20px;
 }
 
-.news-text {
+.page .news-text {
   padding: 70px 100px 50px 100px;
 }
 
-.news-info {
+.page .news-info {
   margin-top: 12px;
 }
 
@@ -236,7 +236,7 @@ hr {
     margin-bottom: 22px;
   }
 
-  .news-text {
+  .page .news-text {
     padding: 70px 0 50px;
   }
 }
