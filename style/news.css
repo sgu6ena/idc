@@ -29,7 +29,6 @@ hr {
 
 .navigations-link:hover {
   color: var(--title-second);
-
 }
 
 .backward {
@@ -483,6 +482,12 @@ hr {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+.tariff-title {
+  color: var(--title-second);
+  padding-left: 25px;
+}
+
 /* * support * */
 .support .container {
   max-width: 1600px;
@@ -575,7 +580,6 @@ ul.collapse,
 ul.collapsing {
   padding: 0;
   margin-bottom: 0;
-
 }
 
 .support-menu-link-item {
@@ -604,45 +608,44 @@ ul.collapsing {
   /* transition-delay:0.2s ;
   background-size: 100% 3px; */
   color: #006285;
-   font-weight: 500; 
+  font-weight: 500;
 }
 
-.support-description{
-font-size: 21px;
-line-height: 30px;
-color: #37355B;
-padding-left: 50px;
-margin-bottom: 100px;
-margin-top: 10px;
-
+.support-description {
+  font-size: 21px;
+  line-height: 30px;
+  color: #37355b;
+  padding-left: 50px;
+  margin-bottom: 100px;
+  margin-top: 10px;
 }
-.support-description ul li{
+.support-description ul li {
   list-style-type: none;
 }
-.support-description ul{
+.support-description ul {
   padding-left: 20px;
 }
-.support-description ul li:before { 
-  content:"·";
-margin-right: 15px;
-font-weight: 600;
+.support-description ul li:before {
+  content: "·";
+  margin-right: 15px;
+  font-weight: 600;
 }
-.support-description > ul, 
-.support-description > ol{
-margin: 0;
+.support-description > ul,
+.support-description > ol {
+  margin: 0;
 }
-.support-description p{
+.support-description p {
   margin-top: 15px;
 }
 
-.support-description h4{
-font-weight: 600;
-font-size: 24px;
-line-height: 29px;
-letter-spacing: 0.01em;
-color: #37355B;
-margin-top: 30px;
-margin-bottom: 25px;
+.support-description h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #37355b;
+  margin-top: 30px;
+  margin-bottom: 25px;
 }
 
 /* * accordion * */
@@ -658,17 +661,16 @@ margin-bottom: 25px;
 .accordion-item {
   background-color: transparent;
   border: none;
- 
 }
 .accordion-item:not(:first-of-type) {
-  border-top: 1px solid #d0d7dd; 
+  border-top: 1px solid #d0d7dd;
 }
-.accordion-menu .support-card-link-wrapper:hover{
-  color:#006285;
+.accordion-menu .support-card-link-wrapper:hover {
+  color: #006285;
 }
 
-.accordion-faq .accordion-button{
-font-weight: 500;
+.accordion-faq .accordion-button {
+  font-weight: 500;
 }
 .accordion-button {
   color: #37355b;
@@ -678,13 +680,11 @@ font-weight: 500;
   border: none;
 }
 
- .accordion-button:focus{
+.accordion-button:focus {
   box-shadow: none;
   outline: none;
   border: none;
 }
-
-
 
 .accordion-button:not(.collapsed) {
   color: #37355b;
@@ -707,7 +707,33 @@ font-weight: 500;
   letter-spacing: 0.01em;
   color: #7c7b8a;
 }
-
-footer .container {
-  max-width: 1600px;
+@media (max-width: 1400px) {
+  .page > .container {
+    padding: 25px 10px;
+  }
+}
+@media (max-width: 1199px) {
+  .page > .container {
+    padding: 25px 25px;
+  }
+}
+@media (max-width: 767px) {
+  .page > .container {
+    padding: 25px 15px;
+  }
+  .tariff-title {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .page > .container {
+    padding: 25px 10px;
+  }
+  .page .news-page-item {
+    padding: 15px;
+  }
+  .page-button-tag {
+    margin: 4px;
+  }
 }
