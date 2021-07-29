@@ -2959,7 +2959,7 @@ footer {
   min-height: 420px;
 }
 .tariff-long .tariff-item-long {
-  min-height: 500px;
+  min-height: 550px;
 }
 
 @media (max-width: 1420px) {
