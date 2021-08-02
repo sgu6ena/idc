@@ -2128,9 +2128,9 @@ footer {
 .input-number,
 .input-date,
 .select {
+  width: 100%;
   display: inline-block;
   outline: none;
-  margin: 5px;
   color: #37355b;
   padding: 12px 16px;
   font-size: 14px;
@@ -2792,11 +2792,19 @@ footer {
 
 /* * личный кабинет* */
 .my-idc-card {
-  /* max-width: 640px; */
+  display: block;
+  border: none;
+  width: 100%;
   background-color: #fff;
   border-radius: 8px;
-  padding: 12px;
+  padding: 12px 20px;
+
   margin-bottom: 7px;
+}
+.my-idc-dark-card {
+  background-color: #006582;
+
+  color: #fff;
 }
 .my-idc-tariff {
   display: flex;
@@ -2841,6 +2849,9 @@ footer {
 }
 /* * круглые прогресс бары* */
 .circle-big {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
   position: relative;
   width: 150px;
   height: 150px;

@@ -656,6 +656,8 @@
 /* * личный кабинет* */
 .my-idc-card {
   /* max-width: 640px; */
+  display: block;
+  border: none;
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
@@ -703,6 +705,9 @@
 }
 /* * круглые прогресс бары* */
 .circle-big {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
   position: relative;
   width: 150px;
   height: 150px;
