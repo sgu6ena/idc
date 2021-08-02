@@ -2794,8 +2794,9 @@ footer {
 .my-idc-card {
   max-width: 640px;
   background-color: #fff;
-  border-radius: 20px;
-  padding: 20px;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 7px;
 }
 .my-idc-tariff {
   display: flex;
