@@ -2792,7 +2792,7 @@ footer {
 
 /* * личный кабинет* */
 .my-idc-card {
-  max-width: 640px;
+  /* max-width: 640px; */
   background-color: #fff;
   border-radius: 8px;
   padding: 12px;
