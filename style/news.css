@@ -441,6 +441,7 @@ hr {
   text-decoration: line-through;
 }
 .family-price-wrapper .price-count {
+  display: inline;
   margin-top: 8px;
   font-weight: 800;
   font-size: 52px;
@@ -736,4 +737,71 @@ ul.collapsing {
   .page-button-tag {
     margin: 4px;
   }
+}
+
+/* * my idc* */
+.my-idc > .container {
+  max-width: 1300px;
+}
+
+.my-idc .hvr-underline-from-center.active::before {
+  left: 16px;
+  right: 16px;
+}
+.my-idc-access-point {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  width: 100%;
+  height: 64px;
+  border: none;
+  background: #ffffff;
+  border-radius: 25px;
+}
+.my-idc-point {
+  border: none;
+  background: transparent;
+}
+
+.my-idc .dropdown-toggle-1 {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+}
+
+.my-idc-point-icon {
+  color: #006285;
+  padding: 8px;
+}
+.my-idc-point-name {
+  text-align: left;
+  font-weight: 600;
+  font-size: 18px;
+  color: #37355b;
+  line-height: 0.9;
+}
+.my-idc-point-number {
+  text-align: left;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7c7b8a;
+}
+.add-point {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  display: inline-block;
+  border: none;
+  background-color: #006285;
+  padding: 10px 16px;
+  height: 36px;
+  border-radius: 20px;
+  margin-bottom: 40px;
 }

@@ -457,11 +457,35 @@
 
     <section class="page">
         <div class="container">
-            <div class="row ">
+            <h1 class="page-title">Тарифы мобильной связи</h1>
+            <div class="page-buttons-wrapper">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 col-md-12 d-flex flex-wrap justify-content-center  nav  nav-pills"
+                        id="pills-tab">
+                        <button class="page-button-tag ">Все</button>
+                        <button class="page-button-tag  active" data-bs-toggle="pill" data-bs-target="#family">Тариф
+                            «Семейный»</button>
+                        <button class="page-button-tag" data-bs-toggle="pill" data-bs-target="#active">Тариф
+                            «Active»</button>
+                        <button class="page-button-tag" data-bs-toggle="pill" data-bs-target="#light">Тариф
+                            «Легкий»</button>
+                        <button class="page-button-tag" data-bs-toggle="pill" data-bs-target="#idc">Тарифы
+                            «IDC»</button>
+                        <button class="page-button-tag" data-bs-toggle="pill" data-bs-target="#simple">Тариф
+                            «Simple»</button>
+                        <button class="page-button-tag" data-bs-toggle="pill" data-bs-target="#freedom">Тариф
+                            «Свобода»</button>
+                        <button class="page-button-tag" data-bs-toggle="pill" data-bs-target="#cool">Тариф
+                            «Классный»</button>
+                        <button class="page-button-tag" data-bs-toggle="pill" data-bs-target="#privilege">Тариф
+                            «Льготный»</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row  tab-content" id="all" id="pills-tabContent">
                 <!-- Тариф семейный -->
-                <div class="col-lg-12 tariff-wrapper">
-                    <h2 class="tariff-title">Тариф семейный</h2>
-                    <div class="tariff tariff-long d-flex ">
+                <div class=" col-lg-12 tariff-wrapper tab-content tab-pane fade show active" id="family">
+                    <div class="tariff tariff-long d-flex  tab-pane fade show active">
                         <!-- Семейный мини -->
                         <div class="tariff-item tariff-item-long">
                             <div class="tariff-image-wrapper"><img src="image/family-1.jpg" alt="" class="tariff-image">
@@ -818,8 +842,8 @@
                 </div>
                 <!-- Тариф семейный -->
                 <!-- Тариф ACTIVE -->
-                <div class="col-lg-12 tariff-wrapper">
-                    <h2 class="tariff-title">Тариф ACTIVE</h2>
+                <div class="col-lg-12 tariff-wrapper tab-content tab-pane fade " id="active">
+
                     <div class="tariff tariff-long d-flex">
                         <div class="tariff-item">
                             <div class="tariff-image-wrapper"><img src="image/active-2.jpg" alt="" class="tariff-image">
@@ -1080,8 +1104,8 @@
                 </div>
                 <!-- Тариф ACTIVE -->
                 <!-- Тарифы «IDC» -->
-                <div class="col-lg-12 tariff-wrapper">
-                    <h2 class="tariff-title"> Тарифы «IDC»</h2>
+                <div class="col-lg-12 tariff-wrapper  tab-content tab-pane fade" id="idc">
+
                     <div class="tariff tariff-long d-flex">
                         <!-- IDC-7 -->
                         <div class="tariff-item">
@@ -1497,8 +1521,8 @@
                 </div>
                 <!-- Тарифы «IDC» -->
                 <!-- Тариф «Simple» -->
-                <div class="col-lg-12 tariff-wrapper">
-                    <h2 class="tariff-title"> Тариф «Simple»</h2>
+                <div class="col-lg-12 tariff-wrapper  tab-content tab-pane fade" id="simple">
+
                     <div class="tariff tariff-long d-flex">
                         <!-- Simple-35 -->
                         <div class="tariff-item">
@@ -1661,8 +1685,8 @@
                 </div>
                 <!-- Тариф «Simple» -->
                 <!-- Тариф Лёгкий -->
-                <div class="col-xl-6 col-lg-12 tariff-wrapper">
-                    <h2 class="tariff-title">Тариф Лёгкий</h2>
+                <div class="col-xl-6 col-lg-12 tariff-wrapper  tab-content tab-pane fade" id="light">
+
                     <div class="tariff tariff-long d-flex">
                         <div class="tariff-item">
                             <div class="tariff-image-wrapper">
@@ -1791,8 +1815,8 @@
                 </div>
                 <!-- Тариф Лёгкий -->
                 <!-- Тариф «Свобода» -->
-                <div class="col-xl-3 col-lg-6  col-md-12 tariff-wrapper">
-                    <h2 class="tariff-title"> Свобода</h2>
+                <div class="col-xl-3 col-lg-6  col-md-12 tariff-wrapper  tab-content tab-pane fade" id="freedom">
+
                     <div class="tariff tariff-long d-flex">
                         <div class="tariff-item">
                             <div class="tariff-image-wrapper">
@@ -1854,8 +1878,9 @@
                 </div>
                 <!-- Тариф «Свобода» -->
                 <!-- Тариф «Классный» -->
-                <div class="col-xl-3 col-lg-6  col-md-12 tariff-wrapper justify-content-end">
-                    <h2 class="tariff-title">Классный</h2>
+                <div class="col-xl-3 col-lg-6  col-md-12 tariff-wrapper justify-content-end  tab-content tab-pane fade"
+                    id="cool">
+
                     <div class="tariff tariff-long d-flex">
                         <div class="tariff-item">
                             <div class="tariff-image-wrapper">
@@ -1921,8 +1946,8 @@
                 </div>
                 <!-- Тариф «Классный» -->
                 <!-- Тариф Льготный -->
-                <div class="col-lg-12 tariff-wrapper">
-                    <h2 class="tariff-title"> Тариф Льготный</h2>
+                <div class="col-lg-12 tariff-wrapper tab-content tab-pane fade" id="privilege">
+
                     <div class="tariff tariff-long d-flex">
                         <!-- Льготный VoLTE -->
                         <div class="tariff-item ">
