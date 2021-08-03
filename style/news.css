@@ -861,7 +861,7 @@ background: linear-gradient(var(--third-default), var(--third-default)) left
 
 button.my-idc-card:hover{
 transition: all 0.45s; 
-  background-size: 70% 3px;
+  background-size: 100% 3px;
 }
 
 button.my-idc-card:hover .my-idc-point-icon, button.my-idc-card:hover .my-idc-point-name, button.my-idc-card:hover .my-idc-point-number {
