@@ -33,7 +33,7 @@ hr {
 
 .backward {
   display: inline-block;
-  background: linear-gradient(var(--second-accent), var(--second-accent)) left
+  background: linear-gradient(var(--third-default), var(--third-default)) left
     bottom;
   padding-bottom: 5px;
   background-size: 0% 3px;
