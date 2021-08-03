@@ -840,11 +840,50 @@ line-height: 17px;
   margin-bottom: 10px;
   margin-top: 10px;.
 }
-.my-idc-balance button {
+.my-idc-balance form button {
   border: none;
   background-color: #f8f32b;
   border-radius: 5px;
   width: 100%;
   text-align: center;
   padding: 9px;
+  
+}
+
+button.my-idc-card{    
+background: linear-gradient(var(--third-default), var(--third-default)) left 
+    bottom; 
+    background-color: #fff;
+  background-size: 0% 3px; 
+  background-repeat: no-repeat; 
+
+}
+
+button.my-idc-card:hover{
+transition: all 0.45s; 
+  background-size: 70% 3px;
+}
+
+button.my-idc-card:hover .my-idc-point-icon, button.my-idc-card:hover .my-idc-point-name, button.my-idc-card:hover .my-idc-point-number {
+
+  transition: all 0.45s;
+}
+.circle-big:hover .icon, .circle-big:hover .value, .circle-big:hover .small{
+  transition: all 0.45s;
+color: #37355b;
+}
+
+.circle-big .icon, .circle-big .value, .circle-big .small{
+  transition: color 0.45s;
+}
+
+.circle-big:hover .icon{
+   transform:  rotateY(360deg);
+}
+.my-idc-balance-icon{
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  margin-left: 7px;
+    color: #d0d7dd;
 }

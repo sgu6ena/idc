@@ -371,7 +371,10 @@ a:title {
   background: #c2c2c2;
   color: #ffffff;
 }
-
+.my-idc-card.hvr-underline-from-center{
+  linear-gradient(var(--third-default), var(--third-default)) left 
+    bottom; !important;
+}
 .button-modal-another-login {
   font-family: "Inter", serif;
   font-weight: 500;
@@ -2792,6 +2795,7 @@ footer {
 
 /* * личный кабинет* */
 .my-idc-card {
+  transition: background 0.3s;
   display: block;
   border: none;
   width: 100%;
