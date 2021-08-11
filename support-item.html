@@ -8,26 +8,26 @@
     <title>IDC | Интерднестрком</title>
 
 
- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
         rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/bootstrap-grid.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
- <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/news.css">
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
         defer>
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
- <script src="scripts/page.js" defer></script>
+    <script src="scripts/page.js" defer></script>
 
 </head>
 
@@ -41,7 +41,7 @@
                             <use xlink:href="image/sprite.svg#logo"></use>
                         </svg>
                     </div>
-             </div>
+                </div>
                 <div class="col-lg-8 col-md-8 col-sm-auto  header-nav-list">
                     <ul class="d-flex justify-content-center align-items-center">
                         <li class="header-nav-item">
@@ -76,7 +76,7 @@
                                 </ul>
                             </div>
 
-                     </li>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-2  col-sm-8 col-9 d-flex justify-content-end  align-items-center">
@@ -85,7 +85,7 @@
                         <svg class="icon-search" width="22px" height="22px">
                             <use xlink:href="image/sprite.svg#search"></use>
                         </svg>
-                 </button>
+                    </button>
                     <button class="button-login d-flex align-items-center" data-bs-toggle="modal"
                         data-bs-target="#staticBackdropLogin">
                         <svg class="icon-user" width="22px" height="22px">
@@ -93,7 +93,7 @@
                         </svg>
                         <span class="login-text">Войти</span>
                     </button>
-                 <button
+                    <button
                         class="button-logout d-flex align-items-center header-nav-link all-sites-dropdown-toggle dropdown-toggle hidden"
                         id="logoutButton" data-bs-toggle="dropdown" aria-expanded="false">
                         <svg class="icon-user" width="22px" height="22px">
@@ -102,7 +102,7 @@
                         <span class="login-text">777 77777 </span>
                     </button>
 
-                 <ul class="dropdown-menu all-sites-dropdown dropdown-login" aria-labelledby="logoutButton">
+                    <ul class="dropdown-menu all-sites-dropdown dropdown-login" aria-labelledby="logoutButton">
                         <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item"
                                 href="#">Управление услугами</a></li>
                         <li class="dropdown-item-li"><a class="dropdown-item all-sites-dropdown-item"
@@ -113,18 +113,18 @@
                         </li>
                     </ul>
 
-                 <button class="button-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTopMenu"
+                    <button class="button-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTopMenu"
                         aria-controls="offcanvasTopMenu">
                         <svg class="icon-menu-alt" width="33px" height="33px">
                             <use xlink:href="image/sprite.svg#menu_alt_01"></use>
                         </svg>
-                 </button>
+                    </button>
                 </div>
             </div>
         </div>
     </header>
 
- <div class="modal modal-login fade" id="staticBackdropLogin" tabindex="-1"
+    <div class="modal modal-login fade" id="staticBackdropLogin" tabindex="-1"
         aria-labelledby="staticBackdropLoginLabel" aria-hidden="true">
         <div class="modal-dialog show active modal-dialog-login">
             <div class="modal-content modal-content-login">
@@ -151,7 +151,7 @@
                             </svg>
                         </div>
                     </div>
-                 <div class="card">
+                    <div class="card">
                         <form class="card-login" onsubmit="return false">
                             <div class="modal-login-text">Введите номер телефона</div>
                             <div class="input-login-wrapper">
@@ -167,32 +167,32 @@
                                 " onclick="this.value.length<=4?this.value = '0(77':'';" maxlength="11">
                                 <span class="login-danger-text">неверный номер</span>
                             </div>
-                         <button
+                            <button
                                 class="button-modal-login button-modal-login-next d-flex justify-content-center align-items-center"
                                 disabled type="submit">
                                 Далее
                             </button>
-                         <a href="" class="card-registration-link">Регистрация</a>
+                            <a href="" class="card-registration-link">Регистрация</a>
                             <div class="spinner-border hidden" role="status">
-                         </div>
+                            </div>
 
-                     </form>
+                        </form>
                         <form class="card-pass hidden" onsubmit="return false">
                             <div class="modal-login-text">Введите пароль</div>
                             <div class="modal-login-text-descr">
-                         </div>
-                         <div class="input-login-wrapper">
+                            </div>
+                            <div class="input-login-wrapper">
                                 <input type="password" class="input-password input-modal" placeholder="Введите пароль">
                                 <span class="login-danger-text">неверный пароль</span>
                             </div>
-                         <button type="submit"
+                            <button type="submit"
                                 class="button-modal-login button-next d-flex justify-content-center align-items-center">
                                 Войти
                             </button>
                             <button class="button-modal-another-login login-backward">
                                 Войти с другим логином
                             </button>
-                         <button class="button-modal-forgotten-password">
+                            <button class="button-modal-forgotten-password">
                                 Забыли пароль
                             </button>
                         </form>
@@ -204,7 +204,7 @@
                                     maxlength="4">
                                 <span class="login-danger-text">неверный пароль</span>
                             </div>
-                         <button type="submit"
+                            <button type="submit"
                                 class="button-modal-login button-next d-flex justify-content-center align-items-center">
                                 Войти
                             </button>
@@ -213,11 +213,11 @@
                             </button>
                         </form>
                     </div>
-             </div>
+                </div>
             </div>
         </div>
     </div>
- <section class="megamenu">
+    <section class="megamenu">
         <div class="offcanvas offcanvas-top  offcanvas-top-menu " tabindex="-1" id="offcanvasTopMenu"
             aria-labelledby="offcanvasTopMenuLabel">
             <div class="container-fluid">
@@ -226,7 +226,7 @@
                         <h5 id="offcanvasTopLabel-menu" class="offcanvas-title">Меню сайта</h5>
                         <hr class="offcanvas-title-line" height="3px">
                     </div>
-                 <button type="button" class="btn-close btn-close-white text-reset close-menu"
+                    <button type="button" class="btn-close btn-close-white text-reset close-menu"
                         data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body offcanvas-body-menu">
@@ -251,7 +251,7 @@
                                     </li>
                                     <li class="menu-point"><a href="#" class="menu-point-link">Тарифы IPTV</a></li>
                                     <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
-                             </ul>
+                                </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
@@ -261,7 +261,7 @@
                                     <li class="menu-point"><a href="#" class="menu-point-link">Тарифы DVB-C</a></li>
                                     <li class="menu-point"><a href="#" class="menu-point-link">Тарифы DVB-T2</a></li>
                                     <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
-                             </ul>
+                                </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
@@ -306,7 +306,7 @@
                                 <ul class="menu-item-list">
                                     <li class="menu-point"><a href="#" class="menu-point-link">Пополнение счета</a></li>
                                     <li class="menu-point"><a href="#" class="menu-point-link">Денежный перевод</a></li>
-                             </ul>
+                                </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
@@ -347,16 +347,16 @@
                                         <li class="menu-point"><a href="#" class="menu-point-link">Полезная
                                                 информация</a></li>
                                     </div>
-                             </ul>
+                                </ul>
                             </div>
                         </div>
-                 </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
- <section class="megamenu search-menu">
+    <section class="megamenu search-menu">
         <div class="offcanvas offcanvas-top  offcanvas-top-menu " tabindex="-1" id="offcanvasTopSearch"
             aria-labelledby="offcanvasTopSearchLabel">
             <div class="container-fluid">
@@ -365,7 +365,7 @@
                         <h5 id="offcanvasTopLabel-menu" class="offcanvas-title">Поиск</h5>
                         <hr class="offcanvas-title-line" height="3px">
                     </div>
-                 <button type="button" class="btn-close btn-close-white text-reset close-menu"
+                    <button type="button" class="btn-close btn-close-white text-reset close-menu"
                         data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body offcanvas-body-menu">
@@ -382,7 +382,7 @@
                                     </li>
                                     <li class="menu-point"><a href="#" class="menu-point-link">Роуминг</a></li>
                                     <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
-                             </div>
+                                </div>
                                 <div class="col-lg-6 col-md-6 p-0">
                                     <li class="menu-point"><a href="#" class="menu-point-link">Тарифы</a></li>
                                     <li class="menu-point"><a href="#" class="menu-point-link">Мобильный интернет</a>
@@ -390,7 +390,7 @@
                                     <li class="menu-point"><a href="#" class="menu-point-link">Роуминг</a></li>
                                     <li class="menu-point"><a href="#" class="menu-point-link">Услуги</a></li>
                                 </div>
-                         </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -398,8 +398,8 @@
         </div>
     </section>
 
- <hr>
- <section class="navigation container">
+    <hr>
+    <section class="navigation container">
         <nav class="navigation-wrapper">
             <ul class="navigation-list d-flex align-items-center">
                 <li class="navigations-item">
@@ -416,275 +416,374 @@
         <hr>
     </section>
 
- <section class="support-item">
+    <section class="support-item">
         <div class="container">
-         <div class="row">
-             <h2 class="support-item-title">Блокировка номера</h2>
+            <div class="row">
+                <h2 class="support-item-title">Блокировка номера</h2>
                 <div class="col-lg-3">
                     <div class="accordion-menu" id="accordionMenu">
                         <div class="accordion-item">
-                         <button class=" accordion-button  support-card-link-wrapper" type="button"
+                            <button class=" accordion-button  support-card-link-wrapper" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#menuOne">
                                 Часто задаваемые вопросы
                             </button>
-                       
-                            <ul  id="menuOne" class=" collapse" data-bs-parent="#accordionMenu">
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Пожаловаться на SMS спам
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Защита от мошенников
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Бланки заявлений</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Номера, которые могут быть Вам полезны
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Термины</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Актуализация тарифов и опций</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Список архивных тарифов</a></li>
+
+                            <ul id="menuOne" class=" collapse" data-bs-parent="#accordionMenu">
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Пожаловаться на
+                                        SMS спам
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Защита от
+                                        мошенников
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Бланки
+                                        заявлений</a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Номера, которые
+                                        могут быть Вам полезны
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Термины</a>
+                                </li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Актуализация
+                                        тарифов и опций</a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Список архивных
+                                        тарифов</a></li>
                             </ul>
 
-                          
+
                         </div>
                         <div class="accordion-item">
-                         <button class="accordion-button  support-card-link-wrapper " type="button"
+                            <button class="accordion-button  support-card-link-wrapper " type="button"
                                 data-bs-toggle="collapse" data-bs-target="#menuTwo" data-bs-parent="#accordionMenu">
                                 Действия с SIM-картой
                             </button>
-                       
-                                    <ul  id="menuTwo" class=" collapse" data-bs-parent="#accordionMenu">
-                                        <li class="support-menu-link-item"><a href="#" class="support-menu-link">Пожаловаться на SMS спам
-                                        </a></li>
-                                        <li class="support-menu-link-item"><a href="#" class="support-menu-link">Защита от мошенников
-                                        </a></li>
-                                        <li class="support-menu-link-item"><a href="#" class="support-menu-link">Бланки заявлений</a></li>
-                                        <li class="support-menu-link-item"><a href="#" class="support-menu-link">Номера, которые могут быть Вам полезны
-                                        </a></li>
-                                        <li class="support-menu-link-item"><a href="#" class="support-menu-link">Термины</a></li>
-                                        <li class="support-menu-link-item"><a href="#" class="support-menu-link">Актуализация тарифов и опций</a></li>
-                                        <li class="support-menu-link-item"><a href="#" class="support-menu-link">Список архивных тарифов</a></li>
-                                    </ul>
-                       
+
+                            <ul id="menuTwo" class=" collapse" data-bs-parent="#accordionMenu">
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Пожаловаться на
+                                        SMS спам
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Защита от
+                                        мошенников
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Бланки
+                                        заявлений</a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Номера, которые
+                                        могут быть Вам полезны
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Термины</a>
+                                </li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Актуализация
+                                        тарифов и опций</a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Список архивных
+                                        тарифов</a></li>
+                            </ul>
+
                         </div>
-                     <div class="accordion-item">
-                         <button class=" accordion-button  support-card-link-wrapper" type="button"
+                        <div class="accordion-item">
+                            <button class=" accordion-button  support-card-link-wrapper" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#menuThree">
                                 Действия со счетом
                             </button>
-                     
-                            <ul  id="menuThree" class=" collapse" data-bs-parent="#accordionMenu">
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Пожаловаться на SMS спам
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Защита от мошенников
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Бланки заявлений</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Номера, которые могут быть Вам полезны
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Термины</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Актуализация тарифов и опций</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Список архивных тарифов</a></li>
+
+                            <ul id="menuThree" class=" collapse" data-bs-parent="#accordionMenu">
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Пожаловаться на
+                                        SMS спам
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Защита от
+                                        мошенников
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Бланки
+                                        заявлений</a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Номера, которые
+                                        могут быть Вам полезны
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Термины</a>
+                                </li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Актуализация
+                                        тарифов и опций</a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Список архивных
+                                        тарифов</a></li>
                             </ul>
-                            
+
                         </div>
                         <div class="accordion-item">
-                         <button class=" accordion-button collapsed support-card-link-wrapper" type="button"
+                            <button class=" accordion-button collapsed support-card-link-wrapper" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#menuFour">
                                 Сервисы самообслуживания
                             </button>
-                       
-                            <ul  id="menuFour" class="show collapse" data-bs-parent="#accordionMenu">
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Пожаловаться на SMS спам
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Защита от мошенников
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Бланки заявлений</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Номера, которые могут быть Вам полезны
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Термины</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Актуализация тарифов и опций</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Список архивных тарифов</a></li>
+
+                            <ul id="menuFour" class="show collapse" data-bs-parent="#accordionMenu">
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Пожаловаться на
+                                        SMS спам
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Защита от
+                                        мошенников
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Бланки
+                                        заявлений</a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Номера, которые
+                                        могут быть Вам полезны
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Термины</a>
+                                </li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Актуализация
+                                        тарифов и опций</a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Список архивных
+                                        тарифов</a></li>
                             </ul>
-                            
+
                         </div>
                         <div class="accordion-item">
-                         <button class=" accordion-button  support-card-link-wrapper" type="button"
+                            <button class=" accordion-button  support-card-link-wrapper" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#menuFive">
                                 Сервисы самообслуживания
                             </button>
-                        
-                            <ul  id="menuFive" class=" collapse" data-bs-parent="#accordionMenu">
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Пожаловаться на SMS спам
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Защита от мошенников
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Бланки заявлений</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Номера, которые могут быть Вам полезны
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Термины</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Актуализация тарифов и опций</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Список архивных тарифов</a></li>
+
+                            <ul id="menuFive" class=" collapse" data-bs-parent="#accordionMenu">
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Пожаловаться на
+                                        SMS спам
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Защита от
+                                        мошенников
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Бланки
+                                        заявлений</a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Номера, которые
+                                        могут быть Вам полезны
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Термины</a>
+                                </li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Актуализация
+                                        тарифов и опций</a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Список архивных
+                                        тарифов</a></li>
                             </ul>
-                         
+
                         </div>
                         <div class="accordion-item">
-                         <button class=" accordion-button  support-card-link-wrapper" type="button"
+                            <button class=" accordion-button  support-card-link-wrapper" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#menuSix">
                                 Полезная информация
                             </button>
-                         
-                            <ul  id="menuSix" class=" collapse" data-bs-parent="#accordionMenu">
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Пожаловаться на SMS спам
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Защита от мошенников
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Бланки заявлений</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Номера, которые могут быть Вам полезны
-                                </a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Термины</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Актуализация тарифов и опций</a></li>
-                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Список архивных тарифов</a></li>
+
+                            <ul id="menuSix" class=" collapse" data-bs-parent="#accordionMenu">
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Пожаловаться на
+                                        SMS спам
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Защита от
+                                        мошенников
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Бланки
+                                        заявлений</a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Номера, которые
+                                        могут быть Вам полезны
+                                    </a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Термины</a>
+                                </li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Актуализация
+                                        тарифов и опций</a></li>
+                                <li class="support-menu-link-item"><a href="#" class="support-menu-link">Список архивных
+                                        тарифов</a></li>
                             </ul>
-                          
+
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-9">
-                 <div class="support-description">
-               
-                    <ul>
-                         <li>Вас замучили рекламные SMS?</li>
-                         <li>Нет сил звонить куда-то и отписываться от странных рассылок?</li>
-                     </ul>
-                     Теперь вы можете пожаловаться на рекламные SMS, отправленные вам без вашего согласия с помощью нового сервиса МТС «Антиспам». 
-                   
-                  <p>Чтобы отправить жалобу, необходимо выполнить следующие действия:
-                        <ol>
-                            <li>    Перешлите рекламное SMS без изменений на номер 6333.</li>
-                            <li> В ответ вы получите SMS от номера 6333 с запросом имени или номера отправителя рекламного SMS. Отправьте SMS с именем или номером отправителя на номер 6333 в течение 10 минут после получения соответствующего запроса.</li>
-                        </ol>
+                    <div class="support-description">
 
-                    <p>
-                    Подключить тариф «Семейный» можно в любом Центре связи на абонента мобильной связи. Домашний телефон, домашний интернет, телевидение должны быть зарегистрированы по одному адресу. Если все услуги [мобильный и домашний телефоны, домашний интернет и телевидение] оформлены на одного абонента при оформлении достаточно предъявить паспорт. Если некоторые из услуг оформлены на других абонентов – необходимо от них письменное разрешение [делегирование] или переоформление. Можно переоформить или делегировать услугу домашний телефон, интернет и телевидение, при чем, совершенно бесплатно.
-                
-                    <p> 
-                        В течение 24 часов после отправки жалобы вам поступит ответ от номера 6333 с указанием действий, которые вы можете предпринять для прекращения данной рекламной рассылки в ваш адрес в случае, если рекламное сообщение было отправлено из сети МТС или другого российского оператора связи.
-                    <br>На основе полученных жалоб, МТС предпримет все возможные меры по предотвращению распространения несанкционированной SMS-рекламы.
-          
-                <p>   Услуги в тарифе «Семейный» предоставляются в течение календарного месяца с 1 числа на авансовой
-                        системе оплаты. Для удобства оплаты на лицевой счет тарифа «Семейный» возможно подключить другие
-                        услуги.
-               
-                    
-                    
-                        <div class="accordion-faq">
-                            <div class="accordion-item">
-           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-               data-bs-target="#faqOne">
-               Как я могу подключить пакет «Семейный», что для этого нужно?
-           </button>
-           <div id="faqOne" class="accordion-collapse collapse ">
-               <div class="accordion-body">
-                   Подключить тариф «Семейный» можно в любом Центре связи на абонента мобильной связи.
-                   Домашний телефон, домашний интернет, телевидение должны быть зарегистрированы по одному
-                   адресу. Если все услуги [мобильный и домашний телефоны, домашний интернет и телевидение]
-                   оформлены на одного абонента при оформлении достаточно предъявить паспорт. Если
-                   некоторые из услуг оформлены на других абонентов – необходимо от них письменное
-                   разрешение [делегирование] или переоформление. Можно переоформить или делегировать
-                   услугу домашний телефон, интернет и телевидение, при чем, совершенно бесплатно.
-               </div>
-           </div>
-       </div>
-       <div class="accordion-item">
-           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-               data-bs-target="#faqTwo">
-               Что такое делегирование, как его правильно оформить, куда обратиться?
-           </button>
-           <div id="faqTwo" class="accordion-collapse collapse">
-               <div class="accordion-body">
-                   Опция «Семейные номера» - это опция, которая позволяет неограниченно разговаривать между
-                   собой, а также с абонентом пакетной системы. При первоначальном подключении [или
-                   впоследствии] абонент пакетной системы указывает номера своих членов семьи. Данные
-                   номера должны быть оформлены на физических лиц с тарифными планами Active 1, Active 3,
-                   Active 10, Active 25, IDC-7, IDC-10, IDC-15, IDC-20, IDC-30, IDC-50 или IDC-Престиж –
-                   данные пакеты оплачиваются отдельно от тарифа «Семейный». Например, абонент пакета
-                   «Семейный Плюс» с условным номером «0», при оформлении указал в качестве Семейных
-                   номеров следующие номера: «1», «2», «3», на которых пакеты IDC-7 и IDC-10. Данная опция
-                   позволит абонентам «1», «2», «3» между собой общаться безлимитно, а также звонить
-                   безгранично на номер «0» внутри сети при условии активного пакета
-               </div>
-           </div>
-       </div>
-       <div class="accordion-item">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-               data-bs-target="#faqThree">
-               Каким образом начисляется трафик мобильного интернета? Переходит ли на следующий месяц?
-           </button>
-        <div id="faqThree" class="accordion-collapse collapse">
-               <div class="accordion-body">
-                   В тариф «Семейный» можно включить один мобильный телефон [помимо домашнего интернета,
-                   домашнего телефона и телевидения] с любым пакетом, кроме контрактных пакетов. В
-                   дальнейшем старый пакет оплачивать отдельно не нужно.
-               </div>
-           </div>
-       </div>
-       <div class="accordion-item">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-               data-bs-target="#faqFour">
-               Как я могу подключить пакет «Семейный», что для этого нужно?
-           </button>
-        <div id="faqFour" class="accordion-collapse collapse ">
-               <div class="accordion-body">
-                   Подключить тариф «Семейный» можно в любом Центре связи на абонента мобильной связи.
-                   Домашний телефон, домашний интернет, телевидение должны быть зарегистрированы по одному
-                   адресу. Если все услуги [мобильный и домашний телефоны, домашний интернет и телевидение]
-                   оформлены на одного абонента при оформлении достаточно предъявить паспорт. Если
-                   некоторые из услуг оформлены на других абонентов – необходимо от них письменное
-                   разрешение [делегирование] или переоформление. Можно переоформить или делегировать
-                   услугу домашний телефон, интернет и телевидение, при чем, совершенно бесплатно.
-               </div>
-           </div>
-       </div>
-       <div class="accordion-item">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-               data-bs-target="#faqFive">
-               Как я могу подключить пакет «Семейный», что для этого нужно?
-           </button>
-        <div id="faqFive" class=" collapse ">
-               <div class="accordion-body">
-                   Подключить тариф «Семейный» можно в любом Центре связи на абонента мобильной связи.
-                   Домашний телефон, домашний интернет, телевидение должны быть зарегистрированы по одному
-                   адресу. Если все услуги [мобильный и домашний телефоны, домашний интернет и телевидение]
-                   оформлены на одного абонента при оформлении достаточно предъявить паспорт. Если
-                   некоторые из услуг оформлены на других абонентов – необходимо от них письменное
-                   разрешение [делегирование] или переоформление. Можно переоформить или делегировать
-                   услугу домашний телефон, интернет и телевидение, при чем, совершенно бесплатно.
-               </div>
-           </div>
-       </div>
-       <div class="accordion-item">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-               data-bs-target="#faqSix">
-               Как я могу подключить пакет «Семейный», что для этого нужно?
-           </button>
-        <div id="faqSix" class="accordion-collapse collapse ">
-               <div class="accordion-body">
-                   Подключить тариф «Семейный» можно в любом Центре связи на абонента мобильной связи.
-                   Домашний телефон, домашний интернет, телевидение должны быть зарегистрированы по одному
-                   адресу. Если все услуги [мобильный и домашний телефоны, домашний интернет и телевидение]
-                   оформлены на одного абонента при оформлении достаточно предъявить паспорт. Если
-                   некоторые из услуг оформлены на других абонентов – необходимо от них письменное
-                   разрешение [делегирование] или переоформление. Можно переоформить или делегировать
-                   услугу домашний телефон, интернет и телевидение, при чем, совершенно бесплатно.
-               </div>
-           </div>
-       </div>
-       </div>
+                        <ul>
+                            <li>Вас замучили рекламные SMS?</li>
+                            <li>Нет сил звонить куда-то и отписываться от странных рассылок?</li>
+                        </ul>
+                        Теперь вы можете пожаловаться на рекламные SMS, отправленные вам без вашего согласия с помощью
+                        нового сервиса МТС «Антиспам».
+
+                        <p>Чтобы отправить жалобу, необходимо выполнить следующие действия:
+                            <ol>
+                                <li> Перешлите рекламное SMS без изменений на номер 6333.</li>
+                                <li> В ответ вы получите SMS от номера 6333 с запросом имени или номера отправителя
+                                    рекламного SMS. Отправьте SMS с именем или номером отправителя на номер 6333 в
+                                    течение 10 минут после получения соответствующего запроса.</li>
+                            </ol>
+
+                            <p>
+                                Подключить тариф «Семейный» можно в любом Центре связи на абонента мобильной связи.
+                                Домашний телефон, домашний интернет, телевидение должны быть зарегистрированы по одному
+                                адресу. Если все услуги [мобильный и домашний телефоны, домашний интернет и телевидение]
+                                оформлены на одного абонента при оформлении достаточно предъявить паспорт. Если
+                                некоторые из услуг оформлены на других абонентов – необходимо от них письменное
+                                разрешение [делегирование] или переоформление. Можно переоформить или делегировать
+                                услугу домашний телефон, интернет и телевидение, при чем, совершенно бесплатно.
+
+                                <p>
+                                    В течение 24 часов после отправки жалобы вам поступит ответ от номера 6333 с
+                                    указанием действий, которые вы можете предпринять для прекращения данной рекламной
+                                    рассылки в ваш адрес в случае, если рекламное сообщение было отправлено из сети МТС
+                                    или другого российского оператора связи.
+                                    <br>На основе полученных жалоб, МТС предпримет все возможные меры по предотвращению
+                                    распространения несанкционированной SMS-рекламы.
+
+                                    <p> Услуги в тарифе «Семейный» предоставляются в течение календарного месяца с 1
+                                        числа на авансовой
+                                        системе оплаты. Для удобства оплаты на лицевой счет тарифа «Семейный» возможно
+                                        подключить другие
+                                        услуги.
+
+
+
+                                        <div class="accordion-faq">
+                                            <div class="accordion-item">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faqOne">
+                                                    Как я могу подключить пакет «Семейный», что для этого нужно?
+                                                </button>
+                                                <div id="faqOne" class="accordion-collapse collapse ">
+                                                    <div class="accordion-body">
+                                                        Подключить тариф «Семейный» можно в любом Центре связи на
+                                                        абонента мобильной связи.
+                                                        Домашний телефон, домашний интернет, телевидение должны быть
+                                                        зарегистрированы по одному
+                                                        адресу. Если все услуги [мобильный и домашний телефоны, домашний
+                                                        интернет и телевидение]
+                                                        оформлены на одного абонента при оформлении достаточно
+                                                        предъявить паспорт. Если
+                                                        некоторые из услуг оформлены на других абонентов – необходимо от
+                                                        них письменное
+                                                        разрешение [делегирование] или переоформление. Можно
+                                                        переоформить или делегировать
+                                                        услугу домашний телефон, интернет и телевидение, при чем,
+                                                        совершенно бесплатно.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faqTwo">
+                                                    Что такое делегирование, как его правильно оформить, куда
+                                                    обратиться?
+                                                </button>
+                                                <div id="faqTwo" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        Опция «Семейные номера» - это опция, которая позволяет
+                                                        неограниченно разговаривать между
+                                                        собой, а также с абонентом пакетной системы. При первоначальном
+                                                        подключении [или
+                                                        впоследствии] абонент пакетной системы указывает номера своих
+                                                        членов семьи. Данные
+                                                        номера должны быть оформлены на физических лиц с тарифными
+                                                        планами Active 1, Active 3,
+                                                        Active 10, Active 25, IDC-7, IDC-10, IDC-15, IDC-20, IDC-30,
+                                                        IDC-50 или IDC-Престиж –
+                                                        данные пакеты оплачиваются отдельно от тарифа «Семейный».
+                                                        Например, абонент пакета
+                                                        «Семейный Плюс» с условным номером «0», при оформлении указал в
+                                                        качестве Семейных
+                                                        номеров следующие номера: «1», «2», «3», на которых пакеты IDC-7
+                                                        и IDC-10. Данная опция
+                                                        позволит абонентам «1», «2», «3» между собой общаться
+                                                        безлимитно, а также звонить
+                                                        безгранично на номер «0» внутри сети при условии активного
+                                                        пакета
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faqThree">
+                                                    Каким образом начисляется трафик мобильного интернета? Переходит ли
+                                                    на следующий месяц?
+                                                </button>
+                                                <div id="faqThree" class="accordion-collapse collapse">
+                                                    <div class="accordion-body">
+                                                        В тариф «Семейный» можно включить один мобильный телефон [помимо
+                                                        домашнего интернета,
+                                                        домашнего телефона и телевидения] с любым пакетом, кроме
+                                                        контрактных пакетов. В
+                                                        дальнейшем старый пакет оплачивать отдельно не нужно.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faqFour">
+                                                    Как я могу подключить пакет «Семейный», что для этого нужно?
+                                                </button>
+                                                <div id="faqFour" class="accordion-collapse collapse ">
+                                                    <div class="accordion-body">
+                                                        Подключить тариф «Семейный» можно в любом Центре связи на
+                                                        абонента мобильной связи.
+                                                        Домашний телефон, домашний интернет, телевидение должны быть
+                                                        зарегистрированы по одному
+                                                        адресу. Если все услуги [мобильный и домашний телефоны, домашний
+                                                        интернет и телевидение]
+                                                        оформлены на одного абонента при оформлении достаточно
+                                                        предъявить паспорт. Если
+                                                        некоторые из услуг оформлены на других абонентов – необходимо от
+                                                        них письменное
+                                                        разрешение [делегирование] или переоформление. Можно
+                                                        переоформить или делегировать
+                                                        услугу домашний телефон, интернет и телевидение, при чем,
+                                                        совершенно бесплатно.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faqFive">
+                                                    Как я могу подключить пакет «Семейный», что для этого нужно?
+                                                </button>
+                                                <div id="faqFive" class=" collapse ">
+                                                    <div class="accordion-body">
+                                                        Подключить тариф «Семейный» можно в любом Центре связи на
+                                                        абонента мобильной связи.
+                                                        Домашний телефон, домашний интернет, телевидение должны быть
+                                                        зарегистрированы по одному
+                                                        адресу. Если все услуги [мобильный и домашний телефоны, домашний
+                                                        интернет и телевидение]
+                                                        оформлены на одного абонента при оформлении достаточно
+                                                        предъявить паспорт. Если
+                                                        некоторые из услуг оформлены на других абонентов – необходимо от
+                                                        них письменное
+                                                        разрешение [делегирование] или переоформление. Можно
+                                                        переоформить или делегировать
+                                                        услугу домашний телефон, интернет и телевидение, при чем,
+                                                        совершенно бесплатно.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faqSix">
+                                                    Как я могу подключить пакет «Семейный», что для этого нужно?
+                                                </button>
+                                                <div id="faqSix" class="accordion-collapse collapse ">
+                                                    <div class="accordion-body">
+                                                        Подключить тариф «Семейный» можно в любом Центре связи на
+                                                        абонента мобильной связи.
+                                                        Домашний телефон, домашний интернет, телевидение должны быть
+                                                        зарегистрированы по одному
+                                                        адресу. Если все услуги [мобильный и домашний телефоны, домашний
+                                                        интернет и телевидение]
+                                                        оформлены на одного абонента при оформлении достаточно
+                                                        предъявить паспорт. Если
+                                                        некоторые из услуг оформлены на других абонентов – необходимо от
+                                                        них письменное
+                                                        разрешение [делегирование] или переоформление. Можно
+                                                        переоформить или делегировать
+                                                        услугу домашний телефон, интернет и телевидение, при чем,
+                                                        совершенно бесплатно.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                     </div>
 
 
-             </div>
+                </div>
             </div>
         </div>
     </section>
 
- <footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -728,7 +827,7 @@
                             <div class="footer-my-idc-title"> Мой IDC</div>
                             <a href="#" class="footer-my-idc-link d-flex">
                                 <div class="col-3">
-                                 <svg class="logo-icon icon" width="35px" height="35px">
+                                    <svg class="logo-icon icon" width="35px" height="35px">
                                         <use xlink:href="image/sprite.svg#google-play"></use>
                                     </svg>
                                 </div>
@@ -759,40 +858,40 @@
                         </div>
                         <div class="col-lg-6   col-md-6 col-sm-6  p-0">
                             <div class="footer-social">
-                             <div class="footer-social-title">
+                                <div class="footer-social-title">
                                     Социальные сети
-                                 <ul class="footer-social-list">
+                                    <ul class="footer-social-list">
                                         <li class="footer-social-item d-flex align-items-start">
                                             <a href="#" class="footer-social-link">
                                                 <svg class="logo-icon icon" width="25px" height="25px">
                                                     <use xlink:href="image/sprite.svg#facebook"></use>
                                                 </svg>
-                                         </a>
+                                            </a>
                                         </li>
                                         <li class="footer-social-item">
                                             <a href="#" class="footer-social-link">
                                                 <svg class="logo-icon icon" width="25px" height="25px">
                                                     <use xlink:href="image/sprite.svg#instagram"></use>
                                                 </svg>
-                                         </a>
+                                            </a>
                                         </li>
                                         <li class="footer-social-item">
                                             <a href="#" class="footer-social-link">
                                                 <svg class="logo-icon icon" width="25px" height="25px">
                                                     <use xlink:href="image/sprite.svg#odnoklassniki"></use>
                                                 </svg>
-                                         </a></li>
+                                            </a></li>
                                         <li class="footer-social-item">
                                             <a href="#" class="footer-social-link">
                                                 <svg class="logo-icon icon" width="25px" height="25px">
                                                     <use xlink:href="image/sprite.svg#vk"></use>
                                                 </svg>
-                                         </a>
+                                            </a>
                                         </li>
-                                 </ul>
+                                    </ul>
                                 </div>
 
-                             <div class="footer-social-title">
+                                <div class="footer-social-title">
                                     Мессенджеры
                                 </div>
                                 <ul class="footer-social-list">
@@ -802,7 +901,7 @@
                                                 <use xlink:href="image/sprite.svg#viber"></use>
                                             </svg>
 
-                                     </a>
+                                        </a>
                                     </li>
                                     <li class="footer-social-item">
                                         <a href="#" class="footer-social-link">
@@ -818,9 +917,9 @@
                                             </svg>
                                         </a>
                                     </li>
-                             </ul>
+                                </ul>
 
-                         </div>
+                            </div>
                         </div>
                     </div>
                     </ul>
