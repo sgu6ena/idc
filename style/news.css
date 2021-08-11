@@ -323,14 +323,14 @@ hr {
   max-width: 1300px;
   margin: auto;
 }
-.page .nav-item {
+.page .nav-item{
   margin: -2px 2px;
   background: linear-gradient(var(--third-default), var(--third-default)) center
     bottom;
   background-size: 0% 3px;
   background-repeat: no-repeat;
 }
-.page .nav-item a {
+.page .nav-item a{
   font-weight: 500;
   margin: 0 5px;
   text-decoration: none;
@@ -338,7 +338,7 @@ hr {
   line-height: 4;
 }
 
-.page .nav-item a.active {
+.page .nav-item a.active{
   text-decoration: none;
   color: var(--third-default);
   background-size: 0% 3px;
@@ -348,7 +348,8 @@ hr {
 .page .nav-item .hvr-underline-from-center.active:before,
 .page .nav-item .hvr-underline-from-center:hover:before,
 .page .nav-item .hvr-underline-from-center:focus:before,
-.page .nav-item .hvr-underline-from-center:active:before {
+.page .nav-item .hvr-underline-from-center:active:before
+  {
   left: 0px;
   right: 0px;
 }
